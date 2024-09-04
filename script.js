@@ -29,7 +29,7 @@ function startQuiz() {
   backButton.innerHTML = "Back"; // Update back button text
 
   // Select 40 random questions from the pool
-  selectedQuestions = getRandomQuestions(questions, 999);
+  selectedQuestions = getRandomQuestions(questions, 40);
 
   updateProgressBar(); // Initialize progress bar
   showQuestion();
