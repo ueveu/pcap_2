@@ -4562,7 +4562,8 @@ export const questions = [
       { text: '"\"', correct: false },
       { text: `"King's Cross Station"`, correct: true },
     ],
-    explanation: `Explanation:<br><br>A is a valid Python string literal. Triple quotes (""" or ''') allow for multi-line strings and can include both single and double quotes within the string without the need for escaping.<br><br>B is not a valid Python string literal. The single quote within the string (emperor's) conflicts with the single quotes used to define the string, which causes a syntax error. To make this valid, you would need to either escape the inner single quote or use double quotes for the string.<br><br>C is not a valid Python string literal. The backslash (\) is an escape character, and it's incomplete here. To make this valid, you would need to complete the escape sequence or use a double backslash to represent a literal backslash.<br><br>D is a valid Python string literal. The string is enclosed in double quotes, so the single quote within the string (King's) does not cause any issues.`
+    explanation: `Explanation:<br><br>A is a valid Python string literal. Triple quotes (""" or ''') allow for multi-line strings and can include both single and double quotes within the string without the need for escaping.<br><br>B is not a valid Python string literal. The single quote within the string (emperor's) conflicts with the single quotes used to define the string, which causes a syntax error. To make this valid, you would need to either escape the inner single quote or use double quotes for the string.<br><br>C is not a valid Python string literal. The backslash (\) is an escape character, and it's incomplete here. To make this valid, you would need to complete the escape sequence or use a double backslash to represent a literal backslash.<br><br>D is a valid Python string literal. The string is enclosed in double quotes, so the single quote within the string (King's) does not cause any issues.`,
+    link: "https://www.w3schools.com/python/python_strings.asp",
   },
   {
     question: "Assuming that the following code has been executed successfully, indicate the expressions which evaluate to True and don't raise any exceptions. <br><br>(Choose two)",
@@ -4621,6 +4622,7 @@ export const questions = [
       { text: "D", correct: true },
     ],
     explanation: "Explanation:<br><br>The expression A evaluates to True and raises no exceptions. In Python, the empty string is considered to be present in any string, so this expression correctly returns True.<br><br>The expression B checks whether the substring 'xyz' is not present in the string 'uvwxyz'. Since 'xyz' is actually part of the string 'uvwxyz', this expression evaluates to False. While it raises no exceptions, it does not meet the criteria of evaluating to True.<br><br>The expression C checks whether the empty string is not present in another empty string. However, Python considers the empty string to be present in any string, including another empty string, so this expression evaluates to False. It raises no exceptions, but it does not evaluate to True.<br><br>Finally, the expression D evaluates to True and raises no exceptions. The character 'b' is indeed present in the string 'abc', so this expression correctly returns True.",
+    link: "https://docs.python.org/3/reference/expressions.html#boolean-operations",
   },
   {
     question: "Select the true statements about the filter() function. <br><br>(Choose two)",
@@ -4630,7 +4632,8 @@ export const questions = [
       { text: "The filter() function does not return an iterator.", correct: false },
       { text: "The filter() function has the following syntax:filter(iterable, function)", correct: false },
     ],
-    explanation: "Explanation:<br><br>The filter() function returns an iterator that can be used to iterate over the filtered results. In Python 3, it doesn't return a list directly but an iterator object that yields items one by one.<br><br>The filter() function takes two arguments: a function and an iterable. The function is applied to each item in the iterable, and only items for which the function returns True are included in the iterator returned by filter()."
+    explanation: "Explanation:<br><br>The filter() function returns an iterator that can be used to iterate over the filtered results. In Python 3, it doesn't return a list directly but an iterator object that yields items one by one.<br><br>The filter() function takes two arguments: a function and an iterable. The function is applied to each item in the iterable, and only items for which the function returns True are included in the iterator returned by filter().",
+    link: "https://www.programiz.com/python-programming/methods/built-in/filter",
   },
   {
     question: "Given the code below, which of the expressions will evaluate to True? <br><br>(Choose two)",
