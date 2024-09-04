@@ -1,4 +1,4 @@
-# PCAP Quiz (Single Answers) - Certified Associate Python Programmer (still in development)
+# PCAP Quiz - Certified Associate Python Programmer (still in development)
 
 [Deutsch](#deutsch) | [English](#english)
 
