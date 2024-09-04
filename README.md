@@ -1,4 +1,4 @@
-# PCAP Quiz - Certified Associate Python Programmer (still in development)
+# PCAP Quiz (Single Answers) - Certified Associate Python Programmer (still in development)
 
 [Deutsch](#deutsch) | [English](#english)
 
@@ -37,7 +37,7 @@ To get started with the PCAP Quiz project, follow this step:
 
 **Clone the repository:**
     ```bash
-    git clone https://github.com/gude44/PCAP_Quiz_combined.git
+    git clone https://github.com/gude44/PCAP_Quiz_Single_Answers.git
     ```
 
 ## Usage
@@ -116,7 +116,7 @@ Um mit dem PCAP Quiz Projekt zu beginnen, folgen Sie diesem Schritt:
 
 **Repository klonen:**
     ```bash
-    git clone https://github.com/gude44/PCAP_Quiz_combined.git    ```
+    git clone https://github.com/gude44/PCAP_Quiz_Single_Answers.git    ```
 
 
 ## Verwendung
