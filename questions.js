@@ -5997,8 +5997,7 @@ export const questions = [
     ],
     explanation: "Explanation:<br><br>A) This line of code sets c to the value of b (which is 3), b to the value of a (which is 2), and a to the value of c (which is 1). After executing this line, the values will be: a = 1, b = 2, and c = 3. Therefore, print(a, b, c) will output 1 2 3.<br><br>B) This line assigns c the value of a (which is 2), b the value of c (which is 1), and a the value of b (which is 3). After this operation, the values will be: a = 3, b = 1, and c = 2. Therefore, print(a, b, c) will produce 3 1 2.<br><br>C) This line sets a to the value of c (which is 1), b to the value of a (which is 2), and c to the value of b (which is 3). After this line is executed, the values will be: a = 1, b = 2, and c = 3. Therefore, print(a, b, c) will output 1 2 3.<br><br>D) This line does not change any values; it simply assigns each variable its current value.",
     link: "https://docs.python.org/3/tutorial/controlflow.html#assignment-statements"
-  }
-  ,
+  },
   {
     question: "Which of the listed actions can be applied to the following tuple? (Choose two)<br><br>tup = ()",
     answers: [
@@ -6020,8 +6019,7 @@ export const questions = [
     ],
     explanation: "Explanation<br><br>A) is true when x is a single character string. The ord() function converts a character to its corresponding ASCII (or Unicode) code point, and the chr() function converts a code point back to a character. So, for a single character x, chr(ord(x)) will indeed be equal to x.<br><br>B) is not true. The ord() function expects a single character string and returns its integer ASCII (or Unicode) code point. Applying ord() to this integer (which is not a valid input for ord()) will raise a TypeError.<br><br>C) is not true. The chr() function expects an integer code point and returns a character. Applying chr() to a character (which is not a valid input for chr()) will raise a TypeError.<br><br>D) is true when x is a valid integer code point within the range of characters (0 to 1114111 for Unicode). The chr() function converts the integer code point to a character, and the ord() function converts it back to the integer code point. Thus, ord(chr(x)) will be equal to x as long as x is within the valid range.",
     link: "https://docs.python.org/3/library/functions.html#ord"
-  }
-  ,
+  },
   {
     question: "A class constructor... <br><br>(Choose two)",
     answers: [
@@ -6044,8 +6042,7 @@ export const questions = [
     ],
     explanation: "Explanation:<br><br>A) will evaluate to False. The random.random() function generates a floating-point number in the range [0.0, 1.0), so v1 and v2 will always be less than 1.<br><br>B) will evaluate to True. The random.seed(1) function initializes the random number generator to a known state. By resetting the seed to 1 and calling random.random() again, v1 and v2 will be identical because the sequence of random numbers generated will be the same due to the same seed.<br><br>C) will evaluate to False. The random.sample() function returns a list of unique elements from the given sequence. The length of the list returned when sampling 2 elements from [1, 2, 3] will always be 2, which is not greater than 2.<br><br>D) will evaluate to True. The random.choice() function selects a random element from the list [1, 2, 3]. Since all elements in the list are 1, 2, or 3, and all of these are greater than or equal to 1, the condition will always be true.",
     link: "https://docs.python.org/3/library/random.html#random.seed"
-  }
-  ,
+  },
   {
     question: "Which of the following snippets will execute without raising any unhandled exceptions? <br><br>(Choose two)",
     image: "images/image176.png",
@@ -6068,8 +6065,7 @@ export const questions = [
     ],
     explanation: `Explanation:<br><br>A) evaluates to false. The ASCII value of "Z" is 90, and the ASCII value of "z" is 122. Subtracting these values gives -32, while the ASCII value of "0" is 48. Since -32 does not equal 48, this expression is false.<br><br>B) evaluates to true. The ord('A') function returns 65, and adding 1 results in 66. The chr(66) function converts this back to the character 'B', so the expression chr(ord('A') + 1) indeed results in 'B'.<br><br>C) evaluates to true. The string '\' contains a single character, which is a single quote. Its length is 1, making the expression len('\'') == 1 true.<br><br>D) evaluates to false. The string """ """ is a multi-line string that contains one space character. Thus, its length is 1, not 0. Therefore, this expression is false.`,
     link: "https://docs.python.org/3/library/functions.html#ord"
-  }
-  ,
+  },
   {
     question: "Which of the following expressions evaluate to True? <br><br>(Choose two)",
     answers: [
@@ -6092,8 +6088,7 @@ export const questions = [
     ],
     explanation: "Explanation:<br><br>A) evaluates to false. ClassA.__bases__ is a tuple containing the base classes of ClassA. Since ClassA only inherits from the implicit object class and has no other explicit base classes, ClassA.__bases__ is (object,), which has a length of 1. Therefore, len(ClassA.__bases__) is 1, not 2.<br><br>B) evaluates to true. The __module__ attribute of a class holds the name of the module where the class is defined. When code.py is executed directly, its module name is set to '__main__'. Hence, ClassA.__module__ will indeed be '__main__'.<br><br>C) evaluates to false. The special variable __name__ is set to '__main__' when a script is run directly, not to the name of the file. Therefore, __name__ is '__main__', not 'code.py'.<br><br>D) evaluates to true. The Object instance is created from ClassB, which inherits the __str__ method from ClassA. The __str__ method of ClassA returns 'Object', so str(Object) will indeed return 'Object'.",
     link: "https://docs.python.org/3/library/functions.html#str"
-  }
-  ,
+  },
   {
     question: "What is true about Object-Oriented Programming in Python? <br><br>(Choose two)",
     answers: [
@@ -6115,8 +6110,7 @@ export const questions = [
     ],
     explanation: "Explanation:<br><br>In Python, the constructor for a class is defined by the __init__ method. This special method is automatically called when a new instance of the class is created, and it is used to initialize the object's attributes.<br><br>The __init__ method must have at least one parameter, self, which refers to the instance being created. However, it can also have additional parameters that are used to initialize the object's attributes.",
     link: "https://www.geeksforgeeks.org/constructors-in-python/"
-  }
-  ,
+  },
   {
     question: "Assuming that the following code has been executed successfully, which of the expressions evaluate to True? <br><br>(Choose two)",
     answers: [
@@ -6138,8 +6132,7 @@ export const questions = [
     ],
     explanation: "Explanation:<br><br>A) is a correct lambda function definition. It takes two parameters, x and y, and returns a tuple (x, y). The syntax is valid and does not produce any errors.<br><br>B) is incorrect. In Python, lambda functions cannot use the return keyword. The lambda function should directly express the return value without the return keyword. The correct syntax would be to write lambda x, y: x // y - x % y.<br><br>C) is a correct lambda function definition. It takes two parameters, x and y, and returns the result of x // y - x % y. The syntax is valid and appropriate for a lambda function.<br><br>D) is incorrect. Lambda functions do not support default values for parameters in this syntax. Parameters should be specified without default values. The correct lambda function definition should not include default values for parameters.",
     link: "https://docs.python.org/3/library/functions.html#lambda"
-  }
-  ,
+  },
   {
     question: "Which of the following statements are true? <br><br>(Choose two)",
     answers: [
@@ -6161,8 +6154,7 @@ export const questions = [
     ],
     explanation: `Explanation:<br><br>A) evaluates to false. The ord('a') function returns the ASCII value of 'a', which is 97, and ord('A') returns 65. Subtracting 65 from 97 gives 32. The ord('0') function returns 48, so 32 is not equal to 48.<br><br>B) evaluates to true. The string """ """ contains a single space character. The length of this string is 1, which is greater than 0. Therefore, the condition len(""" """) > 0 is true.<br><br>c) evaluates to false. The ord('a') function returns the ASCII value of 'a', which is 97. Adding 1 to 97 results in 98, and chr(98) gives 'b'. Therefore, chr(ord('a') + 1) evaluates to 'b', not 'B'.<br><br>D) evaluates to true. The string '\' contains a single backslash character. Its length is indeed 1. Thus, len('\'') equals 1, making the expression true.`,
     link: "https://docs.python.org/3/library/functions.html#ord"
-  }
-  ,
+  },
   {
     question: "Assuming that the code below has been executed successfully, which of the expressions evaluate to True? <br><br>(Choose two)",
     image: "images/image178.png",
@@ -6186,8 +6178,7 @@ export const questions = [
     ],
     explanation: "Explanation:<br><br>A) will not always evaluate to true. The random.random() function generates a random float between 0.0 and 1.0, and since v1 and v2 are generated independently, it is highly unlikely that they will have the exact same value. Therefore, v1 == v2 is not guaranteed to be true.<br><br>B) will always evaluate to true. The random.random() function generates a float in the range [0.0, 1.0), so v1 will always be less than 1. Hence, v1 < 1 is always true.<br><br>C) will always evaluate to true. The random.choice([1, 2, 3]) function selects a random element from the list [1, 2, 3], and since all elements in this list are greater than 0, random.choice([1, 2, 3]) > 0 will always be true.<br><br>D) will not evaluate to true. The random.sample([1, 2, 3], 1) function returns a list containing a single randomly selected element from [1, 2, 3], so the length of the list is always 1. Consequently, len(random.sample([1, 2, 3], 1)) > 2 is false because 1 is not greater than 2.",
     link: "https://docs.python.org/3/library/random.html#random.choice"
-  }
-  ,
+  },
   {
     question: "Assuming that the snippet below has been executed successfully, which of the following expressions evaluate to True? <br><br>(Choose two)",
     image: "images/image180.png",
@@ -6210,8 +6201,7 @@ export const questions = [
     ],
     explanation: "Explanation:<br><br>A) compares an integer (11) with a string ('011'). In Python, integers and strings are different types, and they are never considered equal. Therefore, this expression evaluates to False.<br><br>B) multiplies the string 'a' by 3, resulting in 'aaa', and multiplies 'a' by 2, resulting in 'aa'. It then checks if 'aaa' is less than 'aa'. In Python, string comparisons are lexicographical, meaning it compares the strings character by character. Since 'aaa' is not less than 'aa', this expression evaluates to False.<br><br>C) first converts 'abc' to uppercase, resulting in 'ABC', and then compares it with 'abc'. Again, lexicographical comparison is used, and uppercase letters have lower Unicode values than lowercase letters. Since 'ABC' is less than 'abc', this expression evaluates to True.<br><br>D) evaluates the string concatenation. The left-hand side of the expression is '1' + 2 * '2', which equals '1' + '22', resulting in '122'. The right-hand side, 2 * '12', results in '1212'. Since '122' is not equal to '1212', this expression evaluates to True.",
     link: "https://docs.python.org/3/library/functions.html#str"
-  }
-  ,
+  },
   {
     question: "Which of the following invocations are valid? <br><br>(Choose two)",
     answers: [
@@ -6233,8 +6223,7 @@ export const questions = [
     ],
     explanation: "Explanation:<br><br>In A), the math.hypot(2, 5) function calculates the Euclidean distance between the origin and the point (2, 5). This results in √(2² + 5²) = √29, which is approximately 5.385. On the other hand, math.trunc(2.5) removes the decimal part of 2.5, resulting in 2. Since 5.385 is not equal to 2, this expression evaluates to False.<br><br>In B), the math.floor(2.5) function returns the largest integer less than or equal to 2.5, which is 2. Similarly, math.trunc(2.5) truncates the decimal part of 2.5, also resulting in 2. Since both values are equal to 2, this expression evaluates to True.<br><br>In C), the math.ceil(2.5) function returns the smallest integer greater than or equal to 2.5, which is 3. The math.floor(2.5) function, however, returns 2. Since 3 is not equal to 2, this expression evaluates to False.<br><br>In D), the math.hypot(3, 4) function calculates the Euclidean distance between the origin and the point (3, 4), which results in √(3² + 4²) = √25 = 5. Similarly, math.sqrt(25) also returns √25, which is 5. Since both values are equal, this expression evaluates to True.",
     link: "https://docs.python.org/3/library/math.html#math.trunc"
-  }
-  ,
+  },
   {
     question: "Which of the following statement are true? <br><br>(Choose two)",
     answers: [
@@ -6256,8 +6245,375 @@ export const questions = [
     ],
     explanation: `Explanation:<br><br>A) is true. In Python, the __init__.py file is used to initialize a package's state. It can contain initialization code, or it can be empty. Its presence indicates that the directory should be treated as a package.<br><br>B) is false. Python packages are typically distributed as ZIP files or directories containing Python code, not MP3 files. MP3 files are audio files and are not suitable for storing Python packages.<br><br>C) is false. The _pycache_ directory is used to store compiled bytecode files (.pyc files) for Python modules. These files are fully compiled and are used to speed up the loading of modules. They are not "semi-completed" but rather optimized bytecode versions of the source files.<br><br>D) is true. The sys.path variable in Python is a list of strings that specifies the search paths for modules. It determines where Python looks for modules to import.`,
     link: "https://docs.python.org/3/library/sys.html#sys.path",
-  }
-  ,
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image181.png",
+    answers: [
+      { text: "True" + "\n" + "False" + "\n" + "False", correct: false },
+      { text: "False" + "\n" + "False" + "\n" + "False", correct: false },
+      { text: "True" + "\n" + "False" + "\n" + "True", correct: false },
+      { text: "True" + "\n" + "True" + "\n" + "False", correct: true },
+    ],
+    explanation: `Explanation:<br><br>print(' \n '.isspace()):<br>The string ' \n ' contains only whitespace characters—a space, a newline, and another space. Since all characters are whitespace and the string is not empty, the method isspace() returns True. Therefore, the output of this line is True.<br><br>print(" ".isspace()):<br> The string " " consists of a single space character, which is a whitespace character. Since the string contains only this whitespace character and is not empty, the method isspace() returns True. Thus, the output of this line is True.<br><br>print("Wazzuuuuuuuup".isspace()):<br> The string "Wazzuuuuuuuup" contains letters and no whitespace characters. Since not all characters are whitespace and the string is not empty, the method isspace() returns False. Therefore, the output of this line is False.`,
+    link: "https://www.w3schools.com/python/ref_string_isspace.asp",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image182.png",
+    answers: [
+      { text: "[1, 2, 3, 4]", correct: false },
+      { text: "[2, 4, 6, 8]", correct: false },
+      { text: "[[1, 4], [9, 16]]", correct: false },
+      { text: "[1, 4, 9, 16]", correct: true },
+    ],
+    explanation: "Explanation:<br><br>The code defines a matrix as matrix = [[1, 2], [3, 4]], which is a list of lists representing a 2x2 matrix. The list comprehension [num**2 for row in matrix for num in row] processes each element in this matrix by iterating over each row and then over each number within that row. For each number, it computes the square of the number (num**2).",
+    link: "https://www.w3schools.com/python/python_lists_comprehension.asp",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image183.png",
+    answers: [
+      { text: "True" + "\n" + "True" + "\n" + "False" + "\n" + "True", correct: false },
+      { text: "False" + "\n" + "True" + "\n" + "True" + "\n" + "True", correct: false },
+      { text: "False" + "\n" + "True" + "\n" + "False" + "\n" + "False", correct: false },
+      { text: "False" + "\n" + "True" + "\n" + "False" + "\n" + "True", correct: true },
+    ],
+    explanation: "Explanation:<br><br>The first print statement checks if the instance obj has an attribute called __name__. Since __name__ is an attribute of class objects and not instances, this check returns False.<br><br>The second print statement checks if the instance obj has an attribute called __module__. The __module__ attribute is associated with classes and not instances, so this check also returns False.<br><br>The third print statement checks if the instance obj has an attribute called __bases__. This attribute pertains to class objects and not their instances, so this check returns False as well.<br><br>Finally, the fourth print statement checks if the class object MyClass has an attribute called __name__. Class objects do have a __name__ attribute, which holds the name of the class as a string. Therefore, this check returns True.",
+    link: "https://www.programiz.com/python-programming/methods/built-in/hasattr",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image184.png",
+    answers: [
+      { text: `["a", "aa", "aaa", "b", "bb", "bbb", "c", "cc", "ccc"]`, correct: false },
+      { text: `["aa", "bb", "cc"]`, correct: false },
+      { text: `["aa", "cc"]`, correct: true },
+      { text: `["a", "b", "c"]`, correct: false },
+    ],
+    explanation: `Explanation:<br><br>The list comprehension [letter*2 for letter in letters if letter != "b"] creates a new list by iterating over each element in the letters list. For each letter, it checks if the letter is not equal to "b". If this condition is true, the code creates a new string by repeating the letter twice.<br><br>During execution, when the letter is "a", it meets the condition "a" != "b", so it produces "a"*2, resulting in "aa". When the letter is "b", it does not meet the condition since "b" == "b", so it is excluded from the result. For the letter "c", it meets the condition "c" != "b", and thus produces "c"*2, resulting in "cc".<br><br>As a result, the list comprehension produces the list ['aa', 'cc'].`,
+    link: "https://www.programiz.com/python-programming/list-comprehension",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image185.png",
+    answers: [
+      { text: "True, True, False", correct: false },
+      { text: "True, False, False", correct: true },
+      { text: "True, False, True", correct: false },
+      { text: "False, False, False", correct: false },
+      { text: "True, True, True", correct: false },
+    ],
+    explanation: "Explanation:<br><br>The first print statement checks if the class C has an attribute named A. Since C inherits from class A, which has the attribute A, the check returns True. Thus, the output of this statement is True,.<br><br>The second print statement checks if the class C has an attribute named B. Although class C inherits from class B, which has an attribute b, there is no attribute named B in C. Therefore, the check returns False, and the output is False,.<br><br>The third print statement checks if the class B has an attribute named A. Since B does not have an attribute A and only has an attribute named b, the check returns False.",
+    link: "https://www.programiz.com/python-programming/methods/built-in/hasattr",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image186.png",
+    answers: [
+      { text: "1", correct: false },
+      { text: "0", correct: false },
+      { text: "2", correct: true },
+      { text: "3", correct: false },
+    ],
+    explanation: "Explanation:<br><br>The code defines a class named A with two methods: __init__ and set. The __init__ method initializes an instance of A with an attribute v, which defaults to 1 if no other value is provided. The set method allows you to update the attribute v with a new value and returns this new value.<br><br>When the line a = A() is executed, an instance of class A named a is created. The __init__ method sets a.v to 1 since that is the default value specified.<br><br>Next, the print(a.set(a.v + 1)) statement is executed. In this line, a.v has the value 1, so a.v + 1 evaluates to 2. The set method is then called with the argument 2. Inside the set method, a.v is updated to 2, and the method returns the value 2.<br><br>Finally, the print function outputs the value returned by the set method, which is 2.",
+    link: "https://docs.python.org/3/tutorial/classes.html",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image187.png",
+    answers: [
+      { text: "1", correct: false },
+      { text: "3 2 1", correct: true },
+      { text: "1 2 3", correct: false },
+      { text: "3", correct: false },
+    ],
+    explanation: "Explanation<br><br>The code defines a generator function named countdown that takes a parameter n. This function uses a while loop to yield values starting from n and decrementing by 1 on each iteration until n is no longer greater than 0. The yield keyword produces values one at a time and pauses the function's execution until the next value is requested.<br><br>When the countdown(3) generator is used in the for loop, it begins with n set to 3. During the first iteration of the loop, the generator yields the value 3, which is printed followed by a space. The generator then decrements n to 2 and yields this value, which is also printed with a space. In the next iteration, n is decremented to 1, and this value is yielded and printed. After n is decremented to 0, the generator finishes, as n is no longer greater than 0, and the loop exits.",
+    link: "https://www.programiz.com/python-programming/generator",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image188.png",
+    answers: [
+      { text: "The code is erroneous.", correct: false },
+      { text: "1", correct: true },
+      { text: "3", correct: false },
+      { text: "2", correct: false },
+    ],
+    explanation: "Explanation:<br><br>In the try block, the statement c = a / b would raise a ZeroDivisionError, which is a subclass of the ArithmeticError exception. However, in the except block, the ArithmeticError exception would be caught before the ZeroDivisionError exception. <br><br>Therefore, the value of c would be set to 1.",
+    link: "https://docs.python.org/3/library/exceptions.html"
+  },
+  {
+    question: "If you want to import mathematical constant e from math, which line will you use?",
+    answers: [
+      { text: "import e from math", correct: false },
+      { text: "from e import math", correct: false },
+      { text: "from math import e", correct: true },
+      { text: "None of the above", correct: false },
+    ],
+    explanation: "Explanation:<br><br>In Python, the mathematical constant e can be imported from the math module.The math module provides various mathematical functions and constants including e.<br><br>The line from math import e imports only the constant e from the math module.This means that we can now use the constant e directly in our code, without having to prefix it with the module name math.",
+    link: "https://www.programiz.com/python-programming/modules",
+  },
+  {
+    question: "What line of code should you use if you want to shuffle this list?",
+    image: "images/image189.png",
+    answers: [
+      { text: "shufle(names)", correct: false },
+      { text: "random(names.shuffle())", correct: false },
+      { text: "names.shuffle()", correct: false },
+      { text: "random.shuffle(names)", correct: true },
+    ],
+    explanation: "Explanation:<br><br>To shuffle the names list, you can use the shuffle() function from the random module in Python. This will output the names list in a random order. Note that the shuffle() function shuffles the list in place, meaning that it modifies the original list rather than returning a new shuffled list.",
+    link: "https://www.w3schools.com/python/ref_random_shuffle.asp",
+  },
+  {
+    question: "What does the .read() method do in Python file handling?",
+    answers: [
+      { text: "Reads the entire contents of the file as a single string.", correct: true },
+      { text: "Reads all lines of text from the file.", correct: false },
+      { text: "Reads a single line of text from the file.", correct: false },
+      { text: "Reads a specified number of characters from the file.", correct: false },
+    ],
+    explanation: "Explanation:<br><br>The .read() method in Python file handling is used to read the contents of a file. It allows you to read the entire content of a file as a string or a specified number of bytes from the file. When called without any arguments, file.read() reads the entire content of the file and returns it as a single string.",
+    link: "https://www.w3schools.com/python/ref_file_read.asp",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image190.png",
+    answers: [
+      { text: "[2, 4]", correct: true },
+      { text: "[]", correct: false },
+      { text: "[1, 2, 3, 4, 5]", correct: false },
+      { text: "[1, 3, 5]", correct: false },
+    ],
+    explanation: "Explanation:<br><br>The function custom_func is defined to take two parameters: numbers, which is expected to be a list of numbers, and condition, which is a function or lambda expression used to test each number in the list. Inside the function, a list comprehension is used to create a new list that includes only the numbers from the numbers list that satisfy the condition function.<br><br>The function is then called with the list [1, 2, 3, 4, 5] and a lambda function lambda x: x % 2 == 0. This lambda function checks whether a number x is even by testing if the remainder when x is divided by 2 is 0.<br><br>During execution, the list comprehension iterates through each number in the list [1, 2, 3, 4, 5]. For each number, the lambda function is applied to determine if the number is even. If the lambda function returns True, the number is included in the resulting list.<br><br>Since the lambda function returns True for the even numbers 2 and 4, these are the only numbers included in the final list. The odd numbers 1, 3, and 5 are excluded because they do not meet the condition of being even.<br><br>As a result, when the print(result) statement is executed, it outputs the list [2, 4].",
+    link: "https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image191.png",
+    answers: [
+      { text: "7", correct: true },
+      { text: "24", correct: false },
+      { text: "27", correct: false },
+      { text: "21", correct: false },
+    ],
+    explanation: "Explanation:<br><br>The code defines three lambda functions: f, g, and h. The lambda function f doubles its input, defined as f = lambda x: x * 2. The lambda function g adds 3 to its input, defined as g = lambda y: y + 3. The lambda function h subtracts 5 from its input, defined as h = lambda z: z - 5.<br><br>The main lambda function, which is invoked with arguments 1, 2, and 3, performs a series of computations using these three functions. Specifically, it computes f(g(h(x))) + h(g(y)) + g(f(z)).<br><br>First, for x = 1, the function h(x) is computed as 1 - 5, resulting in -4. Next, g(h(x)) is computed as -4 + 3, resulting in -1. Then, f(g(h(x))) is calculated as -1 * 2, resulting in -2.<br><br>Next, for y = 2, g(y) is computed as 2 + 3, resulting in 5. Then, h(g(y)) is computed as 5 - 5, resulting in 0.<br><br>Finally, for z = 3, f(z) is computed as 3 * 2, resulting in 6. Then, g(f(z)) is computed as 6 + 3, resulting in 9.<br><br>Adding these results together, -2 + 0 + 9 equals 7.",
+    link: "https://realpython.com/python-lambda/#anonymous-functions",
+  },
+  {
+    question: "What is the expected output of the following code snippet?",
+    image: "images/image192.png",
+    answers: [
+      { text: "-13", correct: false },
+      { text: "13", correct: false },
+      { text: "5", correct: false },
+      { text: "-4", correct: false },
+    ],
+    explanation: "Explanation:<br><br>First, the math.floor(x) function is used to find the largest integer less than or equal to -4.7, which is -5. Next, the math.ceil(x) function returns the smallest integer greater than or equal to -4.7, which is -4.<br><br>Adding these two results together gives -5 + (-4), which equals -9. The abs function is then applied to this sum, so abs(-9) equals 9. The negative of this absolute value is -9.<br><br>Finally, the math.trunc(x) function truncates -4.7 to the integer -4 by removing the fractional part. Adding this to -9 results in -9 + (-4), which equals -13.",
+    link: "https://docs.python.org/3/library/math.html#math.trunc",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image193.png",
+    answers: [
+      { text: "Raises an exception", correct: false },
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+      { text: "None of the above", correct: false },
+    ],
+    explanation: "Explanation:<br><br>The isinstance() function returns False because C is not a subclass of B, and obj is an instance of C, so it is not an instance of B.",
+    link: "https://docs.python.org/3/library/functions.html#isinstance",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image194.png",
+    answers: [
+      { text: "It will raise a TypeError", correct: false },
+      { text: "2", correct: true },
+      { text: '"Not alphanumeric"', correct: false },
+      { text: "3", correct: false },
+    ],
+    explanation: `Explanation:<br><br>In this code, we check if the string s1 is alphanumeric using the isalnum() method. Since s1 only contains letters and digits, this condition evaluates to True.<br><br>Next, we count the number of occurrences of the letter "a" in s1 using the count() method and print the result, which is 2.`,
+    link: "https://www.programiz.com/python-programming/methods/string/isalnum",
+  },
+  {
+    question: "What is the expected output if the user enters 0?",
+    image: "images/image195.png",
+    answers: [
+      { text: "The program will raise ValueError.", correct: false },
+      { text: "The program will raise TypeError.", correct: true },
+      { text: "The program will raise ZeroDivisionError.", correct: false },
+      { text: "The program will raise SyntaxError.", correct: false },
+    ],
+    explanation: `Explanation:<br><br>This one is tricky: Notice that we didn't convert the input value to int. <br><br>The input() function always returns a string and if you try to divide a float by a string you will get a TypeError".`,
+    link: "https://www.programiz.com/python-programming/methods/built-in/input",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image196.png",
+    answers: [
+      { text: "The code is erroneous.", correct: false },
+      { text: "True" + "\n" + "False" + "\n" + "False" + "\n" + "False", correct: false },
+      { text: "True" + "\n" + "False" + "\n" + "False" + "\n" + "True", correct: false },
+      { text: "True" + "\n" + "False" + "\n" + "True" + "\n" + "True", correct: true },
+    ],
+    explanation: "Explanation:<br><br>The first print statement, print('pro' > 'Pro'), compares the strings 'pro' and 'Pro'. In Python, string comparisons are case-sensitive and based on Unicode values. The Unicode value for the lowercase letter 'p' is higher than that for the uppercase letter 'P', so 'pro' is considered greater than 'Pro'. Therefore, this statement prints True.<br><br>The second print statement, print('Pro' < 'Pro'), compares two identical strings, 'Pro' and 'Pro'. Since they are equal, the comparison 'Pro' < 'Pro' is False, and thus this statement prints False.<br><br>The third print statement, print('PRO' > '1000'), compares the string 'PRO' with '1000'. In Unicode, the uppercase letter 'P' has a higher value than the numeric character '1', which is the first character of '1000'. Hence, 'PRO' is considered greater than '1000'. Consequently, this statement prints True.<br><br>The fourth print statement, print('11' < '8'), compares the string '11' with '8'. When comparing strings, Python compares the Unicode values of the characters. The Unicode value for '1' is less than that for '8', so '11' is considered less than '8'. Therefore, this statement prints True.",
+    link: "https://www.digitalocean.com/community/tutorials/python-string-comparison",
+  },/*
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],
+  },
   {
     question: "",
     answers: [
@@ -6276,119 +6632,5 @@ export const questions = [
       { text: "", correct: false },
     ],
   }
-  ,
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],
-  }
-  ,
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],
-  }
-  ,
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],
-  }
-  ,
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],
-  }
-  ,
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],
-  }
-  ,
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],
-  }
-  
+  */
 ];
