@@ -7,7 +7,7 @@
 
 # English
 
-Welcome to the PCAP Quiz project! This project is a web-based application designed to help users prepare for the Certified Associate Python Programmer (PCAP) certification through an interactive quiz.
+Welcome to the PCAP Quiz project! This project is a web-based application designed to help users prepare for the Certified Associate Python Programmer (PCAP) certification (31-03) through an interactive quiz.
 
 ## Table of Contents
 
@@ -86,7 +86,7 @@ If you have any questions or feedback, feel free to reach out to the project mai
 
 # Deutsch
 
-Willkommen zum PCAP Quiz Projekt! Dieses Projekt ist eine webbasierte Anwendung, die Benutzern hilft, sich durch ein interaktives Quiz auf die Zertifizierung zum Certified Associate Python Programmer (PCAP) vorzubereiten.
+Willkommen zum PCAP Quiz Projekt! Dieses Projekt ist eine webbasierte Anwendung, die Benutzern hilft, sich durch ein interaktives Quiz auf die Zertifizierung (31-03) zum Certified Associate Python Programmer (PCAP) vorzubereiten.
 
 ## Inhaltsverzeichnis
 
