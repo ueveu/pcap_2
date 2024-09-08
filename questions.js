@@ -51,18 +51,6 @@ export const questions = [
     link: "https://www.w3schools.com/python/python_tuples.asp",
   },
   {
-    question: "Which of the following data types is mutable in Python?",
-    answers: [
-      { text: "String", correct: false },
-      { text: "Tuple", correct: false },
-      { text: "List", correct: true },
-      { text: "Dictionary", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>Lists in Python are mutable. They can be modified after they are created.",
-    link: "https://runestone.academy/ns/books/published/py4e-int/lists/mutable.html",
-  },
-  {
     question:
       "What is the purpose of the 'else' clause in a Python 'if' statement?",
     answers: [
@@ -237,7 +225,7 @@ export const questions = [
       { text: "Unzips compressed files.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'zip' function combines two or more lists into pairs, for example:<br><br>zip(list1, list2).",
+      "Explanation:<br><br>The 'zip' function combines two or more lists into pairs, for example:<br><br>zip(list1, list2)",
     link: "https://www.w3schools.com/python/ref_func_zip.asp",
   },
   {
@@ -561,7 +549,7 @@ export const questions = [
       { text: "To delete a method from a class.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'del' statement is used to delete a variable or an object, for example: <br><br> del variable_name.",
+      "Explanation:<br><br>The del statement in Python is used to delete variables, items from collections, or attributes from objects. When you use del on a variable, it removes the reference to that variable. For collections like lists or dictionaries, del can be used to remove specific items. <br><br>Additionally, you can use del to remove attributes from objects. The actual memory is freed only when there are no remaining references to the object.",
     link: "https://www.w3schools.com/python/ref_keyword_del.asp",
   },
   {
@@ -617,7 +605,7 @@ export const questions = [
       { text: "ythonp", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The code uses slicing with a step of -1 to reverse the string 'python', resulting in 'nohtyp'.",
+      `Explanation:<br><br>In this code, the variable text is initialized with the string "python". The expression text[::-1] is used to reverse the string. This is done through slicing, where the [::-1] syntax means that the string will be traversed from the end to the beginning, effectively reversing it.<br><br>The -1 indicates the step, meaning it moves backwards through the string. The reversed version of "python" is "nohtyp", which is then assigned to the variable result. Finally, the print(result) statement outputs the reversed string, "nohtyp".`,
     link: "https://www.w3schools.com/python/python_strings_slicing.asp",
   },
   {
@@ -887,19 +875,6 @@ export const questions = [
     link: "https://www.w3schools.com/python/python_mysql_connect.asp",
   },
   {
-    question:
-      "Which of the following is a key benefit of using web development frameworks like Django?",
-    answers: [
-      { text: "Increased development time", correct: false },
-      { text: "Reduced code complexity", correct: true },
-      { text: "Limited scalability", correct: false },
-      { text: "Dependency on specific browsers", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>Frameworks like Django provide pre-built components, such as authentication, routing, and database handling, which streamline the development process, reduce repetitive tasks, and enable developers to build web applications more quickly and efficiently.",
-    link: "https://www.djangoproject.com/",
-  },
-  {
     question: "What is the output of the following code snippet?",
     image: "images/image10.png",
     answers: [
@@ -1021,7 +996,7 @@ export const questions = [
       { text: "'rb+'", correct: true },
     ],
     explanation:
-      "Explanation:<br><br> The 'rb+' mode is used to open a file for both reading and writing in binary format.",
+      "Explanation:<br><br>To open a file for both reading and writing in binary format, you should use the file mode 'rb+' in Python. <br><br>This mode combines several options: 'r' indicates that the file is opened for reading, 'b' specifies that the file is handled in binary format, and '+' allows both reading from and writing to the file. <br><br>It's important to note that 'rb+' does not create a new file if it does not already exist; it will raise an error if the file is not found.",
     link: "https://stackoverflow.com/questions/15746954/what-is-the-difference-between-rb-and-rb-modes-in-file-objects",
   },
   {
@@ -1048,7 +1023,7 @@ export const questions = [
       { text: "This code will produce an error.", correct: false },
       { text: "No output will be displayed.", correct: false },
     ],
-    explanation: `Explanation:<br><br>In the provided code, two classes, A and B, are defined. Class B is a subclass of class A, meaning that it inherits from A. Both classes have a method named show.<br><br>The show method in class A is designed to print "Class A", while the show method in class B is designed to print "Class B". When an instance of class B is created and assigned to the variable obj, the show method is called on obj using obj.show().<br><br>Because obj is an instance of class B, the show method in class B is invoked instead of the one in class A. This is an example of method overriding, where the method in the subclass (B) overrides the method with the same name in the superclass (A). As a result, the output of the code is "Class B".`,
+    explanation: `Explanation:<br><br>In the provided code, two classes, A and B, are defined. Class B is a subclass of class A, meaning that it inherits from A. Both classes have a method named show.<br><br>The show method in class A is designed to print "Class A", while the show method in class B is designed to print "Class B". When an instance of class B is created and assigned to the variable obj, the show method is called on obj using obj.show().<br><br>Because obj is an instance of class B, the show method in class B is invoked instead of the one in class A. This is an example of method overriding, where the method in the subclass (B) overrides the method with the same name in the superclass (A). <br><br>As a result, the output of the code is "Class B".`,
     link: "https://www.programiz.com/python-programming/inheritance",
   },
   {
@@ -1160,7 +1135,7 @@ export const questions = [
       { text: "['Hello']", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The regular expression the email adress 'user@example.com' in the given text.",
+      `Explanation:<br><br>In this code, the re module is used to work with regular expressions. The variable text contains the string "Hello, my email is user@example.com". The regular expression pattern r'\b\w+@\w+\b' is intended to match email-like strings but is not precise enough to capture a full email address.<br><br>The pattern r'\b\w+@\w+\b' breaks down as follows:<br><br>- \b denotes a word boundary<br>\w+ matches one or more word characters (letters, digits, and underscores)<br>@ matches the literal @ symbol<br>\w+ matches one or more word characters after the @`,
     link: "https://docs.python.org/3/library/re.html",
   },
   {
@@ -1235,19 +1210,19 @@ export const questions = [
     question:
       "Which of the following statements is true about modules in Python?",
     answers: [
-      { text: "Modules are not reusable pieces of code.", correct: false },
+      { text: "A)   Modules are not reusable pieces of code.", correct: false },
       {
-        text: "A module can only contain functions, not variables.",
+        text: "B)   A module can only contain functions, not variables.",
         correct: false,
       },
-      { text: "Modules can be organized into packages.", correct: true },
+      { text: "C)   Modules can be organized into packages.", correct: true },
       {
-        text: "Modules are only used for graphical user interfaces.",
+        text: "D)   Modules are only used for graphical user interfaces.",
         correct: false,
       },
     ],
     explanation:
-      "Explanation:<br><br>Modules can be organized into packages, which helps in better organization and structuring of code.",
+      "Explanation:<br><br>Modules in Python are reusable pieces of code that can contain functions, variables, classes, and runnable code. They allow you to organize and reuse code efficiently.<br><br>Option A is incorrect because modules are indeed reusable pieces of code.<br><br>Option B is incorrect because modules can contain both functions and variables, as well as classes and executable code.<br><br>Option D is incorrect because modules are not limited to graphical user interfaces; they can be used for a wide range of purposes including data processing, file handling, networking, and more.<br><br>Option C is correct because modules can be organized into packages. A package is a collection of modules organized in directories, which helps in structuring code hierarchically and managing complex codebases.",
     link: "https://www.geeksforgeeks.org/modules-in-python/",
   },
   {
@@ -1310,7 +1285,7 @@ export const questions = [
       { text: "Polymorphism", correct: false },
     ],
     explanation:
-      "Explanation:<br><br> Inheritance allows a class to inherit attributes and methods from another class.",
+      "Explanation:<br><br>Inheritance enables a new class (known as a subclass or derived class) to inherit the properties and behaviors (attributes and methods) of an existing class (known as a superclass or base class). <br><br>This promotes code reusability and establishes a hierarchical relationship between classes. <br><br>For example, if you have a base class Animal, a derived class Dog can inherit from Animal, gaining access to its attributes and methods while also adding or overriding its own.",
     link: "https://www.geeksforgeeks.org/inheritance-in-python/",
   },
   {
@@ -1385,7 +1360,7 @@ export const questions = [
       { text: "It generates random numbers.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'super' function in Python is used to access the superclass of a class.",
+      "Explanation:<br><br>The super function in Python is used to call methods from a parent or superclass from within a subclass. It is commonly used to ensure that the parent class's methods are properly executed as part of the subclass's method. This is particularly useful in the context of inheritance and method overriding.<br><br>For example, when you override a method in a subclass but still want to include the behavior of the parent class's method, you can use super() to call the parent class's method. This helps in extending or modifying the functionality of the parent class rather than completely replacing it.",
     link: "https://www.w3schools.com/python/ref_func_super.asp",
   },
   {
@@ -1417,13 +1392,13 @@ export const questions = [
     question: "What is the output of the following code?",
     image: "images/image17.png",
     answers: [
-      { text: "3.14, 4", correct: true },
-      { text: "4, 3.14", correct: false },
-      { text: "3.14, 3.14", correct: false },
-      { text: "4, 4", correct: false },
+      { text: "3.14" + "\n" + "4", correct: true },
+      { text: "4" + "\n" + "3.14", correct: false },
+      { text: "3.14" + "\n" + "3.14", correct: false },
+      { text: "4" + "\n" + "4", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The list contains instances of both Circle and Square classes. The overridden 'area' methods are called for each instance, resulting in the output of 3.14 and 4.",
+      "Explanation:<br><br>he code defines a base class named Shape with an area() method that is intended to be overridden by subclasses. The Circle and Square classes inherit from Shape and provide their own implementations of the area() method. In this implementation, the Circle class's area() method returns a hardcoded value of 3.14. The Square class's area() method returns a hardcoded value of 4.<br><br>When the code is executed, it creates instances of Circle and Square, then prints the result of calling their area() methods. Consequently, the output will be 3.14 for the Circle and 4 for the Square.",
     link: "https://www.w3schools.com/python/python_functions.asp",
   },
   {
@@ -1751,27 +1726,8 @@ export const questions = [
       { text: "Generator expressions execute faster.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'generator expression' is used to consume less memory.",
+      "Explanation:<br><br>Generator expressions are more memory-efficient than list comprehensions because they generate values on-the-fly and do not store the entire result in memory at once. <br><br>This is especially beneficial when working with large datasets or when the result of the computation is needed only one item at a time. <br><br>In contrast, list comprehensions create and store the entire list in memory, which can be less efficient if the list is large.",
     link: "https://peps.python.org/pep-0289/",
-  },
-  {
-    question:
-      "In the context of a software project, what is the purpose of project planning and organization?",
-    answers: [
-      { text: "To create complex algorithms and functions.", correct: false },
-      { text: "To write documentation for the project.", correct: false },
-      {
-        text: "To outline the project's scope, goals, and timeline.",
-        correct: true,
-      },
-      {
-        text: "To design a visually appealing user interface.",
-        correct: false,
-      },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'project planning and organization' is used to outline the project's scope, goals, and timeline.",
-    link: "https://realpython.com/python-project-planning/",
   },
   {
     question: "What is the role of a RESTful API in web services?",
@@ -1803,7 +1759,7 @@ export const questions = [
     ],
     explanation:
       "Explanation:<br><br>The 'x' variable will contain False, because the list is basically empty.",
-    link: "https://realpython.com/python-empty-list/",
+    link: "https://www.datacamp.com/tutorial/python-empty-list",
   },
   {
     question: "What is the expected output of the following code?",
@@ -1911,7 +1867,7 @@ export const questions = [
       { text: "None of the above.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The object variable id does not get changed by the initialisation of the local variable id in the __init__() method. They are two different entities.",
+      "Explanation:<br><br>In this code, the Test class has an __init__ method that initializes an instance with an id attribute. When an instance of Test is created with x = Test(23), the __init__ method is called with the value 23 for the id parameter. <br><br>Inside the __init__ method, the instance's attribute self.id is set to 23, but then the local variable id is set to 100. This local variable id does not affect the instance attribute self.id. <br><br>Therefore, when you print x.id, it outputs 23, which is the value assigned to the instance attribute.",
     link: "https://www.w3schools.com/python/python_classes.asp",
   },
   {
@@ -1990,8 +1946,8 @@ export const questions = [
       { text: "It outputs True.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>text_1 and text_2 are two different objects, therefore they are not equal.",
-    link: "https://www.w3schools.com/python/python_operators.asp",
+    `Explanation:<br><br>In this code, the class Content has a class variable title set to "None". The __init__ method of the class takes a parameter this and initializes an instance variable name with the value of this followed by " than " and then the class variable Content.title.<br><br>When text_1 is created as an instance of Content with "Paper" as the argument, the name attribute of text_1 is set to "Paper than None". Similarly, when text_2 is created with "Article" as the argument, the name attribute of text_2 is set to "Article than None".<br><br>The comparison text_1.title == text_2.name checks whether the class variable title, which is "None", is equal to the instance variable name of text_2, which is "Article than None". Since these two values are not the same, the result of the comparison is False.`,
+    link: "https://docs.python.org/3/tutorial/classes.html",
   },
   {
     question: "What is the expected output of the following code?",
@@ -2055,7 +2011,7 @@ export const questions = [
       { text: "77", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>It is not possible to multiply strings like that.",
+      "Explanation:<br><br>In the code, the expression '7' * '7' attempts to multiply a string by another string. However, in Python, the multiplication operator * is used to repeat a string by an integer. The second operand must be an integer to specify how many times the string should be repeated.<br><br>Here, both operands are strings ('7'), so Python does not know how many times to repeat the string '7' and will raise a TypeError.",
     link: "https://www.geeksforgeeks.org/create-multiple-copies-of-a-string-in-python-by-using-multiplication-operator/",
   },
   {
@@ -2096,7 +2052,7 @@ export const questions = [
       { text: "[ 3, 1, 25, 5, 20, 5, 4 ]", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>list.pop([i]) -> The index is optional. If the index is given, pop() removes and returns the element at the given index. The default index is -1 Meaning that the last index is removed and returned. Here the index 1 gets removed: the number 4.",
+      "Explanation:<br><br>In this code, the variable nums is initialized with the list [3, 4, 5, 20, 5, 25, 1, 3]. The method pop(1) is then called on this list. The pop() method removes and returns the element at the specified index, which in this case is index 1. The element at index 1 is 4.<br><br>After calling nums.pop(1), the element 4 is removed from the list. Therefore, the list is updated to [3, 5, 20, 5, 25, 1, 3].",
     link: "https://www.w3schools.com/python/ref_list_pop.asp",
   },
   {
@@ -2361,7 +2317,7 @@ export const questions = [
     ],
 
     explanation:
-      "Explanation:<br><br>The 0o prefix in Python denotes that the number following it is written in octal (base-8) notation. Example:<br>- 0o10 in octal represents the decimal number 8.<br>- 0o77 in octal represents the decimal number 63.<br><br>The 0o prefix allows Python to distinguish octal numbers from decimal or other bases.",
+      "Explanation:<br><br>The 0o prefix in Python denotes that the number following it is written in octal (base-8) notation.<br><br>Example:<br><br>- 0o10 in octal represents the decimal number 8.<br>- 0o77 in octal represents the decimal number 63.<br><br>The 0o prefix allows Python to distinguish octal numbers from decimal or other bases.",
     link: "https://exercism.org/tracks/python/concepts/binary-octal-hexadecimal",
   },
   {
@@ -2671,7 +2627,7 @@ export const questions = [
       { text: "The snippet will enter an infinite loop.", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>i gets incremented inside the while loop, BUT i will always be smaller than i + 2. Therefore the whole condition will always be True and we've build ourselves a nice infinite loop.",
+      "Explanation:<br><br>In this code, a while loop is set to run as long as the condition i < i + 2 is true. Since this condition is always true for any finite value of i (because i will always be less than i + 2), the loop will run indefinitely. Inside the loop, the variable i is incremented by 1 each time, and an asterisk ('*') is printed. As a result, the code creates an infinite loop that continuously prints '*', and the else block is never executed because the loop does not terminate.",
     link: "https://www.w3schools.com/python/python_while_loops.asp",
   },
   {
@@ -2696,7 +2652,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The calendar.weekheader() function generates a header for a week, typically used in calendars.<br>The argument 2 specifies the length of the abbreviated weekday names.<br>By default, the abbreviated weekday names are three characters long, but by passing 2 as an argument, they are abbreviated to two characters.<br>Thus, the output will be 'Mo Tu We Th Fr Sa Su', representing abbreviated weekday names.",
+      "Explanation:<br><br>The calendar.weekheader() function generates a header for a week, typically used in calendars.<br><br>The argument 2 specifies the length of the abbreviated weekday names.<br><br>By default, the abbreviated weekday names are three characters long, but by passing 2 as an argument, they are abbreviated to two characters.<br<br>>Thus, the output will be 'Mo Tu We Th Fr Sa Su', representing abbreviated weekday names.",
     link: "https://www.w3resource.com/python/module/calendar/weekheader.php",
   },
   {
@@ -2723,7 +2679,7 @@ export const questions = [
       { text: "False", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>In Python, the comparison operators (==, >, !=, etc.) return boolean values (True or False).<br>The expression y == z evaluates to False because y is 7 and z is 3.<br>Similarly, the expression y > z also evaluates to True.<br><br>Therefore, the overall expression becomes False and True or False and True, which simplifies to False or False, resulting in False.",
+      "Explanation:<br><br>In Python, the comparison operators (==, >, !=, etc.) return boolean values (True or False).<br>The expression y == z evaluates to False because y is 7 and z is 3.<br><br>Similarly, the expression y > z also evaluates to True.<br><br>Therefore, the overall expression becomes False and True or False and True, which simplifies to False or False, resulting in False.",
   },
   {
     question: "What is the expected output of the following code?",
@@ -2760,7 +2716,7 @@ export const questions = [
       { text: "-2", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The math.floor() method rounds a number DOWN to the nearest integer.<br>The math.ceil() method rounds a number UP to the nearest integer.<br>The abs() function returns the absolute value of a given number.",
+      "Explanation:<br><br>In this code, the math module is used to perform mathematical operations. The variable x is set to 1.7. The math.floor(x) function returns the largest integer less than or equal to x, which is 1 for x = 1.7. Similarly, math.ceil(x) returns the smallest integer greater than or equal to x, which is 2 for x = 1.7.<br><br>When you add these two values together, 1 + 2 equals 3. The abs() function then computes the absolute value of 3, which is still 3. Applying the negative sign to this absolute value results in -3.",
     link: "https://www.geeksforgeeks.org/floor-ceil-function-python/",
   },
   {
@@ -2799,7 +2755,7 @@ export const questions = [
       { text: "[ 7, 20, 23, 42 ]", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The two list slicings create new lists and don't affect w.<br> The assigning of the list w to the variable z creates a reference to the same object. Therefore the change of z does also affect w. <br><br>Hence, z[1] = 20 affects the Index [1] of w, leading to [7, 20, 23, 42]",
+      "Explanation:<br><br>The two list slicings create new lists and don't affect w.<br><br> The assigning of the list w to the variable z creates a reference to the same object. Therefore the change of z does also affect w. <br><br>Hence, z[1] = 20 affects the Index [1] of w, leading to [7, 20, 23, 42]",
     link: "https://www.geeksforgeeks.org/python-list-slicing/",
   },
   {
@@ -2851,7 +2807,7 @@ export const questions = [
       { text: "__modname__", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The name of the predefined variable is __name__. In the current file the output will be __main__. In an imported file named module.py the output would be module. The others do not exist.",
+      "Explanation:<br><br>A predefined Python variable that stores the module name is called __name__. When a module is run directly, __name__ is set to '__main__'. If the module is imported into another module, __name__ is set to the module's name. <br><br>This allows you to distinguish between when a module is being run as the main program versus when it is being imported.",
     link: "https://builtin.com/articles/name-python",
   },
   {
@@ -3002,7 +2958,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The variables x and y are strings, not numbers. When Python compares strings using >, it does so lexicographically, meaning character by character, like in a dictionary. For '20' and '30', it compares the first characters: '2' and '3'. The Unicode value of '2' is 50, and '3' is 51. Since 50 is less than 51, '20' is less than '30'. Therefore, x > y evaluates to False, and the code prints False.",
+      "Explanation:<br><br>The variables x and y are strings, not numbers. When Python compares strings using >, it does so lexicographically, meaning character by character, like in a dictionary. For '20' and '30', it compares the first characters: '2' and '3'. <br><br>The Unicode value of '2' is 50, and '3' is 51. Since 50 is less than 51, '20' is less than '30'. Therefore, x > y evaluates to False, and the code prints False.",
     link: "https://www.geeksforgeeks.org/string-comparison-in-python/",
   },
   {
@@ -3079,7 +3035,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>First we got a nested list comprehension that generates a list of lists:<br>The outer loop for r in range(3) iterates over the range 0, 1, 2. For each value of r, the inner loop for c in range(r) creates a list of integers from 0 to r-1. <br><br>Let's break down the list comprehension for each value of r: <br>When r = 0, the inner loop for c in range(0) generates an empty list [] because the range is 0. <br>When r = 1, the inner loop for c in range(1) generates [0]. <br>When r = 2, the inner loop for c in range(2) generates [0, 1]. <br><br>Combining these, the result of the list comprehension is: lst = [[], [0], [0, 1]]<br><br>Now let's examine how the nested for loop processes the list lst: <br>For the first sublist [], there are no elements to iterate over, so nothing is printed. <br>For the second sublist [0], the only element is 0. Since 0 < 2, an asterisk '*' is printed. <br>For the third sublist [0, 1], the elements are 0 and 1. Both satisfy y < 2, so two asterisks '*' are printed.",
+      "Explanation:<br><br>First we got a nested list comprehension that generates a list of lists:<br>The outer loop for r in range(3) iterates over the range 0, 1, 2. For each value of r, the inner loop for c in range(r) creates a list of integers from 0 to r-1. <br><br>Let's break down the list comprehension for each value of r: <br>When r = 0, the inner loop for c in range(0) generates an empty list [] because the range is 0. <br>When r = 1, the inner loop for c in range(1) generates [0]. <br>When r = 2, the inner loop for c in range(2) generates [0, 1]. <br><br>Combining these, the result of the list comprehension is: lst = [[], [0], [0, 1]]<br><br>Now let's examine how the nested for loop processes the list lst: <br>For the first sublist [], there are no elements to iterate over, so nothing is printed. <br>For the second sublist [0], the only element is 0. Since 0 < 2, an asterisk '*' is printed. <br>For the third sublist [0, 1], the elements are 0 and 1. <br><br>Both satisfy y < 2, so two asterisks '*' are printed.",
     link: "https://www.w3schools.com/python/python_lists_comprehension.asp",
   },
   {
@@ -3110,7 +3066,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>lst2 = lst1.split(',') splits the string lst1 at each comma (,). After splitting, lst2 becomes ['12', '34']. This creates a list where each element is a substring from lst1 separated by commas. <br><br>len(lst1) gives the length of the string lst1, which is 5 (counting each character including the comma). <br>len(lst2) gives the length of the list lst2, which is 2 (since it contains two elements after splitting). <br><br>So in this case, 5 < 2 evaluates to False.",
+      "Explanation:<br><br>lst2 = lst1.split(',') splits the string lst1 at each comma (,). After splitting, lst2 becomes ['12', '34']. This creates a list where each element is a substring from lst1 separated by commas. <br><br>len(lst1) gives the length of the string lst1, which is 5 (counting each character including the comma). <br><br>len(lst2) gives the length of the list lst2, which is 2 (since it contains two elements after splitting). <br><br>So in this case, 5 < 2 evaluates to False.",
     link: "https://www.w3schools.com/python/ref_string_split.asp",
   },
   {
@@ -3355,7 +3311,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The __bases__ attribute is a tuple containing the direct superclasses of the class. It is a read-only attribute.",
+      "Explanation:<br><br>The built-in class property __bases__ in Python is a tuple that contains the base classes of a class. This property provides a way to access the tuple of base classes from which a class is derived.<br><br>For example, if you have a class Child that inherits from Parent, Child.__bases__ would return a tuple containing Parent. This property is useful for inspecting class hierarchies and understanding the inheritance structure of a class.",
     link: "https://jfine-python-classes.readthedocs.io/en/latest/construct.html",
   },
   {
@@ -3479,7 +3435,7 @@ export const questions = [
       { text: "None of the above.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Initially, the list data is assigned the elements ['Peter', 'Paul', 'Mary']. The expression inside the print statement is data[int(-1 / 2)]. To understand this, we need to evaluate the expression int(-1 / 2) first.<br><br>The division of -1 by 2 results in -0.5. Applying the int() function to -0.5 truncates the decimal part, yielding 0 because converting a float to an integer in Python truncates towards zero. So, int(-0.5) evaluates to 0.<br><br>Thus, the expression data[int(-1 / 2)] simplifies to data[0]. The index 0 in the list data refers to the first element, which is 'Peter'. Therefore, when the program runs, it prints 'Peter' to the monitor.",
+      "Explanation:<br><br>Initially, the list data is assigned the elements ['Peter', 'Paul', 'Mary']. The expression inside the print statement is data[int(-1 / 2)]. To understand this, we need to evaluate the expression int(-1 / 2) first.<br><br>The division of -1 by 2 results in -0.5. Applying the int() function to -0.5 truncates the decimal part, yielding 0 because converting a float to an integer in Python truncates towards zero. So, int(-0.5) evaluates to 0.<br><br>Thus, the expression data[int(-1 / 2)] simplifies to data[0]. The index 0 in the list data refers to the first element, which is 'Peter'.",
     link: "https://www.w3schools.com/python/python_lists.asp",
   },
   {
@@ -3622,7 +3578,7 @@ export const questions = [
       { text: "It raises an exception", correct: false },
     ],
     explanation:
-      'Explanation:<br><br>The output is 3. The code converts 1/3 to a string ("0.3333333333333333"), iterates over each character, and builds the dummy string. The last character of the string is 3.',
+      `Explanation:<br><br>In this code, the expression str(1/3) calculates the result of dividing 1 by 3, which gives approximately 0.3333333333333333. This result is then converted to a string, so the variable string holds the value "0.3333333333333333".<br><br>The variable dummy is initialized as an empty string. The for loop iterates over each character in the string and concatenates each character to dummy. As a result, dummy ends up being the same as string.<br><br>After the loop completes, dummy contains the string "0.3333333333333333". The print(dummy[-1]) statement prints the last character of this string, which is '3'.`,
     link: "https://www.geeksforgeeks.org/convert-integer-to-string-in-python/",
   },
   {
@@ -3891,7 +3847,7 @@ export const questions = [
       { text: "D", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>In snippet A, print(-1/1) executes successfully without raising an exception, so the except block is skipped, and the else block runs, printing 1/1. Thus, this code runs without errors.<br><br>In snippet B, x = 1 executes without errors, so the except block is skipped. The else block runs and updates x to 3. This snippet works fine without any exceptions.<br><br>Snippet C raises a NameError in the try block because y is undefined. The except block also fails to handle this properly, causing another NameError. Hence, this snippet does not work due to unhandled exceptions.<br><br>In snippet D, x = 1/0 raises a ZeroDivisionError, which is not caught by the except block that only handles NameError. As a result, the snippet fails due to the unhandled ZeroDivisionError",
+      "Explanation:<br><br>In A, print(-1/1) executes successfully without raising an exception, so the except block is skipped, and the else block runs, printing 1/1. Thus, this code runs without errors.<br><br>In B, x = 1 executes without errors, so the except block is skipped. The else block runs and updates x to 3. This snippet works fine without any exceptions.<br><br>C raises a NameError in the try block because y is undefined. The except block also fails to handle this properly, causing another NameError. Hence, this snippet does not work due to unhandled exceptions.<br><br>In D, x = 1/0 raises a ZeroDivisionError, which is not caught by the except block that only handles NameError. As a result, the snippet fails due to the unhandled ZeroDivisionError",
     link: "https://docs.python.org/3/tutorial/errors.html#handling-exceptions",
   },
   {
@@ -4107,7 +4063,7 @@ export const questions = [
       { text: "E", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The function call A is valid because it passes four positional arguments that directly match the parameters a, b, c, and d in the function's definition.<br><br>The function call B is also valid. It uses three positional arguments for the parameters a, b, and c, and assigns a value to d using a keyword argument, which is perfectly acceptable in Python.<br><br>The function call C is invalid because it incorrectly mixes keyword arguments with a positional argument that comes after them. In Python, once you start using keyword arguments, all subsequent arguments must also be passed as keyword arguments.<br><br>The function call D is valid. It uses keyword arguments for all four parameters, matching the function's signature exactly, which is allowed and correct.<br><br>Lastly, the function call D is invalid because it starts with a keyword argument and then follows with positional arguments. In Python, after using a keyword argument, all subsequent arguments must also be passed as keyword arguments.",
+      "Explanation:<br><br>A is valid because it passes four positional arguments that directly match the parameters a, b, c, and d in the function's definition.<br><br> B is also valid. It uses three positional arguments for the parameters a, b, and c, and assigns a value to d using a keyword argument, which is perfectly acceptable in Python.<br><br>C is invalid because it incorrectly mixes keyword arguments with a positional argument that comes after them. In Python, once you start using keyword arguments, all subsequent arguments must also be passed as keyword arguments.<br><br>D is valid. It uses keyword arguments for all four parameters, matching the function's signature exactly, which is allowed and correct.<br><br>Lastly, E is invalid because it starts with a keyword argument and then follows with positional arguments. In Python, after using a keyword argument, all subsequent arguments must also be passed as keyword arguments.",
     link: "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
   },
   {
@@ -4291,14 +4247,15 @@ export const questions = [
   {
     question:
       "Which of the following snippets output ABC to the screen? <br><br>(Choose two)",
+      image: "images/image734.png",
     answers: [
-      { text: "A.   print ( 'ABCDEF' [ :3 ] )", correct: true },
-      { text: "B.   print ( 'AXBYCZ' [ : : -2] )", correct: false },
-      { text: "C.   print ( 'AXBYCZ' [ : :2] )", correct: true },
-      { text: "D.   print ( 'FEDCBA' [-3: ] )", correct: false },
+      { text: "A)", correct: true },
+      { text: "B)", correct: false },
+      { text: "C)", correct: true },
+      { text: "D)", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>A. This slices the string 'ABCDEF' from the beginning up to but not including index 3, which results in 'ABC'.<br><br>B. This reverses the string and takes every second character. The string 'AXBYCZ' reversed is 'ZCYBXA', and taking every second character gives 'ZCBA'.<br><br>C. This takes every second character from the string 'AXBYCZ', starting from the beginning. The result is 'ABC'.<br><br>D. This slices the string 'FEDCBA' starting from the third-to-last character to the end. The result is 'CBA'.",
+      "Explanation:<br><br>A) slices the string 'ABCDEF' from the beginning up to but not including index 3, which results in 'ABC'.<br><br>B) reverses the string and takes every second character. The string 'AXBYCZ' reversed is 'ZCYBXA', and taking every second character gives 'ZCBA'.<br><br>C) takes every second character from the string 'AXBYCZ', starting from the beginning. The result is 'ABC'.<br><br>D) slices the string 'FEDCBA' starting from the third-to-last character to the end. The result is 'CBA'.",
     link: "https://www.w3schools.com/python/python_strings_slicing.asp",
   },
   {
@@ -4448,7 +4405,7 @@ export const questions = [
       { text: "D", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>In snippet A, eval evaluates the input as a Python expression. If you enter 123, eval will evaluate this as the integer 123. Adding 1 to 123 will give 124.<br><br>Snippet B converts the input string to an integer using int() and then adds 1. If you input 123, int(num) converts it to 123, and 123 + 1 is 124.<br><br>Snippet C directly converts the input string to an integer using int(), and then adds 1. If you input 123, int(input()) converts it to 123, and 123 + 1 is 124.<br><br>Snippet D does not convert the input to an integer; it treats num as a string. Adding 1 to a string will result in a TypeError. If you input 123, this will cause an error because you cannot concatenate a string and an integer.",
+      "Explanation:<br><br>In A, eval evaluates the input as a Python expression. If you enter 123, eval will evaluate this as the integer 123. Adding 1 to 123 will give 124.<br><br>B converts the input string to an integer using int() and then adds 1. If you input 123, int(num) converts it to 123, and 123 + 1 is 124.<br><br>C directly converts the input string to an integer using int(), and then adds 1. If you input 123, int(input()) converts it to 123, and 123 + 1 is 124.<br><br>D does not convert the input to an integer; it treats num as a string. Adding 1 to a string will result in a TypeError. If you input 123, this will cause an error because you cannot concatenate a string and an integer.",
     link: "https://docs.python.org/3/library/functions.html#eval",
   },
   {
@@ -4563,7 +4520,7 @@ export const questions = [
   },
   {
     question:
-      "You want to print the numbers 1 to 7. But the code below does not work. What do you have to change?",
+      "You want to print the numbers 1 to 7. But the code below does not work. What do you have to change? <br><br>(Choose two)",
     image: "images/image723.png",
     answers: [
       { text: "if nums[x] == 7:   # Line 5", correct: true },
@@ -4572,7 +4529,7 @@ export const questions = [
       { text: "print (nums[x] )   # Line 4", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>In line 4, nums(x) uses parentheses, which is incorrect for indexing lists. You should use square brackets for indexing.<br><br>In line 7, the assignment operator = is used instead of the comparison operator ==.",
+      "Explanation:<br><br>In line 4, nums(x) uses parentheses, which is incorrect for indexing lists. You should use square brackets for indexing.<br><br>In line 5, the assignment operator = is used instead of the comparison operator ==.",
     link: "https://www.programiz.com/python-programming/list",
   },
   {
@@ -4706,10 +4663,10 @@ export const questions = [
       "Consider the code below. Which print statement will output True?",
     image: "images/image728.png",
     answers: [
-      { text: "A.  print (languages is more_languages)", correct: false },
-      { text: "B.  print (languages is extra_languages)", correct: false },
-      { text: "C.  print (more_languages is extra_languages)", correct: true },
-      { text: "D.  print (languages == more_languages)", correct: true },
+      { text: "A)  print (languages is more_languages)", correct: false },
+      { text: "B)  print (languages is extra_languages)", correct: false },
+      { text: "C)  print (more_languages is extra_languages)", correct: true },
+      { text: "D)  print (languages == more_languages)", correct: true },
     ],
     explanation:
       "Explanation:<br><br>A) will output False because languages and more_languages are two different lists, even though they have the same content. They are stored at different memory locations.<br><br>B) will also output False because languages and extra_languages are different lists stored at different memory locations.<br><br>C) will output True because extra_languages is just another reference to the same list as more_languages. They both point to the exact same object in memory.<br><br>D) will output True because the contents of languages and more_languages are the same.",
@@ -4729,7 +4686,7 @@ export const questions = [
   },
   {
     question:
-      "Which of the following expressions evaluates to True and raises no exception?",
+      "Which of the following expressions evaluates to True and raises no exception? <br><br>(Choose two)",
     answers: [
       { text: "A)  ' ' * 0 < 1 * ' '", correct: true },
       { text: "B)  'Analog' < 'analog'", correct: true },
@@ -4919,7 +4876,7 @@ export const questions = [
     link: "https://docs.python.org/3/library/stdtypes.html#str",
   },
   {
-    question: "An operator able to perform bitwise shifts is coded as...",
+    question: "An operator able to perform bitwise shifts is coded as... <br><br>(Choose two)",
     answers: [
       { text: "- -", correct: false },
       { text: "+ +", correct: false },
@@ -4967,7 +4924,7 @@ export const questions = [
       { text: "The code is erroneous", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The provided code snippet contains a syntax error due to the incorrect indentation of the else block. In Python, the else statement must be aligned with the corresponding if statement. Since the else block is indented incorrectly, the code will not execute and will raise a SyntaxError.",
+      "Explanation:<br><br>The provided code snippet contains a syntax error due to the incorrect indentation of the else block. In Python, the else statement must be aligned with the corresponding if statement. <br><br>Since the else block is indented incorrectly, the code will not execute and will raise a SyntaxError.",
     link: "https://www.w3schools.com/python/python_conditions.asp",
   },
   {
@@ -5001,7 +4958,7 @@ export const questions = [
     image: "images/image136.png",
     answers: [
       { text: "abc", correct: false },
-      { text: "The code will raise a Type Error", correct: false },
+      { text: "The code will raise a Type Error", correct: true },
       { text: "ABC", correct: false },
       { text: "123", correct: false },
     ],
@@ -5140,13 +5097,13 @@ export const questions = [
     question:
       "Is it possible to safely check if a class/object has a certain attribute?",
     answers: [
-      { text: "yes, by using the hasattr attribute", correct: false },
-      { text: "yes, by using the hasattr( ) method", correct: false },
-      { text: "yes, by using the hasattr( ) function", correct: true },
-      { text: "no, it is not possible", correct: false },
+      { text: "Yes, by using the hasattr attribute", correct: false },
+      { text: "Yes, by using the hasattr( ) method", correct: false },
+      { text: "Yes, by using the hasattr( ) function", correct: true },
+      { text: "No, it is not possible", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>It is possible to safely check if a class or object has a certain attribute by using the `hasattr()` function. This function takes two arguments: the object (or class) and the name of the attribute (as a string) you want to check. It returns `True` if the attribute exists and `False` if it does not. This allows you to verify the presence of an attribute without causing an error if the attribute is not found.",
+      "Explanation:<br><br>It is possible to safely check if a class or object has a certain attribute by using the `hasattr()` function. This function takes two arguments: the object (or class) and the name of the attribute (as a string) you want to check.<br><br> It returns `True` if the attribute exists and `False` if it does not. This allows you to verify the presence of an attribute without causing an error if the attribute is not found.",
     link: "https://www.programiz.com/python-programming/methods/built-in/hasattr",
   },
   {
@@ -5187,7 +5144,7 @@ export const questions = [
       { text: "such an action is not possible in Python", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>To access and store an exception object in a variable, you use the `except` clause with the `as` keyword. This allows you to capture the exception instance and refer to it by a variable name. For example, in the statement `except Exception as e:`, the exception object is stored in the variable `e`. You can then use this variable to access details about the exception. This approach is standard in Python for handling exceptions and retrieving error information.",
+      "Explanation:<br><br>To access and store an exception object in a variable, you use the `except` clause with the `as` keyword. This allows you to capture the exception instance and refer to it by a variable name.<br><br> For example, in the statement `except Exception as e:`, the exception object is stored in the variable `e`. You can then use this variable to access details about the exception. <br><br>This approach is standard in Python for handling exceptions and retrieving error information.",
     link: "https://www.programiz.com/python-programming/exception-handling",
   },
   {
@@ -5204,19 +5161,6 @@ export const questions = [
     explanation:
       "Explanation:<br><br>In Python, a variable that is stored separately for each instance of a class is called an instance variable. Instance variables are defined within methods (typically in the __init__ method) and are unique to each object created from the class. Each object maintains its own copy of instance variables, allowing them to hold different values for different instances of the class.",
     link: "https://pynative.com/python-instance-variables/",
-  },
-  {
-    question:
-      "There is a stream named s open for writing. What option will you select to write a line to the stream?",
-    answers: [
-      { text: `s.write("Hello\n")`, correct: true },
-      { text: `write(s, "Hello")`, correct: false },
-      { text: `s.writeln("Hello")`, correct: false },
-      { text: `s.writeline("Hello")`, correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>In Python, to write a line to a stream that is open for writing, you use the write() method. This method requires you to manually include any newline characters if you want to move to a new line after writing the text.",
-    link: "https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files",
   },
   {
     question:
@@ -5292,7 +5236,7 @@ export const questions = [
       { text: "*-**-*", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>First, the variable s is initialized with the string '*-*'. The expression 2 * s results in the string '*--*', which is the original string repeated twice. Similarly, s * 2 also results in '*--*'. Adding these two results together with 2 * s + s * 2 produces the concatenated string '*--*--*'. Therefore, when the print(s) statement is executed, it prints '*--*--*'.",
+      "Explanation:<br><br>First, the variable s is initialized with the string '*-*'. The expression 2 * s results in the string '*--*', which is the original string repeated twice. Similarly, s * 2 also results in '*--*'. <br><br>Adding these two results together with 2 * s + s * 2 produces the concatenated string '*--*--*'",
     link: "https://www.w3schools.com/python/gloss_python_string_concatenation.asp",
   },
   {
@@ -5415,7 +5359,7 @@ export const questions = [
       { text: "keyword", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>In the provided code snippet, the arguments 1 and 2 are passed to the function fun in a way where their positions match the parameters a and b in the function definition. This method of passing arguments, where the position of each argument determines which parameter it corresponds to, is known as positional argument passing.",
+      "Explanation:<br><br>In the provided code snippet, the arguments 1 and 2 are passed to the function fun in a way where their positions match the parameters a and b in the function definition. <br><br>This method of passing arguments, where the position of each argument determines which parameter it corresponds to, is known as positional argument passing.",
     link: "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
   },
   {
@@ -5594,7 +5538,7 @@ export const questions = [
       { text: "it outputs list assignment index out of range", correct: true },
       { text: "the code is erroneous and it will not execute", correct: false },
     ],
-    explanation: `Explanation:<br><br>When the code is executed, it attempts to assign a value to an index in the list that does not exist. The list 'my_list' contains three elements with indices '0', '1', and '2'. The code tries to assign the value at index '2' to index '3', but since the list does not have an index '3', Python raises an 'IndexError'. This error is caught by the 'except' block, which then prints the error message "list assignment index out of range". Therefore, the expected outcome of this code is the error message being printed.`,
+    explanation: `Explanation:<br><br>When the code is executed, it attempts to assign a value to an index in the list that does not exist. The list 'my_list' contains three elements with indices '0', '1', and '2'.<br><br> The code tries to assign the value at index '2' to index '3', but since the list does not have an index '3', Python raises an 'IndexError'. This error is caught by the 'except' block, which then prints the error message "list assignment index out of range". <br><br>Therefore, the expected outcome of this code is the error message being printed.`,
     link: "https://www.freecodecamp.org/news/list-index-out-of-range-python-error-message-solved/",
   },
   {
@@ -5800,7 +5744,7 @@ export const questions = [
       { text: "Python strings are mutable", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Python strings can be concatenated using the + operator and can be sliced similarly to lists. However, Python strings are not mutable; once created, their contents cannot be changed.",
+      "Explanation:<br><br>Python strings can be concatenated using the + operator and can be sliced similarly to lists. <br><br>However, Python strings are not mutable; once created, their contents cannot be changed.",
     link: "https://docs.python.org/3/library/stdtypes.html#str",
   },
   {
@@ -5997,7 +5941,7 @@ export const questions = [
       { text: "C", correct: true },
       { text: "D", correct: false },
     ],
-    explanation: `Explanation:<br><br>In snippet A, the code will execute without raising any unhandled exceptions. Although 0/0 will raise a ZeroDivisionError, this exception is caught by the except block. The except block then executes successfully with 0/1, and since the else block is skipped due to the exception, no further issues occur.<br><br>In snippet B, the code will raise an unhandled exception. The int("0") conversion succeeds without any issues, but when it reaches the else block, int("") raises a ValueError, which is not handled by the except clause. This results in an unhandled exception.<br><br>In snippet C, the code will also execute without raising any unhandled exceptions. The math.sqrt(-1) call raises a ValueError, but this exception is caught by the except block, which successfully executes math.sqrt(0). Since an exception was caught, the else block does not execute, and no further issues arise.<br><br>In snippet D, the code will raise an unhandled exception. The float("1e1") conversion succeeds, but when the else block is reached, float("1c1") raises a ValueError. Since this exception is not caught, the snippet results in an unhandled exception.`,
+    explanation: `Explanation:<br><br>In A, the code will execute without raising any unhandled exceptions. Although 0/0 will raise a ZeroDivisionError, this exception is caught by the except block. The except block then executes successfully with 0/1, and since the else block is skipped due to the exception, no further issues occur.<br><br>In B, the code will raise an unhandled exception. The int("0") conversion succeeds without any issues, but when it reaches the else block, int("") raises a ValueError, which is not handled by the except clause. This results in an unhandled exception.<br><br>In C, the code will also execute without raising any unhandled exceptions. The math.sqrt(-1) call raises a ValueError, but this exception is caught by the except block, which successfully executes math.sqrt(0). Since an exception was caught, the else block does not execute, and no further issues arise.<br><br>In D, the code will raise an unhandled exception. The float("1e1") conversion succeeds, but when the else block is reached, float("1c1") raises a ValueError. Since this exception is not caught, the snippet results in an unhandled exception.`,
     link: "https://docs.python.org/3/library/functions.html#int",
   },
   {
@@ -6088,25 +6032,13 @@ export const questions = [
   },
   {
     question:
-      "Assuming that the following code has been executed successfully, which of the expressions evaluate to True? <br><br>(Choose two)",
-    answers: [
-      { text: "A)   b() == 4", correct: false },
-      { text: "B)   a != b", correct: true },
-      { text: "C)   a is not None", correct: true },
-      { text: "D)   a() == 4", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>A) evaluates to false. The variable b is assigned the function g from the call f(3, 4), which computes 3 / 4 when executed. This results in 0.75, not 4. Thus, b() == 4 is false.<br><br>B) evaluates to true. The variable a is assigned the function g from the call f(1, 2), and b is assigned the function g from f(3, 4). Since a and b are two different function objects, they are not equal to each other. Therefore, a != b is true.<br><br>C) evaluates to true. The variable a is assigned the function returned by f(1, 2). Since a is a function and not None, a is not None is true.<br><br>D) evaluates to false. The variable a is the function g returned by f(1, 2), which computes 1 / 2. This results in 0.5, not 4. Therefore, a() == 4 is false.",
-    link: "https://docs.python.org/3/library/functions.html#is",
-  },
-  {
-    question:
       "Which of the following lambda definitions are correct? <br><br>(Choose two)",
+    image: "images/image735.png",
     answers: [
-      { text: "A)   lambda x,y: (x,y)", correct: true },
-      { text: "B)   lambda x,y: return x//y - x%y", correct: false },
-      { text: "C)   lambda x,y: x//y - x%y", correct: true },
-      { text: "D)   lambda x,y = x//y - x%y", correct: false },
+      { text: "A)", correct: true },
+      { text: "B)", correct: false },
+      { text: "C)", correct: true },
+      { text: "D)", correct: false },
     ],
     explanation:
       "Explanation:<br><br>A) is a correct lambda function definition. It takes two parameters, x and y, and returns a tuple (x, y). The syntax is valid and does not produce any errors.<br><br>B) is incorrect. In Python, lambda functions cannot use the return keyword. The lambda function should directly express the return value without the return keyword. The correct syntax would be to write lambda x, y: x // y - x % y.<br><br>C) is a correct lambda function definition. It takes two parameters, x and y, and returns the result of x // y - x % y. The syntax is valid and appropriate for a lambda function.<br><br>D) is incorrect. Lambda functions do not support default values for parameters in this syntax. Parameters should be specified without default values. The correct lambda function definition should not include default values for parameters.",
@@ -6151,10 +6083,10 @@ export const questions = [
       "Assuming that the code below has been executed successfully, which of the expressions evaluate to True? <br><br>(Choose two)",
     image: "images/image178.png",
     answers: [
-      { text: "A)   'var' in Class.__dict__", correct: true },
-      { text: "B)   'var' in Object.__dict__", correct: false },
-      { text: "C)   len(Object.__dict__) == 1", correct: true },
-      { text: "D)   'prop' in Class.__dict__", correct: false },
+      { text: "A)", correct: true },
+      { text: "B)", correct: false },
+      { text: "C)", correct: true },
+      { text: "D)", correct: false },
     ],
     explanation:
       "Explanation:<br><br>A) evaluates to true. The Class.__dict__ attribute is a dictionary containing the class attributes of Class. Since var is defined as a class attribute, it is present in Class.__dict__.<br><br>B) evaluates to false. The Object.__dict__ attribute contains instance attributes of the Object instance. var is a class attribute, not an instance attribute, so it does not appear in Object.__dict__.<br><br>C) evaluates to true. The Object.__dict__ contains instance attributes of the Object instance. The only instance attribute set by the __init__ method is prop, which has the value 2. Therefore, Object.__dict__ contains one entry, making its length 1.<br><br>D) evaluates to false. The Class.__dict__ contains class attributes of Class, while prop is an instance attribute set in the __init__ method. Since prop is not a class attribute, it does not appear in Class.__dict__.",
@@ -6457,7 +6389,7 @@ export const questions = [
       { text: "21", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The code defines three lambda functions: f, g, and h. The lambda function f doubles its input, defined as f = lambda x: x * 2. The lambda function g adds 3 to its input, defined as g = lambda y: y + 3. The lambda function h subtracts 5 from its input, defined as h = lambda z: z - 5.<br><br>The main lambda function, which is invoked with arguments 1, 2, and 3, performs a series of computations using these three functions. Specifically, it computes f(g(h(x))) + h(g(y)) + g(f(z)).<br><br>First, for x = 1, the function h(x) is computed as 1 - 5, resulting in -4. Next, g(h(x)) is computed as -4 + 3, resulting in -1. Then, f(g(h(x))) is calculated as -1 * 2, resulting in -2.<br><br>Next, for y = 2, g(y) is computed as 2 + 3, resulting in 5. Then, h(g(y)) is computed as 5 - 5, resulting in 0.<br><br>Finally, for z = 3, f(z) is computed as 3 * 2, resulting in 6. Then, g(f(z)) is computed as 6 + 3, resulting in 9.<br><br>Adding these results together, -2 + 0 + 9 equals 7.",
+      "Explanation:<br><br>The code defines three lambda functions: f, g, and h: <br><br>The lambda function f doubles its input, defined as f = lambda x: x * 2. <br>The lambda function g adds 3 to its input, defined as g = lambda y: y + 3. <br>The lambda function h subtracts 5 from its input, defined as h = lambda z: z - 5.<br><br>The main lambda function, which is invoked with arguments 1, 2, and 3, performs a series of computations using these three functions. <br>Specifically, it computes f(g(h(x))) + h(g(y)) + g(f(z)).<br><br>First, for x = 1, the function h(x) is computed as 1 - 5, resulting in -4. <br>Next, g(h(x)) is computed as -4 + 3, resulting in -1. <br>Then, f(g(h(x))) is calculated as -1 * 2, resulting in -2.<br><br>Next, for y = 2, g(y) is computed as 2 + 3, resulting in 5. <br>Then, h(g(y)) is computed as 5 - 5, resulting in 0.<br><br>Finally, for z = 3, f(z) is computed as 3 * 2, resulting in 6. <br>Then, g(f(z)) is computed as 6 + 3, resulting in 9.<br><br>Adding these results together, -2 + 0 + 9 equals 7.",
     link: "https://realpython.com/python-lambda/#anonymous-functions",
   },
   {
@@ -6483,7 +6415,7 @@ export const questions = [
       { text: "None of the above", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The isinstance() function returns False because C is not a subclass of B, and obj is an instance of C, so it is not an instance of B.",
+      "Explanation:<br><br>In the provided code, you have defined three classes: A, B, and C, where C is a subclass of A, and B is unrelated to these classes. <br><br>An instance of class C is created and assigned to the variable obj. <br><br>When you use isinstance(obj, B) to check if obj is an instance of class B, the result is False because obj is an instance of class C, which does not inherit from B and has no relationship with it. <br><br>Thus, the output of the print(isinstance(obj, B)) statement will be False.",
     link: "https://docs.python.org/3/library/functions.html#isinstance",
   },
   {
@@ -6616,7 +6548,7 @@ export const questions = [
       { text: "ro", correct: false },
       { text: "pr", correct: false },
     ],
-    explanation: `Explanation:<br><br>The try block contains only one statement which is to print the letter 'p' without raising any exceptions. Therefore, the code inside the try block will be executed uccessfully. Then the finally block will also be executed regardless of whether an xception occurred or not, and it will print the letter 'o'. So the final output will be "po".`,
+    explanation: `Explanation:<br><br>The try block contains only one statement which is to print the letter 'p' without raising any exceptions. Therefore, the code inside the try block will be executed uccessfully. <br><br>Then the finally block will also be executed regardless of whether an exception occurred or not, and it will print the letter 'o'. So the final output will be "po".`,
     link: "https://www.w3schools.com/python/python_try_except.asp",
   },
   {
@@ -6763,5 +6695,5 @@ export const questions = [
       { text: "The code is erroneous", correct: false },
     ],
     explanation: "Explanation:<br><br>The code slices the string up to the first 7 characters (s[:7]), which results in 'Genera'. In this slice, the lowercase 'l' is replaced with an uppercase 'L', producing 'GeneraL'. <br><br>The next part of the code, s[8:], retrieves the remaining characters of the string starting from the 8th position, which is 'Kenobi'. These two parts are then concatenated to form the new string 'GeneraL Kenobi'.<br><br>When you use s[:7] + s[8:], it effectively removes the space between 'General' and 'Kenobi'.<br><br>Finally, s.split() splits the string into a list of words, which is ['GeneraLKenobi']."
-  }  
+  } 
 ];
