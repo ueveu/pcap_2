@@ -7,7 +7,7 @@
 
 # English
 
-Welcome to the PCAP Quiz project! This project is a web-based application designed to help users prepare for the Certified Associate Python Programmer (PCAP) certification through an interactive quiz.
+Welcome to the PCAP Quiz project! This project is a web-based application designed to help users prepare for the Certified Associate Python Programmer (PCAP) certification (31-03) through an interactive quiz.
 
 ## Table of Contents
 
@@ -46,7 +46,7 @@ To run the project locally, open the `quiz.html` file in your preferred web brow
 
 ### Running the Quiz
 
-1. Open `quiz.html` in your web browser.
+1. Open the folder containing the quiz in VS Code and start it via the Live Server extension
 2. The quiz interface will display the questions and multiple answers.
 3. Select the appropriate answer by clicking on one of the answer buttons.
 4. An explanation for the selected answer will be displayed below each button.
@@ -86,7 +86,7 @@ If you have any questions or feedback, feel free to reach out to the project mai
 
 # Deutsch
 
-Willkommen zum PCAP Quiz Projekt! Dieses Projekt ist eine webbasierte Anwendung, die Benutzern hilft, sich durch ein interaktives Quiz auf die Zertifizierung zum Certified Associate Python Programmer (PCAP) vorzubereiten.
+Willkommen zum PCAP Quiz Projekt! Dieses Projekt ist eine webbasierte Anwendung, die Benutzern hilft, sich durch ein interaktives Quiz auf die Zertifizierung (31-03) zum Certified Associate Python Programmer (PCAP) vorzubereiten.
 
 ## Inhaltsverzeichnis
 
@@ -125,7 +125,7 @@ Um das Projekt lokal auszuführen, öffnen Sie die Datei `quiz.html` in Ihrem be
 
 ### Quiz starten
 
-1. Öffnen Sie `quiz.html` in Ihrem Webbrowser.
+1. Öffnen Sie den Ordner, in dem sich das Quiz befindet, über VS Code und starten das Quiz über die Live Server Erweiterung
 2. Die Quiz-Oberfläche zeigt die Fragen und mehrere Antworten an.
 3. Wählen Sie die passende Antwort aus, indem Sie auf eine der Antwort-Schaltflächen klicken.
 4. Eine Erklärung zur ausgewählten Antwort wird unter jeder Schaltfläche angezeigt.
