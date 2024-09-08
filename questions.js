@@ -120,7 +120,7 @@ export const questions = [
       { text: "Using the **kwargs syntax", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'args' and 'kwargs' parameters in Python functions are used to pass variable number of arguments to the function, for example: <br><br>def my_function(*args, **kwargs):",
+      "Explanation:<br><br>In Python, you can pass a variable (or arbitrary) number of positional arguments to a function using the *args syntax. The *args collects all additional positional arguments into a tuple, allowing the function to handle more arguments than initially specified.<br><br>*args allows a function to accept any number of positional arguments.<br><br>**kwargs allows a function to accept a variable number of keyword arguments (key-value pairs), but this is not relevant for positional arguments.",
     link: "https://www.freecodecamp.org/news/args-and-kwargs-in-python/",
   },
   {
@@ -209,7 +209,7 @@ export const questions = [
       { text: "Retrieves the element at a specific index.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'pop' method removes the element at the specified index and returns it, for example: list.pop(0).",
+      "Explanation:<br><br>The 'pop' method removes the element at the specified index and returns it, for example: <br><br>list.pop(0).",
     link: "https://www.w3schools.com/python/ref_list_pop.asp",
   },
   {
@@ -265,7 +265,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The 'lambda' keyword is used to create an anonymous function, for example: lambda x: x + 1. It can be used as a shorthand for defining a function with only one line of code.",
+      "Explanation:<br><br>The 'lambda' keyword is used to create an anonymous function, for example: lambda x: x + 1. <br>It can be used as a shorthand for defining a function with only one line of code.",
     link: "https://www.w3schools.com/python/python_lambda.asp",
   },
   {
@@ -577,7 +577,7 @@ export const questions = [
       { text: "By preventing the use of inheritance.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Polymorphism in object-oriented programming contributes to code flexibility by allowing objects of different classes to be treated uniformly through a common interface. <br>This enables the same code to operate on different types of objects, promoting code reuse, modularity, and adaptability to changing requirements.",
+      "Explanation:<br><br>Polymorphism in object-oriented programming contributes to code flexibility by allowing objects of different classes to be treated uniformly through a common interface. <br><br>This enables the same code to operate on different types of objects, promoting code reuse, modularity, and adaptability to changing requirements.",
   },
   {
     question:
@@ -850,31 +850,6 @@ export const questions = [
     link: "https://www.tornadoweb.org/",
   },
   {
-    question:
-      "What is the primary purpose of web development using frameworks like Flask or Django?",
-    answers: [
-      { text: "Creating 3D graphics", correct: false },
-      { text: "Developing mobile applications", correct: false },
-      { text: "Building web applications", correct: true },
-      { text: "Analyzing big data", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The primary purpose of web development using frameworks like Flask or Django is to simplify and expedite the process of building web applications. These frameworks provide a structured and efficient way to handle common web development tasks such as routing, request handling, template rendering, and database interaction, allowing developers to focus on building application logic rather than reinventing the wheel for each project.",
-    link: "https://www.djangoproject.com/",
-  },
-  {
-    question: "Which Python library is commonly used for numerical computing?",
-    answers: [
-      { text: "TensorFlow", correct: false },
-      { text: "Scikit-learn", correct: false },
-      { text: "NumPy", correct: true },
-      { text: "Matplotlib", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The NumPy library is used in Python for numerical computing, for example: <br><br> import numpy",
-    link: "https://numpy.org/",
-  },
-  {
     question: "In the context of Python, what does CRUD operations refer to?",
     answers: [
       { text: "Cryptographic functions", correct: false },
@@ -888,43 +863,6 @@ export const questions = [
     explanation:
       "Explanation:<br><br>In the context of Python, CRUD operations refer to the basic operations performed on data in a persistent storage system, such as a database or file.",
     link: "https://en.wikipedia.org/wiki/Create,_read,_update_and_delete",
-  },
-  {
-    question: "What is the primary purpose of the Pandas library in Python?",
-    answers: [
-      { text: "Game development", correct: false },
-      { text: "Data analysis", correct: true },
-      { text: "Web scraping", correct: false },
-      { text: "Image processing", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The Pandas library is used in Python for data manipulation, for example: <br><br> import pandas",
-    link: "https://pandas.pydata.org/",
-  },
-  {
-    question:
-      "Which library in Python is commonly used for data visualization?",
-    answers: [
-      { text: "Seaborn", correct: false },
-      { text: "Scrapy", correct: false },
-      { text: "NumPy", correct: false },
-      { text: "Matplotlib", correct: true },
-    ],
-    explanation:
-      "Explanation:<br><br>The Matplotlib library is used in Python for data visualization, for example: <br><br> import matplotlib",
-    link: "https://matplotlib.org/",
-  },
-  {
-    question: "What is Flask in the context of web development?",
-    answers: [
-      { text: "A template engine", correct: false },
-      { text: "A web framework", correct: true },
-      { text: "A database management system", correct: false },
-      { text: "A machine learning library", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>In the context of web development, Flask is a lightweight and extensible Python web framework that allows developers to build web applications quickly and easily. It provides tools and libraries for routing requests, handling HTTP methods, rendering templates, and more, making it suitable for building both simple and complex web applications.",
-    link: "https://flask.palletsprojects.com/en/1.1.x/",
   },
   {
     question:
@@ -949,18 +887,6 @@ export const questions = [
     link: "https://www.w3schools.com/python/python_mysql_connect.asp",
   },
   {
-    question: "What does NumPy primarily focus on?",
-    answers: [
-      { text: "Natural language processing", correct: false },
-      { text: "Numerical computing", correct: true },
-      { text: "Network programming", correct: false },
-      { text: "Neural network development", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>NumPy primarily focuses on providing support for numerical computing in Python, offering powerful tools for creating, manipulating, and operating on large arrays and matrices of numeric data efficiently.",
-    link: "https://numpy.org/",
-  },
-  {
     question:
       "Which of the following is a key benefit of using web development frameworks like Django?",
     answers: [
@@ -971,106 +897,6 @@ export const questions = [
     ],
     explanation:
       "Explanation:<br><br>Frameworks like Django provide pre-built components, such as authentication, routing, and database handling, which streamline the development process, reduce repetitive tasks, and enable developers to build web applications more quickly and efficiently.",
-    link: "https://www.djangoproject.com/",
-  },
-  {
-    question: "What is the role of Matplotlib in Python?",
-    answers: [
-      { text: "Database management", correct: false },
-      { text: "Data analysis", correct: false },
-      { text: "Data visualization", correct: true },
-      { text: "Machine learning", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The role of Matplotlib in Python is to provide data visualization capabilities, allowing users to create high-quality plots, charts, and graphs to explore and communicate data effectively.",
-    link: "https://matplotlib.org/",
-  },
-  {
-    question:
-      "In the context of Python, what is the purpose of the Scikit-learn library?",
-    answers: [
-      { text: "Web development", correct: false },
-      { text: "Machine learning", correct: true },
-      { text: "Data analysis", correct: false },
-      { text: "Network programming", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The Scikit-learn library is used in Python for machine learning, for example: <br><br> import sklearn",
-    link: "https://scikit-learn.org/",
-  },
-  {
-    question:
-      "Which library in Python is commonly used for creating interactive visualizations?",
-    answers: [
-      { text: "Seaborn", correct: false },
-      { text: "NumPy", correct: false },
-      { text: "Plotly", correct: true },
-      { text: "Matplotlib", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The Plotly library is used in Python for creating interactive visualizations, for example: <br><br> import plotly",
-    link: "https://plotly.com/python/",
-  },
-  {
-    question: "What is the primary purpose of the Seaborn library in Python?",
-    answers: [
-      { text: "Statistical data visualization", correct: true },
-      { text: "Natural language processing", correct: false },
-      { text: "Web development", correct: false },
-      { text: "Database management", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The Seaborn library is used in Python for statistical data visualization, for example: <br><br> import seaborn",
-    link: "https://seaborn.pydata.org/",
-  },
-  {
-    question:
-      "Which of the following is a lightweight web framework in Python?",
-    answers: [
-      { text: "Django", correct: false },
-      { text: "Flask", correct: true },
-      { text: "Pyramid", correct: false },
-      { text: "Tornado", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>Flask is a lightweight web framework in Python, for example: <br><br> import flask",
-    link: "https://flask.palletsprojects.com/en/1.1.x/",
-  },
-  {
-    question: "What role does SQLAlchemy play in Python?",
-    answers: [
-      { text: "Web scraping", correct: false },
-      { text: "Data analysis", correct: false },
-      { text: "Database connectivity", correct: true },
-      { text: "Machine learning", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>SQLAlchemy is a Python SQL toolkit and Object-Relational Mapping (ORM) library that provides a way to interact with databases using Python objects.",
-    link: "https://www.sqlalchemy.org/",
-  },
-  {
-    question: "Which Python library is commonly used for web scraping?",
-    answers: [
-      { text: "BeautifulSoup", correct: true },
-      { text: "Requests", correct: false },
-      { text: "SQLAlchemy", correct: false },
-      { text: "TensorFlow", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br> Beautiful Soup is a powerful library for extracting data from HTML and XML files, making it popular for scraping data from websites. It provides convenient methods for navigating and searching HTML/XML documents, allowing users to extract specific information from web pages easily.",
-    link: "https://www.crummy.com/software/BeautifulSoup/bs4/doc/",
-  },
-  {
-    question:
-      "Which of the following is NOT a benefit of using web development frameworks like Flask?",
-    answers: [
-      { text: "Rapid development", correct: false },
-      { text: "Code organization", correct: false },
-      { text: "Limited flexibility", correct: true },
-      { text: "Built-in security features", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>Limited flexibility is not a benefit of using web development frameworks like Flask because such frameworks aim to provide structure and conventions to streamline development, rather than allowing unrestricted freedom in implementation.",
     link: "https://www.djangoproject.com/",
   },
   {
@@ -1526,7 +1352,8 @@ export const questions = [
       { text: "Error: Cannot instantiate B", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The class 'B' inherits from class 'A' and overrides the 'show' method to print 'B'. When 'obj.show()' is called, 'B' is printed.",
+      `Explanation:<br><br>In this code, class A defines a method called show() that prints the string "A". Class B inherits from class A but overrides the show() method with its own version that prints "B".<br><br>When an instance of class B is created and the show() method is called using obj.show(), Python looks for the method in class B first. Since class B has its own show() method, it is executed, and the string "B" is printed.<br><br>This is an example of method overriding, where the child class (B) provides its own implementation of a method that exists in the parent class (A). As a result, the overridden method in class B is called, and "B" is printed.`,
+    link: "https://www.programiz.com/python-programming/inheritance",
   },
   {
     question: "Which statement is true about file handling in Python?",
@@ -1667,106 +1494,6 @@ export const questions = [
   },
   {
     question:
-      "Which of the following is NOT part of the Python Standard Library?",
-    answers: [
-      { text: "pandas", correct: true },
-      { text: "NumPy", correct: false },
-      { text: "os", correct: false },
-      { text: "math", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'pandas' module in Python is used for data manipulation and analysis.",
-    link: "https://pandas.pydata.org/",
-  },
-  {
-    question: "What is the primary purpose of NumPy arrays?",
-    answers: [
-      { text: "Displaying plots", correct: false },
-      { text: "Handling text data", correct: false },
-      { text: "Storing and manipulating numerical data", correct: true },
-      { text: "Defining classes", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>NumPy arrays are used to store and manipulate numerical data.",
-    link: "https://numpy.org/",
-  },
-  {
-    question:
-      "Which library is commonly used for data visualization in Python?",
-    answers: [
-      { text: "NumPy", correct: false },
-      { text: "pandas", correct: false },
-      { text: "matplotlib", correct: true },
-      { text: "mathplotlib", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'matplotlib' library in Python is used for data visualization.",
-    link: "https://matplotlib.org/",
-  },
-  {
-    question: "How are pandas Series different from pandas DataFrames?",
-    answers: [
-      {
-        text: "Series can hold only numerical data, while DataFrames can hold any data type.",
-        correct: false,
-      },
-      {
-        text: "Series are one-dimensional, while DataFrames are two-dimensional.",
-        correct: true,
-      },
-      {
-        text: "Series are mutable, while DataFrames are immutable.",
-        correct: false,
-      },
-      {
-        text: "Series are faster for data manipulation compared to DataFrames.",
-        correct: false,
-      },
-    ],
-    explanation:
-      "Explanation:<br><br>Pandas Series are one-dimensional, while pandas DataFrames are two-dimensional.",
-    link: "https://pandas.pydata.org/",
-  },
-  {
-    question:
-      "What function can be used to remove duplicate values from a pandas DataFrame?",
-    answers: [
-      { text: "'drop_duplicates()'", correct: true },
-      { text: "'remove_duplicates()'", correct: false },
-      { text: "'delete_duplicates()'", correct: false },
-      { text: "'clean_duplicates()'", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'drop_duplicates()' function is used to remove duplicate values from a pandas DataFrame.",
-    link: "https://www.geeksforgeeks.org/python-pandas-dataframe-drop_duplicates/",
-  },
-  {
-    question:
-      "When customizing plot appearance in matplotlib, which function is used to set the title of a plot?",
-    answers: [
-      { text: "'plot_title()'", correct: false },
-      { text: "'set_title()'", correct: false },
-      { text: "'title()'", correct: false },
-      { text: "'set_plot_title()'", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'set_title()' function is used to set the title of a plot.",
-    link: "https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.set_title.html",
-  },
-  {
-    question: "Which NumPy function is used to calculate the mean of an array?",
-    answers: [
-      { text: "'mean()'", correct: false },
-      { text: "'average()'", correct: false },
-      { text: "'median()'", correct: false },
-      { text: "'mode()'", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'mean()' function is used to calculate the mean of an array.",
-    link: "https://numpy.org/doc/stable/reference/generated/numpy.mean.html",
-  },
-  {
-    question:
       "What is the purpose of data cleaning in the context of data analysis?",
     answers: [
       {
@@ -1786,200 +1513,6 @@ export const questions = [
     explanation:
       "Explanation:<br><br>Data cleaning is the process of removing or correcting errors in data.",
     link: "https://en.wikipedia.org/wiki/Data_cleaning",
-  },
-  {
-    question:
-      "In pandas, which function is used to filter rows based on a condition?",
-    answers: [
-      { text: "'filter_rows()'", correct: false },
-      { text: "'select_rows()'", correct: false },
-      { text: "'query()'", correct: true },
-      { text: "'filte()'", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'query()' function is used to filter rows based on a condition.",
-    link: "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.query.html",
-  },
-  {
-    question:
-      "Which library is suitable for performing complex mathematical operations in Python?",
-    answers: [
-      { text: "matplotlib", correct: false },
-      { text: "NumPy", correct: true },
-      { text: "pandas", correct: false },
-      { text: "math", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'NumPy' library in Python is suitable for performing complex mathematical operations.",
-    link: "https://numpy.org/",
-  },
-  {
-    question: "What is the purpose of the 'reshape()' function in NumPy?",
-    answers: [
-      {
-        text: "To create a new array by combining two existing arrays.",
-        correct: false,
-      },
-      {
-        text: "To change the number of dimensions of an array.",
-        correct: true,
-      },
-      { text: "To modify the data type of array elements.", correct: false },
-      { text: "To change the order of elements in an array.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'reshape()' function in NumPy is used to change the number of dimensions of an array.",
-    link: "https://numpy.org/doc/stable/reference/generated/numpy.reshape.html",
-  },
-  {
-    question:
-      "Which method is used to read a CSV file into a pandas DataFrame?",
-    answers: [
-      { text: "'read_csv_file()'", correct: false },
-      { text: "'load_csv()'", correct: false },
-      { text: "'read_csv()'", correct: true },
-      { text: "'import_csv()'", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'read_csv()' method is used to read a CSV file into a pandas DataFrame.",
-    link: "https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html",
-  },
-  {
-    question:
-      "In matplotlib, which type of plot is suitable for displaying the distribution of a single numerical variable?",
-    answers: [
-      { text: "Scatter plot", correct: false },
-      { text: "Histogram", correct: true },
-      { text: "Line plot", correct: false },
-      { text: "Bar plot", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'Histogram' type of plot is suitable for displaying the distribution of a single numerical variable.",
-    link: "https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html",
-  },
-  {
-    question: "What does the 'loc[ ]' function do in pandas?",
-    answers: [
-      { text: "It locates the pandas library on the system.", correct: false },
-      {
-        text: "lt selects rows and columns from a DataFrame using labels.",
-        correct: true,
-      },
-      {
-        text: "It calculates the logarithm of the data in a DataFrame.",
-        correct: false,
-      },
-      { text: "It loads an external file into a DataFrame.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'loc[ ]' function in pandas is used to select rows and columns from a DataFrame using labels.",
-    link: "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html",
-  },
-  {
-    question:
-      "Which of the following is a valid method for handling missing data in pandas?",
-    answers: [
-      { text: "Removing all rows with missing data", correct: false },
-      {
-        text: "Replacing missing data with the mean of the entire dataset",
-        correct: false,
-      },
-      {
-        text: "Replacing missing data with the median of the column",
-        correct: false,
-      },
-      { text: "All of the above", correct: true },
-    ],
-    explanation:
-      "Explanation:<br><br>All the mentioned methods are valid approaches for handling missing data in pandas, depending on the context and the nature of the data.",
-    link: "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dropna.html",
-  },
-  {
-    question:
-      "What does the 'xticks()' function in matplotlib allow you to do?",
-    answers: [
-      { text: "Add tick marks to the y-axis of a plot.", correct: false },
-      {
-        text: "Customize the appearance of the x-axis tick labels.",
-        correct: true,
-      },
-      {
-        text: "Rotate the x-axis labels for better readability.",
-        correct: false,
-      },
-      {
-        text: "Set the range of values displayed on the x-axis.",
-        correct: false,
-      },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'xticks()' function in matplotlib allows you to add tick marks to the x-axis of a plot.",
-    link: "https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xticks.html",
-  },
-  {
-    question:
-      "Which of the following is true about the 'describe()' function in pandas?",
-    answers: [
-      {
-        text: "It displays a summary of basic statistics for each column in a DataFrame.",
-        correct: true,
-      },
-      {
-        text: "It generates a detailed description of the data, including outliers",
-        correct: false,
-      },
-      {
-        text: "It calculates the correlation matrix of the DataFrame.",
-        correct: false,
-      },
-      { text: "It only works with numerical data.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'describe()' function in pandas displays a summary of basic statistics for each column in a DataFrame.",
-    link: "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html",
-  },
-  {
-    question: "What is the purpose of the 'scatter()' function in matplotlib?",
-    answers: [
-      {
-        text: "To create a scatter plot to show the relationship between two numerical variables.",
-        correct: true,
-      },
-      { text: "To generate random scatter points on a plot.", correct: false },
-      {
-        text: "To add a scatter of points on top of an existing plot.",
-        correct: false,
-      },
-      { text: "To create a 3D scatter plot.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The scatter() function in Matplotlib creates scatter plots by displaying individual data points as markers based on their x and y coordinates. It is used to visualize the relationship between two continuous variables, highlighting patterns or correlations in the data.",
-    link: "https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html",
-  },
-  {
-    question:
-      "Which of the following methods is used to sort a pandas DataFrame by column values?",
-    answers: [
-      { text: "'sort()'", correct: false },
-      { text: "'sort_values()'", correct: true },
-      { text: "'arrange()'", correct: false },
-      { text: "'order()'", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'sort_values()' method is used to sort a pandas DataFrame by column values.",
-    link: "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html",
-  },
-  {
-    question: "How can you add a legend to a plot created using matplotlib?",
-    answers: [
-      { text: "'add_legend()'", correct: false },
-      { text: "'legend()'", correct: true },
-      { text: "'create_legend()'", correct: false },
-      { text: "'show_legend()'", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'legend()' function in matplotlib is used to add a legend to a plot created using matplotlib.",
-    link: "https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html",
   },
   {
     question:
@@ -2085,19 +1618,6 @@ export const questions = [
     link: "https://realpython.com/python-frozensets/",
   },
   {
-    question:
-      "Which of the following is NOT an advantage of using version control systems like Git?",
-    answers: [
-      { text: "Collaboration among team members.", correct: false },
-      { text: "Tracking changes and version history.", correct: false },
-      { text: "Ensuring 100% bug-free code.", correct: true },
-      { text: "Facilitating code review and merging.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'Git' version control system is used to track changes and version history.",
-    link: "https://realpython.com/python-git-version-control/",
-  },
-  {
     question: "What is the purpose of a debugger in programming?",
     answers: [
       { text: "To write and execute test cases.", correct: false },
@@ -2173,25 +1693,6 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The 'dictionary' data type is used for mapping keys to values in Python.",
     link: "https://realpython.com/python-dictionaries/",
-  },
-  {
-    question:
-      "In the context of testing, what does the term 'test coverage' refer to?",
-    answers: [
-      {
-        text: "The extent to which code is tested using unit tests.",
-        correct: true,
-      },
-      {
-        text: "The percentage of automated tests in the project.",
-        correct: false,
-      },
-      { text: "The number of bugs found during testing.", correct: false },
-      { text: "The duration of time spent on testing.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'test coverage' refers to the extent to which code is tested using unit tests.",
-    link: "https://realpython.com/python-unit-testing/",
   },
   {
     question:
@@ -3234,7 +2735,7 @@ export const questions = [
       { text: ";", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The string 'John,Doe,42' is split into a list of substrings using the comma , as a delimiter.<br>Then, the join() function concatenates these substrings without any separator, effectively removing the comma.<br>The resulting string is 'JohnDoe42'.<br>Finally, strng[-2] accesses the second character from the end of the string, which is '4'.",
+      "Explanation:<br><br>The string 'John,Doe,42' is split into a list of substrings using the comma , as a delimiter.<br><br>Then, the join() function concatenates these substrings without any separator, effectively removing the comma.<br><br>The resulting string is 'JohnDoe42'.<br><br>Finally, strng[-2] accesses the second character from the end of the string, which is '4'.",
     link: "https://www.geeksforgeeks.org/python-program-split-join-string/",
   },
   {
@@ -3656,7 +3157,7 @@ export const questions = [
       { text: "runtime error on line 5", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The given code snippet starts by assigning the value `1` to the variable `x`. It then defines a function named `a` that takes a single argument `x` and returns twice its value. After defining the function, the code calculates `x = 2 + a(x)`. At this point, the function `a` is called with the current value of `x`, which is `1`. The function returns `2` (since `2 * 1 = 2`), and this result is added to `2`, giving a new value of `4` for `x`. <br><br>Next, the code executes `print(a(x))`. Here, the function `a` is called again, but this time with the updated value of `x`, which is `4`. The function computes `2 * 4`, which results in `8`. This value, `8`, is then printed to the console. Thus, the expected output of the code is `8`.",
+      "Explanation:<br><br>The given code snippet starts by assigning the value `1` to the variable `x`. It then defines a function named `a` that takes a single argument `x` and returns twice its value. After defining the function, the code calculates `x = 2 + a(x)`. <br><br>At this point, the function `a` is called with the current value of `x`, which is `1`. The function returns `2` (since `2 * 1 = 2`), and this result is added to `2`, giving a new value of `4` for `x`. <br><br>Next, the code executes `print(a(x))`. Here, the function `a` is called again, but this time with the updated value of `x`, which is `4`. The function computes `2 * 4`, which results in `8`. This value, `8`, is then printed to the console.<br><br> Thus, the expected output of the code is `8`.",
     link: "https://www.w3schools.com/python/python_functions.asp",
   },
   {
@@ -3688,7 +3189,7 @@ export const questions = [
       { text: "It will print an empty line", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The provided code snippet includes a string assignment and a function definition. Initially, the variable `s` is assigned the string value `'SPAM'`. Following this, a function `f` is defined, which takes one parameter `x`. Inside the function body, the return statement concatenates the global variable `s` with the string `'MAPS'`.<br><br>Despite the function accepting a parameter `x`, it does not utilize this parameter in its operation. Instead, it uses the global variable `s` to form the output. When the function `f` is called with `s` as the argument (`f(s)`), it concatenates the value of the global variable `s`, which is `'SPAM'`, with `'MAPS'`. Therefore, the function returns the string `'SPAMMAPS'`. <br><br>Finally, the `print` function outputs this concatenated string. As a result, the code will print `SPAMMAPS` to the console.",
+      "Explanation:<br><br>In this code, the variable s is defined globally as the string 'SPAM'. The function f(x) takes one argument, x, but the value of x is not used inside the function. Instead, the function uses the global variable s and concatenates it with the string 'MAPS', returning the result.<br><br>When print(f(s)) is called, the function f(s) executes, and it concatenates the global variable s (which is 'SPAM') with 'MAPS'. This results in the string 'SPAMMAPS', which is then printed by the print() statement.<br><br>The important thing to note is that even though the function accepts an argument, it does not use it and instead operates on the global variable s. Therefore, the output is 'SPAMMAPS'.",
     link: "https://www.w3schools.com/python/python_functions.asp",
   },
   {
@@ -3789,7 +3290,7 @@ export const questions = [
       { text: "None of the above.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>There's a global variable x initially set to 42. The function func() is defined with the global x declaration inside it, indicating that x refers to the global variable rather than a local one within the function scope. <br>When func() is called, it first prints the current value of x, which is 42. Then, it assigns a new value 23 to x and prints this updated value. <br>After executing func(), the final print(x) statement outside the function also prints the current value of the global variable x, which remains 23 after being modified within func().",
+      "Explanation:<br><br>There's a global variable x initially set to 42. The function func() is defined with the global x declaration inside it, indicating that x refers to the global variable rather than a local one within the function scope. <br><br>When func() is called, it first prints the current value of x, which is 42. Then, it assigns a new value 23 to x and prints this updated value. <br><br>After executing func(), the final print(x) statement outside the function also prints the current value of the global variable x, which remains 23 after being modified within func().",
     link: "https://www.geeksforgeeks.org/python-inner-functions/",
   },
   {
@@ -3804,18 +3305,6 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The provided Python code defines a generator function named func(n) that takes an integer parameter n. Inside this function, an empty string s is initialized. A for loop iterates i from 0 to n-1. During each iteration, an asterisk ('*') is appended to the string s, and then yield s is used to yield the current value of s to the caller.<br><br> Outside the function, a for loop iterates over the generator object returned by func(3). During each iteration, it prints the value yielded by the generator function without adding a newline (end=''). This results in the consecutive printing of the string values '*', '**', and '***'.",
     link: "https://www.geeksforgeeks.org/generators-in-python/",
-  },
-  {
-    question: "The two basic, mutually exclusive, file open modes are named:",
-    answers: [
-      { text: "text and image", correct: false },
-      { text: "binary and ternary", correct: false },
-      { text: "binary and text", correct: true },
-      { text: "None of the above.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The two basic, mutually exclusive, file open modes are 'r' and 'rb'. 'r' is used for reading text files and 'rb' is used for reading binary files.",
-    link: "https://www.programiz.com/python-programming/methods/built-in/open",
   },
   {
     question: "What is the expected output of the following code?",
@@ -4429,7 +3918,7 @@ export const questions = [
       { text: "C", correct: true },
       { text: "D", correct: false },
     ],
-    explanation: `Explanation:<br><br>For expression A, ord("0") - ord("9") == 10, the ord("0") function returns the ASCII value of "0", which is 48, and ord("9") returns the ASCII value of "9", which is 57. Subtracting these values gives 48 - 57, which equals -9. Since -9 is not equal to 10, this expression is false.<br><br>Expression B, len("''") == 2, checks the length of the string ''. The string contains two single quotes, so its length is indeed 2. Therefore, this expression is true.<br><br>For expression C, chr(ord('z') - 1) == 'y', ord('z') gives the ASCII value of 'z', which is 122. Subtracting 1 from 122 gives 121, and chr(121) returns the character 'y'. Since 'y' is indeed equal to 'y', this expression is true.<br><br>Expression D, len(''1234'') == 4, contains an incorrectly formatted string (''1234''), which would cause a syntax error in Python. If the string were properly formatted as "1234", its length would be 4. However, as it is written, the expression is invalid and does not evaluate to anything.`,
+    explanation: `Explanation:<br><br>For A, ord("0") - ord("9") == 10, the ord("0") function returns the ASCII value of "0", which is 48, and ord("9") returns the ASCII value of "9", which is 57. Subtracting these values gives 48 - 57, which equals -9. Since -9 is not equal to 10, this expression is false.<br><br>In B, len("''") == 2, checks the length of the string ''. The string contains two single quotes, so its length is indeed 2. Therefore, this expression is true.<br><br>For C, chr(ord('z') - 1) == 'y', ord('z') gives the ASCII value of 'z', which is 122. Subtracting 1 from 122 gives 121, and chr(121) returns the character 'y'. Since 'y' is indeed equal to 'y', this expression is true.<br><br>In D, len(''1234'') == 4, contains an incorrectly formatted string (''1234''), which would cause a syntax error in Python. If the string were properly formatted as "1234", its length would be 4. However, as it is written, the expression is invalid and does not evaluate to anything.`,
     link: "https://python-reference.readthedocs.io/en/latest/docs/str/ASCII.html",
   },
   {
@@ -4443,7 +3932,7 @@ export const questions = [
       { text: "D", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>For expression A, 'xYz'.lower() > 'XY', the .lower() method converts the string 'xYz' to lowercase, resulting in 'xyz'. When comparing 'xyz' with 'XY', Python compares the strings lexicographically based on Unicode values. The lowercase 'x' has a higher Unicode value than the uppercase 'X', so 'xyz' > 'XY' is true.<br><br>In expression B, '8' + '8' != 2 * '8', the operation '8' + '8' concatenates the two strings, resulting in '88'. The expression 2 * '8' repeats the string '8' twice, also resulting in '88'. Since '88' is equal to '88', the expression '8' + '8' != 2 * '8' is false.<br><br>For expression C, float('3.14') == str('3.' + '14'), the float('3.14') converts the string '3.14' to the float 3.14. The str('3.' + '14') first concatenates the strings '3.' and '14' to form '3.14', and then converts it to a string, which remains '3.14'. However, a float 3.14 is not equal to a string '3.14', so this expression is false.<br><br>In expression D, 121 + 1 == int('1' + 2 * '2'), the calculation 121 + 1 results in 122. The expression '1' + 2 * '2' first repeats the string '2' twice to get '22', and then concatenates it with '1' to form '122'. Converting this string '122' to an integer using int('122') results in the integer 122. Since 122 == 122, this expression is true.",
+      "Explanation:<br><br>For A, 'xYz'.lower() > 'XY', the .lower() method converts the string 'xYz' to lowercase, resulting in 'xyz'. When comparing 'xyz' with 'XY', Python compares the strings lexicographically based on Unicode values. The lowercase 'x' has a higher Unicode value than the uppercase 'X', so 'xyz' > 'XY' is true.<br><br>In B, '8' + '8' != 2 * '8', the operation '8' + '8' concatenates the two strings, resulting in '88'. The expression 2 * '8' repeats the string '8' twice, also resulting in '88'. Since '88' is equal to '88', the expression '8' + '8' != 2 * '8' is false.<br><br>For C, float('3.14') == str('3.' + '14'), the float('3.14') converts the string '3.14' to the float 3.14. The str('3.' + '14') first concatenates the strings '3.' and '14' to form '3.14', and then converts it to a string, which remains '3.14'. However, a float 3.14 is not equal to a string '3.14', so this expression is false.<br><br>In D, 121 + 1 == int('1' + 2 * '2'), the calculation 121 + 1 results in 122. The expression '1' + 2 * '2' first repeats the string '2' twice to get '22', and then concatenates it with '1' to form '122'. Converting this string '122' to an integer using int('122') results in the integer 122. Since 122 == 122, this expression is true.",
     link: "https://docs.python.org/3/reference/expressions.html#value-comparisons",
   },
   {
@@ -4520,10 +4009,10 @@ export const questions = [
   {
     question: "What is true about lambda function? <br><br>(Choose two)",
     answers: [
-      { text: "The are called anonymous functions", correct: true },
+      { text: "They are called anonymous functions", correct: true },
       { text: "They cannot return the None value as a result", correct: false },
-      { text: "The must contain the return keyword", correct: false },
-      { text: "The must have a non-zero number of parameters", correct: true },
+      { text: "They must contain the return keyword", correct: false },
+      { text: "They can have zero arguments", correct: true },
     ],
     explanation:
       "Explanation:<br><br>Lambda functions in Python are indeed known as anonymous functions because they are defined without a name. They are often used for short, throwaway functions where defining a full function with a name would be unnecessarily verbose.<br><br>A lambda function in Python can have any number of arguments, including zero arguments. Lambda function with no arguments performs a simple operation without needing any inputs. However, they cannot have zero parameters.",
@@ -4681,7 +4170,7 @@ export const questions = [
       { text: "D", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The expression A evaluates to True and raises no exceptions. In Python, the empty string is considered to be present in any string, so this expression correctly returns True.<br><br>The expression B checks whether the substring 'xyz' is not present in the string 'uvwxyz'. Since 'xyz' is actually part of the string 'uvwxyz', this expression evaluates to False. While it raises no exceptions, it does not meet the criteria of evaluating to True.<br><br>The expression C checks whether the empty string is not present in another empty string. However, Python considers the empty string to be present in any string, including another empty string, so this expression evaluates to False. It raises no exceptions, but it does not evaluate to True.<br><br>Finally, the expression D evaluates to True and raises no exceptions. The character 'b' is indeed present in the string 'abc', so this expression correctly returns True.",
+      "Explanation:<br><br>A evaluates to True and raises no exceptions. In Python, the empty string is considered to be present in any string, so this expression correctly returns True.<br><br>B checks whether the substring 'xyz' is not present in the string 'uvwxyz'. Since 'xyz' is actually part of the string 'uvwxyz', this expression evaluates to False. While it raises no exceptions, it does not meet the criteria of evaluating to True.<br><br>C checks whether the empty string is not present in another empty string. However, Python considers the empty string to be present in any string, including another empty string, so this expression evaluates to False. It raises no exceptions, but it does not evaluate to True.<br><br>Finally, D evaluates to True and raises no exceptions. The character 'b' is indeed present in the string 'abc', so this expression correctly returns True.",
     link: "https://docs.python.org/3/reference/expressions.html#boolean-operations",
   },
   {
@@ -5090,7 +4579,7 @@ export const questions = [
     question: "Which of the following statements are true?",
     answers: [
       {
-        text: "A)   The final branch of the try statement may be executed if special conditions are met.",
+        text: "A)   The finally branch of the try statement may be executed if special conditions are met.",
         correct: false,
       },
       {
@@ -5098,7 +4587,7 @@ export const questions = [
         correct: true,
       },
       {
-        text: "C)   The final branch of the try statement is always executed.",
+        text: "C)   The finally branch of the try statement is always executed.",
         correct: true,
       },
       {
@@ -5359,10 +4848,10 @@ export const questions = [
   {
     question: "Which of the following statements are true?",
     answers: [
-      { text: "Lists may not be stored inside tuples", correct: false },
-      { text: "Tuples may be stored inside lists", correct: true },
-      { text: "Tuples may not be stored inside tuples", correct: false },
-      { text: "Lists may be stored inside lists", correct: true },
+      { text: "A)   Lists may not be stored inside tuples", correct: false },
+      { text: "B)   Tuples may be stored inside lists", correct: true },
+      { text: "C)   Tuples may not be stored inside tuples", correct: false },
+      { text: "D)   Lists may be stored inside lists", correct: true },
     ],
     explanation:
       "Explanation:<br><br>A) is False. Lists can indeed be stored inside tuples. For example, tuple_with_list = ([1, 2, 3], 'a', 'b') is a valid tuple where one of the elements is a list.<br><br>B) is True. Tuples can be stored inside lists. For example, list_with_tuple = [(1, 2), (3, 4)] is a valid list containing tuples.<br><br>C) is False. Tuples can be stored inside other tuples. For example, nested_tuple = ((1, 2), (3, 4)) is a valid tuple where each element is also a tuple.<br><br>D) is True. Lists can be stored inside other lists. For example, nested_list = [[1, 2, 3], [4, 5, 6]] is a valid list where each element is another list.",
@@ -5504,7 +4993,7 @@ export const questions = [
       { text: "3", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The given code initializes a list lst with the values [1, 2, 3, 4]. The first slicing operation, lst[-3:-2], extracts a sublist starting from the element at index -3 (which is 2) up to but not including the element at index -2 (which is 3). This operation results in the list [2]. Next, the code reassigns lst to the value of lst[-1], which selects the last element of the list [2], resulting in lst being assigned the integer 2. Finally, the print statement outputs the value of lst, which is 2.",
+      "Explanation:<br><br>The given code initializes a list lst with the values [1, 2, 3, 4]. The first slicing operation, lst[-3:-2], extracts a sublist starting from the element at index -3 (which is 2) up to but not including the element at index -2 (which is 3). This operation results in the list [2].<br><br> Next, the code reassigns lst to the value of lst[-1], which selects the last element of the list [2], resulting in lst being assigned the integer 2. Finally, the print statement outputs the value of lst, which is 2.",
     link: "https://www.w3schools.com/python/python_lists.asp",
   },
   {
@@ -5765,7 +5254,7 @@ export const questions = [
       { text: "always None", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>In Python, the built-in open() function attempts to open a file and returns a file object, which is a stream object. This object provides methods and attributes for interacting with the file, such as reading from or writing to it.",
+      "Explanation:<br><br>In Python, the built-in open() function attempts to open a file and returns a file object, which is a stream object. This object provides methods and attributes for interacting with the file, such as reading from or writing to it.<br><br>Here's an example:<br><br>file = open('example.txt', 'r')<br>print(type(file))",
     link: "https://docs.python.org/3/library/functions.html#open",
   },
   {
@@ -5974,7 +5463,7 @@ export const questions = [
       { text: "the class component has to be a method", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>When a class component's name starts with two underscores (__), Python applies name mangling. This means that the name is altered to include the class name as a prefix, which makes it harder to accidentally override the component in subclasses. For example, if a class MyClass has a variable named __variable, Python will internally change this name to _MyClass__variable.",
+      "Explanation:<br><br>When a class component's name starts with two underscores (__), Python applies name mangling. This means that the name is altered to include the class name as a prefix, which makes it harder to accidentally override the component in subclasses.<br><br> For example, if a class MyClass has a variable named __variable, Python will internally change this name to _MyClass__variable.",
     link: "https://en.wikipedia.org/wiki/Name_mangling#Python",
   },
   {
