@@ -29,9 +29,9 @@ export const questions = [
     question: "What is the the output of the following code snippet?",
     image: "images/image3.png",
     answers: [
-      { text: '"Python."', correct: false },
-      { text: '"nohtyP."', correct: true },
-      { text: '"nythoP."', correct: false },
+      { text: '"Python"', correct: false },
+      { text: '"nohtyP"', correct: true },
+      { text: '"nythoP"', correct: false },
       { text: "Error: invalid syntax", correct: false },
     ],
     explanation:
@@ -1759,7 +1759,7 @@ export const questions = [
   {
     question: "Which NumPy function is used to calculate the mean of an array?",
     answers: [
-      { text: "'mean()'", correct: false },
+      { text: "'mean()'", correct: true },
       { text: "'average()'", correct: false },
       { text: "'median()'", correct: false },
       { text: "'mode()'", correct: false },
@@ -2849,7 +2849,7 @@ export const questions = [
   },
   {
     question:
-      "Which of the following expressions evaluates to True and raises no exception?",
+      "Which of the following expressions evaluates to True and raises no exception? <br><br>(Choose two)",
     answers: [
       { text: "10 != '1' + '0'", correct: true },
       { text: "'AI' * 2 != 2 * 'AI'", correct: false },
@@ -3052,7 +3052,7 @@ export const questions = [
     image: "images/image55.png",
     answers: [
       { text: "Object = Class(object)", correct: false },
-      { text: "object = Class( )", correct: true },
+      { text: "object = Class()", correct: true },
       { text: "object = Class(self)", correct: false },
       { text: "object = Class", correct: false },
     ],
@@ -3497,7 +3497,7 @@ export const questions = [
       { text: "The code is erroneous.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>With a = 0 we get b = a ** 0 = 1, therefore we get c = 2. So a + b + c = 3.",
+      "Explanation:<br><br>b = a ** 0: This means that a is raised to the power of 0. In Python, any number raised to the power of 0 results in the value 1, so b = 1",
     link: "https://www.w3schools.com/python/python_operators.asp",
   },
   {
