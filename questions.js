@@ -4636,7 +4636,7 @@ export const questions = [
   },
   {
     question:
-      "Assuming that the following snippet has been successfully executed, which of the equations are True?",
+      "Assuming that the following snippet has been successfully executed, which of the equations are True? <br><br>(Choose two)",
     image: "images/image729.png",
     answers: [
       { text: "A)  len(a) == len(b)", correct: true },
@@ -4650,7 +4650,7 @@ export const questions = [
   },
   {
     question:
-      "Assuming that the following snippet has been successfully executed, which of the equations are True?",
+      "Assuming that the following snippet has been successfully executed, which of the equations are True? <br><br>(Choose two)",
     image: "images/image730.png",
     answers: [
       { text: "A)  len(a) == len (b)", correct: true },
