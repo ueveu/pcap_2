@@ -674,18 +674,6 @@ export const questions = [
     link: "https://www.w3schools.com/python/python_regex.asp",
   },
   {
-    question: "Which method is used to remove an element from a set in Python?",
-    answers: [
-      { text: "discard()", correct: true },
-      { text: "remove()", correct: false },
-      { text: "delete()", correct: false },
-      { text: "pop()", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'discard()' method is used to remove an element from a set in Python, for example: <br><br> set.discard(element)",
-    link: "https://www.w3schools.com/python/ref_set_discard.asp",
-  },
-  {
     question: "What is the purpose of the 'zip()' function in Python?",
     answers: [
       { text: "To compress files and folders", correct: false },
@@ -852,28 +840,6 @@ export const questions = [
     explanation:
       "Explanation:<br><br>In the context of Python, CRUD operations refer to the basic operations performed on data in a persistent storage system, such as a database or file.",
     link: "https://en.wikipedia.org/wiki/Create,_read,_update_and_delete",
-  },
-  {
-    question:
-      "Which of the following statements is true regarding database connectivity in Python?",
-    answers: [
-      { text: "Python cannot connect to databases", correct: false },
-      {
-        text: "Database connectivity is limited to specific versions of Python",
-        correct: false,
-      },
-      {
-        text: "Python can integrate with databases for executing CRUD operations",
-        correct: true,
-      },
-      {
-        text: "Database connectivity is only possible with MySQL",
-        correct: false,
-      },
-    ],
-    explanation:
-      "Explanation:<br><br>Python can connect to databases, for example: <br><br> import mysql.connector",
-    link: "https://www.w3schools.com/python/python_mysql_connect.asp",
   },
   {
     question: "What is the output of the following code snippet?",
@@ -1055,31 +1021,6 @@ export const questions = [
     link: "https://www.w3schools.com/python/gloss_python_raise.asp",
   },
   {
-    question:
-      "Which of the following statements about context managers is true?",
-    answers: [
-      {
-        text: "Context managers are used to perform mathematical calculations.",
-        correct: false,
-      },
-      {
-        text: "Context managers are used to create GUI elements",
-        correct: false,
-      },
-      {
-        text: "Context managers ensure proper resource management using the 'with' statement.",
-        correct: true,
-      },
-      {
-        text: "Context managers are used to define inheritance hierarchies.",
-        correct: false,
-      },
-    ],
-    explanation:
-      "Explanation:<br><br> Context managers are used to ensure proper resource management using the 'with' statement.",
-    link: "https://realpython.com/python-with-statement/#using-the-python-with-statement",
-  },
-  {
     question: "What is the output of the following code snippet?",
     image: "images/image13.png",
     answers: [
@@ -1238,7 +1179,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br> The 'with' statement in Python is used to manage resources and ensure proper cleanup after a block of code is executed.",
+      "Explanation:<br><br>The key benefit of the with statement is that it ensures that resources are automatically cleaned up after their use, even if an error occurs. For example, when opening a file using with, the file will be closed automatically once the block of code inside the with statement is done, without needing to call file.close() manually.",
     link: "https://www.geeksforgeeks.org/with-statement-in-python/",
   },
   {
@@ -1439,7 +1380,7 @@ export const questions = [
       { text: "To call a method from a superclass.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'raise' statement in Python is used to raise an exception.",
+      "Explanation:<br><br>n Python, the raise statement is used to manually trigger an exception. This is helpful when you want to signal that an error or unusual condition has occurred in your program, and it allows you to define custom error messages or handle specific error cases.",
     link: "https://www.w3schools.com/python/python_raise.asp",
   },
   {
@@ -1523,7 +1464,7 @@ export const questions = [
     ],
     explanation:
       "Explanation:<br><br>The 'set' data structure is ideal for storing a collection of unique elements.",
-    link: "https://realpython.com/python-set/",
+    link: "https://www.w3schools.com/python/python_sets.asp",
   },
   {
     question: "What is a major difference between a stack and a queue?",
@@ -1560,19 +1501,6 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The 'generator expression' is used to create a new generator object.",
     link: "https://realpython.com/python-generator-expressions/",
-  },
-  {
-    question:
-      "When making HTTP requests using the 'requests' library, which HTTP method is used to retrieve data?",
-    answers: [
-      { text: "GET", correct: true },
-      { text: "POST", correct: false },
-      { text: "PUT", correct: false },
-      { text: "DELETE", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'GET' HTTP method is used to retrieve data from a server.",
-    link: "https://realpython.com/python-requests/",
   },
   {
     question:
@@ -1689,7 +1617,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The 'API' is used to provide a graphical user interface for the application.",
+      "Explanation:<br><br>The primary purpose of an API (Application Programming Interface) is to enable different software systems to communicate and interact with each other. It allows one program to access and use the functionality or data of another program, typically through well-defined protocols. APIs streamline integration and data exchange between applications or services.",
     link: "https://realpython.com/python-api/",
   },
   {
@@ -2139,19 +2067,6 @@ export const questions = [
     link: "https://www.w3schools.com/python/ref_file_read.asp",
   },
   {
-    question:
-      "Which method is used to break the connection between the file handle and a physical file?",
-    answers: [
-      { text: "disconnect()", correct: false },
-      { text: "shutup()", correct: false },
-      { text: "lock()", correct: false },
-      { text: "close()", correct: true },
-    ],
-    explanation:
-      "Explanation:<br><br>close() closes the file handle and releases the file.",
-    link: "https://www.w3schools.com/python/ref_file_close.asp",
-  },
-  {
     question: "What is the expected output of the following code?",
     image: "images/image42.png",
     answers: [
@@ -2506,7 +2421,7 @@ export const questions = [
       { text: "The code is erroneous.", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>range(2) has two elements: 0 and 1. Therefore the outer list will have two elements. Since data[2] does not exist, the code is erroneous.",
+      "Explanation:<br><br>range(2) has two elements: 0 and 1. Therefore the outer list will have two elements. <br><br>Since data[2] does not exist, the code is erroneous.",
     link: "https://www.w3schools.com/python/python_for_loops.asp",
   },
   {
@@ -2919,7 +2834,7 @@ export const questions = [
       { text: "NoneType", correct: false },
     ],
     explanation:
-      'Explanation:<br><br>z = len("Python") is 6, therefore it is of type int. x = y > z is False, therefore x is of type bool.',
+      'Explanation:<br><br>z = len("Python") is 6, therefore it is of type int.<br><br> x = y > z is False, therefore x is of type bool.',
     link: "https://www.w3schools.com/python/python_datatypes.asp",
   },
   {
@@ -3735,7 +3650,7 @@ export const questions = [
       { text: "It outputs 321", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The code reverses the string `'123'`, resulting in `'321'`. It then iterates over each character in this reversed string, converting each character to an integer and adding it to the variable `dummy`. Starting with `dummy` equal to 0, it first adds 3, then 2, and finally 1. After these additions, the value of `dummy` becomes 6, which is then printed.",
+      "Explanation:<br><br>The code reverses the string `'123'`, resulting in `'321'`. It then iterates over each character in this reversed string, converting each character to an integer and adding it to the variable `dummy`. <br><br>Starting with `dummy` equal to 0, it first adds 3, then 2, and finally 1. After these additions, the value of `dummy` becomes 6, which is then printed.",
     link: "https://www.geeksforgeeks.org/python-reversed-function/",
   },
   {
@@ -3949,7 +3864,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>'var' in Class.__dict__, evaluates to true. This is because Class.__dict__ is a dictionary containing the class attributes of Class. Since var is a class attribute defined in Class, it will be present in this dictionary.<br><br>'data' in Object.__dict__, evaluates to false. This is because Object.__dict__ is a dictionary containing only the instance attributes of the Object instance. Since data is a class attribute and not an instance attribute, it will not be found in this dictionary.<br><br>len(Class.__dict__) == 1, evaluates to false. The Class.__dict__ dictionary contains multiple entries, including the class attributes var and data, as well as other special entries such as methods and possibly module information. Therefore, the length of Class.__dict__ is greater than one.<br><br>'data' in Class.__dict__, evaluates to true. Since data is a class attribute of Class, it is included in the Class.__dict__ dictionary, making this expression true.",
     link: "https://docs.python.org/3/reference/datamodel.html#object.__dict__",
-  },
+  },/* 
   {
     question:
       "Assuming that the code below has been placed inside a file named code.py and executed successfully, which of the following expressions evaluate to true?<br><br>(Choose two)",
@@ -3963,7 +3878,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>str(Object) = 'Object': In Python, you cannot use = for comparison. The correct operator for comparison is ==. The correct expression would be str(Object) == 'Object', but even then, this would not be true because the default implementation of __str__ in Object will return something like '<__main__.ClassB object at 0x...>', not 'Object'.<br><br>__name__ == '__main__': This expression checks if the script is being run as the main program. Since the code provided does not include the standard if __name__ == '__main__': block, we cannot determine if this script was executed as the main program. Therefore, without more context, this expression might not be true, but IT CAN BE true if this script were executed directly.<br><br>len(ClassB.__bases__) == 1: ClassB.__bases__ returns a tuple of base classes of ClassB. Since ClassB inherits from ClassA, ClassB.__bases__ contains a single base class, ClassA. Thus, the length of ClassB.__bases__ is 1, making this expression true.<br><br>classA.__module__ == 'ClassA': This expression is not valid as classA is not defined in the provided code. The __module__ attribute of a class refers to the name of the module in which the class is defined. In this context, the correct expression would be ClassA.__module__, and it would return the name of the module (likely 'code' if the code is in a file named code.py).",
     link: "https://docs.python.org/3/reference/datamodel.html#object.__module__",
-  },
+  }, */
   {
     question: "What is true about lambda function? <br><br>(Choose two)",
     answers: [
@@ -4198,11 +4113,11 @@ export const questions = [
     question:
       "You develop a Python application for your company. A list named employees contains 200 employee names, the last five being company management. You need to slice the list to display all employees excluding management. <br><br>Which code segments can you use? <br><br>(Choose two)",
     answers: [
-      { text: "A.   Employees[ 1:-5 ]", correct: false },
-      { text: "B.   Employees[  :-5 ]", correct: true },
-      { text: "C.   Employees[ 0:-5 ]", correct: true },
-      { text: "D.   Employees[ 0:-4 ]", correct: false },
-      { text: "E.   Employees[ 1:-4 ]", correct: false },
+      { text: "A)   Employees[ 1:-5 ]", correct: false },
+      { text: "B)   Employees[  :-5 ]", correct: true },
+      { text: "C)   Employees[ 0:-5 ]", correct: true },
+      { text: "D)   Employees[ 0:-4 ]", correct: false },
+      { text: "E)   Employees[ 1:-4 ]", correct: false },
     ],
     explanation:
       "Explanation:<br><br>A is incorrect: This starts slicing from index 1 and excludes the last five elements. This will skip the first employee and exclude the last five, which is not the desired outcome.<br><br>B is correct: This slices the list from the beginning up to but not including the last five elements. This is the correct way to exclude the last five elements.<br><br>C is correct: This is functionally the same as employees[:-5]. It slices from the beginning of the list up to but not including the last five elements.<br><br>D is incorrect: This slices up to but not including the last four elements. It excludes only the last four, not the last five.<br><br>E is incorrect: This starts slicing from index 1 and excludes the last four elements. This skips the first employee and excludes the last four, which is not the desired outcome.",
@@ -4439,7 +4354,7 @@ export const questions = [
       { text: "seed( )", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The math.sqrt() method returns the square root of a number.<br><br>The math.hypot() method returns the hypotenuse of a right-angled triangle.",
+      "Explanation:<br><br>The math.sqrt() method returns the square root of a number.<br><br>The math.hypot() method returns the hypotenuse of a right-angled triangle, via Pythagorean theorem: <br><br>a² + b² = c²",
     link: "https://docs.python.org/3/library/math.html#module-math",
   },
   {
@@ -4939,7 +4854,7 @@ export const questions = [
       { text: "two chars", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Given that the string is six or more letters long, the slice string[1:-2] removes three characters from the original string. Specifically, it excludes the first character and the last two characters. As a result, the sliced string is shorter than the original string by three characters.",
+      "Explanation:<br><br>Given that the string is six or more letters long, the slice string[1:-2] removes three characters from the original string. Specifically, it excludes the first character and the last two characters.<br><br> As a result, the sliced string is shorter than the original string by three characters.",
     link: "https://www.w3schools.com/python/ref_string_slice.asp",
   },
   {
@@ -5791,7 +5706,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>A uses integers for phone numbers, which is valid but might limit formatting or leading zeros.<br><br>B uses strings for phone numbers, which allows more flexibility in formatting and handling.",
+      "Explanation:<br><br>A) uses integers for phone numbers, which is valid but might limit formatting or leading zeros.<br><br>B) uses strings for phone numbers, which allows more flexibility in formatting and handling.",
     link: "https://docs.python.org/3/library/stdtypes.html#dict",
   },
   {
@@ -6227,7 +6142,7 @@ export const questions = [
       { text: "[1, 4, 9, 16]", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The code defines a matrix as matrix = [[1, 2], [3, 4]], which is a list of lists representing a 2x2 matrix. The list comprehension [num**2 for row in matrix for num in row] processes each element in this matrix by iterating over each row and then over each number within that row. For each number, it computes the square of the number (num**2).",
+      "Explanation:<br><br>The code defines a matrix as matrix = [[1, 2], [3, 4]], which is a list of lists representing a 2x2 matrix. <br><br>The list comprehension [num**2 for row in matrix for num in row] processes each element in this matrix by iterating over each row and then over each number within that row. <br><br>For each number, it computes the square of the number (num**2).",
     link: "https://www.w3schools.com/python/python_lists_comprehension.asp",
   },
   {
@@ -6577,7 +6492,7 @@ export const questions = [
     link: "https://docs.python.org/3/tutorial/errors.html",
   },
   {
-    question: "What is true? <br><br>(Choose two)",
+    question: "What statement is true? <br><br>(Choose two)",
     answers: [
       { text: "The constructor can return a value.", correct: false },
       { text: "The self parameter is used to obtain access to the object's instance and class variables.", correct: true },
@@ -6718,25 +6633,32 @@ export const questions = [
       { text: "execute the source code", correct: false },
       { text: "translate the source code into machine code", correct: true },
     ],    
+  },
+  {
+    question: "What is the expected output of the following snippet?",
+    image: "images/image215.png",
+    answers: [
+      { text: "the code is erroneous", correct: true },
+      { text: "3", correct: false },
+      { text: "7", correct: false },
+      { text: "15", correct: false },
+    ],
+    explanation: "Explanation:<br><br>In the if statement, it should be == (for comparison) instead of = (which is for assignment). Therefore, the code is erroneous.",
+    link: "https://www.w3schools.com/python/gloss_python_comparison_operators.asp",
+  },
+  {
+    question: "How many lines does the following snippet output?",
+    image: "images/image216.png",
+    answers: [
+      { text: "three", correct: false },
+      { text: "one", correct: true },
+      { text: "two", correct: false },
+      { text: "four", correct: false },
+    ],
+    explanation: `Explanation:<br><br>The for loop iterates over the numbers 1 and 2 generated by range(1, 3). On each iteration, the print("*", end="") statement outputs a * without moving to a new line because of the end="" parameter, which keeps the output on the same line.<br><br>After the loop completes its iterations, the else block is executed, and the print("*") statement prints another * in the same line.`,
+
+
   },/*
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
   {
     question: "",
     answers: [
