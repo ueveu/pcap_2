@@ -842,28 +842,6 @@ export const questions = [
     link: "https://en.wikipedia.org/wiki/Create,_read,_update_and_delete",
   },
   {
-    question:
-      "Which of the following statements is true regarding database connectivity in Python?",
-    answers: [
-      { text: "Python cannot connect to databases", correct: false },
-      {
-        text: "Database connectivity is limited to specific versions of Python",
-        correct: false,
-      },
-      {
-        text: "Python can integrate with databases for executing CRUD operations",
-        correct: true,
-      },
-      {
-        text: "Database connectivity is only possible with MySQL",
-        correct: false,
-      },
-    ],
-    explanation:
-      "Explanation:<br><br>Python can connect to databases, for example: <br><br> import mysql.connector",
-    link: "https://www.w3schools.com/python/python_mysql_connect.asp",
-  },
-  {
     question: "What is the output of the following code snippet?",
     image: "images/image10.png",
     answers: [
@@ -1041,31 +1019,6 @@ export const questions = [
     explanation:
       "Explanation:<br><br> The 'raise' keyword is used to define custom exceptions.",
     link: "https://www.w3schools.com/python/gloss_python_raise.asp",
-  },
-  {
-    question:
-      "Which of the following statements about context managers is true?",
-    answers: [
-      {
-        text: "Context managers are used to perform mathematical calculations.",
-        correct: false,
-      },
-      {
-        text: "Context managers are used to create GUI elements",
-        correct: false,
-      },
-      {
-        text: "Context managers ensure proper resource management using the 'with' statement.",
-        correct: true,
-      },
-      {
-        text: "Context managers are used to define inheritance hierarchies.",
-        correct: false,
-      },
-    ],
-    explanation:
-      "Explanation:<br><br> Context managers are used to ensure proper resource management using the 'with' statement.",
-    link: "https://realpython.com/python-with-statement/#using-the-python-with-statement",
   },
   {
     question: "What is the output of the following code snippet?",
@@ -1511,7 +1464,7 @@ export const questions = [
     ],
     explanation:
       "Explanation:<br><br>The 'set' data structure is ideal for storing a collection of unique elements.",
-    link: "https://realpython.com/python-set/",
+    link: "https://www.w3schools.com/python/python_sets.asp",
   },
   {
     question: "What is a major difference between a stack and a queue?",
@@ -1548,19 +1501,6 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The 'generator expression' is used to create a new generator object.",
     link: "https://realpython.com/python-generator-expressions/",
-  },
-  {
-    question:
-      "When making HTTP requests using the 'requests' library, which HTTP method is used to retrieve data?",
-    answers: [
-      { text: "GET", correct: true },
-      { text: "POST", correct: false },
-      { text: "PUT", correct: false },
-      { text: "DELETE", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'GET' HTTP method is used to retrieve data from a server.",
-    link: "https://realpython.com/python-requests/",
   },
   {
     question:
@@ -2481,7 +2421,7 @@ export const questions = [
       { text: "The code is erroneous.", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>range(2) has two elements: 0 and 1. Therefore the outer list will have two elements. Since data[2] does not exist, the code is erroneous.",
+      "Explanation:<br><br>range(2) has two elements: 0 and 1. Therefore the outer list will have two elements. <br><br>Since data[2] does not exist, the code is erroneous.",
     link: "https://www.w3schools.com/python/python_for_loops.asp",
   },
   {
@@ -3924,7 +3864,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>'var' in Class.__dict__, evaluates to true. This is because Class.__dict__ is a dictionary containing the class attributes of Class. Since var is a class attribute defined in Class, it will be present in this dictionary.<br><br>'data' in Object.__dict__, evaluates to false. This is because Object.__dict__ is a dictionary containing only the instance attributes of the Object instance. Since data is a class attribute and not an instance attribute, it will not be found in this dictionary.<br><br>len(Class.__dict__) == 1, evaluates to false. The Class.__dict__ dictionary contains multiple entries, including the class attributes var and data, as well as other special entries such as methods and possibly module information. Therefore, the length of Class.__dict__ is greater than one.<br><br>'data' in Class.__dict__, evaluates to true. Since data is a class attribute of Class, it is included in the Class.__dict__ dictionary, making this expression true.",
     link: "https://docs.python.org/3/reference/datamodel.html#object.__dict__",
-  },
+  },/* 
   {
     question:
       "Assuming that the code below has been placed inside a file named code.py and executed successfully, which of the following expressions evaluate to true?<br><br>(Choose two)",
@@ -3938,7 +3878,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>str(Object) = 'Object': In Python, you cannot use = for comparison. The correct operator for comparison is ==. The correct expression would be str(Object) == 'Object', but even then, this would not be true because the default implementation of __str__ in Object will return something like '<__main__.ClassB object at 0x...>', not 'Object'.<br><br>__name__ == '__main__': This expression checks if the script is being run as the main program. Since the code provided does not include the standard if __name__ == '__main__': block, we cannot determine if this script was executed as the main program. Therefore, without more context, this expression might not be true, but IT CAN BE true if this script were executed directly.<br><br>len(ClassB.__bases__) == 1: ClassB.__bases__ returns a tuple of base classes of ClassB. Since ClassB inherits from ClassA, ClassB.__bases__ contains a single base class, ClassA. Thus, the length of ClassB.__bases__ is 1, making this expression true.<br><br>classA.__module__ == 'ClassA': This expression is not valid as classA is not defined in the provided code. The __module__ attribute of a class refers to the name of the module in which the class is defined. In this context, the correct expression would be ClassA.__module__, and it would return the name of the module (likely 'code' if the code is in a file named code.py).",
     link: "https://docs.python.org/3/reference/datamodel.html#object.__module__",
-  },
+  }, */
   {
     question: "What is true about lambda function? <br><br>(Choose two)",
     answers: [
@@ -4914,7 +4854,7 @@ export const questions = [
       { text: "two chars", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Given that the string is six or more letters long, the slice string[1:-2] removes three characters from the original string. Specifically, it excludes the first character and the last two characters. As a result, the sliced string is shorter than the original string by three characters.",
+      "Explanation:<br><br>Given that the string is six or more letters long, the slice string[1:-2] removes three characters from the original string. Specifically, it excludes the first character and the last two characters.<br><br> As a result, the sliced string is shorter than the original string by three characters.",
     link: "https://www.w3schools.com/python/ref_string_slice.asp",
   },
   {
@@ -6202,7 +6142,7 @@ export const questions = [
       { text: "[1, 4, 9, 16]", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The code defines a matrix as matrix = [[1, 2], [3, 4]], which is a list of lists representing a 2x2 matrix. The list comprehension [num**2 for row in matrix for num in row] processes each element in this matrix by iterating over each row and then over each number within that row. For each number, it computes the square of the number (num**2).",
+      "Explanation:<br><br>The code defines a matrix as matrix = [[1, 2], [3, 4]], which is a list of lists representing a 2x2 matrix. <br><br>The list comprehension [num**2 for row in matrix for num in row] processes each element in this matrix by iterating over each row and then over each number within that row. <br><br>For each number, it computes the square of the number (num**2).",
     link: "https://www.w3schools.com/python/python_lists_comprehension.asp",
   },
   {
