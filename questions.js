@@ -120,7 +120,7 @@ export const questions = [
       { text: "Has no effect; it is a null operation.", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The 'pass' statement is used to create a placeholder for future code.",
+      "Explanation:<br><br>The pass statement is a null operation—it doesn't do anything and is used as a placeholder. You can use pass in situations where a statement is syntactically required but you don't want to execute any code at that moment.<br><br>This can be useful when you're writing code that hasn't been fully implemented yet, or when you're constructing loops, functions, or classes that don't have any content initially but are syntactically required.",
     link: "https://www.w3schools.com/python/ref_keyword_pass.asp",
   },
   {
@@ -138,7 +138,7 @@ export const questions = [
       { text: "Has no effect on the loop.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'break' statement is used to exit a loop, for example, the 'break' statement is used to break out of the loop when a certain condition is met.",
+      "Explanation:<br><br>The break statement is used to immediately terminate a loop (either a for loop or a while loop) when a certain condition is met. Once the break statement is encountered, the loop stops executing, and the program continues with the first line of code after the loop.",
     link: "https://www.tutorialspoint.com/python/python_break_statement.htm",
   },
   {
@@ -744,6 +744,7 @@ export const questions = [
     ],
     explanation:
       "Explanation:<br><br>The code calculates the average of the numbers by adding them up and dividing by the number of elements in the list. The result is 3.0.",
+    link: "https://www.w3schools.com/python/python_lists.asp",
   },
   {
     question:
@@ -2266,7 +2267,8 @@ export const questions = [
       { text: "2 3", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The output would be 3 2 because x is set to 2 + 1, and y is incremented by 1 from its initial value of 1.",
+      "Explanation:<br><br>When the function test(2, 1) is called, the values x=2 and y=1 are passed as arguments, overriding the default values of x=1 and y=2. Inside the function, the statement x = x + y is executed, updating the value of x to 3 (since x = 2 and y = 1, making x = 2 + 1 = 3). Then, the statement y += 1 increments the value of y by 1, making y = 2.<br><br>Finally, the print(x, y) statement outputs the updated values of x and y, which are 3 and 2 respectively.",
+    link: "https://www.w3schools.com/python/python_functions.asp",
   },
   {
     question: "What is the expected output of the following code?",
@@ -4907,7 +4909,7 @@ export const questions = [
     image: "images/image133.png",
     answers: [
       { text: "ant'bat'camel", correct: false },
-      { text: `ant"bat"camel`, correct: false },
+      { text: `ant"bat"camel`, correct: true },
       { text: "antbatcamel", correct: false },
       { text: `print(a, b, c, sep= '"')`, correct: false },
     ],
@@ -6695,5 +6697,244 @@ export const questions = [
       { text: "The code is erroneous", correct: false },
     ],
     explanation: "Explanation:<br><br>The code slices the string up to the first 7 characters (s[:7]), which results in 'Genera'. In this slice, the lowercase 'l' is replaced with an uppercase 'L', producing 'GeneraL'. <br><br>The next part of the code, s[8:], retrieves the remaining characters of the string starting from the 8th position, which is 'Kenobi'. These two parts are then concatenated to form the new string 'GeneraL Kenobi'.<br><br>When you use s[:7] + s[8:], it effectively removes the space between 'General' and 'Kenobi'.<br><br>Finally, s.split() splits the string into a list of words, which is ['GeneraLKenobi']."
-  } 
+  },
+  {
+    question: "What will the value of the i variable be when the following loop finishes its execution?",
+    image: "images/image214.png",
+    answers: [
+      { text: "10", correct: false },
+      { text: "11", correct: false },
+      { text: "9", correct: true },
+      { text: "the variable becomes unavailable", correct: false },
+    ],
+    explanation: "Explanation:<br><br>The variable i will take on values from 0 to 9 during the loop execution because the range(10) function generates numbers from 0 to 9 (10 numbers in total).<br><br>Since the pass statement does nothing, the loop runs without any action being performed for each value of i. When the loop finishes, i will hold the value of the last number in the range, which is 9.",
+    link: "https://wiki.python.org/moin/ForLoop",
+  },
+  {
+    question: "A compiler is a program designed to.. <br><br>(Choose two)",
+    answers: [
+      { text: "rearrange the source code to make it clearer", correct: false },
+      { text: "check the source code in order to see of it's correct", correct: true },
+      { text: "execute the source code", correct: false },
+      { text: "translate the source code into machine code", correct: true },
+    ],    
+  },/*
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: true },
+      { text: "", correct: false },
+    ],    
+  },
+  */
+  
 ];
