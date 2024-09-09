@@ -3593,7 +3593,7 @@ export const questions = [
       { text: "It outputs [1, 3]", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>my_list is created as [0, 1, 2, 3, 4].<br>br>The list comprehension [my_list[i] for i in range(4, 0, -1) if my_list[i] % 2 != 0] iterates over the indices 4, 3, 2, 1 (in that order) and selects the values from my_list at those indices if the value is not divisible by 2 (i.e., it's odd).<br>br> For i = 4, my_list[4] is 4 (even, so it's not included).<br>br>For i = 3, my_list[3] is 3 (odd, so it's included).<br>br>For i = 2, my_list[2] is 2 (even, so it's not included).<br>br>For i = 1, my_list[1] is 1 (odd, so it's included).<br>br>Therefore, the resulting list m is [3, 1].<br>br>The output of the code is [3, 1].",
+      "Explanation:<br><br>my_list is created as [0, 1, 2, 3, 4].<br><br>The list iterates over the indices 4, 3, 2, 1 (in that order) and selects the values from my_list at those indices if the value is not divisible by 2 (i.e., it's odd).<br><br> For i = 4, my_list[4] is 4 (even, so it's not included).<br>br>For i = 3, my_list[3] is 3 (odd, so it's included).<br>br>For i = 2, my_list[2] is 2 (even, so it's not included).<br><br>For i = 1, my_list[1] is 1 (odd, so it's included).<br><br>Therefore, the resulting list m is [3, 1].<br><br>The output of the code is [3, 1].",
     link: "https://www.w3schools.com/python/python_lists_comprehension.asp",
   },
   {
