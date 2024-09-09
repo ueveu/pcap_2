@@ -1522,24 +1522,6 @@ export const questions = [
     link: "https://realpython.com/python-frozensets/",
   },
   {
-    question: "What is the purpose of a debugger in programming?",
-    answers: [
-      { text: "To write and execute test cases.", correct: false },
-      {
-        text: "To automatically fix syntax errors in the code.",
-        correct: false,
-      },
-      {
-        text: "To analyze and troubleshoot code during execution.",
-        correct: true,
-      },
-      { text: "To format the code for better readability.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'debugger' is used to write and execute test cases.",
-    link: "https://realpython.com/python-debugging/",
-  },
-  {
     question:
       "Which of the following best describes the role of a command-line interface (CLI) in a software project?",
     answers: [
