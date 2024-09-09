@@ -6626,15 +6626,6 @@ export const questions = [
     link: "https://wiki.python.org/moin/ForLoop",
   },
   {
-    question: "A compiler is a program designed to.. <br><br>(Choose two)",
-    answers: [
-      { text: "rearrange the source code to make it clearer", correct: false },
-      { text: "check the source code in order to see of it's correct", correct: true },
-      { text: "execute the source code", correct: false },
-      { text: "translate the source code into machine code", correct: true },
-    ],    
-  },
-  {
     question: "What is the expected output of the following snippet?",
     image: "images/image215.png",
     answers: [
