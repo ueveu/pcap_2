@@ -107,17 +107,23 @@ function resetState() {
 // Handle answer selection
 function selectAnswer(e) {
   const selectedBtn =
-    e.target.tagName === "SPAN" ? e.target.parentNode : e.target; // Handle clicks on span
-  const isCorrect = selectedBtn.dataset.correct === "true"; // Check if the answer is correct
+    e.target.tagName === "SPAN" ? e.target.parentNode : e.target;
+  const isCorrect = selectedBtn.dataset.correct === "true";
   
-  if (isCorrect) {
-    selectedBtn.classList.add("correct"); // Add the correct class to the selected button
+  // Funktion zum Abspielen des Tons
+  function playSound(sound) {
+    sound.pause();
+    sound.currentTime = 0;
+    sound.play();
+  }
+  
+  if (isCorrect && !selectedBtn.classList.contains("correct")) {
+    selectedBtn.classList.add("correct");
     score++;
-    correctSound.play();
-  } else {
-    selectedBtn.classList.add("incorrect"); // Add the incorrect class to the selected button
+    playSound(correctSound);
+  } else if (!isCorrect && !selectedBtn.classList.contains("incorrect")) {
     selectedBtn.classList.add("incorrect");
-    incorrectSound.play();
+    playSound(incorrectSound);
   }
 
   // Überprüfen, ob alle korrekten Antworten ausgewählt wurden
@@ -125,7 +131,7 @@ function selectAnswer(e) {
     button => button.dataset.correct === "true"
   );
   const selectedCorrectAnswers = Array.from(answerButtons.children).filter(
-    button => button.classList.contains("correct")
+    button => button.classList.contains("correct") && button.dataset.correct === "true"
   );
 
   if (allCorrectAnswers.length === selectedCorrectAnswers.length) {
