@@ -4428,7 +4428,7 @@ export const questions = [
       { text: "print (nums[x] )   # Line 4", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>In line 4, nums(x) uses parentheses, which is incorrect for indexing lists. You should use square brackets for indexing.<br><br>In line 5, the assignment operator = is used instead of the comparison operator ==.",
+      "Explanation:<br><br>In line 4, nums(x) uses parentheses, which is incorrect for indexing lists. You should use square brackets for indexing.<br><br>In line 5, the assignment operator = is used instead of the comparison operator ==",
     link: "https://www.programiz.com/python-programming/list",
   },
   {
@@ -4521,7 +4521,7 @@ export const questions = [
   },
   {
     question:
-      "Select the true statements about the try-except block in relation to the following example:",
+      "Select the true statements about the try-except block in relation to the following example: <br><br>(Choose two)",
     image: "images/image727.png",
     answers: [
       {
