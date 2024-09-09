@@ -3092,7 +3092,7 @@ export const questions = [
       { text: "It will print an empty line", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The code defines a generator function called `gen()`. This function creates a range of numbers from 0 to 4. It then yields the square of each number in that range. The `for` loop outside the function calls `gen()` and iterates over its values. It prints each square on the same line without any spaces or newlines between them. Therefore, the output of the code is `014916`.",
+      "Explanation:<br><br>The code defines a generator function called `gen()`. This function creates a range of numbers from 0 to 4. It then yields the square of each number in that range. <br><br>The `for` loop outside the function calls `gen()` and iterates over its values. It prints each square on the same line without any spaces or newlines between them. <br><br>Therefore, the output of the code is `014916`.",
     link: "https://www.w3schools.com/python/python_functions.asp",
   },
   {
