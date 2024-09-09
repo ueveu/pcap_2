@@ -107,55 +107,60 @@ function resetState() {
 // Handle answer selection
 function selectAnswer(e) {
   const selectedBtn =
-    e.target.tagName === "SPAN" ? e.target.parentNode : e.target; // Handle clicks on span
-  const isCorrect = selectedBtn.dataset.correct === "true"; // Check if the answer is correct
-  if (isCorrect) {
-    selectedBtn.classList.add("correct"); // Add the correct class to the selected button
+    e.target.tagName === "SPAN" ? e.target.parentNode : e.target;
+  const isCorrect = selectedBtn.dataset.correct === "true";
+  
+  // Funktion zum Abspielen des Tons
+  function playSound(sound) {
+    sound.pause();
+    sound.currentTime = 0;
+    sound.play();
+  }
+  
+  if (isCorrect && !selectedBtn.classList.contains("correct")) {
+    selectedBtn.classList.add("correct");
     score++;
-    correctSound.play(); 
-  } else {
-    selectedBtn.classList.add("incorrect"); // Add the incorrect class to the selected button
+    playSound(correctSound);
+  } else if (!isCorrect && !selectedBtn.classList.contains("incorrect")) {
     selectedBtn.classList.add("incorrect");
-    incorrectSound.play();
+    playSound(incorrectSound);
   }
 
+  // Überprüfen, ob alle korrekten Antworten ausgewählt wurden
+  const allCorrectAnswers = Array.from(answerButtons.children).filter(
+    button => button.dataset.correct === "true"
+  );
+  const selectedCorrectAnswers = Array.from(answerButtons.children).filter(
+    button => button.classList.contains("correct") && button.dataset.correct === "true"
+  );
 
+  if (allCorrectAnswers.length === selectedCorrectAnswers.length) {
+    // Alle korrekten Antworten wurden ausgewählt
+    const explanationElement = document.getElementById("explanation");
+    const linkElement = document.getElementById("link"); // Get the explanation element
+    let currentQuestion = selectedQuestions[currentQuestionIndex]; // Get the current question from selectedQuestions
+    explanationElement.innerHTML = currentQuestion.explanation; // Set the explanation
+    explanationElement.style.display = "block"; // Show the explanation element
+    explanationElement.classList.remove("show");
+    explanationElement.classList.add("show");
 
-
-/*   // Show correct answer(s) and disable all buttons
-  Array.from(answerButtons.children).forEach((button) => {
-    if (button.dataset.correct === "true") {
-      button.classList.add("correct");
+    if (currentQuestion.link) {
+      linkElement.innerHTML = ""; // Clear link if it already exists
+      const link = document.createElement("a");
+      link.href = currentQuestion.link;
+      link.target = "_blank"; // Open link in a new tab
+      link.rel = "noopener noreferrer"; // Security best practice
+      link.textContent = "Learn more";
+      link.style.color = "white";
+      linkElement.appendChild(link); // Append the link to the link element
+    } else {
+      linkElement.innerHTML = ""; // Clear link if no URL is provided
     }
-    button.disabled = true;
-  }); */
-  const explanationElement = document.getElementById("explanation");
-  const linkElement = document.getElementById("link"); // Get the explanation element
-  let currentQuestion = selectedQuestions[currentQuestionIndex]; // Get the current question from selectedQuestions
-  explanationElement.innerHTML = currentQuestion.explanation; // Set the explanation
-  explanationElement.style.display = "block"; // Show the explanation element
-  explanationElement.classList.remove("show");
-  explanationElement.classList.add("show");
 
-
-  // Create a clickable link
-  if (currentQuestion.link) {
-    linkElement.innerHTML = ""; // Clear link if it already exists
-    const link = document.createElement("a");
-    link.href = currentQuestion.link;
-    link.target = "_blank"; // Open link in a new tab
-    link.rel = "noopener noreferrer"; // Security best practice
-    link.textContent = "Learn more";
-    link.style.color = "white";
-    linkElement.appendChild(link); // Append the link to the link element
-  } else {
-    linkElement.innerHTML = ""; // Clear link if no URL is provided
+    nextButton.style.display = "block"; // Show the next button
+    backButton.style.display = "block";
   }
-
-  nextButton.style.display = "block"; // Show the next button
-  backButton.style.display = "block";
 }
-
 
 function showScore() {
   resetState();
