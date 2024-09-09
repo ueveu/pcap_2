@@ -3846,21 +3846,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>'var' in Class.__dict__, evaluates to true. This is because Class.__dict__ is a dictionary containing the class attributes of Class. Since var is a class attribute defined in Class, it will be present in this dictionary.<br><br>'data' in Object.__dict__, evaluates to false. This is because Object.__dict__ is a dictionary containing only the instance attributes of the Object instance. Since data is a class attribute and not an instance attribute, it will not be found in this dictionary.<br><br>len(Class.__dict__) == 1, evaluates to false. The Class.__dict__ dictionary contains multiple entries, including the class attributes var and data, as well as other special entries such as methods and possibly module information. Therefore, the length of Class.__dict__ is greater than one.<br><br>'data' in Class.__dict__, evaluates to true. Since data is a class attribute of Class, it is included in the Class.__dict__ dictionary, making this expression true.",
     link: "https://docs.python.org/3/reference/datamodel.html#object.__dict__",
-  },/* 
-  {
-    question:
-      "Assuming that the code below has been placed inside a file named code.py and executed successfully, which of the following expressions evaluate to true?<br><br>(Choose two)",
-    image: "images/image706.png",
-    answers: [
-      { text: "str(Object) = 'Object'", correct: false },
-      { text: "__name__ == '__main__'", correct: false },
-      { text: "len(ClassB.__bases__) == 1", correct: false },
-      { text: "classA.__module__ == 'ClassA'", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>str(Object) = 'Object': In Python, you cannot use = for comparison. The correct operator for comparison is ==. The correct expression would be str(Object) == 'Object', but even then, this would not be true because the default implementation of __str__ in Object will return something like '<__main__.ClassB object at 0x...>', not 'Object'.<br><br>__name__ == '__main__': This expression checks if the script is being run as the main program. Since the code provided does not include the standard if __name__ == '__main__': block, we cannot determine if this script was executed as the main program. Therefore, without more context, this expression might not be true, but IT CAN BE true if this script were executed directly.<br><br>len(ClassB.__bases__) == 1: ClassB.__bases__ returns a tuple of base classes of ClassB. Since ClassB inherits from ClassA, ClassB.__bases__ contains a single base class, ClassA. Thus, the length of ClassB.__bases__ is 1, making this expression true.<br><br>classA.__module__ == 'ClassA': This expression is not valid as classA is not defined in the provided code. The __module__ attribute of a class refers to the name of the module in which the class is defined. In this context, the correct expression would be ClassA.__module__, and it would return the name of the module (likely 'code' if the code is in a file named code.py).",
-    link: "https://docs.python.org/3/reference/datamodel.html#object.__module__",
-  }, */
+  }, 
   {
     question: "What is true about lambda function? <br><br>(Choose two)",
     answers: [
@@ -4063,19 +4049,6 @@ export const questions = [
     explanation:
       "Explanation: <br><br>Expression A compares if selection and element are the same object in memory. Since selection is an instance of Radio and element is an instance of Control, they are different objects and the expression evaluates to False.<br><br>In expression B, selection is an instance of Radio. In Radio, my_ID is inherited from Button, which is 2. Thus, selection.my_ID evaluates to 2, so this expression evaluates to True.<br><br>In expression C, start is an instance of Button, where my_ID is 2. This expression compares start.my_ID with -2, which is not equal. Thus, this expression evaluates to False.<br><br>In expression D, start is an instance of Button, so isinstance(start, Button) evaluates to True.",
     link: "https://docs.python.org/3/library/functions.html#isinstance",
-  },
-  {
-    question:
-      "A programmer needs to use the following functions:<br><br>machine( ), choice () and system( )<br><br>Which modules have to be imported to make this possible? <br><br>(Choose two)",
-    answers: [
-      { text: "math", correct: false },
-      { text: "random", correct: true },
-      { text: "tkinter", correct: false },
-      { text: "platform", correct: true },
-    ],
-    explanation:
-      "Explanation:<br><br>random is imported for the choice() function and system() function. tkinter is imported for the machine() function.",
-    link: "https://docs.python.org/3/library/random.html",
   },
   {
     question:
@@ -5660,7 +5633,7 @@ export const questions = [
   },
   {
     question:
-      "What would you used instead of XXX if you want to check weather a certain 'key' exists in a dictionary called dict? <br><br>(Choose two)",
+      "What would you used instead of XXX if you want to check wether a certain 'key' exists in a dictionary called dict? <br><br>(Choose two)",
     image: "images/image171.png",
     answers: [
       { text: "'key' in dict", correct: true },
@@ -5688,7 +5661,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>A) uses integers for phone numbers, which is valid but might limit formatting or leading zeros.<br><br>B) uses strings for phone numbers, which allows more flexibility in formatting and handling.",
+      "Explanation:<br><br>A) uses integers for phone numbers, which is valid but might limit formatting or leading zeros.<br><br>B) uses strings for phone numbers, which allows more flexibility in formatting and handling.<br><br>Options C) and D) are incorrect due to the lack of quotes around the dictionary keys, which should be strings.",
     link: "https://docs.python.org/3/library/stdtypes.html#dict",
   },
   {
@@ -6629,15 +6602,123 @@ export const questions = [
       { text: "four", correct: false },
     ],
     explanation: `Explanation:<br><br>The for loop iterates over the numbers 1 and 2 generated by range(1, 3). On each iteration, the print("*", end="") statement outputs a * without moving to a new line because of the end="" parameter, which keeps the output on the same line.<br><br>After the loop completes its iterations, the else block is executed, and the print("*") statement prints another * in the same line.`,
-
-
+  },
+  {
+    question: "Which snippet would be the best to use in order to get the following result (list): [1, 3, 5]",
+    image: "images/image217.png",
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>C) is correct because it filters the list my_list = [0, 1, 2, 3, 4, 5, 6] by selecting only the odd numbers. The expression x % 2 == 1 checks if each number in the list is odd, and the filter() function returns a new list containing only the odd numbers, which are 1, 3, and 5. <br><br>Therefore, option C gives the desired result [1, 3, 5].",
+    link: "https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions",
+  },
+  {
+    question: "What is the output of the following code in Python?",
+    image: "images/image218.png",
+    answers: [
+      { text: "{'MyClass.__x': 42}", correct: false },
+      { text: "{'__x': 42}", correct: false },
+      { text: "{'_MyClass__x': 42}", correct: true },
+      { text: "{'x': 42}", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>When you run the code and execute print(obj.__dict__), the output will be {'_MyClass__x': 42}.<br><br>This happens because the attribute __x in the MyClass is marked as private by using a double underscore. In Python, when you use double underscores, it triggers name mangling, which changes the name of the attribute internally to _MyClass__x. This is done to avoid accidental access or modification of the private attribute from outside the class. <br><br>As a result, when you print obj.__dict__, the internal dictionary shows the mangled attribute name as _MyClass__x, with its value being 42.",
+    link: "https://docs.python.org/3/tutorial/classes.html#private-attributes",
+  },
+  {
+    question: "With regards to the directory structure below, select the proper forms of the directives in order to import module_a. <br><br>(Choose two)",
+    image: "images/image219.png",
+    answers: [
+      { text: "A) from pypack import module_a", correct: true },
+      { text: "B) import module_a from pypack", correct: false },
+      { text: "C) import module_a", correct: false },
+      { text: "D) import pypack.module_a", correct: true },
+    ],    
+    explanation: "A) from pypack import module_a: This form is valid when importing module_a from the pypack directory when you're working from outside the pypack directory.<br><br>B) import module_a from pypack: This is invalid Python syntax.<br><br>C) import module_a: This would only work if you're working within the pypack directory itself, but since the question is asking for general imports from a package structure, this is not applicable in most scenarios where module_a needs to be accessed from outside the pypack directory.<br><br>D) import pypack.module_a: This form is also correct. It explicitly imports module_a by referencing its full path within the pypack directory structure, which is valid if pypack is treated as a package.",
+    link: "https://docs.python.org/3/tutorial/modules.html#tut-package",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image220.png",
+    answers: [
+      { text: "True" + "\n" + "False" + "\n" + "False", correct: false },
+      { text: "True" + "\n" + "True" + "\n" + "True", correct: true },
+      { text: "True" + "\n" + "False" + "\n" + "True", correct: false },
+      { text: "True" + "\n" + "True" + "\n" + "False", correct: false },
+    ],    
+    explanation: `Explanation:<br><br>"a" > "" is True because the empty string "" is considered to be less than any non-empty string.<br><br>"69" > "420" is Truebecause strings are compared character by character. The first characters  compared are "6" and "4", and since "6" is greater than "4", the comparison returns True.<br><br>"Marvin" > "MARVIN" is True because uppercase letters have a smaller Unicode value than lowercase letters. In this case, "M" has a smaller Unicode value than "m", so "Marvin" is considered to be greater than "MARVIN".`,
+    link: "https://docs.python.org/3/library/stdtypes.html#str",
+  },
+  {
+    question: "What is the output of the following code in Python?",
+    image: "images/image221.png",
+    answers: [
+      { text: "54321 will be printed on the standard output", correct: false },
+      { text: "1 2 3 4 5 will be printed on the standard output", correct: false },
+      { text: "12345 will be printed on the standard output", correct: true },
+      { text: "None of these", correct: false },
+    ],
+    explanation: "Explanation:<br><br>First, the sys module is imported to access system-specific functionality, including sys.stdout for writing output. The list numbers contains the integers [1, 2, 3, 4, 5]. The for loop iterates over each number in this list. <br><br>Inside the loop, each number is converted to a string using str(n) and then written to the standard output with sys.stdout.write().<br><br>Since sys.stdout.write() does not add any additional characters between the outputs, the numbers are printed consecutively as a single, unbroken string.",
+    link: "https://docs.python.org/3/library/sys.html#sys.stdout",
+  },
+  {
+    question: "What is the output of the following code in Python?",
+    image: "images/image222.png",
+    answers: [
+      { text: "Fluffy white", correct: true },
+      { text: "AttributeError", correct: false },
+      { text: "NameError", correct: false },
+      { text: "TypeError", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>The given code creates a class hierarchy involving Animal, Cat, and Persian.<br><br>In this case, the Animal class is the base class, the Cat class inherits from Animal, and the Persian class inherits from Cat. <br><br>Each class has its own __init__() method to initialize the instance variables.<br><br>When an instance of the Persian class, p, is created using the statement Persian('Fluffy', 'white'), it invokes the __init__() method of the Persian class. However, since the Persian class does not define its own __init__() method, it will look for one in its immediate superclass, Cat.<br><br> Similarly, if not found in Cat, it will continue searching in the next superclass, Animal.<br><br> The __init__() method of the Cat class is called using super().__init__(name) to ensure that the initialization logic of the Cat class is executed. This initializes the name attribute inherited from the Animal class. <br><br>Then, the color attribute specific to the Cat class is initialized. Therefore, when the statement print(p.name, p.color) is executed, it will print the values of the name and color attributes of the p instance, which are 'Fluffy' and 'white', respectively.",
+    link: "https://docs.python.org/3/tutorial/classes.html#inheriting-from-classes",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image223.png",
+    answers: [
+      { text: "0 1 4", correct: true },
+      { text: "1 2 3", correct: false },
+      { text: "1 4 9", correct: false },
+      { text: "0 1 2", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>• The squares() function generates an iterator that yields the square of each number from 0 up to n-1<br><br>• In the for loop, we iterate over the values generated by calling squares(3)<br><br>• The first iteration generates 0 (0 ** 2), which is printed to the console<br><br>• The second iteration generates 1 (1 ** 2), which is printed to the console<br><br>• The third iteration generates 4 (2 ** 2), which is printed to the console<br><br>• The loop then exits",
+    link: "https://docs.python.org/3/library/functions.html#squares",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image224.png",
+    answers: [
+      { text: "2", correct: true },
+      { text: "4", correct: false },
+      { text: "3", correct: false },
+      { text: "1", correct: false },
+    ],    
+    explanation: `Explanation:<br><br>The string "Lernen für das Zertifikat ist öde" is sliced from index 1 up to, but not including, index 32, with a step size of 11. This slicing operation selects characters at the specified indices with the given step.<br><br>Specifically:<br><br>• At index 1, the character is 'e'<br><br>• At index 12, the character is 'a'<br><br>• At index 23, the character is 'a'.<br><br>These characters are extracted and combined to form the substring 'eaa'.<br><br>The count() method returns the number of elements with the specified value, in this case 'a'.<br><br>Since we got 2 'a's, the output is 2.`,
+    link: "https://docs.python.org/3/library/stdtypes.html#str.count",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image225.png",
+    answers: [
+      { text: "Kevin", correct: false },
+      { text: "Hand", correct: false },
+      { text: "schütteln", correct: false },
+      { text: "Hand schütteln möchte", correct: false },
+      { text: "brauche", correct: false },
+      { text: "Leiter", correct: true },
+    ],    
+    explanation: `Explanation:<br><br>my_string.split() splits the original string into a list of words using whitespace as the delimiter, resulting in:<br><br>['Wenn', 'ich', 'Kevin', 'die', 'Hand', 'schütteln', 'möchte,', 'brauche', 'ich', 'ne', 'Leiter!']<br><br>This slice operation reverses the order of the elements in the list, giving us:<br><br>['Leiter!', 'ne', 'ich', 'brauche', 'möchte,', 'schütteln', 'Hand', 'die', 'Kevin', 'ich', 'Wenn']<br><br>[0] selects the first element from the reversed list, whichis 'Leiter!'<br><br>.rstrip("!") removes the trailing exclamation mark '!' from the end of the string 'Leiter!', so the resulting string is 'Leiter'.`,
+    link: "https://docs.python.org/3/library/stdtypes.html#str.split",
   },/*
   {
     question: "",
     answers: [
       { text: "", correct: false },
       { text: "", correct: false },
-      { text: "", correct: true },
+      { text: "", correct: false },
       { text: "", correct: false },
     ],    
   },
@@ -6646,7 +6727,7 @@ export const questions = [
     answers: [
       { text: "", correct: false },
       { text: "", correct: false },
-      { text: "", correct: true },
+      { text: "", correct: false },
       { text: "", correct: false },
     ],    
   },
@@ -6655,7 +6736,7 @@ export const questions = [
     answers: [
       { text: "", correct: false },
       { text: "", correct: false },
-      { text: "", correct: true },
+      { text: "", correct: false },
       { text: "", correct: false },
     ],    
   },
@@ -6664,7 +6745,7 @@ export const questions = [
     answers: [
       { text: "", correct: false },
       { text: "", correct: false },
-      { text: "", correct: true },
+      { text: "", correct: false },
       { text: "", correct: false },
     ],    
   },
@@ -6673,7 +6754,7 @@ export const questions = [
     answers: [
       { text: "", correct: false },
       { text: "", correct: false },
-      { text: "", correct: true },
+      { text: "", correct: false },
       { text: "", correct: false },
     ],    
   },
@@ -6682,7 +6763,7 @@ export const questions = [
     answers: [
       { text: "", correct: false },
       { text: "", correct: false },
-      { text: "", correct: true },
+      { text: "", correct: false },
       { text: "", correct: false },
     ],    
   },
@@ -6691,145 +6772,9 @@ export const questions = [
     answers: [
       { text: "", correct: false },
       { text: "", correct: false },
-      { text: "", correct: true },
       { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: true },
       { text: "", correct: false },
     ],    
   },
   */
-  
 ];
