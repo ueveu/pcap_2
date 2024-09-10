@@ -6420,7 +6420,7 @@ export const questions = [
       { text: "b'Hello world!'", correct: true },
       { text: "None", correct: false },
     ],
-    explanation: "Explanation:<br><br>The file 'file.txt' is initially opened in write mode with the 'w' mode and data is written as a string 'Hello world!'.<br><br>Then the file is opened in read mode with 'r', and the data is read as a string. The string is then encoded into bytes using the .encode() method and written to the file in binary mode using the 'wb' mode.<br><br>Finally, the file is opened in binary mode with 'rb', and the data is read as a bytes object.<br><br>The type of data is <class 'bytes'>.",
+    explanation: "Explanation:<br><br>The file 'file.txt' is initially opened in write mode with the 'w' mode and data is written as a string 'Hello world!'.<br><br>Then the file is opened in read mode with 'r', and the data is read as a string. The string is then encoded into bytes using the .encode() method and written to the file in binary mode using the 'wb' mode.<br><br>Finally, the file is opened in binary mode with 'rb', and the data is read as a bytes object.<br><br>The type of data is class 'bytes'",
     link: "https://www.w3schools.com/python/ref_func_open.asp",
   },
   {
