@@ -4578,9 +4578,9 @@ export const questions = [
     image: "images/image729.png",
     answers: [
       { text: "A)  len(a) == len(b)", correct: true },
-      { text: "B)  b [0] +1 ==a [0]", correct: false },
-      { text: "C)  a [0] == b [0]", correct: true },
-      { text: "D)  a [0] + 1 ==b [0]", correct: false },
+      { text: "B)  b[0] +1 == a[0]", correct: false },
+      { text: "C)  a[0] == b[0]", correct: true },
+      { text: "D)  a[0] + 1 == b[0]", correct: false },
     ],
     explanation:
       "Explanation:<br><br>A) Both a and b reference the same list, so they have the same length.<br><br>B) b[0] is 0 and a[0] is also 0. So, b[0] + 1 equals 1, which is not equal to a[0] (which is 0).<br><br>C) Both a[0] and b[0] are 0 because a and b reference the same list.<br><br>D) a[0] is 0, so a[0] + 1 equals 1. However, b[0] is 0, so 1 is not equal to 0.",
@@ -4591,10 +4591,10 @@ export const questions = [
       "Assuming that the following snippet has been successfully executed, which of the equations are True? <br><br>(Choose two)",
     image: "images/image730.png",
     answers: [
-      { text: "A)  len(a) == len (b)", correct: true },
-      { text: "B)  a [0] - 1 == b [0]", correct: true },
-      { text: "C)  a [0] == b [0]", correct: false },
-      { text: "D)  b [0] - 1 == a [0]", correct: false },
+      { text: "A)  len(a) == len(b)", correct: true },
+      { text: "B)  a[0] - 1 == b[0]", correct: true },
+      { text: "C)  a[0] == b[0]", correct: false },
+      { text: "D)  b[0] - 1 == a[0]", correct: false },
     ],
     explanation:
       "Explanation:<br><br>A) is True. Both a and b are lists with a length of 1, so their lengths are equal.<br><br>B) is True. The value of a[0] is 1, so a[0] - 1 equals 0, which is the same as b[0].<br><br>C) is False. The value of a[0] is 1, while the value of b[0] is 0, so they are not equal.<br><br>D) is False. The value of b[0] is 0, so b[0] - 1 equals -1, which is not equal to a[0], which is 1.",
