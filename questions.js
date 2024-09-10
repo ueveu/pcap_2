@@ -4231,7 +4231,7 @@ export const questions = [
     link: "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists",
   },
   {
-    question: "Which of the following code snippets will print 124?",
+    question: "Which of the following code snippets will print 124? <br><br>(Choose three)",
     image: "images/image720.png",
     answers: [
       { text: "A", correct: true },
@@ -6401,12 +6401,12 @@ export const questions = [
   {
     question: "Which of the following statements is true?",
     answers: [
-      { text: "A try statement can either have a finally clause or an except clause.", correct: false },
-      { text: "A try statement can have a finally clause without an except clause.", correct: true },
-      { text: "A try statement cannot have more except clauses.", correct: false },
-      { text: "A try statement can have one or more finally clauses.", correct: false },
+      { text: "A) A try statement can either have a finally clause or an except clause.", correct: false },
+      { text: "B) A try statement can have a finally clause without an except clause.", correct: true },
+      { text: "C) A try statement cannot have more except clauses.", correct: false },
+      { text: "D) A try statement can have one or more finally clauses.", correct: false },
     ],
-    explanation: "Explanation:<br><br>A try statement can have one or more except clauses to handle different types of exceptions that may occur within the try block.<br><br>A try statement can have only one finally clause in Python.<br><br>In Python, a try statement must have at least one except clause or a finally clause, and it can also have both.<br><br>A try statement can have a finally clause without an except clause. The finally clause is executed regardless of whether an exception was raised or not.",
+    explanation: "Explanation:<br><br>A) is false because a try statement can have both an except clause and a finally clause at the same time.<br><br>B) is true. You don't need an except clause if you're using a finally clause. The finally clause is useful when you want to ensure that some cleanup or finishing code is executed, regardless of whether an exception occurred or not.<br><br>C) is false. A try statement can have multiple except clauses to handle different types of exceptions. This allows you to catch and handle specific exceptions in different ways.<br><br>D) is false. A try statement can have only one finally clause. The finally clause is intended to ensure that certain code always runs after the try block, regardless of whether an exception occurs or not, but there can only be one finally block.",
     link: "https://docs.python.org/3/tutorial/errors.html",
   },
   {
