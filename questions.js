@@ -1068,19 +1068,6 @@ export const questions = [
     link: "https://www.geeksforgeeks.org/file-handling-python/",
   },
   {
-    question: "What is the output of the following code snippet?",
-    image: "images/image14.png",
-    answers: [
-      { text: "[ ]", correct: false },
-      { text: "['user@example.com']", correct: true },
-      { text: "['email']", correct: false },
-      { text: "['Hello']", correct: false },
-    ],
-    explanation:
-      `Explanation:<br><br>In this code, the re module is used to work with regular expressions. The variable text contains the string "Hello, my email is user@example.com". The regular expression pattern r'\b\w+@\w+\b' is intended to match email-like strings but is not precise enough to capture a full email address.<br><br>The pattern r'\b\w+@\w+\b' breaks down as follows:<br><br>- \b denotes a word boundary<br>\w+ matches one or more word characters (letters, digits, and underscores)<br>@ matches the literal @ symbol<br>\w+ matches one or more word characters after the @`,
-    link: "https://docs.python.org/3/library/re.html",
-  },
-  {
     question:
       "Which of the following is NOT a characteristic of object-oriented programming?",
     answers: [
