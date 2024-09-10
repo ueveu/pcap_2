@@ -1778,7 +1778,7 @@ export const questions = [
       { text: "1 2 1", correct: false },
     ],
     explanation: "Explanation:<br><br>This one is simple: x, y, z = 1, 1, 2",
-    link: "https://www.w3schools.com/python/python_tuples.asp",
+    link: "https://cs.stanford.edu/people/nick/py/python-var.html",
   },
   {
     question: "Which module in Python supports regular expressions?",
@@ -2019,7 +2019,7 @@ export const questions = [
     ],
     explanation:
       "Explanation:<br><br>None is the default return value for a function that does not explicitly return any value.",
-    link: "https://www.w3schools.com/python/gloss_python_function_return_value.asp",
+    link: "https://www.w3schools.com/python/ref_keyword_none.asp",
   },
   {
     question:
