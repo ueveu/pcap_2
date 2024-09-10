@@ -4318,11 +4318,12 @@ export const questions = [
   {
     question:
       "Which of the following lines contain valid Python code? <br><br>(Choose two)",
+      image: "images/image736.png",
     answers: [
-      { text: "A. lambda x: x + 1", correct: true },
-      { text: "B. lambda (x): return x + 1", correct: false },
-      { text: "C. lambda x: None", correct: true },
-      { text: "D. lambda x = x + 1", correct: false },
+      { text: "A", correct: true },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
     ],
     explanation:
       "Explanation:<br><br>Lambda functions are used for creating small anonymous functions in Python.<br><br>Line A defines a valid lambda function that takes one parameter x and returns x + 1.<br><br>Line B is invalid because there are    parentheses around a single parameter, which is not allowed in Python 3. Lambda functions do not use return statements, they are meant to be single-expression functions.<br><br>Line C defines a valid lambda function that takes one parameter x and returns None<br><br>Line D is invalid because lambda functions cannot have default arguments that depend on the value of the parameter itself. The syntax for lambda functions does not support such default arguments.",
@@ -4649,7 +4650,7 @@ export const questions = [
     link: "https://docs.python.org/3/library/functions.html#ord",
   },
   {
-    question: "What is a true about python class constructors?",
+    question: "What is a true about python class constructors? <br><br>(Choose two)",
     answers: [
       {
         text: "A) the constructor must have at least one parameter",
@@ -4660,7 +4661,7 @@ export const questions = [
         correct: false,
       },
       {
-        text: "C) the constructor is a method named_init__",
+        text: "C) the constructor is a method named __init__",
         correct: true,
       },
       {
