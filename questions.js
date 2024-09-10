@@ -1496,31 +1496,6 @@ export const questions = [
     link: "https://realpython.com/python-frozensets/",
   },
   {
-    question:
-      "Which of the following best describes the role of a command-line interface (CLI) in a software project?",
-    answers: [
-      {
-        text: "It enables users to interact with the project through graphical elements.",
-        correct: false,
-      },
-      {
-        text: "It provides a visual representation of data structures.",
-        correct: false,
-      },
-      {
-        text: "It allows users to input commands and receive text-based responses.",
-        correct: true,
-      },
-      {
-        text: "It automatically tests the project's codebase for errors.",
-        correct: false,
-      },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'command-line interface' is used to enable users to interact with the project through graphical elements.",
-    link: "https://realpython.com/python-command-line-interface/",
-  },
-  {
     question: "What is the primary purpose of a comprehension in Python?",
     answers: [
       { text: "To generate a sequence of numbers.", correct: false },
