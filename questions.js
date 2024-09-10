@@ -4882,7 +4882,7 @@ export const questions = [
       { text: "print [1]", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The provided code snippet will result in an error when executed. The function a is defined to return the value of x[y], where x is expected to be a sequence (such as a list or string) and y is an index. However, in the function call a(0, [1]), 0 is passed as the first argument, which is an integer, and [1] is passed as the second argument, which is a list.<br><br>Since integers cannot be indexed and lists cannot be used as indices for integers, Python will raise a TypeError. The error message will indicate that an integer object is not subscriptable, meaning you cannot use a list to index an integer.",
+      "Explanation:<br><br>The provided code snippet will result in an error when executed. The function a is defined to return the value of x[y], where x is expected to be a sequence (such as a list or string) and y is an index.<br><br> However, in the function call a(0, [1]), 0 is passed as the first argument, which is an integer, and [1] is passed as the second argument, which is a list.<br><br>Since integers cannot be indexed and lists cannot be used as indices for integers, Python will raise a TypeError. The error message will indicate that an integer object is not subscriptable, meaning you cannot use a list to index an integer.",
     link: "https://docs.python.org/3/library/exceptions.html#TypeError",
   },
   {
@@ -4890,7 +4890,7 @@ export const questions = [
       "What can you do if you don't like a long package path like this one?<br><br>import alpha.beta.gamma.delta.epsilon.zeta",
     answers: [
       {
-        text: "you can make an alias for the name using the alias keyword",
+        text: "you can make an alias for the name using the 'alias' keyword",
         correct: false,
       },
       { text: "nothing, you need to come to terms with it", correct: false },
@@ -4899,12 +4899,12 @@ export const questions = [
         correct: false,
       },
       {
-        text: "you can make an alias for the name using the as keyword",
+        text: "you can make an alias for the name using the 'as' keyword",
         correct: true,
       },
     ],
     explanation:
-      "Explanation:<br><br>In Python, if you don't like a long package path, you can use the as keyword to create an alias for the module or package. This allows you to refer to it by a shorter name within your code. Here is an example of how you can do this:<br><br>import alpha.beta.gamma.delta.epsilon.zeta as zeta<br><br>With this alias, you can use zeta instead of the full path alpha.beta.gamma.delta.epsilon.zeta throughout your code, making it more concise and readable.",
+      "Explanation:<br><br>In Python, if you don't like a long package path, you can use the as keyword to create an alias for the module or package. This allows you to refer to it by a shorter name within your code.<br><br> Here is an example of how you can do this:<br><br>import alpha.beta.gamma.delta.epsilon.zeta as zeta<br><br>With this alias, you can use zeta instead of the full path alpha.beta.gamma.delta.epsilon.zeta throughout your code, making it more concise and readable.",
     link: "https://realpython.com/python-aliases/",
   },
   {
@@ -4920,7 +4920,7 @@ export const questions = [
       { text: "abdef", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The code snippet will result in an error when executed. In the code, the string 'abcdef' is assigned to the variable str, and the function fun is defined to take a parameter s and attempt to delete the element at index 2 using del s[2].<br><br>However, since strings in Python are immutable, you cannot modify them by deleting characters or altering them in place. Therefore, attempting to delete an element from the string will raise a TypeError. The error message will indicate that a 'str' object does not support item deletion. Consequently, the function call print(fun(str)) will not produce a valid output and will instead result in this type of error.",
+      "Explanation:<br><br>The code snippet will result in an error when executed. In the code, the string 'abcdef' is assigned to the variable str, and the function fun is defined to take a parameter s and attempt to delete the element at index 2 using del s[2].<br><br>However, since strings in Python are immutable, you cannot modify them by deleting characters or altering them in place. Therefore, attempting to delete an element from the string will raise a TypeError. <br><br>The error message will indicate that a 'str' object does not support item deletion. Consequently, the function call print(fun(str)) will not produce a valid output and will instead result in this type of error.",
     link: "https://www.w3schools.com/python/python_ref_string.asp",
   },
   {
@@ -4933,7 +4933,7 @@ export const questions = [
       { text: "12", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The code defines a recursive function f that constructs a string by concatenating numbers in descending order. When f(2) is called, the function returns '2' concatenated with the result of f(1). Since f(1) returns '1', the result of f(2) is '2' + '1', which is '21'. Therefore, the expected output of the code is '21'.",
+      "Explanation:<br><br>The code defines a recursive function f that constructs a string by concatenating numbers in descending order. <br><br>When f(2) is called, the function returns '2' concatenated with the result of f(1). <br><br>Since f(1) returns '1', the result of f(2) is '2' + '1', which is '21'. <br><br>Therefore, the expected output of the code is '21'.",
     link: "https://www.programiz.com/python-programming/recursion",
   },
   {
@@ -4962,7 +4962,7 @@ export const questions = [
       { text: "print 1234", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The expected behavior of the provided code is to print a description of the generator object. When the function f(2) is called, it returns a generator object. This generator object represents an iterator that can yield values from 1 to 2 when iterated over.<br><br> However, simply printing the generator object does not execute it or display the values it generates. Instead, it prints a description of the generator object, which looks like <generator object f at (some hex digits)>, where (some hex digits) is the memory address of the generator.",
+      "Explanation:<br><br>The expected behavior of the provided code is to print a description of the generator object.<br><br> When the function f(2) is called, it returns a generator object. This generator object represents an iterator that can yield values from 1 to 2 when iterated over.<br><br> However, simply printing the generator object does not execute it or display the values it generates. <br><br>Instead, it prints a description of the generator object, which looks like <generator object f at (some hex digits)>, where (some hex digits) is the memory address of the generator.<br><br>In order to output values from the generator, you have to use the `next()` function.<br><br>In this case: print(next(f(2)))",
     link: "https://www.programiz.com/python-programming/generator",
   },
   {
@@ -6712,6 +6712,127 @@ export const questions = [
     ],    
     explanation: `Explanation:<br><br>my_string.split() splits the original string into a list of words using whitespace as the delimiter, resulting in:<br><br>['Wenn', 'ich', 'Kevin', 'die', 'Hand', 'schütteln', 'möchte,', 'brauche', 'ich', 'ne', 'Leiter!']<br><br>This slice operation reverses the order of the elements in the list, giving us:<br><br>['Leiter!', 'ne', 'ich', 'brauche', 'möchte,', 'schütteln', 'Hand', 'die', 'Kevin', 'ich', 'Wenn']<br><br>[0] selects the first element from the reversed list, whichis 'Leiter!'<br><br>.rstrip("!") removes the trailing exclamation mark '!' from the end of the string 'Leiter!', so the resulting string is 'Leiter'.`,
     link: "https://docs.python.org/3/library/stdtypes.html#str.split",
+  },
+  {
+    question: "A file name like this one below says that: services.cpython-36.pyc<br><br>(Choose three)",
+    answers: [
+      { text: "A) the interpreter used to generate the file is version 3.6", correct: true },
+      { text: "B) it has been produced by CPython", correct: true },
+      { text: "C) it is the 36 version of the file", correct: false },
+      { text: "D) the file comes from the services.py source file", correct: true },
+    ],
+    explanation: "Explanation:<br><br>A) is True: The -36 in the filename indicates that the Python version used to generate the file was Python 3.6.<br><br>B) is True: The cpython in the filename indicates that the file was produced by the CPython implementation of Python.<br><br>C) is False: The 36 does not refer to the version of the file but to the Python interpreter version (3.6) used to generate the file.<br><br>D) is True: The services prefix suggests that the .pyc file was generated from the services.py source file.",
+    link: "https://codefather.tech/blog/difference-between-py-and-pyc-files-python/",
+  },
+  {
+    question: "What will be the output of the following code?",
+    image: "images/image226.png",
+    answers: [
+      { text: "The code will raise a TypeError.", correct: false },
+      { text: "The code will print the result of the division.", correct: false },
+      { text: `The code will not print "Invalid input." if the user enters a zero.`, correct: false },
+      { text: `The code will print "Invalid input." if the user enters a non-numeric value.`, correct: true },
+    ],    
+    explanation: `Explanation:<br><br>The code uses a try-except block to handle two exceptions: ValueError if the user enters a non-numeric value, and ZeroDivisionError if the user enters a zero. <br><br>If the user enters a non-numeric value, the int() function will raise a ValueError, and the except block will execute and print "Invalid input." <br><br>The code will not raise a TypeError, and it will not print the result of the division.`,
+    link: "https://www.programiz.com/python-programming/exceptions",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image227.png",
+    answers: [
+      { text: "0 2 4", correct: false },
+      { text: "0 1 2", correct: false },
+      { text: "0 1 4", correct: true },
+      { text: "1 4 9", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>The fun(n) generator function yields i*i for each value of i in the range from 0 to n-1. In the for loop that follows, the values yielded by fun(3) are printed, separated by spaces. <br><br>So the output is 0 1 4, which are the squares of 0, 1, and 2.",
+    link: "https://www.programiz.com/python-programming/generator",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image228.png",
+    answers: [
+      { text: "81", correct: false },
+      { text: "7", correct: false },
+      { text: "12", correct: true },
+      { text: "None", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>• The custom_func function takes three parameters: x, y, and operation. It calls the operation function with x and y as arguments and returns the result.<br><br>• result is assigned the result of calling custom_func with arguments 3, 4, and a lambda function lambda x, y: x * y. This lambda function multiplies its two arguments x and y.<br><br>• When custom_func is called, it passes 3 as x, 4 as y, and the lambdafunction lambda x, y: x * y as operation.<br><br>• Inside custom_func, it calls operation(3, 4), which invokes the lambda function with x=3 and y=4. The lambda function performs the multiplication and returns the result.<br><br>• The returned result from custom_func is stored in the result variable.<br><br>• Finally, print(result) outputs the value of result, which is the result of the multiplication, 12.",
+    link: "https://realpython.com/python-lambda/#anonymous-functions",
+  },
+  {
+    question: "Select valid string operators. <br><br>(Choose two)",
+    answers: [
+      { text: "-", correct: false },
+      { text: "*", correct: true },
+      { text: "/", correct: false },
+      { text: "*=", correct: true },
+    ],    
+    explanation: `Explanation:<br><br>*= is a valid string operator in Python. It is used for string repetition. For example, the expression "abc" *= 3 would result in the string "abcabcabc".<br><br></br>The * operator can be used with strings in Python to repeat the string a certain number of times. For example, "hello" * 3 would produce the string "hellohellohello".<br><br>The / operator is used for division of numerical types, and is not applicable to strings.<br><br>The - operator is not a valid string operator in Python. It is used for subtraction of numerical types, and is not applicable to strings.`,
+    link: "https://www.programiz.com/python-programming/operators",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image229.png",
+    answers: [
+      { text: "Kevin Benjamin Marvin Benjamin", correct: false },
+      { text: "Benjamin Marvin Kevin Benjamin", correct: false },
+      { text: "Marvin Benjamin Kevin Benjamin ", correct: true },
+      { text: "Kevin Marvin Benjamin", correct: false },
+      { text: "The code is erroneous", correct: false },
+    ],    
+    explanation: `Explanation:<br><br>When the function f is called with f(40), it executes the code in the try block without raising any exceptions, so it goes to the else block and prints "Marvin". <br><br>Then it goes to the finally block and prints "Benjamin".<br><br>When the function f is called with f(0), it executes the code in the try block, but the expression a / a raises a ZeroDivisionError. So it goes to the except block and prints "Kevin".<br><br> Then it goes to the finally block and prints "Benjamin".<br><br>Everything will be written on the same line because of end=" "`,
+    link: "https://www.programiz.com/python-programming/exceptions",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image230.png",
+    answers: [
+      { text: "420", correct: false },
+      { text: `(420, 69, 44, 123456, "Ja moin")`, correct: false },
+      { text: "44", correct: false },
+      { text: "5", correct: true },
+      { text: "The code is erroneous.", correct: false },
+    ],    
+    explanation: `Explanation:<br><br>When the raise statement is executed, it raises an Exception object with five arguments: 420, 69, 44, 123456, and "Ja moin"<br><br>When the except block catches the exception, it assigns it to the variable e. <br><br>The len(e.args) statement then returns the length of the args attribute of the Exception object, which is 5.`,
+    link: "https://www.programiz.com/python-programming/exceptions",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image231.png",
+    answers: [
+      { text: "[[3, 2, 1], [6, 5, 4], [9, 8, 7]]", correct: false },
+      { text: "[[1, 2, 3], [4, 5, 6], [7, 8, 9]]", correct: false },
+      { text: "[[1, 4, 7], [2, 5, 8], [3, 6, 9]]", correct: true },
+      { text: "None of these.", correct: false },
+    ],
+    explanation: "Explanation:<br><br>This code is using list comprehension to create a new 2D list that is the transpose of the original matrix. <br><br>The inner comprehension [row[i] for row in matrix] selects the i-th element from each row of matrix, and the outer comprehension [...] for i in range(len(matrix[0]))] iterates over the indices of the columns in matrix. <br><br>Therefore, the resulting transpose list has rows corresponding to columns of matrix and columns corresponding to rows of matrix.",
+    link: "https://www.geeksforgeeks.org/python-matrix/",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image232.png",
+    answers: [
+      { text: `"Frankfurt am Main"`, correct: false },
+      { text: `"Frankfurt Frankfurt"`, correct: false },
+      { text: `"am Main an der Oder"`, correct: false },
+      { text: `"Frankfurt an der Oder"`, correct: true },
+      { text: "None", correct: false },
+    ],    
+    explanation: "Explanation:<br><br> The replace() method returns a copy of the string with all occurrences of a specified substring replaced with another string.",
+    link: "https://www.programiz.com/python-programming/methods/string/replace",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image233.png",
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "The code is erroneus.", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>In this example, D class inherits from B and C, and B class overrides the method method() inherited from A class. Since B class is listed first in the inheritance list, its implementation of method() is called when obj.method() is called.",
+    link: "https://www.codecademy.com/resources/docs/python/inheritance",
   },/*
   {
     question: "",
@@ -6776,5 +6897,123 @@ export const questions = [
       { text: "", correct: false },
     ],    
   },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
   */
+  
 ];
