@@ -1819,7 +1819,7 @@ export const questions = [
       { text: "0.2", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The operators here come from two different groups: The group 'Multiplication, Division, Floor division, Modulus' has a higher precedence than the group 'Addition, Subtraction'. <br><br>Therefore the order of operations here is: //  →  /  →  +",
+      "Explanation:<br><br>The operators here come from two different groups: The group 'Multiplication, Division, Floor division, Modulus' has a higher precedence than the group 'Addition, Subtraction'. <br><br>Therefore the order of operations here is: //  →  /  →  +<br><br>x = 1 // 5 + 1/5 = 0 + 0.2 = 0.2",
     link: "https://www.w3schools.com/python/python_operators.asp",
   },
   {
@@ -2217,7 +2217,7 @@ export const questions = [
       { text: "17.5", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The operators here come from three different groups:<br>'Exponent' ** has the highest precedence. Followed by 'Multiplication, Division, Floor division, Modulus'.<br><br>'Addition, Subtraction' has the lowest precedence.<br><br>Therefore the order of operations here is:  **  →  /  →  //  →  +",
+      "Explanation:<br><br>The operators here come from three different groups:<br>'Exponent' ** has the highest precedence. Followed by 'Multiplication, Division, Floor division, Modulus'.<br><br>'Addition, Subtraction' has the lowest precedence.<br><br>Therefore the order of operations here is:  **  →  /  →  //  →  +<br><br>x = 1/2 + 3 // 3 + 4**2 = 0.5 + 1 + 16 = 17.5",
     link: "https://www.w3schools.com/python/python_operators.asp",
   },
   {
@@ -2245,7 +2245,7 @@ export const questions = [
       { text: "9.0", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The operators here come from three different groups:<br>'Exponent' ** has the highest precedence. Followed by 'Multiplication, Division, Floor division, Modulus'.<br>'Addition, Subtraction' has the lowest precedence.<br><br>Therefore the order of operations here is:  **   →  //  →  *  →  /  →   %  →   +",
+      "Explanation:<br><br>The operators here come from three different groups:<br>'Exponent' ** has the highest precedence. Followed by 'Multiplication, Division, Floor division, Modulus'.<br>'Addition, Subtraction' has the lowest precedence.<br><br>Therefore the order of operations here is:  **   →  //  →  *  →  /  →   %  →   +<br><br>result = 9 // 2 * 2 / 2 + 12 % 2 ** 3<br>= 4 * 2 / 2 + 12 % 8 = 4.0 + 4 = 8.0",
     link: "https://www.w3schools.com/python/python_operators.asp",
   },
   {
@@ -2423,7 +2423,7 @@ export const questions = [
       { text: "3.5", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The operators here are from two different groups:<br>The group 'Multiplication, Division, Floor division, Modulus' has a higher precedence than the group 'Addition, Subtraction'.<br><br>Therefore the order of operations here is:  //  →  /  →  +  ",
+      "Explanation:<br><br>The operators here are from two different groups:<br>The group 'Multiplication, Division, Floor division, Modulus' has a higher precedence than the group 'Addition, Subtraction'.<br><br>Therefore the order of operations here is:  //  →  /  →  +  <br><br>x = 1 + 0 + 0.5 + 2 = 3.5",
   },
   {
     question:
@@ -5361,7 +5361,7 @@ export const questions = [
       { text: "it outputs 3", correct: false },
       { text: "it outputs 'None'", correct: false },
     ],
-    explanation: `Explanation:<br><br>When the code is executed, it first calculates the result of 1 / 3, which is approximately '0.3333333333333333', and converts this result into a string. The code then iterates over each character in this string, adding each character to the beginning of an initially empty string called 'dummy'. This process effectively reverses the string.<br><br> After the loop completes, 'dummy' contains the reversed version of the original string, which is "3333333333333333.0".<br><br> Finally, the code prints the last character of this reversed string. Since the last character of "3333333333333333.0" is "0", the code will print "0".`,
+    explanation: `Explanation:<br><br>When the code is executed, it first calculates the result of 1 / 3, which is approximately '0.3333333333333333', and converts this result into a string. <br><br>The code then iterates over each character in this string, adding each character to the beginning of an initially empty string called 'dummy'. This process effectively reverses the string.<br><br> After the loop completes, 'dummy' contains the reversed version of the original string, which is "3333333333333333.0".<br><br> Finally, the code prints the last character of this reversed string. Since the last character of "3333333333333333.0" is "0", the code will print "0".`,
     link: "https://www.w3schools.com/python/python_howto_reverse_string.asp",
   },
   {
