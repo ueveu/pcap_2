@@ -6039,6 +6039,18 @@ export const questions = [
     link: "https://docs.python.org/3/library/sys.html#sys.path",
   },
   {
+    question: "What is the expected output of the following code?",
+    image: "images/image181.png",
+    answers: [
+      { text: "True" + "\n" + "False" + "\n" + "False", correct: false },
+      { text: "False" + "\n" + "False" + "\n" + "False", correct: false },
+      { text: "True" + "\n" + "False" + "\n" + "True", correct: false },
+      { text: "True" + "\n" + "True" + "\n" + "False", correct: true },
+    ],
+    explanation: `Explanation:<br><br>print(' (backslash) n '.isspace()):<br><br>The string ' (backslash) n ' contains only whitespace characters—a space, a newline, and another space. Since all characters are whitespace and the string is not empty, the method isspace() returns True. Therefore, the output of this line is True.<br><br>print(" ".isspace()):<br><br> The string " " consists of a single space character, which is a whitespace character. Since the string contains only this whitespace character and is not empty, the method isspace() returns True. Thus, the output of this line is True.<br><br>print("Wazzuuuuuuuup".isspace()):<br><br> The string "Wazzuuuuuuuup" contains letters and no whitespace characters. Since not all characters are whitespace and the string is not empty, the method isspace() returns False. Therefore, the output of this line is False.`,
+    link: "https://www.w3schools.com/python/ref_string_isspace.asp",
+  },
+  {
     question: "What is the output of the following code?",
     image: "images/image182.png",
     answers: [
