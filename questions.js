@@ -6833,43 +6833,53 @@ export const questions = [
     ],    
     explanation: "Explanation:<br><br>In this example, D class inherits from B and C, and B class overrides the method method() inherited from A class. Since B class is listed first in the inheritance list, its implementation of method() is called when obj.method() is called.",
     link: "https://www.codecademy.com/resources/docs/python/inheritance",
+  },
+  {
+    question: "What will be printed when the following code is executed?",
+    image: "images/image234.png",
+    answers: [
+      { text: "Klappt das hier?" + "\n" + "€" + "\n" + "Nice!", correct: false },
+      { text: "Klappt das hier?" + "\n" + "Nice!", correct: false },
+      { text: "Klappt das hier?" + "\n" + "Nope..." + "\n" + "Delete System32", correct: true },
+      { text: "Nope..." + "\n" + "Delete System32", correct: false },
+    ],    
+    explanation: `Explanation:<br><br>The program will enter the try block and execute the first print statement, which will output the string "Klappt das hier?" to the console.<br><br>The program will then execute the second print statement, which will try to access the character at index 2 of the string "€€". However, since the string only has two characters (max index [1]), this will raise an IndexError exception.<br><br>The program will catch the IndexError exception and execute the code in the except block, which will print the message "Nope..." to the console.<br><br>The program will then execute the final print statement, which will output the string "Delete System32" to the console.`,
+    link: "https://www.programiz.com/python-programming/exceptions",
+  },
+  {
+    question: "What statement is true? <br><br>(Choose all that apply)",
+    answers: [
+      { text: "The part of the code where you think an exception may occur should be placed inside the except branch.", correct: false },
+      { text: "The part of the code where the handling of an exception takes place should be placed inside the exception branch.", correct: false },
+      { text: "The part of the code where the handling of an exception takes place should be placed inside the except branch.", correct: true },
+      { text: "The part of the code where you think an exception may occur should be placed inside the try branch.", correct: true },
+    ],    
+    explanation: "Explanation:<br><br>In Python, you should put the part of the code where you think an exception may occur inside a try block. The try block is used to enclose the code that may raise an exception.<br><br>Also, it's generally a good practice to specify the specific type of exception that you expect to be raised inside the except block. This allows you to handle different exceptions differently and avoid catching unintended exceptions.",
+    link: "https://www.w3schools.com/python/python_try_except.asp",
+  },
+  {
+    question: "Is the __dict__ property available for all Python objects?",
+    answers: [
+      { text: "A) No, it is only available for instances of built-in classes.", correct: false },
+      { text: "B) Yes, it is available for all objects that are instances of user-defined classes.", correct: true },
+      { text: "C) No, it is only available for instances of user-defined classes.", correct: false },
+      { text: "D) Yes, it is available for instances of all Python objects.", correct: false },
+    ],
+    explanation: "Explanation:<br><br>A) is incorrect because built-in class instances generally do not have a __dict__.<br><br>B) is correct. The __dict__ attribute is available for objects that are instances of user-defined classes, allowing access to their attributes. It stores the object's namespace in a dictionary. However, objects of some built-in types like int, str, or float don't have a __dict__.<br><br>C) implies it's exclusive to user-defined class instances, which is mostly true but not absolute since some custom optimizations or settings can remove it (e.g., by using __slots__).<br><br>D) is incorrect because not all objects (like built-in types) have the __dict__ attribute.",
+    link: "https://docs.python.org/3/reference/datamodel.html#object.__dict__",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image235.png",
+    answers: [
+      { text: "None", correct: false },
+      { text: "True", correct: false },
+      { text: "False", correct: false },
+      { text: "The code is erroneous.", correct: true },
+    ],    
+    explanation: `Explanation:<br><br>The code tries to convert the string '12.8' to an integer using the int() function.<br><br> However, since the string contains a decimal point, which is not a valid digit in an integer, a ValueError is raised with the message "invalid literal for int() with base 10: '12.8'".`,
+    link: "https://docs.python.org/3/library/functions.html#int",
   },/*
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
   {
     question: "",
     answers: [
