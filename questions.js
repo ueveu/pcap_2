@@ -3464,7 +3464,7 @@ export const questions = [
       { text: "It outputs list assignment index out of range", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The output is list assignment index out of range. The code attempts to assign a value to an index that doesn't exist, causing an IndexError, which is caught and printed.",
+      `Explanation:<br><br>The output of the provided code will be "list assignment index out of range". <br><br>This happens because the code tries to assign a value to my_list[3], which does not exist in the list my_list that has only three elements with valid indices 0, 1, and 2. <br><br>When the code tries to access index 3, an IndexError is raised. The except block catches this error and prints out the error message "list assignment index out of range".`,
     link: "https://www.freecodecamp.org/news/list-index-out-of-range-python-error-message-solved/",
   },
   {
@@ -4132,7 +4132,7 @@ export const questions = [
   },
   {
     question:
-      "The ABC company is creating a program that allows customers to log the number of miles biked. The program will send messages based on how many miles the customer logs. You create the following Python code:",
+      "The ABC company is creating a program that allows customers to log the number of miles biked. The program will send messages based on how many miles the customer logs. <br><br>In the code below, what would you insert instead of both ???",
     image: "images/image714.png",
     answers: [
       { text: "A", correct: true },
@@ -4343,24 +4343,24 @@ export const questions = [
       "What is true about object-oriented programming (OOP)? <br><br>(Choose two)",
     answers: [
       {
-        text: "A superclass of a class is located below the class in the hierarchy diagram.",
+        text: "A) A superclass of a class is located below the class in the hierarchy diagram.",
         correct: false,
       },
       {
-        text: "Encapsulation is a phenomenon which allows you to hide certain class traits from the outer world.",
+        text: "B) Encapsulation is a phenomenon which allows you to hide certain class traits from the outer world.",
         correct: true,
       },
       {
-        text: "All objects of the same class have exactly the same set of attributes.",
+        text: "C) All objects of the same class have exactly the same set of attributes.",
         correct: false,
       },
       {
-        text: "A part of a class designed to build new objects is called constructor.",
+        text: "D) A part of a class designed to build new objects is called constructor.",
         correct: true,
       },
     ],
     explanation:
-      "Explanation:<br><br> In hierarchy diagrams, the superclass is above the subclass.<br><br>Encapsulation hides internal details of a class.<br><br>Objects of the same class have the same set of attributes, though their values may differ.<br><br> A constructor initializes new objects in a class.",
+      "Explanation:<br><br>A) In hierarchy diagrams, the superclass is above the subclass.<br><br>B) Encapsulation hides internal details of a class.<br><br>C) Objects of the same class have the same set of attributes, though their values may differ.<br><br>D) A constructor initializes new objects in a class.",
     link: "https://www.programiz.com/python-programming/object-oriented-programming",
   },
   {
@@ -4571,7 +4571,7 @@ export const questions = [
   },
   {
     question:
-      "You are creating a function that manipulates a number. The function has the following requirements:<br><br>A float is passed into the function. The function must take the absolute value of the float.Any decimal points after the integer must be removed. <br><br>Which math functions should you use?",
+      "You are creating a function that manipulates a number, which has the following requirements:<br><br>A float is passed into the function. The function must take the absolute value of the float. Any decimal points after the integer must be removed. <br><br>Which math functions should you use? <br><br>(Choose two)",
     answers: [
       { text: "math.ceil(x)", correct: false },
       { text: "math.floor(x)", correct: true },
@@ -4580,7 +4580,7 @@ export const questions = [
       { text: "math.frexp(x)", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>math.floor(x): This function returns the largest integer less than or equal to x. This effectively removes any decimal points after the integer part, as it rounds down to the nearest whole number.<br><br>math.fabs(x): This function returns the absolute value of x. It converts a negative float to its positive counterpart but does not remove decimal points.",
+      "Explanation:<br><br>math.floor(x): This function returns the largest integer less than or equal to x. This effectively removes any decimal points after the integer part, as it rounds down to the nearest whole number.<br><br>math.fabs(x): This function returns the absolute value of x. It converts a negative float to its positive counterpart but does not remove decimal points.<br><br>Note: math.fabs() is part of the math module and requires importing the math module, while abs() is a built-in function in Python. Both do the same thing.",
     link: "https://docs.python.org/3/library/math.html",
   },
   {
@@ -4735,7 +4735,7 @@ export const questions = [
     link: "https://www.geeksforgeeks.org/python-classes/",
   },
   {
-    question: "Which of the following expressions evaluate to True?",
+    question: "Which of the following expressions evaluate to True? <br><br>(Choose three)",
     image: "images/image733.png",
     answers: [
       { text: "A", correct: true },
