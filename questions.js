@@ -4677,7 +4677,7 @@ export const questions = [
     question: "What is a true about python class constructors?",
     answers: [
       {
-        text: "A) the constructor must have at least one parametercorrect",
+        text: "A) the constructor must have at least one parameter",
         correct: true,
       },
       {
@@ -4685,7 +4685,7 @@ export const questions = [
         correct: false,
       },
       {
-        text: "C) the constructor is a method named_init_correct",
+        text: "C) the constructor is a method named_init__",
         correct: true,
       },
       {
