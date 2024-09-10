@@ -6842,35 +6842,43 @@ export const questions = [
     ],    
     explanation: `Explanation:<br><br>The code tries to convert the string '12.8' to an integer using the int() function.<br><br> However, since the string contains a decimal point, which is not a valid digit in an integer, a ValueError is raised with the message "invalid literal for int() with base 10: '12.8'".`,
     link: "https://docs.python.org/3/library/functions.html#int",
-  },
-  /*
+  },  
   {
-    question: "",
+    question: "Consider the following code. Which of the assignments are valid? <br><br>(Choose two)",
+    image: "images/image236.png",
     answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
+      { text: "A", correct: true },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: false },
     ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
+    explanation: `Explanation:<br><br>A) is valid: This call provides both required positional arguments (name and age), so it will work.<br><br>B) is valid: This call uses keyword arguments (age=256 and name="Kevin"), and the order doesn't matter as long as both arguments are provided.<br><br>C) is invalid: This call only provides one argument (name="Marvin"), but the constructor requires two arguments (name and age). This will result in a TypeError.<br><br>D)is invalid: This call provides no arguments, but the constructor requires two (name and age). This will result in a TypeError.`,
+    link: "https://pythongeeks.org/constructor-in-python/",
   },
   {
-    question: "",
+    question: `Consider the following code. What will happen if the user enters "Gandalf" for x and "Frodo" for y?`,
+    image: "images/image237.png",
     answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
+      { text: `The program will print "You shall not pass!"`, correct: false },
+      { text: `The program will print "Hobbites."`, correct: false },
+      { text: `The program will print 0.7`, correct: true },
+      { text: `The program will print "One does not simply walk into Mordor."`, correct: false },
     ],    
+    explanation: `When the user enters "Gandalf", the program calculates the length of the string "Gandalf", which is 7, and assigns it to a.<br><br>When the user enters "Frodo", it calculates the length of the string "Frodo", which is 5, and multiplies it by 2, resulting in b = 10.<br><br>The program then attempts to calculate a / b, which in this case is 7 / 10. The result is 0.7.<br><br>Since no errors occur during this process (there's no division by zero, value error, or any other general exception), the try block runs successfully. Therefore, the result 0.7 is printed to the screen, and none of the except blocks are triggered.`,
+    link: "https://www.programiz.com/python-programming/exception-handling",
   },
+  {
+    question: "What is the output of the following code",
+    image: "images/image238.png",
+    answers: [
+      { text: "How much is the fish?", correct: true },
+      { text: "NameError", correct: false },
+      { text: "SyntaxError", correct: false },
+      { text: "Nothing will be printed", correct: false },
+    ],    
+    explanation: `Explanation:<br><br>The code defines a class MyClass with a method my_method that prints "How much is the fish?".<br><br> An object obj of the MyClass class is created and its method my_method is called, which prints "How much is the fish?".`,
+    link: "https://docs.python.org/3/tutorial/classes.html",
+  },/*
   {
     question: "",
     answers: [
