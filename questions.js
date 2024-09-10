@@ -5676,7 +5676,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>B) is true. The mode 'rt' stands for reading the file in text mode with newline translation. In text mode, the file will automatically handle newline characters and convert them appropriately.<br><br>A) is incorrect because str is not a string but a file object, and the file contents have not been read yet.<br><br>C) is incorrect because the file is opened in read mode, and if 'file.txt' doesn't exist, Python will raise a FileNotFoundError. The file won't be created.<br><br>D) is true, but indirectly. Since the file is opened in read mode ('r'), the file cannot be written to, but it's not because of the variable str; it's because of the mode 'r'.",
+      "Explanation:<br><br>A) is incorrect because str is not a string but a file object, and the file contents have not been read yet.<br><br>B) is true. The mode 'rt' stands for reading the file in text mode with newline translation. In text mode, the file will automatically handle newline characters and convert them appropriately.<br><br>C) is incorrect because the file is opened in read mode, and if 'file.txt' doesn't exist, Python will raise a FileNotFoundError. The file won't be created.<br><br>D) is true, but indirectly. Since the file is opened in read mode ('r'), the file cannot be written to, but it's not because of the variable str; it's because of the mode 'r'.",
     link: "https://docs.python.org/3/library/functions.html#open",
   },
   {
