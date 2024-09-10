@@ -6867,7 +6867,8 @@ export const questions = [
     ],    
     explanation: `Explanation:<br><br>The code tries to convert the string '12.8' to an integer using the int() function.<br><br> However, since the string contains a decimal point, which is not a valid digit in an integer, a ValueError is raised with the message "invalid literal for int() with base 10: '12.8'".`,
     link: "https://docs.python.org/3/library/functions.html#int",
-  },/*
+  },
+  /*
   {
     question: "",
     answers: [
