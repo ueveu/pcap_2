@@ -3225,7 +3225,7 @@ export const questions = [
       { text: "4", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>Initially, data is assigned a tuple (1, 2, 4, 8). The slicing operation data[-2:-1] extracts a portion of this tuple, specifically creating a new tuple containing just the second-to-last element, which is (4,). Then, data is reassigned to the last element of this new tuple, which is simply 4. Therefore, when the final value of data is printed, the output is 4.",
+      "Explanation:<br><br>Initially, data is assigned a tuple (1, 2, 4, 8). The slicing operation data[-2:-1] extracts a portion of this tuple, specifically creating a new tuple containing just the second-to-last element, which is (4,). Then, data is reassigned to the last element of this new tuple, which is simply 4. <br><br>Therefore, when the final value of data is printed, the output is 4.",
     link: "https://realpython.com/python-tuples/",
   },
   {
@@ -4625,7 +4625,7 @@ export const questions = [
     link: "https://docs.python.org/3/library/stdtypes.html#tuple",
   },
   {
-    question: "Which of the following expression evaluate to True?",
+    question: "Which of the following expression evaluate to True? <br><br>(Choose two)",
     image: "images/image731.png",
     answers: [
       { text: "A", correct: true },
@@ -4633,7 +4633,7 @@ export const questions = [
       { text: "C", correct: true },
       { text: "D", correct: false },
     ],
-    explanation: `Explanation:<br><br>A) evaluates to True because the string '•' contains exactly one character. Therefore, its length is 1, which makes the comparison len('•') == 1 true. <br><br>B) evaluates to False. The string """ """ actually contains a single space, so its length is 1. Since the comparison is checking if the length is 0, it does not hold true.<br><br>B) evaluates to True. The function ord('A') returns the ASCII value of 'A', which is 65. Adding 1 to this value gives 66, and chr(66) converts this back to the character 'B'. Therefore, the comparison chr(ord('A') + 1) == 'B' is true.<br><br>D) evaluates to False. The ord("Z") function returns 90, and ord("z") returns 122. The difference is 90 - 122, which equals -32. The ord("0") function returns 48, so the comparison -32 == 48 is false.`,
+    explanation: `Explanation:<br><br>A) evaluates to True because the string '•' contains exactly one character. Therefore, its length is 1, which makes the comparison len('•') == 1 true. <br><br>B) evaluates to False. The string """ """ actually contains a single space, so its length is 1. Since the comparison is checking if the length is 0, it does not hold true.<br><br>C) evaluates to True. The function ord('A') returns the ASCII value of 'A', which is 65. Adding 1 to this value gives 66, and chr(66) converts this back to the character 'B'. Therefore, the comparison chr(ord('A') + 1) == 'B' is true.<br><br>D) evaluates to False. The ord("Z") function returns 90, and ord("z") returns 122. The difference is 90 - 122, which equals -32. The ord("0") function returns 48, so the comparison -32 == 48 is false.`,
     link: "https://docs.python.org/3/library/functions.html#ord",
   },
   {
@@ -6656,7 +6656,7 @@ export const questions = [
     answers: [
       { text: "A) the interpreter used to generate the file is version 3.6", correct: true },
       { text: "B) it has been produced by CPython", correct: true },
-      { text: "C) it is the 36 version of the file", correct: false },
+      { text: "C) . version of the file", correct: false },
       { text: "D) the file comes from the services.py source file", correct: true },
     ],
     explanation: "Explanation:<br><br>A) is True: The -36 in the filename indicates that the Python version used to generate the file was Python 3.6.<br><br>B) is True: The cpython in the filename indicates that the file was produced by the CPython implementation of Python.<br><br>C) is False: The 36 does not refer to the version of the file but to the Python interpreter version (3.6) used to generate the file.<br><br>D) is True: The services prefix suggests that the .pyc file was generated from the services.py source file.",
