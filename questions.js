@@ -1777,7 +1777,7 @@ export const questions = [
       { text: "zero", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>In the list comprehension [i for i in range(-1, -2)], the range(-1, -2) generates a sequence of numbers starting from -1 and ending before -2. However, since -1 is not less than -2, the range is empty. Consequently, the list comprehension creates an empty list.",
+      "Explanation:<br><br>In the list comprehension [i for i in range(-1, -2)], the range(-1, -2) generates a sequence of numbers starting from -1 and ending before -2. However, since -1 is not less than -2, the range is empty. <br><br>Consequently, the list comprehension creates an empty list.",
     link: "https://www.w3schools.com/Python/python_lists_comprehension.asp",
   },
   {
