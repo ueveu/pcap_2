@@ -4601,7 +4601,7 @@ export const questions = [
     link: "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists",
   },
   {
-    question: "Which of the following statements are true?",
+    question: "Which of the following statements are true? <br><br>(Choose two)",
     answers: [
       { text: "A) Python strings are actually lists", correct: false },
       { text: "B) Python strings can be concatenated", correct: true },
