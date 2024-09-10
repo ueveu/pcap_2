@@ -3900,18 +3900,6 @@ export const questions = [
   },
   {
     question:
-      "Which of the following are valid Python string literals? <br><br>(Choose two)",
-    answers: [
-      { text: '" " " Hello there! General Kenobi!" " " "', correct: true },
-      { text: "'All the emperor's druids'", correct: false },
-      { text: '""', correct: false },
-      { text: `"King's Cross Station"`, correct: true },
-    ],
-    explanation: `Explanation:<br><br>A is a valid Python string literal. Triple quotes (""" or ''') allow for multi-line strings and can include both single and double quotes within the string without the need for escaping.<br><br>B is not a valid Python string literal. The single quote within the string (emperor's) conflicts with the single quotes used to define the string, which causes a syntax error. To make this valid, you would need to either escape the inner single quote or use double quotes for the string.<br><br>C is not a valid Python string literal. The backslash (\) is an escape character, and it's incomplete here. To make this valid, you would need to complete the escape sequence or use a double backslash to represent a literal backslash.<br><br>D is a valid Python string literal. The string is enclosed in double quotes, so the single quote within the string (King's) does not cause any issues.`,
-    link: "https://www.w3schools.com/python/python_strings.asp",
-  },
-  {
-    question:
       "Assuming that the following code has been executed successfully, indicate the expressions which evaluate to True and don't raise any exceptions. <br><br>(Choose two)",
     image: "images/image709.png",
     answers: [
