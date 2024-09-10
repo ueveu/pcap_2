@@ -6047,7 +6047,7 @@ export const questions = [
       { text: "True" + "\n" + "False" + "\n" + "True", correct: false },
       { text: "True" + "\n" + "True" + "\n" + "False", correct: true },
     ],
-    explanation: `Explanation:<br><br>print(' \n '.isspace()):<br>The string ' \n ' contains only whitespace characters—a space, a newline, and another space. Since all characters are whitespace and the string is not empty, the method isspace() returns True. Therefore, the output of this line is True.<br><br>print(" ".isspace()):<br> The string " " consists of a single space character, which is a whitespace character. Since the string contains only this whitespace character and is not empty, the method isspace() returns True. Thus, the output of this line is True.<br><br>print("Wazzuuuuuuuup".isspace()):<br> The string "Wazzuuuuuuuup" contains letters and no whitespace characters. Since not all characters are whitespace and the string is not empty, the method isspace() returns False. Therefore, the output of this line is False.`,
+    explanation: `Explanation:<br><br>print(' \n '.isspace()):<br><br>The string ' \n ' contains only whitespace characters—a space, a newline, and another space. Since all characters are whitespace and the string is not empty, the method isspace() returns True. Therefore, the output of this line is True.<br><br>print(" ".isspace()):<br><br> The string " " consists of a single space character, which is a whitespace character. Since the string contains only this whitespace character and is not empty, the method isspace() returns True. Thus, the output of this line is True.<br><br>print("Wazzuuuuuuuup".isspace()):<br><br> The string "Wazzuuuuuuuup" contains letters and no whitespace characters. Since not all characters are whitespace and the string is not empty, the method isspace() returns False. Therefore, the output of this line is False.`,
     link: "https://www.w3schools.com/python/ref_string_isspace.asp",
   },
   {
@@ -6321,7 +6321,7 @@ export const questions = [
       { text: "None of these", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The code defines four classes A, B, C and D. A has a class variable x with the value 42, B inherits from A and overrides x with the value 56, C inherits from B and overrides x with the value 33, and D inherits from C and doesn't define any class variables.<br><br>When an object of class D is created and obj.x is printed, Python first looks for x in the instance of D, but there is no x defined in the instance. It then looks for x in the class D, but x is not defined in D. Next, it looks for x in the parent class C, where it finds x with the value 33. Therefore, the output is 33.",
+      "Explanation:<br><br>The code defines four classes A, B, C and D. A has a class variable x with the value 42, B inherits from A and overrides x with the value 56, C inherits from B and overrides x with the value 33, and D inherits from C and doesn't define any class variables.<br><br>When an object of class D is created and obj.x is printed, Python first looks for x in the instance of D, but there is no x defined in the instance. It then looks for x in the class D, but x is not defined in D. Next, it looks for x in the parent class C, where it finds x with the value 33. <br><br>Therefore, the output is 33.",
     link: "https://www.programiz.com/python-programming/inheritance",
   },
   {
