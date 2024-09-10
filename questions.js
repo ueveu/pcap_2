@@ -1778,7 +1778,6 @@ export const questions = [
       { text: "1 2 1", correct: false },
     ],
     explanation: "Explanation:<br><br>This one is simple: x, y, z = 1, 1, 2",
-    link: "https://www.w3schools.com/python/python_tuples.asp",
   },
   {
     question: "Which module in Python supports regular expressions?",
@@ -2019,7 +2018,7 @@ export const questions = [
     ],
     explanation:
       "Explanation:<br><br>None is the default return value for a function that does not explicitly return any value.",
-    link: "https://www.w3schools.com/python/gloss_python_function_return_value.asp",
+    link: "None is the default return value for a function that does not explicitly ",
   },
   {
     question:
@@ -5410,7 +5409,7 @@ export const questions = [
       { text: "it outputs 3", correct: false },
       { text: "it outputs 'None'", correct: false },
     ],
-    explanation: `Explanation:<br><br>When the code is executed, it first calculates the result of 1 / 3, which is approximately '0.3333333333333333', and converts this result into a string. The code then iterates over each character in this string, adding each character to the beginning of an initially empty string called 'dummy'. This process effectively reverses the string.<br><br> After the loop completes, 'dummy' contains the reversed version of the original string, which is "3333333333333333.0".<br><br> Finally, the code prints the last character of this reversed string. Since the last character of "3333333333333333.0" is "0", the code will print "0".`,
+    explanation: `Explanation:<br><br>When the code is executed, it first calculates the result of 1 / 3, which is approximately '0.3333333333333333', and converts this result into a string. <br><br>The code then iterates over each character in this string, adding each character to the beginning of an initially empty string called 'dummy'. This process effectively reverses the string.<br><br> After the loop completes, 'dummy' contains the reversed version of the original string, which is "3333333333333333.0".<br><br> Finally, the code prints the last character of this reversed string. <br><br>Since the last character of "3333333333333333.0" is "0", the code will print "0".`,
     link: "https://www.w3schools.com/python/python_howto_reverse_string.asp",
   },
   {
