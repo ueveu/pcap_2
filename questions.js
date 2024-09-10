@@ -577,7 +577,7 @@ export const questions = [
       { text: "methodstatic", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Static methods are methods that are not associated with a particular instance of a class. They are defined using the 'staticmethod' keyword in Python.",
+      "Explanation:<br><br>The @staticmethod decorator is used to define a method that doesn't require access to the instance (self) or the class (cls). Static methods are bound to the class and not to its instances, and they can be called directly on the class.",
     link: "https://www.geeksforgeeks.org/python-staticmethod-function/",
   },
   {
@@ -4452,7 +4452,7 @@ export const questions = [
       { text: "Launch", correct: true },
       { text: "Ignition", correct: false },
     ],
-    explanation: `Explanation:<br><br>he Failure class is defined as a subclass of IndexError. It has an __init__ method that takes a message argument and assigns it to an instance variable, self.message.<br><br>The __str__ method is overridden to return the string "Problem" whenever an instance of Failure is converted to a string.<br><br>The code inside the try block first prints "Launch". It then raises an instance of the Failure exception with the message "Ignition".<br><br>The first except block is for RuntimeError. This block would be ignored because the raised exception is of type Failure, which is a subclass of IndexError, not RuntimeError.<br><br>The second except block catches IndexError. Since Failure is a subclass of IndexError, this block will handle the raised Failure exception. Inside this block, "Ignore" is printed.<br><br>The else block is not executed because an exception was raised and caught.`,
+    explanation: `Explanation:<br><br>The Failure class is defined as a subclass of IndexError. It has an __init__ method that takes a message argument and assigns it to an instance variable, self.message.<br><br>The __str__ method is overridden to return the string "Problem" whenever an instance of Failure is converted to a string.<br><br>The code inside the try block first prints "Launch". It then raises an instance of the Failure exception with the message "Ignition".<br><br>The first except block is for RuntimeError. This block would be ignored because the raised exception is of type Failure, which is a subclass of IndexError, not RuntimeError.<br><br>The second except block catches IndexError. Since Failure is a subclass of IndexError, this block will handle the raised Failure exception. Inside this block, "Ignore" is printed.<br><br>The else block is not executed because an exception was raised and caught.`,
     link: "https://www.geeksforgeeks.org/python-try-except/",
   },
   {
@@ -6878,25 +6878,31 @@ export const questions = [
     ],    
     explanation: `Explanation:<br><br>The code defines a class MyClass with a method my_method that prints "How much is the fish?".<br><br> An object obj of the MyClass class is created and its method my_method is called, which prints "How much is the fish?".`,
     link: "https://docs.python.org/3/tutorial/classes.html",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image239.png",
+    answers: [
+      { text: "5" + "\n" + "7", correct: false },
+      { text: "10" + "\n" + "21", correct: true },
+      { text: "6" + "\n" + "14", correct: false },
+      { text: "2" + "\n" + "3", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>• The make_multiplier function takes a parameter n and returns a lambda function that multiplies its input x by n.<br><br>• times_two is assigned the result of calling make_multiplier with an argument of 2, creating a lambda function that multiplies its input by 2.<br><br>• times_three is assigned the result of calling make_multiplier with an argument of 3, creating a lambda function that multiplies its input by 3.<br><br>• times_two(5) calls the lambda function stored in times_two with an input value of 5. This results in multiplying 5 by 2, so the output is 10.<br><br>• times_three(7) calls the lambda function stored in times_three with an input value of 7. This results in multiplying 7 by 3, so the output is 21.",
+    link: "https://realpython.com/python-lambda/#anonymous-functions",
+  },
+  {
+    question: "What is the output of the following code",
+    image: "images/image240.png",
+    answers: [
+      { text: "25", correct: false },
+      { text: "15", correct: false },
+      { text: "30", correct: true },
+      { text: "20", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>• First, an instance of MyClass is created with a value of 5, and assigned to variable 'a'.<br><br>• Next, variable 'b' is assigned the same instance of MyClass as variable 'a'. This means that 'a' and 'b' both refer to the same object in memory.<br><br>• Then, the 'add_value' method is called on variable 'b' with an argument of 10. This adds 10 to the value of the object that 'b' refers to, which is the same object as 'a'.<br><br>• Finally, the sum of 'a.value' and 'b.value' is printed, which is 30. This is because the value of the object that 'a' and 'b' both refer to has been modified by the call to 'add_value' on 'b'.",
+    link: "https://docs.python.org/3/reference/datamodel.html#object-references",
   },/*
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
   {
     question: "",
     answers: [

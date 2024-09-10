@@ -14,14 +14,18 @@ const incorrectSound = new Audio('audio/incorrect_answer.mp3');
 
 let currentQuestionIndex = 0; // Track current question index
 let score = 0; // Track user's score
-let timeLeft = 3900; // 60 minutes in seconds
+let timeLeft = 3900; // 65 minutes in seconds
 let timerInterval;
+let quizEnded = false;
 
 // Store a subset of 40 random questions
 let selectedQuestions = [];
 
 // Start the quiz by resetting the question index and score, and show the first question
 function startQuiz() {
+  
+  quizEnded = false;
+
   currentQuestionIndex = 0; // Reset question index
   score = 0; // Reset score
   timeLeft = 3900; // Reset timer
@@ -168,10 +172,14 @@ function showScore() {
   nextButton.innerHTML = "Try Again"; // Update next button text to "Try Again"
   nextButton.style.display = "block";
   clearInterval(timerInterval); // Stop the timer when the quiz ends
+  quizEnded = true;
 }
 
 // Handle the next button click to show the next question or the final score
 function handleNextButton() {
+
+  if (quizEnded) return;
+
   currentQuestionIndex++;
   if (currentQuestionIndex < selectedQuestions.length) {
     showQuestion();
@@ -183,7 +191,10 @@ function handleNextButton() {
 
 // Event listener for the next button click to show the next question or the final score
 nextButton.addEventListener("click", () => {
-  if (currentQuestionIndex < selectedQuestions.length) {
+  if (quizEnded) {
+    startQuiz();
+  }
+  else if (currentQuestionIndex < selectedQuestions.length) {
     handleNextButton();
   } else {
     startQuiz();
@@ -245,5 +256,15 @@ function updateQuestionCounter() {
   }`;
 }
 
+function resetQuizState() {
+  quizEnded = false;
+  nextButton.style.display = "none";
+  backButton.style.display = "block";
+}
+
+
+
+
 // Start the quiz initially
+resetQuizState();
 startQuiz();
