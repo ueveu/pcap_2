@@ -1327,7 +1327,7 @@ export const questions = [
       { text: "4" + "\n" + "4", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>he code defines a base class named Shape with an area() method that is intended to be overridden by subclasses. The Circle and Square classes inherit from Shape and provide their own implementations of the area() method. In this implementation, the Circle class's area() method returns a hardcoded value of 3.14. The Square class's area() method returns a hardcoded value of 4.<br><br>When the code is executed, it creates instances of Circle and Square, then prints the result of calling their area() methods. Consequently, the output will be 3.14 for the Circle and 4 for the Square.",
+      "Explanation:<br><br>he code defines a base class named Shape with an area() method that is intended to be overridden by subclasses. The Circle and Square classes inherit from Shape and provide their own implementations of the area() method. <br><br>In this implementation, the Circle class's area() method returns a hardcoded value of 3.14. The Square class's area() method returns a hardcoded value of 4.<br><br>When the code is executed, it creates instances of Circle and Square, then prints the result of calling their area() methods. Consequently, the output will be 3.14 for the Circle and 4 for the Square.",
     link: "https://www.w3schools.com/python/python_functions.asp",
   },
   {
