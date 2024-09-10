@@ -4637,7 +4637,7 @@ export const questions = [
     link: "https://docs.python.org/3/library/functions.html#ord",
   },
   {
-    question: "Which of the following expression evaluate to True?",
+    question: "Which of the following expression evaluate to True? <br><br>(Choose three)",
     image: "images/image732.png",
     answers: [
       { text: "A", correct: false },
