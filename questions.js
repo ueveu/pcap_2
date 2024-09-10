@@ -127,18 +127,18 @@ export const questions = [
     question: "What does the 'break' statement do in a loop?",
     answers: [
       {
-        text: "Exits the loop and continues with the next iteration.",
-        correct: true,
-      },
-      { text: "Exits the loop and terminates the program.", correct: false },
-      {
-        text: "Skips the current iteration and continues with the next one.",
+        text: "A) Exits the loop and continues with the next iteration.",
         correct: false,
       },
-      { text: "Has no effect on the loop.", correct: false },
+      { text: "B) Exits the loop entirely and continues execution with the statement following the loop.", correct: true },
+      {
+        text: "C) Skips the current iteration and continues with the next one.",
+        correct: false,
+      },
+      { text: "D) Has no effect on the loop.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The break statement is used to immediately terminate a loop (either a for loop or a while loop) when a certain condition is met. Once the break statement is encountered, the loop stops executing, and the program continues with the first line of code after the loop.",
+      "Explanation:<br><br>A) is incorrect because break doesn't continue with the next iteration; it exits the loop altogether.<br><br>B) correctly describes the behavior of the break statement, as it stops the loop entirely and moves to the code that comes after the loop.<br><br>C) is incorrect. The continue statement does that, not break.<br><br>D) is clearly incorrect. The break statement does have an effect, as it exits the loop.",
     link: "https://www.tutorialspoint.com/python/python_break_statement.htm",
   },
   {
