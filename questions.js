@@ -1398,19 +1398,6 @@ export const questions = [
   },
   {
     question:
-      "Which of the following is an advantage of using object-oriented programming (OOP)?",
-    answers: [
-      { text: "Decreased code reusability", correct: false },
-      { text: "Reduced modularity and organization", correct: false },
-      { text: "Increased maintenance complexity", correct: false },
-      { text: "Improved code readability and reusability", correct: true },
-    ],
-    explanation:
-      "Explanation:<br><br>OOP improves code readability, reusability and organization by allowing you to model real-world concepts of objects.",
-    link: "https://www.w3schools.com/python/python_oop.asp",
-  },
-  {
-    question:
       "What is the purpose of data cleaning in the context of data analysis?",
     answers: [
       {
@@ -1599,7 +1586,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The primary purpose of an API (Application Programming Interface) is to enable different software systems to communicate and interact with each other. It allows one program to access and use the functionality or data of another program, typically through well-defined protocols. APIs streamline integration and data exchange between applications or services.",
+      "Explanation:<br><br>The primary purpose of an API (Application Programming Interface) is to enable different software systems to communicate and interact with each other. It allows one program to access and use the functionality or data of another program, typically through well-defined protocols. <br><br>APIs streamline integration and data exchange between applications or services.",
     link: "https://realpython.com/python-api/",
   },
   {
@@ -3909,6 +3896,7 @@ export const questions = [
       { text: "D", correct: false },
     ],
     explanation: `Explanation:<br><br>Snippet A converts the string "321" into a list of characters, sorts the list into ['1', '2', '3'], and then joins the sorted elements with a space separator. This results in the output "1 2 3".<br><br>Snippet B sorts the characters of the string "321" into a list ['1', '2', '3'], and then joins these sorted characters with a space separator, also producing the output "1 2 3.`,
+    link: "https://docs.python.org/3/library/functions.html#sorted",
   },
   {
     question:
@@ -5989,7 +5977,7 @@ export const questions = [
       { text: "D)   len(string) == 1", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The first part of the snippet, 'SKY'[::-1], reverses the string 'SKY', which results in the string 'YKS'. After this operation, the variable string is assigned the value 'YKS'. In the next line, string = string[-1], the last character of the string 'YKS' is extracted and assigned to string. The last character of 'YKS' is 'S', so string is now equal to 'S'.<br><br>A) is false because string is 'S', and its first character is 'S', not 'Y'.<br><br>B) is true since both string[0] and string[-1] refer to the same character, 'S'.<br><br>C) is false because string is 'S', not None.<br><br>D) is true because the length of string is 1.",
+      "Explanation:<br><br>The first part of the snippet, 'SKY'[::-1], reverses the string 'SKY', which results in the string 'YKS'. After this operation, the variable string is assigned the value 'YKS'. <br><br>In the next line, string = string[-1], the last character of the string 'YKS' is extracted and assigned to string. The last character of 'YKS' is 'S', so string is now equal to 'S'.<br><br>A) is false because string is 'S', and its first character is 'S', not 'Y'.<br><br>B) is true since both string[0] and string[-1] refer to the same character, 'S'.<br><br>C) is false because string is 'S', not None.<br><br>D) is true because the length of string is 1.",
     link: "https://docs.python.org/3/reference/expressions.html#slice",
   },
   {
@@ -6268,7 +6256,7 @@ export const questions = [
     question: "What is the expected output of the following code snippet?",
     image: "images/image192.png",
     answers: [
-      { text: "-13", correct: false },
+      { text: "-13", correct: truee },
       { text: "13", correct: false },
       { text: "5", correct: false },
       { text: "-4", correct: false },
