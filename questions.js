@@ -351,7 +351,7 @@ export const questions = [
       { text: "To facilitate communication between objects.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The primary purpose of encapsulation in object-oriented programming is to restrict direct access to an object's internal data and methods, thereby protecting the object's state and ensuring controlled interaction through defined interfaces. This promotes data integrity and abstraction by allowing internal implementation details to be hidden from the outside world.",
+      "Explanation:<br><br>The primary purpose of encapsulation in object-oriented programming is to restrict direct access to an object's internal data and methods, thereby protecting the object's state and ensuring controlled interaction through defined interfaces. <br><br>This promotes data integrity and abstraction by allowing internal implementation details to be hidden from the outside world.",
     link: "https://stackoverflow.com/questions/75715054/need-help-to-verify-own-interpretation-of-the-main-purpose-of-the-encapsulation",
   },
   {
@@ -2859,7 +2859,7 @@ export const questions = [
       { text: "['A', 'B']", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Using the del statement, you can remove a specific slice of elements from a list. The slice [0:-2] means 'from the start of the list (index 0) up to, but not including(!), the element at index -2'. In Python, negative indexing allows you to refer to positions from the end of the list, with -1 being the last element. Therefore, -2 refers to the second-to-last element, which is 2 in this case.<br><br>Therefore, 'A', 'B' and 'C' are removed from the list.",
+      "Explanation:<br><br>Using the del statement, you can remove a specific slice of elements from a list. The slice [0:-2] means 'from the start of the list (index 0) up to, but not including(!), the element at index -2'. <br><br>In Python, negative indexing allows you to refer to positions from the end of the list, with -1 being the last element. Therefore, -2 refers to the second-to-last element, which is 2 in this case.<br><br>Therefore, 'A', 'B' and 'C' are removed from the list.",
     link: "https://www.w3schools.com/python/python_lists_remove.asp",
   },
   {
@@ -4785,7 +4785,7 @@ export const questions = [
       { text: "3", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The given code initializes a list lst with the values [1, 2, 3, 4]. The first slicing operation, lst[-3:-2], extracts a sublist starting from the element at index -3 (which is 2) up to but not including the element at index -2 (which is 3). This operation results in the list [2].<br><br> Next, the code reassigns lst to the value of lst[-1], which selects the last element of the list [2], resulting in lst being assigned the integer 2. Finally, the print statement outputs the value of lst, which is 2.",
+      "Explanation:<br><br>The given code initializes a list lst with the values [1, 2, 3, 4]. The first slicing operation, lst[-3:-2], extracts a sublist starting from the element at index -3 (which is 2) up to but not including the element at index -2 (which is 3). This operation results in the list [2].<br><br> Next, the code reassigns lst to the value of lst[-1], which selects the last element of the list [2], resulting in lst being assigned the integer 2. <br><br>Finally, the print statement outputs the value of lst, which is 2.",
     link: "https://www.w3schools.com/python/python_lists.asp",
   },
   {
@@ -5436,7 +5436,7 @@ export const questions = [
       { text: "it raises an exception", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>In the given code, the class Class has a class attribute __Var that is initialized to 0. The foo method increments this class attribute and assigns the incremented value to an instance attribute named __prop.<br><br>When an instance o1 of Class is created and its foo method is called, the class attribute __Var is incremented from 0 to 1, and the instance attribute __prop for o1 is set to 1. Subsequently, another instance o2 of Class is created, and calling o2.foo() again increments the class attribute __Var from 1 to 2, setting the instance attribute __prop for o2 to 2.<br><br>Finally, the code prints the sum of o2._Class__Var and o1._Class__prop. The value of o2._Class__Var is 2, and the value of o1._Class__prop is 1. Therefore, the result of the addition is 3.",
+      "Explanation:<br><br>In the given code, the class Class has a class attribute __Var that is initialized to 0. The foo method increments this class attribute and assigns the incremented value to an instance attribute named __prop.<br><br>When an instance o1 of Class is created and its foo method is called, the class attribute __Var is incremented from 0 to 1, and the instance attribute __prop for o1 is set to 1. Subsequently, another instance o2 of Class is created, and calling o2.foo() again increments the class attribute __Var from 1 to 2, setting the instance attribute __prop for o2 to 2.<br><br>Finally, the code prints the sum of o2._Class__Var and o1._Class__prop. The value of o2._Class__Var is 2, and the value of o1._Class__prop is 1. <br><br>Therefore, the result of the addition is 3.",
     link: "https://docs.python.org/3/tutorial/classes.html#private-variables",
   },
   {
