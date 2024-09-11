@@ -232,13 +232,13 @@ export const questions = [
     question:
       "Which of the following is a correct way to concatenate two strings in Python?",
     answers: [
-      { text: 'str1="Hello"', correct: false },
-      { text: 'str2="World"', correct: false },
+      { text: 'str1 = "Hello"', correct: false },
+      { text: 'str2 = "World"', correct: false },
       { text: "result = str1 + str2", correct: true },
       { text: "result = str1 - str2", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'str1' and 'str2' variables are used to concatenate the strings, for example:<br><br>str1 = 'Hello'<br>str2 = 'World'<br>result = str1 + str2.",
+      "Explanation:<br><br>The 'str1' and 'str2' variables are used to concatenate the strings, for example:<br><br>str1 = 'Hello'<br><br>str2 = 'World'<br><br>result = str1 + str2.",
     link: "https://www.w3schools.com/python/gloss_python_string_concatenation.asp",
   },
   {
@@ -791,19 +791,6 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The 'join()' method in Python is used to concatenate elements of a list into a single string, for example: <br><br> string.join(list)",
     link: "https://www.w3schools.com/python/ref_string_join.asp",
-  },
-  {
-    question:
-      "What is the primary focus of the Tornado web framework in Python?",
-    answers: [
-      { text: "Data analysis", correct: false },
-      { text: "Asynchronous web applications", correct: true },
-      { text: "Machine learning", correct: false },
-      { text: "Web scraping", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The Tornado web framework is used to develop web applications in Python, for example: <br><br> import tornado.web",
-    link: "https://www.tornadoweb.org/",
   },
   {
     question: "In the context of Python, what does CRUD operations refer to?",
@@ -1532,25 +1519,6 @@ export const questions = [
   },
   {
     question:
-      "Which of the following is a characteristic of a deque (double-ended queue)?",
-    answers: [
-      { text: "It only supports insertion from the front.", correct: false },
-      {
-        text: "It follows the Last-In-First-Out (LIFO) order.",
-        correct: false,
-      },
-      {
-        text: "It supports constant-time insertion and deletion from both ends.",
-        correct: true,
-      },
-      { text: "It cannot be used to implement a stack.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'deque' data type is used for a double-ended queue.",
-    link: "https://realpython.com/python-deque/",
-  },
-  {
-    question:
       "What is the primary advantage of using generator expressions over list comprehensions?",
     answers: [
       { text: "Generator expressions consume less memory.", correct: true },
@@ -1567,24 +1535,6 @@ export const questions = [
     explanation:
       "Explanation:<br><br>Generator expressions are more memory-efficient than list comprehensions because they generate values on-the-fly and do not store the entire result in memory at once. <br><br>This is especially beneficial when working with large datasets or when the result of the computation is needed only one item at a time. <br><br>In contrast, list comprehensions create and store the entire list in memory, which can be less efficient if the list is large.",
     link: "https://peps.python.org/pep-0289/",
-  },
-  {
-    question: "What is the role of a RESTful API in web services?",
-    answers: [
-      { text: "To create visually appealing user interfaces.", correct: false },
-      { text: "To manage version control of the project.", correct: false },
-      {
-        text: "To define a set of principles for secure coding.",
-        correct: false,
-      },
-      {
-        text: "To provide a standardized way for clients to interact with the server.",
-        correct: true,
-      },
-    ],
-    explanation:
-      "Explanation:<br><br>A RESTful API (Representational State Transfer API) in web services provides a standardized way for applications to communicate over HTTP by exposing endpoints that allow CRUD (Create, Read, Update, Delete) operations on resources. It simplifies the interaction between clients and servers by adhering to REST principles, making web services scalable and easy to integrate.",
-    link: "https://realpython.com/python-rest-api/",
   },
   {
     question:
@@ -2004,19 +1954,6 @@ export const questions = [
   },
   {
     question:
-      "The value thirty point eleven times ten raised to the power of nine should be written as:",
-    answers: [
-      { text: "30.11E9.0", correct: false },
-      { text: "30E11.9", correct: false },
-      { text: "30.11E9", correct: true },
-      { text: "30.11*10^9", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The value 'thirty point eleven times ten raised to the power of nine' should be written as 30.11e9 in scientific notation.",
-    link: "https://en.wikipedia.org/wiki/Scientific_notation#E_notation",
-  },
-  {
-    question:
       "What is the output of the following program if the user enters 'kangaroo' at the first prompt and '0' at the second prompt?",
     image: "images/image44.png",
     answers: [
@@ -2172,19 +2109,6 @@ export const questions = [
     explanation:
       "Explanation:<br><br>A string is a sequence of characters and works very fine with the list() function. The result is a list of strings, in which every character is a string of its own.",
     link: "https://www.w3schools.com/python/ref_func_list.asp",
-  },
-  {
-    question:
-      "The system that allows you to diagnose input/output errors in Python is called:",
-    answers: [
-      { text: "error_number", correct: false },
-      { text: "error_string", correct: false },
-      { text: "errno", correct: false },
-      { text: "errcode", correct: true },
-    ],
-    explanation:
-      "Explanation:<br><br>The errno module is used to get the error number of an exception. The errcode module is used to get the error code of an exception.",
-    link: "https://www.oreilly.com/library/view/python-standard-library/0596000960/ch02s12.html",
   },
   {
     question: "What is the expected output of the following code?",
@@ -2862,7 +2786,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>First we got a nested list comprehension that generates a list of lists:<br>The outer loop for r in range(3) iterates over the range 0, 1, 2. For each value of r, the inner loop for c in range(r) creates a list of integers from 0 to r-1. <br><br>Let's break down the list comprehension for each value of r: <br>When r = 0, the inner loop for c in range(0) generates an empty list [] because the range is 0. <br>When r = 1, the inner loop for c in range(1) generates [0]. <br>When r = 2, the inner loop for c in range(2) generates [0, 1]. <br><br>Combining these, the result of the list comprehension is: lst = [[], [0], [0, 1]]<br><br>Now let's examine how the nested for loop processes the list lst: <br>For the first sublist [], there are no elements to iterate over, so nothing is printed. <br>For the second sublist [0], the only element is 0. Since 0 < 2, an asterisk '*' is printed. <br>For the third sublist [0, 1], the elements are 0 and 1. <br><br>Both satisfy y < 2, so two asterisks '*' are printed.",
+      "Explanation:<br><br>First we got a nested list comprehension that generates a list of lists:<br>The outer loop for r in range(3) iterates over the range 0, 1, 2. For each value of r, the inner loop for c in range(r) creates a list of integers from 0 to r-1. <br><br>Let's break down the list comprehension for each value of r: <br>When r = 0, the inner loop for c in range(0) generates an empty list [ ] because the range is 0. <br>When r = 1, the inner loop for c in range(1) generates [0]. <br>When r = 2, the inner loop for c in range(2) generates [0, 1]. <br><br>Combining these, the result of the list comprehension is: lst = [[ ], [0], [0, 1]]<br><br>Now let's examine how the nested for loop processes the list lst: <br>For the first sublist [ ], there are no elements to iterate over, so nothing is printed. <br>For the second sublist [0], the only element is 0. Since 0 < 2, an asterisk '*' is printed. <br>For the third sublist [0, 1], the elements are 0 and 1. <br><br>Both satisfy y < 2, so two asterisks '*' are printed.",
     link: "https://www.w3schools.com/python/python_lists_comprehension.asp",
   },
   {
@@ -3654,13 +3578,13 @@ export const questions = [
       "Assuming that the code below has been executed successfully, which of the following expressions will always evaluate to True?<br><br>(Choose two)",
     image: "images/image700.png",
     answers: [
-      { text: "len(random.sample([1, 2, 3], 1)) > 2", correct: false },
-      { text: "v1 == v2", correct: false },
-      { text: "random.choice([1, 2, 3]) > 0", correct: true },
-      { text: "v1 != v2", correct: true },
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
+      { text: "D", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The function random.choice([1, 2, 3]) randomly selects an element from the list [1, 2, 3]. Since all elements in this list (1, 2, and 3) are greater than 0, random.choice([1, 2, 3]) > 0 will always be True<br><br>v1 != v2 will always evaluate to True because v1 and v2 are randomly generated floating-point numbers between 0.0 and 1.0. While it is theoretically possible for v1 and v2 to be exactly equal, in practical terms with the precision of floating-point numbers, they are very unlikely to be exactly the same. Thus, this condition will almost always be true.",
+      "Explanation:<br><br>A) is false because the length of the sample will always be 1, which is not greater than 2.<br><br>B) is false because v1 and v2 are almost never exactly equal.<br><br>C) is true because any value chosen from [1, 2, 3] will always be greater than 0.<br><br>D) is true because v1 and v2 are random values and will almost always be different.",
     link: "https://docs.python.org/3/library/random.html#random.choice",
   },
   {
@@ -3766,13 +3690,13 @@ export const questions = [
       "Assuming the code below has been executed successfully, which of the following expressions evaluate to True? <br><br>(Choose two)",
     image: "images/image705.png",
     answers: [
-      { text: "'var' in Class __dict__", correct: true },
-      { text: "'data' in Object.__dict", correct: false },
-      { text: "len(Class.__dict__) == 1", correct: false },
-      { text: "'data' in Class.__dict__", correct: true },
+      { text: "A", correct: true },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>'var' in Class.__dict__, evaluates to true. This is because Class.__dict__ is a dictionary containing the class attributes of Class. Since var is a class attribute defined in Class, it will be present in this dictionary.<br><br>'data' in Object.__dict__, evaluates to false. This is because Object.__dict__ is a dictionary containing only the instance attributes of the Object instance. Since data is a class attribute and not an instance attribute, it will not be found in this dictionary.<br><br>len(Class.__dict__) == 1, evaluates to false. The Class.__dict__ dictionary contains multiple entries, including the class attributes var and data, as well as other special entries such as methods and possibly module information. Therefore, the length of Class.__dict__ is greater than one.<br><br>'data' in Class.__dict__, evaluates to true. Since data is a class attribute of Class, it is included in the Class.__dict__ dictionary, making this expression true.",
+      "Explanation:<br><br>A) is true because 'var' is a class variable and exists in Class.__dict__.<br><br>B) is false because 'data' is not an instance variable and will not be in Object.__dict__.<br><br>C) is false because Class.__dict__ contains more than one entry.<br><br>D) is true because 'data' is a class variable and exists in Class.__dict__.",
     link: "https://docs.python.org/3/reference/datamodel.html#object.__dict__",
   }, 
   {
@@ -4038,10 +3962,10 @@ export const questions = [
       "Which of the following snippets output ABC to the screen? <br><br>(Choose two)",
       image: "images/image734.png",
     answers: [
-      { text: "A)", correct: true },
-      { text: "B)", correct: false },
-      { text: "C)", correct: true },
-      { text: "D)", correct: false },
+      { text: "A", correct: true },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
     ],
     explanation:
       "Explanation:<br><br>A) slices the string 'ABCDEF' from the beginning up to but not including index 3, which results in 'ABC'.<br><br>B) reverses the string and takes every second character. The string 'AXBYCZ' reversed is 'ZCYBXA', and taking every second character gives 'ZCBA'.<br><br>C) takes every second character from the string 'AXBYCZ', starting from the beginning. The result is 'ABC'.<br><br>D) slices the string 'FEDCBA' starting from the third-to-last character to the end. The result is 'CBA'.",
@@ -4313,10 +4237,10 @@ export const questions = [
       "You want to print the numbers 1 to 7. But the code below does not work. What do you have to change? <br><br>(Choose two)",
     image: "images/image723.png",
     answers: [
-      { text: "if nums[x] == 7:   # Line 5", correct: true },
-      { text: "while (x < 10):    # Line 3", correct: false },
-      { text: "x = x + 1          # Line 8", correct: false },
-      { text: "print (nums[x] )   # Line 4", correct: true },
+      { text: "A", correct: true },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
     ],
     explanation:
       "Explanation:<br><br>In line 4, nums(x) uses parentheses, which is incorrect for indexing lists. You should use square brackets for indexing.<br><br>In line 5, the assignment operator = is used instead of the comparison operator ==",
@@ -4435,28 +4359,16 @@ export const questions = [
     explanation:
       "Explanation:<br><br>A) is False. If an error occurs in the except block, the control will not proceed to the code that follows the try block or the except block. Instead, Python will look for any additional except or finally blocks, or if none are present, it will propagate the exception up to the next higher level.<br><br>B) is True. Syntax errors occur during the parsing of the code before execution begins. Therefore, if there is a syntax error in the try block, it will not be caught by the except block. Instead, a SyntaxError will be raised before the try block is executed.<br><br>C) is True. To handle potential exceptions gracefully, you should place the code that might raise an exception inside a try block. This allows you to catch and handle exceptions using the except block, rather than allowing the program to terminate unexpectedly.<br><br>D) is False. If an error occurs in the try block, the except block will handle it, and any code following the except block (within the same level of indentation) will be executed. The except block itself handles the exception, but the try block does not execute the code that comes after the except block.",
     link: "https://www.geeksforgeeks.org/python-try-except/",
-  },/* 
-  {
-    question: `If you want to build a string that reads:<br><br>Marvin's weed's name's "La Sage"<br><br>Which of the following literals would you use?`,
-    answers: [
-      { text: `A)   'Marvin\'s weed\'s name\'s \"La Sage\"`, correct: true },
-      { text: `B)   'Marvin's weed's name's "La Sage" '`, correct: false },
-      { text: `C)   "Marvin's weed's name's "La Sage" "`, correct: false },
-      { text: `D)   "Marvin's weed's name's \"La Sage\" "`, correct: true },
-    ],
-    explanation:
-      "Explanation:<br><br>A) is a valid option in Python. It uses single quotes to define the string and escapes both the single quotes and the double quotes within the string.<br><br>B) will result in a syntax error in Python because the single quotes inside the string conflict with the single quotes used to define the string.<br><br>C) is problematic because it incorrectly places a single quote after name, which will cause a syntax error.<br><br>D) is a valid option in Python. It uses double quotes to define the string and escapes the double quotes inside the string.",
-    link: "https://www.w3schools.com/python/python_strings.asp",
-  }, */
+  },
   {
     question:
       "Consider the code below. Which print statement will output True?",
     image: "images/image728.png",
     answers: [
-      { text: "A)  print (languages is more_languages)", correct: false },
-      { text: "B)  print (languages is extra_languages)", correct: false },
-      { text: "C)  print (more_languages is extra_languages)", correct: true },
-      { text: "D)  print (languages == more_languages)", correct: true },
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
+      { text: "D", correct: true },
     ],
     explanation:
       "Explanation:<br><br>A) will output False because languages and more_languages are two different lists, even though they have the same content. They are stored at different memory locations.<br><br>B) will also output False because languages and extra_languages are different lists stored at different memory locations.<br><br>C) will output True because extra_languages is just another reference to the same list as more_languages. They both point to the exact same object in memory.<br><br>D) will output True because the contents of languages and more_languages are the same.",
@@ -4477,11 +4389,12 @@ export const questions = [
   {
     question:
       "Which of the following expressions evaluates to True and raises no exception? <br><br>(Choose two)",
+    image: "images/image738.png",
     answers: [
-      { text: "A)  ' ' * 0 < 1 * ' '", correct: true },
-      { text: "B)  'Analog' < 'analog'", correct: true },
-      { text: "C)  str(None) == None", correct: false },
-      { text: "D)  str(None) != 'None'", correct: false },
+      { text: "A", correct: true },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: false },
     ],
     explanation:
       "Explanation:<br><br>A) evaluates to True because ' ' * 0 results in an empty string '', and 1 * ' ' results in a string containing a single space ' '<br><br>B) evaluates to True because the string comparison is based on the ASCII values of the characters.<br><br>In C), the comparison between str(None) and None evaluates to False because a string is not the same as the None object.<br><br>In D), the comparison between str(None) and the string 'None' evaluates to False because both are the same string, and the != operator checks for inequality, which is not the case here.",
@@ -4516,11 +4429,12 @@ export const questions = [
   },
   {
     question: "Which of the following lines contain valid Python code?",
+    image: "images/image739.png",
     answers: [
-      { text: "A)  lambda f (x,y): return x >> y", correct: false },
-      { text: "B)  lambda x, y: '0123456789' [x:y]", correct: true },
-      { text: "C)  lambda x, y: x + y", correct: true },
-      { text: "D)  lambda x, y -> x ** y", correct: false },
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
     ],
     explanation:
       "Explanation:<br><br>A) attempts to define a lambda function, but it incorrectly uses the syntax f(x, y) and the return keyword. In Python, lambda functions are anonymous and don't use the return keyword; they consist of a single expression that is implicitly returned.<br><br>B) defines a lambda function that slices the string '0123456789' from index x to index y. The syntax is correct.<br><br>C) defines a lambda function that takes two arguments x and y, and returns their sum. The syntax is correct.<br><br>D) incorrectly uses the -> symbol, which is not valid in a lambda function. The correct syntax should use a colon (:) instead of ->.",
@@ -4557,10 +4471,10 @@ export const questions = [
       "Assuming that the following snippet has been successfully executed, which of the equations are True? <br><br>(Choose two)",
     image: "images/image729.png",
     answers: [
-      { text: "A)  len(a) == len(b)", correct: true },
-      { text: "B)  b[0] +1 == a[0]", correct: false },
-      { text: "C)  a[0] == b[0]", correct: true },
-      { text: "D)  a[0] + 1 == b[0]", correct: false },
+      { text: "A", correct: true },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
     ],
     explanation:
       "Explanation:<br><br>A) Both a and b reference the same list, so they have the same length.<br><br>B) b[0] is 0 and a[0] is also 0. So, b[0] + 1 equals 1, which is not equal to a[0] (which is 0).<br><br>C) Both a[0] and b[0] are 0 because a and b reference the same list.<br><br>D) a[0] is 0, so a[0] + 1 equals 1. However, b[0] is 0, so 1 is not equal to 0.",
@@ -4571,10 +4485,10 @@ export const questions = [
       "Assuming that the following snippet has been successfully executed, which of the equations are True? <br><br>(Choose two)",
     image: "images/image730.png",
     answers: [
-      { text: "A)  len(a) == len(b)", correct: true },
-      { text: "B)  a[0] - 1 == b[0]", correct: true },
-      { text: "C)  a[0] == b[0]", correct: false },
-      { text: "D)  b[0] - 1 == a[0]", correct: false },
+      { text: "A", correct: true },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: false },
     ],
     explanation:
       "Explanation:<br><br>A) is True. Both a and b are lists with a length of 1, so their lengths are equal.<br><br>B) is True. The value of a[0] is 1, so a[0] - 1 equals 0, which is the same as b[0].<br><br>C) is False. The value of a[0] is 1, while the value of b[0] is 0, so they are not equal.<br><br>D) is False. The value of b[0] is 0, so b[0] - 1 equals -1, which is not equal to a[0], which is 1.",
@@ -4668,10 +4582,10 @@ export const questions = [
   {
     question: "An operator able to perform bitwise shifts is coded as... <br><br>(Choose two)",
     answers: [
-      { text: "- -", correct: false },
-      { text: "+ +", correct: false },
-      { text: "< <", correct: true },
-      { text: "> >", correct: true },
+      { text: "--", correct: false },
+      { text: "++", correct: false },
+      { text: "<<", correct: true },
+      { text: ">>", correct: true },
     ],
     explanation:
       "Explanation: <br><br>Bitwise left shift operator is coded as <<. Bitwise right shift operator is coded as >>.",
@@ -5515,10 +5429,10 @@ export const questions = [
     question:
       "Operator able to perform bitwise shifts is coded as ... <br><br>(Choose two)",
     answers: [
-      { text: "- -", correct: false },
-      { text: "+ +", correct: false },
-      { text: "< <", correct: true },
-      { text: "> >", correct: true },
+      { text: "--", correct: false },
+      { text: "++", correct: false },
+      { text: "<<", correct: true },
+      { text: ">>", correct: true },
     ],
     explanation:
       "Explanation:<br><br>Both << and >> are bitwise shift operators in Python. The << operator performs a left shift, and the >> operator performs a right shift.",
@@ -5542,10 +5456,10 @@ export const questions = [
       "What would you used instead of XXX if you want to check wether a certain 'key' exists in a dictionary called dict? <br><br>(Choose two)",
     image: "images/image171.png",
     answers: [
-      { text: "'key' in dict", correct: true },
-      { text: "dict['key'] != None", correct: false },
-      { text: "dict.exists('key')", correct: false },
-      { text: "'key' in dict.keys( )", correct: true },
+      { text: "A", correct: true },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
     ],
     explanation:
       "Explanation:<br><br>'key' in dict: This is the most efficient and straightforward way to check if a key exists in a dictionary. It checks for the presence of the key directly.<br><br>'key' in dict.keys(): While this method works and will correctly determine if the key is in the dictionary, it is less efficient than using 'key' in dict because it involves creating a view of the dictionary's keys.",
@@ -5553,16 +5467,17 @@ export const questions = [
   },
   {
     question:
-      "You need data which can act as a simple telephone directory. You can obtain it with the following clauses<br><br>(Choose two.)",
+      "You need data which can act as a simple telephone directory. You can obtain it with the following clauses<br><br>(Choose two)",
+    image: "images/image740.png",
     answers: [
-      { text: "A) dir={'Mom': 5551234567, 'Dad': 5557654321}", correct: true },
+      { text: "A", correct: true },
       {
-        text: "B) dir= {'Mom': '5551234567', 'Dad': '5557654321'}",
+        text: "B",
         correct: true,
       },
-      { text: "C) dir= {Mom: 5551234567, Dad: 5557654321}", correct: false },
+      { text: "C", correct: false },
       {
-        text: "D) dir= {Mom: '5551234567', Dad: '5557654321'}",
+        text: "D",
         correct: false,
       },
     ],
@@ -5574,10 +5489,10 @@ export const questions = [
     question: "Select the valid fun () invocations: <br><br>(Choose two)",
     image: "images/image172.png",
     answers: [
-      { text: "A)  fun(b=1)", correct: false },
-      { text: "B)  fun(a=0)", correct: true },
-      { text: "C)  fun(b=1, 0)", correct: false },
-      { text: "D)  fun(1)", correct: true },
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
     ],
     explanation:
       "Explanation:<br><br>A) is invalid because a is a required argument, and it is missing. You must provide a value for a when calling the function.<br><br>B) is valid. You provide a value for a (0), and since b has a default value of 0, it is not necessary to pass a value for b.<br><br>C) is invalid because positional arguments (like 0) must come before keyword arguments (like b=1). Python doesn't allow a positional argument after a keyword argument.<br><br>D) is valid. You provide a value for a (1), and since b has a default value of 0, it takes that default value.",
@@ -5640,10 +5555,10 @@ export const questions = [
       "Which line can be used instead of the comment to cause the snippet to produce the output '1 2 3'?",
     image: "images/image174.png",
     answers: [
-      { text: "A)", correct: true },
-      { text: "B)", correct: false },
-      { text: "C)", correct: true },
-      { text: "D)", correct: false },
+      { text: "A", correct: true },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
     ],
     explanation:
       "Explanation:<br><br>A) This line of code sets c to the value of b (which is 3), b to the value of a (which is 2), and a to the value of c (which is 1). After executing this line, the values will be: a = 1, b = 2, and c = 3. Therefore, print(a, b, c) will output 1 2 3.<br><br>B) This line assigns c the value of a (which is 2), b the value of c (which is 1), and a the value of b (which is 3). After this operation, the values will be: a = 3, b = 1, and c = 2. Therefore, print(a, b, c) will produce 3 1 2.<br><br>C) This line sets a to the value of c (which is 1), b to the value of a (which is 2), and c to the value of b (which is 3). After this line is executed, the values will be: a = 1, b = 2, and c = 3. Therefore, print(a, b, c) will output 1 2 3.<br><br>D) This line does not change any values; it simply assigns each variable its current value.",
@@ -5700,10 +5615,10 @@ export const questions = [
       "Assuming that the code below has been executed successfully, which of the following expressions will always evaluate to True? <br><br>(Choose two)",
     image: "images/image175.png",
     answers: [
-      { text: "A) v1 >= 1", correct: false },
-      { text: "B) v1 == v2", correct: true },
-      { text: "C) len(random.sample([1, 2, 3], 2)) > 2", correct: false },
-      { text: "D) random.choice([1, 2, 3]) >= 1", correct: true },
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
     ],
     explanation:
       "Explanation:<br><br>A) will evaluate to False. The random.random() function generates a floating-point number in the range [0.0, 1.0), so v1 and v2 will always be less than 1.<br><br>B) will evaluate to True. The random.seed(1) function initializes the random number generator to a known state. By resetting the seed to 1 and calling random.random() again, v1 and v2 will be identical because the sequence of random numbers generated will be the same due to the same seed.<br><br>C) will evaluate to False. The random.sample() function returns a list of unique elements from the given sequence. The length of the list returned when sampling 2 elements from [1, 2, 3] will always be 2, which is not greater than 2.<br><br>D) will evaluate to True. The random.choice() function selects a random element from the list [1, 2, 3]. Since all elements in the list are 1, 2, or 3, and all of these are greater than or equal to 1, the condition will always be true.",
@@ -5721,27 +5636,29 @@ export const questions = [
     ],
     explanation: `Explanation:<br><br>In A, the code will execute without raising any unhandled exceptions. Although 0/0 will raise a ZeroDivisionError, this exception is caught by the except block. The except block then executes successfully with 0/1, and since the else block is skipped due to the exception, no further issues occur.<br><br>In B, the code will raise an unhandled exception. The int("0") conversion succeeds without any issues, but when it reaches the else block, int("") raises a ValueError, which is not handled by the except clause. This results in an unhandled exception.<br><br>In C, the code will also execute without raising any unhandled exceptions. The math.sqrt(-1) call raises a ValueError, but this exception is caught by the except block, which successfully executes math.sqrt(0). Since an exception was caught, the else block does not execute, and no further issues arise.<br><br>In D, the code will raise an unhandled exception. The float("1e1") conversion succeeds, but when the else block is reached, float("1c1") raises a ValueError. Since this exception is not caught, the snippet results in an unhandled exception.`,
     link: "https://docs.python.org/3/library/functions.html#int",
-  },/* 
+  },
   {
     question:
       "Which of the following expressions evaluate to True? <br><br>(Choose two)",
+    image: "images/image741.png",
     answers: [
-      { text: `A)   ord("Z") - ord("z") == ord("0")`, correct: false },
-      { text: `B)   chr(ord('A') + 1) == 'B'`, correct: true },
-      { text: `C)   len('\'') == 1 # ( ' \ ' ' )`, correct: true },
-      { text: `D)   len(""" """) == 0`, correct: false },
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
     ],
     explanation: `Explanation:<br><br>A) evaluates to false. The ASCII value of "Z" is 90, and the ASCII value of "z" is 122. Subtracting these values gives -32, while the ASCII value of "0" is 48. Since -32 does not equal 48, this expression is false.<br><br>B) evaluates to true. The ord('A') function returns 65, and adding 1 results in 66. The chr(66) function converts this back to the character 'B', so the expression chr(ord('A') + 1) indeed results in 'B'.<br><br>C) evaluates to true. The string '\' contains a single character, which is a single quote. Its length is 1, making the expression len('\'') == 1 true.<br><br>D) evaluates to false. The string """ """ is a multi-line string that contains one space character. Thus, its length is 1, not 0. Therefore, this expression is false.`,
     link: "https://docs.python.org/3/library/functions.html#ord",
-  }, */
+  }, 
   {
     question:
       "Which of the following expressions evaluate to True? <br><br>(Choose two)",
+      image: "images/image742.png",
     answers: [
-      { text: "A)   121 + 1 != '1' + 2 * '2'", correct: true },
-      { text: "B)   '1' + '1' + '1' < '1' * 3", correct: false },
-      { text: "C)   'AbC'.lower() < 'AB'", correct: false },
-      { text: "D)   '3.14' != str(3.1415)", correct: true },
+      { text: "A", correct: true },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
     ],
     explanation:
       "Explanation:<br><br>A) evaluates to true. The integer 121 + 1 results in 122, whereas '1' + 2 * '2' creates the string '122' by concatenating '1' with '2' repeated twice. Since an integer and a string are different types, 122 does not equal '122', making this comparison true.<br><br>B) evaluates to false. The expression '1' + '1' + '1' results in the string '111', and '1' * 3 also results in '111'. Since '111' is not less than '111', this expression is false.<br><br>C) evaluates to false. The lower() method converts 'AbC' to 'abc'. In ASCII comparison, 'abc' is not less than 'AB' because lowercase letters have higher values than uppercase letters.<br><br>D) evaluates to true. The string '3.14' is not equal to str(3.1415), which converts the float 3.1415 to the string '3.1415'. Since '3.14' and '3.1415' are different, this expression is true.",
@@ -5752,13 +5669,13 @@ export const questions = [
       "Assuming that the code below has been placed inside a file named code.py and executed successfully, which of the following expressions evaluate to True? <br><br>(Choose two)",
     image: "images/image177.png",
     answers: [
-      { text: "A)   len(ClassA.__bases__) == 2", correct: false },
-      { text: "B)   ClassA.__module__ == '__main__'", correct: true },
-      { text: "C)   __name__ == 'code.py'", correct: false },
-      { text: "D)   str(Object) == 'Object'", correct: true },
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>A) evaluates to false. ClassA.__bases__ is a tuple containing the base classes of ClassA. Since ClassA only inherits from the implicit object class and has no other explicit base classes, ClassA.__bases__ is (object,), which has a length of 1. Therefore, len(ClassA.__bases__) is 1, not 2.<br><br>B) evaluates to true. The __module__ attribute of a class holds the name of the module where the class is defined. When code.py is executed directly, its module name is set to '__main__'. Hence, ClassA.__module__ will indeed be '__main__'.<br><br>C) evaluates to false. The special variable __name__ is set to '__main__' when a script is run directly, not to the name of the file. Therefore, __name__ is '__main__', not 'code.py'.<br><br>D) evaluates to true. The Object instance is created from ClassB, which inherits the __str__ method from ClassA. The __str__ method of ClassA returns 'Object', so str(Object) will indeed return 'Object'.",
+      "Explanation:<br><br>A) is false. A.__bases__ contains only one element, (object,), because class A only inherits from object. Therefore, its length is 1, not 2.<br><br>B) is true. The __module__ attribute refers to the module where the class is defined. Since class A is defined in the main script, its module is '__main__'.<br><br>C) is false. When a script is run directly, __name__ is set to '__main__', not the name of the file. Therefore, __name__ will not be 'code.py'.<br><br>D) is true. class B inherits the __str__ method from class A, which returns 'Object'. Thus, calling str(Object) will return 'Object'.",
     link: "https://docs.python.org/3/library/functions.html#str",
   },
   {
@@ -5813,10 +5730,10 @@ export const questions = [
       "Which of the following lambda definitions are correct? <br><br>(Choose two)",
     image: "images/image735.png",
     answers: [
-      { text: "A)", correct: true },
-      { text: "B)", correct: false },
-      { text: "C)", correct: true },
-      { text: "D)", correct: false },
+      { text: "A", correct: true },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
     ],
     explanation:
       "Explanation:<br><br>A) is a correct lambda function definition. It takes two parameters, x and y, and returns a tuple (x, y). The syntax is valid and does not produce any errors.<br><br>B) is incorrect. In Python, lambda functions cannot use the return keyword. The lambda function should directly express the return value without the return keyword. The correct syntax would be to write lambda x, y: x // y - x % y.<br><br>C) is a correct lambda function definition. It takes two parameters, x and y, and returns the result of x // y - x % y. The syntax is valid and appropriate for a lambda function.<br><br>D) is incorrect. Lambda functions do not support default values for parameters in this syntax. Parameters should be specified without default values. The correct lambda function definition should not include default values for parameters.",
@@ -5843,28 +5760,29 @@ export const questions = [
     explanation:
       "Explanation:<br><br>If open() fails due to reasons such as the file not being found, lacking permissions, or other issues, it raises an exception, typically an OSError or FileNotFoundError.<br><br>The open() function returns a file object, which provides methods and attributes to interact with the file, such as reading from or writing to the file.<br><br><br><br>The open() function requires at least one argument, which is the file path. The second argument, which specifies the mode (e.g., 'r', 'w', 'a'), is optional. If omitted, the default mode is 'r' (read mode).<br><br>The standard pre-opened streams in Python are named sys.stdin, sys.stdout, and sys.stderr. These represent the standard input, output, and error streams, respectively. The names instd, outstd, and errstd are not used in Python.",
     link: "https://docs.python.org/3/library/functions.html#open",
-  },/* 
+  },
   {
     question:
       "Which of the following expressions evaluate to True? <br><br>(Choose two)",
+    image: "images/image737.png",
     answers: [
-      { text: `A)   ord('a') - ord('A') == ord('0')`, correct: false },
-      { text: `B)   len(""" """) > 0`, correct: true },
-      { text: `C)   chr(ord('a') + 1) == 'B'`, correct: false },
-      { text: `D)   len('\'') == 1 # ' \' '`, correct: true },
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
     ],
-    explanation: `Explanation:<br><br>A) evaluates to false. The ord('a') function returns the ASCII value of 'a', which is 97, and ord('A') returns 65. Subtracting 65 from 97 gives 32. The ord('0') function returns 48, so 32 is not equal to 48.<br><br>B) evaluates to true. The string """ """ contains a single space character. The length of this string is 1, which is greater than 0. Therefore, the condition len(""" """) > 0 is true.<br><br>c) evaluates to false. The ord('a') function returns the ASCII value of 'a', which is 97. Adding 1 to 97 results in 98, and chr(98) gives 'b'. Therefore, chr(ord('a') + 1) evaluates to 'b', not 'B'.<br><br>D) evaluates to true. The string '\' contains a single backslash character. Its length is indeed 1. Thus, len('\'') equals 1, making the expression true.`,
+    explanation: `Explanation:<br><br>A) evaluates to false. The ord('a') function returns the ASCII value of 'a', which is 97, and ord('A') returns 65. Subtracting 65 from 97 gives 32. The ord('0') function returns 48, so 32 is not equal to 48.<br><br>B) evaluates to true. The string """ """ contains a single space character. The length of this string is 1, which is greater than 0. Therefore, the condition len(""" """) > 0 is true.<br><br>c) evaluates to false. The ord('a') function returns the ASCII value of 'a', which is 97. Adding 1 to 97 results in 98, and chr(98) gives 'b'. Therefore, chr(ord('a') + 1) evaluates to 'b', not 'B'.<br><br>D) evaluates to true. The string 'backslash' contains a single backslash character. Its length is indeed 1. Thus, len('backslash'') equals 1, making the expression true.`,
     link: "https://docs.python.org/3/library/functions.html#ord",
-  }, */
+  },
   {
     question:
       "Assuming that the code below has been executed successfully, which of the expressions evaluate to True? <br><br>(Choose two)",
     image: "images/image178.png",
     answers: [
-      { text: "A)", correct: true },
-      { text: "B)", correct: false },
-      { text: "C)", correct: true },
-      { text: "D)", correct: false },
+      { text: "A", correct: true },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
     ],
     explanation:
       "Explanation:<br><br>A) evaluates to true. The Class.__dict__ attribute is a dictionary containing the class attributes of Class. Since var is defined as a class attribute, it is present in Class.__dict__.<br><br>B) evaluates to false. The Object.__dict__ attribute contains instance attributes of the Object instance. var is a class attribute, not an instance attribute, so it does not appear in Object.__dict__.<br><br>C) evaluates to true. The Object.__dict__ contains instance attributes of the Object instance. The only instance attribute set by the __init__ method is prop, which has the value 2. Therefore, Object.__dict__ contains one entry, making its length 1.<br><br>D) evaluates to false. The Class.__dict__ contains class attributes of Class, while prop is an instance attribute set in the __init__ method. Since prop is not a class attribute, it does not appear in Class.__dict__.",
@@ -5875,10 +5793,10 @@ export const questions = [
       "Assuming that the code below has been executed successfully, which of the following expressions will always evaluate to True? <br><br>(Choose two)",
     image: "images/image179.png",
     answers: [
-      { text: "A)   v1 == v2", correct: false },
-      { text: "B)   v1 < 1", correct: true },
-      { text: "C)   random.choice([1, 2, 3]) > 0", correct: true },
-      { text: "D)   len(random.sample([1, 2, 3], 1)) > 2", correct: false },
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
     ],
     explanation:
       "Explanation:<br><br>A) will not always evaluate to true. The random.random() function generates a random float between 0.0 and 1.0, and since v1 and v2 are generated independently, it is highly unlikely that they will have the exact same value. Therefore, v1 == v2 is not guaranteed to be true.<br><br>B) will always evaluate to true. The random.random() function generates a float in the range [0.0, 1.0), so v1 will always be less than 1. Hence, v1 < 1 is always true.<br><br>C) will always evaluate to true. The random.choice([1, 2, 3]) function selects a random element from the list [1, 2, 3], and since all elements in this list are greater than 0, random.choice([1, 2, 3]) > 0 will always be true.<br><br>D) will not evaluate to true. The random.sample([1, 2, 3], 1) function returns a list containing a single randomly selected element from [1, 2, 3], so the length of the list is always 1. Consequently, len(random.sample([1, 2, 3], 1)) > 2 is false because 1 is not greater than 2.",
@@ -5889,10 +5807,10 @@ export const questions = [
       "Assuming that the snippet below has been executed successfully, which of the following expressions evaluate to True? <br><br>(Choose two)",
     image: "images/image180.png",
     answers: [
-      { text: "A)   string[0] == 'Y'", correct: false },
-      { text: "B)   string[0] == string [-1]", correct: true },
-      { text: "C)   string is None", correct: false },
-      { text: "D)   len(string) == 1", correct: true },
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
     ],
     explanation:
       "Explanation:<br><br>The first part of the snippet, 'SKY'[::-1], reverses the string 'SKY', which results in the string 'YKS'. After this operation, the variable string is assigned the value 'YKS'. <br><br>In the next line, string = string[-1], the last character of the string 'YKS' is extracted and assigned to string. The last character of 'YKS' is 'S', so string is now equal to 'S'.<br><br>A) is false because string is 'S', and its first character is 'S', not 'Y'.<br><br>B) is true since both string[0] and string[-1] refer to the same character, 'S'.<br><br>C) is false because string is 'S', not None.<br><br>D) is true because the length of string is 1.",
@@ -5901,14 +5819,15 @@ export const questions = [
   {
     question:
       "Which of the following expressions evaluate to True? <br><br>(Choose two)",
+      image: "images/image743.png",
     answers: [
-      { text: "A)   11 == '011", correct: false },
-      { text: "B)   3 * 'a' < 'a' * 2", correct: false },
-      { text: "C)   'abc'.upper() < 'abc'", correct: true },
-      { text: "D)   '1' + 2 * '2' != 2 * '12'", correct: true },
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
+      { text: "D", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>A) compares an integer (11) with a string ('011'). In Python, integers and strings are different types, and they are never considered equal. Therefore, this expression evaluates to False.<br><br>B) multiplies the string 'a' by 3, resulting in 'aaa', and multiplies 'a' by 2, resulting in 'aa'. It then checks if 'aaa' is less than 'aa'. In Python, string comparisons are lexicographical, meaning it compares the strings character by character. Since 'aaa' is not less than 'aa', this expression evaluates to False.<br><br>C) first converts 'abc' to uppercase, resulting in 'ABC', and then compares it with 'abc'. Again, lexicographical comparison is used, and uppercase letters have lower Unicode values than lowercase letters. Since 'ABC' is less than 'abc', this expression evaluates to True.<br><br>D) evaluates the string concatenation. The left-hand side of the expression is '1' + 2 * '2', which equals '1' + '22', resulting in '122'. The right-hand side, 2 * '12', results in '1212'. Since '122' is not equal to '1212', this expression evaluates to True.",
+      "Explanation:<br><br>A) is comparing an integer (11) with the result of str('11'). str('11') converts the string '11' to another string, so it remains '11'. In Python, comparing an integer (11) with a string ('11') will return false because they are different data types, even though they might represent the same number.<br><br>B) multiplies the string 'a' by 3, resulting in 'aaa', and multiplies 'a' by 2, resulting in 'aa'. It then checks if 'aaa' is less than 'aa'. In Python, string comparisons are lexicographical, meaning it compares the strings character by character. Since 'aaa' is not less than 'aa', this expression evaluates to False.<br><br>C) first converts 'abc' to uppercase, resulting in 'ABC', and then compares it with 'abc'. Again, lexicographical comparison is used, and uppercase letters have lower Unicode values than lowercase letters. Since 'ABC' is less than 'abc', this expression evaluates to True.<br><br>D) evaluates the string concatenation. The left-hand side of the expression is '1' + 2 * '2', which equals '1' + '22', resulting in '122'. The right-hand side, 2 * '12', results in '1212'. Since '122' is not equal to '1212', this expression evaluates to True.",
     link: "https://docs.python.org/3/library/functions.html#str",
   },
   {
@@ -5927,11 +5846,12 @@ export const questions = [
   {
     question:
       "Assuming that the math module has been successfully imported, which of the following expressions evaluate to True? <br><br>(Choose two)",
+    image: "images/image744.png",
     answers: [
-      { text: "A)   math.hypot(2,5) == math.trunc(2.5)", correct: false },
-      { text: "B)   math.floor(2.5) == math.trunc(2.5)", correct: true },
-      { text: "C)   math.ceil(2.5) == math.floor(2.5)", correct: false },
-      { text: "D)   math.hypot(3,4) == math.sqrt(25)", correct: true },
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
     ],
     explanation:
       "Explanation:<br><br>In A), the math.hypot(2, 5) function calculates the Euclidean distance between the origin and the point (2, 5). This results in √(2² + 5²) = √29, which is approximately 5.385. On the other hand, math.trunc(2.5) removes the decimal part of 2.5, resulting in 2. Since 5.385 is not equal to 2, this expression evaluates to False.<br><br>In B), the math.floor(2.5) function returns the largest integer less than or equal to 2.5, which is 2. Similarly, math.trunc(2.5) truncates the decimal part of 2.5, also resulting in 2. Since both values are equal to 2, this expression evaluates to True.<br><br>In C), the math.ceil(2.5) function returns the smallest integer greater than or equal to 2.5, which is 3. The math.floor(2.5) function, however, returns 2. Since 3 is not equal to 2, this expression evaluates to False.<br><br>In D), the math.hypot(3, 4) function calculates the Euclidean distance between the origin and the point (3, 4), which results in √(3² + 4²) = √25 = 5. Similarly, math.sqrt(25) also returns √25, which is 5. Since both values are equal, this expression evaluates to True.",
@@ -6089,11 +6009,11 @@ export const questions = [
   {
     question: "What is the expected output of the following code?",
     image: "images/image188.png",
-    answers: [
-      { text: "The code is erroneous.", correct: false },
+    answers: [      
       { text: "1", correct: true },
       { text: "3", correct: false },
       { text: "2", correct: false },
+      { text: "The code is erroneous.", correct: false },
     ],
     explanation:
       "Explanation:<br><br>In the try block, the statement c = a / b would raise a ZeroDivisionError, which is a subclass of the ArithmeticError exception. However, in the except block, the ArithmeticError exception would be caught before the ZeroDivisionError exception. <br><br>Therefore, the value of c would be set to 1.",
