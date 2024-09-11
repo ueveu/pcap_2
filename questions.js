@@ -6490,7 +6490,8 @@ export const questions = [
     answers: [
       { text: "['General', 'Kenobi']", correct: false },
       { text: "['General', 'KEnobi']", correct: false },
-      { text: "['GeneraL', 'Kenobi']", correct: true },
+      { text: "['GeneraL', 'Kenobi']", correct: false },
+      { text: "['GeneraLKenobi']", correct: true },
       { text: "The code is erroneous", correct: false },
     ],
     explanation: "Explanation:<br><br>The code slices the string up to the first 7 characters (s[:7]), which results in 'Genera'. In this slice, the lowercase 'l' is replaced with an uppercase 'L', producing 'GeneraL'. <br><br>The next part of the code, s[8:], retrieves the remaining characters of the string starting from the 8th position, which is 'Kenobi'. These two parts are then concatenated to form the new string 'GeneraL Kenobi'.<br><br>When you use s[:7] + s[8:], it effectively removes the space between 'General' and 'Kenobi'.<br><br>Finally, s.split() splits the string into a list of words, which is ['GeneraLKenobi']."
