@@ -6182,7 +6182,7 @@ export const questions = [
     image: "images/image190.png",
     answers: [
       { text: "[2, 4]", correct: true },
-      { text: "[]", correct: false },
+      { text: "[ ]", correct: false },
       { text: "[1, 2, 3, 4, 5]", correct: false },
       { text: "[1, 3, 5]", correct: false },
     ],
@@ -6828,7 +6828,7 @@ export const questions = [
       { text: "C", correct: false },
       { text: "D", correct: false },
     ],    
-    explanation: `Explanation:<br><br>A) is valid: This call provides both required positional arguments (name and age), so it will work.<br><br>B) is valid: This call uses keyword arguments (age=256 and name="Kevin"), and the order doesn't matter as long as both arguments are provided.<br><br>C) is invalid: This call only provides one argument (name="Marvin"), but the constructor requires two arguments (name and age). This will result in a TypeError.<br><br>D)is invalid: This call provides no arguments, but the constructor requires two (name and age). This will result in a TypeError.`,
+    explanation: `Explanation:<br><br>A) is valid: This call provides both required positional arguments (name and age), so it will work.<br><br>B) is valid: This call uses keyword arguments (age=256 and name="Kevin"), and the order doesn't matter as long as both arguments are provided.<br><br>C) is invalid: This call only provides one argument (name="Marvin"), but the constructor requires two arguments (name and age). This will result in a TypeError.<br><br>D) is invalid: This call provides no arguments, but the constructor requires two (name and age). This will result in a TypeError.`,
     link: "https://pythongeeks.org/constructor-in-python/",
   },
   {
