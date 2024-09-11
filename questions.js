@@ -6945,34 +6945,43 @@ export const questions = [
     ],    
     explanation: "Explanation:<br><br>A) is true. Import statements are typically required to bring modules or packages into scope.<br><br>B) is true. f() is located in subpackage c of subpackage b of package a is correct because a.b.c.f() represents a function f() that is defined in module c, which is a subpackage of module b, which is itself a subpackage of package a. This notation follows Python's hierarchical module structure.<br><br>C) is not inherently incorrect if a, b, c, and f are properly defined and imported. The correctness depends on the actual setup of the modules and packages.<br><br>D) is incorrect because a.b.c.f() represents a function call, not the function name. The function being called is f(), which resides in the c module.",
     link: "https://docs.python.org/3/tutorial/modules.html",
+  },
+  {
+    question: "A Python module named pymod.py contains a function named pyfun(). Which of the following snippets will let you invoke the function? <br><br>(Choose two)",
+    image: "images/image242.png",
+    answers: [
+      { text: "A", correct: true },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>A) imports the entire pymod module and calls the pyfun function using the module name. This is a correct and standard way to use functions from a module.<br><br>B) imports only the pyfun function from the pymod module directly into the current namespace. You can then call pyfun() directly. This is also a correct way to call the function, and it can be more convenient if you only need specific functions from the module.<br><br>C) will result in a NameError because pymod is not in the current namespace.<br><br>D) is incorrect syntax. The correct syntax for importing is import module or from module import function, but import pyfun from pymod is not valid Python syntax.",
+    link: "https://docs.python.org/3/tutorial/modules.html#modules",
+  },
+  {
+    question: "You are going to read 16 bytes from a binary file into a bytearray called data. Which lines would you use?<br><br>(Choose two)",
+    image: "images/image243.png",
+    answers: [
+      { text: "A", correct: true },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
+    ],    
+    explanation: "Explanation:<br><br>A) initializes a bytearray with 16 bytes and then uses the readinto method to read data directly into this bytearray. This is useful for efficient file reading when you need to work with a pre-allocated buffer.<br><br>B) is incorrect because binfile.read() expects an integer argument specifying the number of bytes to read, not a bytearray. It will result in a TypeError.<br><br>C) is incorrect because readinto() does not accept keyword arguments. Instead, it requires the bytearray object as its positional argument.<br><br>D) reads 16 bytes from the file using binfile.read(16), which returns a bytes object. The bytearray() constructor is then used to convert this bytes object into a bytearray. This method is straightforward and works well for cases where you want to read and convert data in one step.",
+    link: "https://docs.python.org/3/library/stdtypes.html#bytearray",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image244.png",
+    answers: [
+      { text: "False", correct: true },
+      { text: "0", correct: false },
+      { text: "True", correct: false },
+      { text: "None", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>• b1 = type(dir(sys)) is str: The dir(sys) function returns a list of names in the sys module. Therefore, type(dir(sys)) is list, not str. Hence, type(dir(sys)) is str evaluates to False.<br><br>• b2 = type(sys.path[-1]) is str: sys.path is a list of strings representing the module search path. sys.path[-1] retrieves the last item in this list, which is a string. Thus, type(sys.path[-1]) is str, and type(sys.path[-1]) is str evaluates to True.<br><br>• print(b1 and b2): Since b1 is False and b2 is True, the logical and operation between them results in False because False and True evaluates to False.",
+    link: "https://docs.python.org/3/library/functions.html#type",
   },/*
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
   {
     question: "",
     answers: [
