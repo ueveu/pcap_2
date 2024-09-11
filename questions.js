@@ -4456,7 +4456,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>A) is False. If an error occurs in the except block, the control will not proceed to the code that follows the try block or the except block. Instead, Python will look for any additional except or finally blocks, or if none are present, it will propagate the exception up to the next higher level.<br><br>B) is True. Syntax errors occur during the parsing of the code before execution begins. Therefore, if there is a syntax error in the try block, it will not be caught by the except block. Instead, a SyntaxError will be raised before the try block is executed.<br><br>C) is True. To handle potential exceptions gracefully, you should place the code that might raise an exception inside a try block. This allows you to catch and handle exceptions using the except block, rather than allowing the program to terminate unexpectedly.<br><br>D) is False. If an error occurs in the try block, the except block will handle it, and any code following the except block (within the same level of indentation) will be executed. The except block itself handles the exception, but the try block does not execute the code that comes after the except block.",
     link: "https://www.geeksforgeeks.org/python-try-except/",
-  },
+  },/* 
   {
     question: `If you want to build a string that reads:<br><br>Marvin's weed's name's "La Sage"<br><br>Which of the following literals would you use?`,
     answers: [
@@ -4468,7 +4468,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>A) is a valid option in Python. It uses single quotes to define the string and escapes both the single quotes and the double quotes within the string.<br><br>B) will result in a syntax error in Python because the single quotes inside the string conflict with the single quotes used to define the string.<br><br>C) is problematic because it incorrectly places a single quote after name, which will cause a syntax error.<br><br>D) is a valid option in Python. It uses double quotes to define the string and escapes the double quotes inside the string.",
     link: "https://www.w3schools.com/python/python_strings.asp",
-  },
+  }, */
   {
     question:
       "Consider the code below. Which print statement will output True?",
