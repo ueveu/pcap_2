@@ -6981,6 +6981,43 @@ export const questions = [
     ],    
     explanation: "Explanation:<br><br>• b1 = type(dir(sys)) is str: The dir(sys) function returns a list of names in the sys module. Therefore, type(dir(sys)) is list, not str. Hence, type(dir(sys)) is str evaluates to False.<br><br>• b2 = type(sys.path[-1]) is str: sys.path is a list of strings representing the module search path. sys.path[-1] retrieves the last item in this list, which is a string. Thus, type(sys.path[-1]) is str, and type(sys.path[-1]) is str evaluates to True.<br><br>• print(b1 and b2): Since b1 is False and b2 is True, the logical and operation between them results in False because False and True evaluates to False.",
     link: "https://docs.python.org/3/library/functions.html#type",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image245.png",
+    answers: [
+      { text: "2" + "\n" + "3", correct: true },
+      { text: "2" + "\n" + "2", correct: false },
+      { text: "1" + "\n" + "2", correct: false },
+      { text: "1" + "\n" + "1", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>• The func1 function is defined with a local variable x set to 1.<br><br>• The func2 function is defined inside func1 and it modifies the value of x using the nonlocal keyword.<br><br>• When func1 is called, it invokes func2 twice using the statements func2() and func2() consecutively.<br><br>• During the first call to func2, the value of x is incremented by 1 using x += 1, resulting in x being equal to 2.<br><br>• The first print statement print(x) inside func2 outputs the value of x, which is 2.<br><br>• During the second call to func2, the value of x is incremented again, making it equal to 3.<br><br>• The second print statement print(x) inside func2 outputs the updated value of x, which is 3.<br><br>In summary, the code demonstrates the concept of a nested function and the usage of the nonlocal keyword to modify a variable defined in the enclosing scope. Each call to func2 modifies and prints the updated value of x.",
+    link: "https://www.w3schools.com/python/ref_keyword_nonlocal.asp",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image246.png",
+    answers: [
+      { text: "3", correct: true },
+      { text: "0", correct: false },
+      { text: "1", correct: false },
+      { text: "2", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>1. Define a class named A.<br><br>2. Inside the A class, define a class-level variable X and set its value to 0.<br><br>3. Define a constructor method named __init__ which takes an argument v with a default value of 0.<br><br>4. Inside the __init__ method, set the instance variable Y to the value of v.<br><br>5. Inside the __init__ method, increment the class-level variable X by the value of v.<br><br>6. Create an instance of A and assign it to the variable a. This will call the __init__ method with the default argument value.<br><br>7. Create an instance of A with the argument value of 1 and assign it to the variable b. This will call the __init__ method with the argument value of 1.<br><br>8. Create an instance of A with the argument value of 2 and assign it to the variable c. This will call the __init__ method with the argument value of 2.<br><br>9. Print the value of the class-level variable X of the c instance, which should be the sum of the argument values passed to the constructors of b and c, i.e., 1 + 2 = 3.",
+    link: "https://www.w3schools.com/python/python_classes.asp",
+  },
+  {
+    question: "What is the output of the following code?",
+    image: "images/image247.png",
+    answers: [
+      { text: "True" + "\n" + "True" + "\n" + "True", correct: true },
+      { text: "True" + "\n" + "False" + "\n" + "True", correct: false },
+      { text: "True" + "\n" + "False" + "\n" + "False", correct: false },
+      { text: "False" + "\n" + "True" + "\n" + "True", correct: false },
+      { text: "False" + "\n" + "False" + "\n" + "False", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>isinstance(obj, A) returns True because obj is an instance of class B which is inherited from class A. isinstance(obj, B) returns True because obj is an instance of class B. <br><br>isinstance(obj, object) returns True because all classes in Python inherit from the object class.",
+    link: "https://www.w3schools.com/python/ref_func_isinstance.asp",
   },/*
   {
     question: "",
@@ -7000,6 +7037,196 @@ export const questions = [
       { text: "", correct: false },
     ],    
   },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
   */
+  
   
 ];
