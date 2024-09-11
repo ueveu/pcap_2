@@ -5093,8 +5093,8 @@ export const questions = [
     answers: [
       { text: "main", correct: false },
       { text: "_main_", correct: false },
-      { text: "_ _main_ _", correct: true },
-      { text: "_ _ _main_ _ _", correct: false },
+      { text: "__main__", correct: true },
+      { text: "___main___", correct: false },
     ],
     explanation: `Explanation:<br><br>In Python, when a script is run directly, the special variable __name__ is set to "__main__". Therefore, to print out the module name when the script is executed directly, you should check if __name__ is equal to "__main__".`,
     link: "https://docs.python.org/3/tutorial/modules.html",
@@ -6878,61 +6878,74 @@ export const questions = [
     ],    
     explanation: "Explanation:<br><br>• First, an instance of MyClass is created with a value of 5, and assigned to variable 'a'.<br><br>• Next, variable 'b' is assigned the same instance of MyClass as variable 'a'. This means that 'a' and 'b' both refer to the same object in memory.<br><br>• Then, the 'add_value' method is called on variable 'b' with an argument of 10. This adds 10 to the value of the object that 'b' refers to, which is the same object as 'a'.<br><br>• Finally, the sum of 'a.value' and 'b.value' is printed, which is 30. This is because the value of the object that 'a' and 'b' both refer to has been modified by the call to 'add_value' on 'b'.",
     link: "https://docs.python.org/3/reference/datamodel.html#object-references",
+  },
+  {
+    question: "A keyword...<br><br>(Choose two)",
+    answers: [
+      { text: "A) can be used as an identifier", correct: false },
+      { text: "B) is defined by Python's lexis", correct: true },
+      { text: "C) is also known as a reserved word", correct: true },
+      { text: "D) cannot be used in the user's code", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>A) is False. Keywords cannot be used as identifiers (e.g., variable names, function names) because they are reserved for special purposes within the language.<br><br>B) is True. Keywords are defined by the language's lexical rules. They are part of the syntax and grammar of the language.<br><br>C) is True. Keywords are also known as reserved words because they are reserved by the language and cannot be used for other purposes.<br><br>D) is False. While keywords cannot be used as identifiers (like variable names, function names, etc.), they can still be used in user code within their defined context.",
+    link: "https://docs.python.org/3/reference/lexical_analysis.html#keywords",
+  },
+  {
+    question: "Assuming that the V variable holds an integer value to 2, which of the following operators should be used instead of OPER to make the expression equal to 1?<br><br>V OPER 1",
+    answers: [
+      { text: "<<<", correct: false },
+      { text: ">>>", correct: false },
+      { text: ">>", correct: true },
+      { text: "<<", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>The operator >> is correct because it performs a bitwise right shift, which is what we need to convert the integer value 2 to 1. <br><br>In binary, 2 is represented as 10. <br><br>When you apply the right shift operator (2 >> 1), it shifts the bits one position to the right, resulting in 01, which is the binary representation of 1. <br><br>Therefore, 2 >> 1 yields 1, making >> the appropriate operator for this transformation.",
+    link: "https://docs.python.org/3/reference/expressions.html#operator-precedence",
+  },
+  {
+    question: "UNICODE is..",
+    answers: [
+      { text: "A) the name of an operating system", correct: false },
+      { text: "B) a standard for encoding and handling texts", correct: true },
+      { text: "C) the name of a programming language", correct: false },
+      { text: "D) the name of a text processor", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>UNICODE is a standard for encoding and handling text. It provides a universal character encoding system that covers most of the world's writing systems, ensuring that text can be consistently represented and manipulated across different platforms and applications.",
+    link: "https://en.wikipedia.org/wiki/Unicode",
+  },
+  {
+    question: "Which of the listed actions can be applied to the following tuple?<br><br>tup = ()<br><br>(Choose two)",
+    answers: [
+      { text: "A) tup[:]", correct: true },
+      { text: "B) tup.append(0)", correct: false },
+      { text: "C) tup[0]", correct: false },
+      { text: "D) del tup", correct: true },
+    ],    
+    explanation: "Explanation:<br><br>A) creates a slice of the tuple. Since the tuple is empty, tup[:] would also result in an empty tuple (). This operation is valid for tuples.<br><br>B) Tuples in Python are immutable, meaning their elements cannot be changed or appended after creation. The append() method is not available for tuples, so this action is not valid.<br><br>C): Attempting to access an element at index 0 in an empty tuple will result in an IndexError because there are no elements in the tuple. Therefore, this action is not valid.<br><br>In C), the del statement can be used to delete a variable, including tuples. After del tup, the variable tup would be removed from the namespace.",
+    link: "https://docs.python.org/3/library/stdtypes.html#tuple",
+  },
+  {
+    question: "If you want to transform a string into a list of words, as seen in the code below, what invocation would you use?<br><br>Expected output:<br><br>They're, taking, the, Hobbits, to, Isengard!,<br><br>(Choose two)",
+    image: "images/image241.png",
+    answers: [
+      { text: "A) s.split()", correct: true },
+      { text: "B) split(s, ' ')", correct: false },
+      { text: "C) s.split(' ')", correct: true },
+      { text: "D) split(s)", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>A) correctly splits the string s into a list of words using whitespace as the delimiter. This is the standard way to convert a string into a list of words.<br><br>B) is incorrect because split() is a method of string objects and should be called as s.split(' ')<br><br>C) is also correct and explicitly splits the string s using a space as the delimiter. This works but is a bit more specific than necessary since s.split() would handle all whitespace.<br><br>D) is incorrect because split is not a standalone function and must be called as a method on a string object.",
+    link: "https://docs.python.org/3/library/stdtypes.html#str.split",
+  },
+  {
+    question: "What can you deduce from the line below?<br><br>x = a.b.c.f()<br><br>(Choose two)",
+    answers: [
+      { text: "A) import a.b.c should be placed before that line", correct: true },
+      { text: "B) f() is located in subpackage c of subpackage b of package a", correct: true },
+      { text: "C) the line is incorrect", correct: false },
+      { text: "D) the function being invoked is called a.b.c.f()", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>A) is true. Import statements are typically required to bring modules or packages into scope.<br><br>B) is true. f() is located in subpackage c of subpackage b of package a is correct because a.b.c.f() represents a function f() that is defined in module c, which is a subpackage of module b, which is itself a subpackage of package a. This notation follows Python's hierarchical module structure.<br><br>C) is not inherently incorrect if a, b, c, and f are properly defined and imported. The correctness depends on the actual setup of the modules and packages.<br><br>D) is incorrect because a.b.c.f() represents a function call, not the function name. The function being called is f(), which resides in the c module.",
+    link: "https://docs.python.org/3/tutorial/modules.html",
   },/*
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
   {
     question: "",
     answers: [
