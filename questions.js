@@ -4441,7 +4441,7 @@ export const questions = [
         correct: false,
       },
       {
-        text: "B)   If there is a syntax error in code located ¡n the try block, the except branch will not handle it, and a SyntaxError exception will be raised instead.",
+        text: "B)   If there is a syntax error in code located in the try block, the except branch will not handle it, and a SyntaxError exception will be raised instead.",
         correct: true,
       },
       {
