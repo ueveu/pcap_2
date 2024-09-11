@@ -5563,7 +5563,7 @@ export const questions = [
     answers: [
       { text: "Lists may not be stored inside tuples", correct: false },
       { text: "Tuples may be stored inside lists", correct: true },
-      { text: "Tuples may not be stored inside", correct: false },
+      { text: "Tuples may not be stored inside lists", correct: false },
       { text: "Lists may be stored inside lists", correct: true },
     ],
     explanation:
