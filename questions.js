@@ -5754,7 +5754,7 @@ export const questions = [
     ],
     explanation: `Explanation:<br><br>In A, the code will execute without raising any unhandled exceptions. Although 0/0 will raise a ZeroDivisionError, this exception is caught by the except block. The except block then executes successfully with 0/1, and since the else block is skipped due to the exception, no further issues occur.<br><br>In B, the code will raise an unhandled exception. The int("0") conversion succeeds without any issues, but when it reaches the else block, int("") raises a ValueError, which is not handled by the except clause. This results in an unhandled exception.<br><br>In C, the code will also execute without raising any unhandled exceptions. The math.sqrt(-1) call raises a ValueError, but this exception is caught by the except block, which successfully executes math.sqrt(0). Since an exception was caught, the else block does not execute, and no further issues arise.<br><br>In D, the code will raise an unhandled exception. The float("1e1") conversion succeeds, but when the else block is reached, float("1c1") raises a ValueError. Since this exception is not caught, the snippet results in an unhandled exception.`,
     link: "https://docs.python.org/3/library/functions.html#int",
-  },
+  },/* 
   {
     question:
       "Which of the following expressions evaluate to True? <br><br>(Choose two)",
@@ -5766,7 +5766,7 @@ export const questions = [
     ],
     explanation: `Explanation:<br><br>A) evaluates to false. The ASCII value of "Z" is 90, and the ASCII value of "z" is 122. Subtracting these values gives -32, while the ASCII value of "0" is 48. Since -32 does not equal 48, this expression is false.<br><br>B) evaluates to true. The ord('A') function returns 65, and adding 1 results in 66. The chr(66) function converts this back to the character 'B', so the expression chr(ord('A') + 1) indeed results in 'B'.<br><br>C) evaluates to true. The string '\' contains a single character, which is a single quote. Its length is 1, making the expression len('\'') == 1 true.<br><br>D) evaluates to false. The string """ """ is a multi-line string that contains one space character. Thus, its length is 1, not 0. Therefore, this expression is false.`,
     link: "https://docs.python.org/3/library/functions.html#ord",
-  },
+  }, */
   {
     question:
       "Which of the following expressions evaluate to True? <br><br>(Choose two)",
@@ -5876,7 +5876,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>If open() fails due to reasons such as the file not being found, lacking permissions, or other issues, it raises an exception, typically an OSError or FileNotFoundError.<br><br>The open() function returns a file object, which provides methods and attributes to interact with the file, such as reading from or writing to the file.<br><br><br><br>The open() function requires at least one argument, which is the file path. The second argument, which specifies the mode (e.g., 'r', 'w', 'a'), is optional. If omitted, the default mode is 'r' (read mode).<br><br>The standard pre-opened streams in Python are named sys.stdin, sys.stdout, and sys.stderr. These represent the standard input, output, and error streams, respectively. The names instd, outstd, and errstd are not used in Python.",
     link: "https://docs.python.org/3/library/functions.html#open",
-  },
+  },/* 
   {
     question:
       "Which of the following expressions evaluate to True? <br><br>(Choose two)",
@@ -5888,7 +5888,7 @@ export const questions = [
     ],
     explanation: `Explanation:<br><br>A) evaluates to false. The ord('a') function returns the ASCII value of 'a', which is 97, and ord('A') returns 65. Subtracting 65 from 97 gives 32. The ord('0') function returns 48, so 32 is not equal to 48.<br><br>B) evaluates to true. The string """ """ contains a single space character. The length of this string is 1, which is greater than 0. Therefore, the condition len(""" """) > 0 is true.<br><br>c) evaluates to false. The ord('a') function returns the ASCII value of 'a', which is 97. Adding 1 to 97 results in 98, and chr(98) gives 'b'. Therefore, chr(ord('a') + 1) evaluates to 'b', not 'B'.<br><br>D) evaluates to true. The string '\' contains a single backslash character. Its length is indeed 1. Thus, len('\'') equals 1, making the expression true.`,
     link: "https://docs.python.org/3/library/functions.html#ord",
-  },
+  }, */
   {
     question:
       "Assuming that the code below has been executed successfully, which of the expressions evaluate to True? <br><br>(Choose two)",
