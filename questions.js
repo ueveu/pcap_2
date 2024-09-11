@@ -701,27 +701,6 @@ export const questions = [
     link: "https://www.w3schools.com/python/python_lists.asp",
   },
   {
-    question: "What is the purpose of the 'enumerate()' function in Python?",
-    answers: [
-      {
-        text: "To iterate over two or more lists simultaneously",
-        correct: false,
-      },
-      { text: "To create an enumerated list", correct: false },
-      {
-        text: "To get the index and value of items in an iterable",
-        correct: true,
-      },
-      {
-        text: "To count occurrences of a specific element in a list",
-        correct: false,
-      },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'enumerate()' function in Python is used to create an enumerated list, for example: <br><br> enumerate(list)",
-    link: "https://www.w3schools.com/python/ref_func_enumerate.asp",
-  },
-  {
     question: "What is the output of the following code snippet?",
     image: "images/image7.png",
     answers: [
