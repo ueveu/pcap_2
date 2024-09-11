@@ -1042,7 +1042,7 @@ export const questions = [
       { text: "It represents a placeholder for future code.", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The purpose of the 'pass* statement is to act as a placeholder in the code where a statement is syntactically required but no action is needed. It allows the code to be syntactically complete without performing any operation, often used in stubs for future code or in loops and conditional statements where logic is yet to be implemented.",
+      "Explanation:<br><br>The purpose of the 'pass* statement is to act as a placeholder in the code where a statement is syntactically required but no action is needed. <br><br>It allows the code to be syntactically complete without performing any operation, often used in stubs for future code or in loops and conditional statements where logic is yet to be implemented.",
     link: "https://www.programiz.com/python-programming/pass-statement",
   },
   {
@@ -1631,7 +1631,7 @@ export const questions = [
       { text: "3", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>insert() inserts an item at a given position. The first argument is the index of the element before which to insert. insert(0, 1) inserts 1 before index 0 (at the front of the list). The del keyword deletes the given object: in this case x[1].The sum() function adds the items of a list (or a different iterable) and returns the sum.",
+      "Explanation:<br><br>insert() inserts an item at a given position. The first argument is the index of the element before which to insert. insert(0, 1) inserts 1 before index 0 (at the front of the list). <br><br>The del keyword deletes the given object: in this case x[1].The sum() function adds the items of a list (or a different iterable) and returns the sum.",
     link: "https://www.w3schools.com/python/ref_list_insert.asp",
   },
   {
@@ -2113,7 +2113,7 @@ export const questions = [
       { text: "2 3", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>When the function test(2, 1) is called, the values x=2 and y=1 are passed as arguments, overriding the default values of x=1 and y=2. Inside the function, the statement x = x + y is executed, updating the value of x to 3 (since x = 2 and y = 1, making x = 2 + 1 = 3). Then, the statement y += 1 increments the value of y by 1, making y = 2.<br><br>Finally, the print(x, y) statement outputs the updated values of x and y, which are 3 and 2 respectively.",
+      "Explanation:<br><br>When the function test(2, 1) is called, the values x=2 and y=1 are passed as arguments, overriding the default values of x=1 and y=2. <br><br>Inside the function, the statement x = x + y is executed, updating the value of x to 3 (since x = 2 and y = 1, making x = 2 + 1 = 3). Then, the statement y += 1 increments the value of y by 1, making y = 2.<br><br>Finally, the print(x, y) statement outputs the updated values of x and y, which are 3 and 2 respectively.",
     link: "https://www.w3schools.com/python/python_functions.asp",
   },
   {
@@ -2629,7 +2629,7 @@ export const questions = [
       { text: "27 81 343", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>data is a list of lambda functions. In the for loop the lambda functions get assigned to func and one after the other they are called with the argument 3:<br><br> 3 ** 2 = 9, 3 ** 3 = 27, 3 ** 4 = 81.",
+      "Explanation:<br><br>data is a list of lambda functions. In the for loop the lambda functions get assigned to func and one after the other they are called with the argument 3:<br><br> 3 ** 2 = 9<br>3 ** 3 = 27<br>3 ** 4 = 81",
     link: "https://www.datacamp.com/tutorial/exponents-in-python?dc_referrer=https%3A%2F%2Fwww.google.com%2F",
   },
   {
@@ -2931,7 +2931,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br> The function fun calculates a raised to the power of b raised to the power of c. In this specific call fun(b=2, a=2, c=3), it computes 2 ** (2 ** 3), which results in 256. Therefore, the output of the print statement is 256.",
+      "Explanation:<br><br> The function fun calculates a raised to the power of b raised to the power of c. In this specific call fun(b=2, a=2, c=3), it computes 2 ** (2 ** 3), which results in 256. <br><br>Therefore, the output of the print statement is 256.",
     link: "https://www.w3schools.com/python/python_operators.asp",
   },
   {
@@ -3594,7 +3594,7 @@ export const questions = [
       { text: "It raises an exception", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The code defines a class named Class with a class variable Var initialized to 0. When an instance of this class is created, the __init__ method sets an instance variable var and increments the class variable Var by 1.<br><br>When object_1 is created with the value 1, it sets object_1.var to 1 and increases Class.Var to 1. Then, when object_2 is created with the value 2, it sets object_2.var to 2 and increments Class.Var to 2. Finally, the code prints the sum of Class.Var, object_1.var, and object_2.var, which equals 2 + 1 + 2, resulting in an output of 5.",
+      "Explanation:<br><br>The code defines a class named Class with a class variable Var initialized to 0. When an instance of this class is created, the __init__ method sets an instance variable var and increments the class variable Var by 1.<br><br>When object_1 is created with the value 1, it sets object_1.var to 1 and increases Class.Var to 1. Then, when object_2 is created with the value 2, it sets object_2.var to 2 and increments Class.Var to 2. <br><br>Finally, the code prints the sum of Class.Var, object_1.var, and object_2.var, which equals 2 + 1 + 2, resulting in an output of 5.",
     link: "https://docs.python.org/3/tutorial/classes.html#instance-variables",
   },
   {
@@ -4013,7 +4013,7 @@ export const questions = [
       { text: "E)   Employees[ 1:-4 ]", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>A is incorrect: This starts slicing from index 1 and excludes the last five elements. This will skip the first employee and exclude the last five, which is not the desired outcome.<br><br>B is correct: This slices the list from the beginning up to but not including the last five elements. This is the correct way to exclude the last five elements.<br><br>C is correct: This is functionally the same as employees[:-5]. It slices from the beginning of the list up to but not including the last five elements.<br><br>D is incorrect: This slices up to but not including the last four elements. It excludes only the last four, not the last five.<br><br>E is incorrect: This starts slicing from index 1 and excludes the last four elements. This skips the first employee and excludes the last four, which is not the desired outcome.",
+      "Explanation:<br><br>A) is incorrect: This starts slicing from index 1 and excludes the last five elements. This will skip the first employee and exclude the last five, which is not the desired outcome.<br><br>B) is correct: This slices the list from the beginning up to but not including the last five elements. This is the correct way to exclude the last five elements.<br><br>C) is correct: This is functionally the same as employees[:-5]. It slices from the beginning of the list up to but not including the last five elements.<br><br>D) is incorrect: This slices up to but not including the last four elements. It excludes only the last four, not the last five.<br><br>E) is incorrect: This starts slicing from index 1 and excludes the last four elements. This skips the first employee and excludes the last four, which is not the desired outcome.",
     link: "https://docs.python.org/3/tutorial/datastructures.html#slicing",
   },
   {
@@ -6116,7 +6116,7 @@ export const questions = [
       { text: "3", correct: false },
     ],
     explanation:
-      "Explanation<br><br>The code defines a generator function named countdown that takes a parameter n. This function uses a while loop to yield values starting from n and decrementing by 1 on each iteration until n is no longer greater than 0. The yield keyword produces values one at a time and pauses the function's execution until the next value is requested.<br><br>When the countdown(3) generator is used in the for loop, it begins with n set to 3. During the first iteration of the loop, the generator yields the value 3, which is printed followed by a space. The generator then decrements n to 2 and yields this value, which is also printed with a space. In the next iteration, n is decremented to 1, and this value is yielded and printed. After n is decremented to 0, the generator finishes, as n is no longer greater than 0, and the loop exits.",
+      "Explanation<br><br>The code defines a generator function named countdown that takes a parameter n. This function uses a while loop to yield values starting from n and decrementing by 1 on each iteration until n is no longer greater than 0. <br><br>The yield keyword produces values one at a time and pauses the function's execution until the next value is requested.<br><br>When the countdown(3) generator is used in the for loop, it begins with n set to 3. During the first iteration of the loop, the generator yields the value 3, which is printed followed by a space. The generator then decrements n to 2 and yields this value, which is also printed with a space. <br><br>In the next iteration, n is decremented to 1, and this value is yielded and printed. After n is decremented to 0, the generator finishes, as n is no longer greater than 0, and the loop exits.",
     link: "https://www.programiz.com/python-programming/generator",
   },
   {
