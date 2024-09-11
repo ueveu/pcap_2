@@ -14,7 +14,7 @@ const incorrectSound = new Audio('audio/incorrect_answer.mp3');
 
 let currentQuestionIndex = 0; // Track current question index
 let score = 0; // Track user's score
-let timeLeft = 3900; // 65 minutes in seconds
+let timeLeft = 86400; // 65 minutes in seconds
 let timerInterval;
 let quizEnded = false;
 
@@ -28,7 +28,7 @@ function startQuiz() {
 
   currentQuestionIndex = 0; // Reset question index
   score = 0; // Reset score
-  timeLeft = 3900; // Reset timer
+  timeLeft = 86400; // Reset timer
   nextButton.innerHTML = "Next"; // Update next button text
   backButton.innerHTML = "Back"; // Update back button text
 
