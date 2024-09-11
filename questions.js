@@ -5559,18 +5559,6 @@ export const questions = [
     link: "https://docs.python.org/3/library/stdtypes.html#str",
   },
   {
-    question: "Which of the following sentences are true? <br><br>(Choose two)",
-    answers: [
-      { text: "Lists may not be stored inside tuples", correct: false },
-      { text: "Tuples may be stored inside lists", correct: true },
-      { text: "Tuples may not be stored inside lists", correct: false },
-      { text: "Lists may be stored inside lists", correct: true },
-    ],
-    explanation:
-      "Explanation:<br><br>In Python, you can store tuples inside lists, and you can also store lists inside other lists. However, lists cannot be stored inside tuples because tuples are immutable, meaning their contents cannot be changed once created.",
-    link: "https://docs.python.org/3/library/stdtypes.html#tuple",
-  },
-  {
     question:
       "What would you used instead of XXX if you want to check wether a certain 'key' exists in a dictionary called dict? <br><br>(Choose two)",
     image: "images/image171.png",
