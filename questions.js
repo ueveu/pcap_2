@@ -47,7 +47,7 @@ export const questions = [
       { text: 'tuple = "1,2,3"', correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Tuples in Python are defined using parentheses. <br><br>For example: tuple = (1,2,3)",
+      "Explanation:<br><br>Tuples in Python are defined using parentheses. <br><br>For example: tuple = (1,2,3)<br><br>Note:<br><br>Square brackets are for lists<br><br>Curly brackets are for dictionaries/sets",
     link: "https://www.w3schools.com/python/python_tuples.asp",
   },
   {
