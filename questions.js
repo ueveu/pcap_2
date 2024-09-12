@@ -1228,27 +1228,6 @@ export const questions = [
     link: "https://www.programiz.com/python-programming/inheritance",
   },
   {
-    question: "Which statement is true about file handling in Python?",
-    answers: [
-      { text: "Files can only be read, not written.", correct: false },
-      {
-        text: "The 'open' function is only used to create new files.",
-        correct: false,
-      },
-      {
-        text: "Files must be explicitly closed after reading or writing.",
-        correct: true,
-      },
-      {
-        text: "Files are automatically closed when the program terminates.",
-        correct: false,
-      },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'with' statement in Python is used to manage resources and ensure proper cleanup after a block of code is executed.",
-    link: "https://www.geeksforgeeks.org/file-handling-python/",
-  },
-  {
     question: "What is the purpose of the 'super' function in Python?",
     answers: [
       { text: "It imports external modules.", correct: false },
