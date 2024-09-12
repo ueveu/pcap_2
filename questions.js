@@ -411,7 +411,7 @@ export const questions = [
       { text: "create", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The '__init__' method is used to initialize class variables, for example:<br><br>def __init__(self, arg1, arg2): pass",
+      "Explanation:<br><br>The '__init__' method is used to initialize class variables, for example:<br><br>def __init__(self, arg1, arg2): <br>pass",
     link: "https://www.geeksforgeeks.org/__init__-in-python/",
   },
   {
