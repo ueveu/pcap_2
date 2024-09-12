@@ -1321,7 +1321,7 @@ export const questions = [
       { text: "It is used to skip the execution of code.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'finally' block is executed after the 'try' block, regardless of an exception being raised.",
+      "Explanation:<br><br>The 'finally' block is used to ensure that certain cleanup actions are performed, whether an exception was raised or not. For example, it might be used to close files or release resources that were acquired in the try block.",
     link: "https://www.w3schools.com/python/python_try_except.asp",
   },
   {
@@ -4109,7 +4109,7 @@ export const questions = [
     link: "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists",
   },
   {
-    question: "Which of the following code snippets will print 124? <br><br>(Choose three)",
+    question: "Which of the following code snippets will print 124, when the user enters 123? <br><br>(Choose three)",
     image: "images/image720.png",
     answers: [
       { text: "A", correct: true },
@@ -4118,7 +4118,7 @@ export const questions = [
       { text: "D", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>In A, eval evaluates the input as a Python expression. If you enter 123, eval will evaluate this as the integer 123. Adding 1 to 123 will give 124.<br><br>B converts the input string to an integer using int() and then adds 1. If you input 123, int(num) converts it to 123, and 123 + 1 is 124.<br><br>C directly converts the input string to an integer using int(), and then adds 1. If you input 123, int(input()) converts it to 123, and 123 + 1 is 124.<br><br>D does not convert the input to an integer; it treats num as a string. Adding 1 to a string will result in a TypeError. If you input 123, this will cause an error because you cannot concatenate a string and an integer.",
+      "Explanation:<br><br>In A), eval evaluates the input as a Python expression. If you enter 123, eval will evaluate this as the integer 123. Adding 1 to 123 will give 124.<br><br>B) converts the input string to an integer using int() and then adds 1. If you input 123, int(num) converts it to 123, and 123 + 1 is 124.<br><br>C) directly converts the input string to an integer using int(), and then adds 1. If you input 123, int(input()) converts it to 123, and 123 + 1 is 124.<br><br>D) does not convert the input to an integer; it treats num as a string. Adding 1 to a string will result in a TypeError. If you input 123, this will cause an error because you cannot concatenate a string and an integer.",
     link: "https://docs.python.org/3/library/functions.html#eval",
   },
   {
@@ -5384,7 +5384,7 @@ export const questions = [
       { text: "it outputs 0", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The code first calculates 3 % 1, which is 0, and assigns this value to the variable x. Then, it uses a conditional expression to set y to 1 if x is greater than 0, otherwise to 0. Since x is 0, which is not greater than 0, y is assigned 0. Finally, the code prints y, so the output is 0.",
+      "Explanation:<br><br>The code first calculates 3 % 1, which is 0, and assigns this value to the variable x. Then, it uses a conditional expression to set y to 1 if x is greater than 0, otherwise to 0. <br><br>Since x is 0, which is not greater than 0, y is assigned 0. Finally, the code prints y, so the output is 0.",
     link: "https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex",
   },
   {
@@ -5552,7 +5552,7 @@ export const questions = [
   },
   {
     question:
-      "Which line can be used instead of the comment to cause the snippet to produce the output '1 2 3'?",
+      "Which line can be used instead of the comment to cause the snippet to produce the output '1 2 3'? <br><br>(Choose two)",
     image: "images/image174.png",
     answers: [
       { text: "A", correct: true },
