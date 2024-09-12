@@ -285,7 +285,7 @@ body {
 
 /* Hover styles for the question image */
 .question-image:hover {
-  transform: scale(1.2); /* Enlarges the image on hover */
+  transform: scale(1.5); /* Enlarges the image on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
 }
 
