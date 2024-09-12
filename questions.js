@@ -2150,7 +2150,7 @@ export const questions = [
       { text: "9.0", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The operators here come from three different groups:<br>'Exponent' ** has the highest precedence. Followed by 'Multiplication, Division, Floor division, Modulus'.<br>'Addition, Subtraction' has the lowest precedence.<br><br>Therefore the order of operations here is:  **   →  //  →  *  →  /  →   %  →   +<br><br>result = 9 // 2 * 2 / 2 + 12 % 2 ** 3<br>= 4 * 2 / 2 + 12 % 8 = 4.0 + 4 = 8.0",
+      "Explanation:<br><br>The operators here come from three different groups:<br><br>'Exponent' ** has the highest precedence, followed by 'Multiplication, Division, Floor division, Modulus'.<br><br>'Addition, Subtraction' has the lowest precedence.<br><br>Therefore the order of operations here is:  **   →  //  →  *  →  /  →   %  →   +<br><br>result = 9 // 2 * 2 / 2 + 12 % 2 ** 3 = 4 * 2 / 2 + 12 % 8 = 4.0 + 4 = 8.0",
     link: "https://www.w3schools.com/python/python_operators.asp",
   },
   {
