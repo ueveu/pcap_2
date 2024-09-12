@@ -578,7 +578,7 @@ export const questions = [
       { text: "methodstatic", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The @staticmethod decorator is used to define a method that doesn't require access to the instance (self) or the class (cls). Static methods are bound to the class and not to its instances, and they can be called directly on the class.",
+      "Explanation:<br><br>The @staticmethod decorator is used to define a method that doesn't require access to the instance (self) or the class. <br><br>Static methods are bound to the class and not to its instances, and they can be called directly on the class.",
     link: "https://www.geeksforgeeks.org/python-staticmethod-function/",
   },
   {
@@ -645,7 +645,7 @@ export const questions = [
       { text: "len()", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The 'len()' function in Python is used to find the length of a list, for example: <br><br> len(list)",
+      "Explanation:<br><br>The len() function returns the number of items in a list (or other iterable data structures like strings, tuples, and dictionaries). <br><br>For example, len([1, 2, 3]) would return 3",
     link: "https://www.w3schools.com/python/ref_func_len.asp",
   },
   {
@@ -985,7 +985,7 @@ export const questions = [
       { text: "It is used to handle file operations.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br> The 'raise' keyword is used to define custom exceptions.",
+      "Explanation:<br><br>The raise keyword is used to trigger exceptions in your code. You can use it to raise a built-in exception or a custom exception that you define. <br><br>This is typically done to signal that an error has occurred and to transfer control to an appropriate exception handler. <br><br>For example, you might use raise to throw an exception when a function receives invalid input or encounters an unexpected condition.",
     link: "https://www.w3schools.com/python/gloss_python_raise.asp",
   },
   {
@@ -1282,7 +1282,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>Polymorphism allows methods to do different things based on the object it is acting upon, even though they share the same name. This concept is crucial for designing flexible and reusable code, enabling a single interface to represent different underlying forms (data types).",
+      "Explanation:<br><br>Polymorphism allows methods to do different things based on the object it is acting upon, even though they share the same name. <br><br>This concept is crucial for designing flexible and reusable code, enabling a single interface to represent different underlying forms (data types).",
     link: "https://www.geeksforgeeks.org/polymorphism-in-python/",
   },
   {
@@ -2594,7 +2594,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The dir() function returns the names of all entities (properties and methods) of the passed module (or object). Examples for entities in the math module are: e, pi, inf, nan, and tau.",
+      "Explanation:<br><br>The dir() function returns the names of all entities (properties and methods) of the passed module (or object). <br><br>Examples for entities in the math module are: e, pi, inf, nan, and tau.",
     link: "https://www.w3schools.com/python/ref_func_dir.asp",
   },
   {
@@ -3181,14 +3181,14 @@ export const questions = [
     question: "What is the expected output of the following code?",
     image: "images/image106.png",
     answers: [
-      { text: "Peter", correct: true },
-      { text: "Paul", correct: false },
-      { text: "Mary", correct: false },
+      { text: "Kevin", correct: false },
+      { text: "Benjamin", correct: true },
+      { text: "Marvin", correct: false },
       { text: "The code is erroneous.", correct: false },
-      { text: "None of the above.", correct: false },
+      { text: "Niklas", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Initially, the list data is assigned the elements ['Peter', 'Paul', 'Mary']. The expression inside the print statement is data[int(-1 / 2)]. To understand this, we need to evaluate the expression int(-1 / 2) first.<br><br>The division of -1 by 2 results in -0.5. Applying the int() function to -0.5 truncates the decimal part, yielding 0 because converting a float to an integer in Python truncates towards zero. So, int(-0.5) evaluates to 0.<br><br>Thus, the expression data[int(-1 / 2)] simplifies to data[0]. The index 0 in the list data refers to the first element, which is 'Peter'.",
+      "Explanation:<br><br>The expression -1 / 2 performs floating-point division, resulting in -0.5. When you apply the int() function to -0.5, it truncates the value towards zero, giving you -0. Since -0 is effectively the same as 0 in Python, accessing data[-0] is equivalent to accessing data[0]. Thus, the code prints the first element of the list data, which is 'Benjamin'.",
     link: "https://www.w3schools.com/python/python_lists.asp",
   },
   {
