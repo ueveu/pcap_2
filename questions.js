@@ -3357,7 +3357,7 @@ export const questions = [
       { text: "It outputs 2", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The code prints 1. Sub_A's doit() method calls its overridden make() method, returning 1, while Sub_B's doit() calls the inherited make() method from Super, returning 0. The sum is 1.",
+      "Explanation:<br><br>The code prints 1. Sub_A's doit() method calls its overridden make() method, returning 1, while Sub_B's doit() calls the inherited make() method from Super, returning 0. <br><br>Therefore, the sum is 1.",
     link: "https://docs.python.org/3/tutorial/classes.html#inheritance",
   },
   {
