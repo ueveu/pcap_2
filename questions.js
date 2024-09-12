@@ -4000,7 +4000,7 @@ export const questions = [
       { text: "D", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Expression A checks if the method is present in the class's dictionary and is not None. Since Class.__dict__ contains the class's attributes, including method, this evaluates to True and does not raise any exceptions.<br><br>Expression B compares the length of the instance's dictionary (object.__dict__) with the class's dictionary (Class.__dict__). Since the instance dictionary only contains instance_var and the class dictionary contains more items (like class_var and method), their lengths are different. This evaluates to False.<br><br>Expression C checks if '__dict__' is a key in Class.__dict__. However, __dict__ is a special attribute and not a key within the dictionary, so this evaluates to False but does not raise an exception.<br><br>Expression C tries to access 'method' in the instance's dictionary (object.__dict__). Since methods are stored in the class dictionary, not the instance dictionary, this will raise a KeyError exception.",
+      "Explanation:<br><br>A) checks if the method is present in the class's dictionary and is not None. Since Class.__dict__ contains the class's attributes, including method, this evaluates to True and does not raise any exceptions.<br><br>B) compares the length of the instance's dictionary (object.__dict__) with the class's dictionary (Class.__dict__). Since the instance dictionary only contains instance_var and the class dictionary contains more items (like class_var and method), their lengths are different. This evaluates to False.<br><br>C) checks if '__dict__' is a key in Class.__dict__. However, __dict__ is a special attribute and not a key within the dictionary, so this evaluates to False but does not raise an exception.<br><br>D) tries to access 'method' in the instance's dictionary (object.__dict__). Since methods are stored in the class dictionary, not the instance dictionary, this will raise a KeyError exception.",
     link: "https://docs.python.org/3/library/functions.html#isinstance",
   },
   {
@@ -6045,7 +6045,7 @@ export const questions = [
       { text: "random.shuffle(names)", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>To shuffle the names list, you can use the shuffle() function from the random module in Python. This will output the names list in a random order. Note that the shuffle() function shuffles the list in place, meaning that it modifies the original list rather than returning a new shuffled list.",
+      "Explanation:<br><br>To shuffle the names list, you can use the shuffle() function from the random module in Python. This will output the names list in a random order. <br><br>Note that the shuffle() function shuffles the list in place, meaning that it modifies the original list rather than returning a new shuffled list.",
     link: "https://www.w3schools.com/python/ref_random_shuffle.asp",
   },
   {
