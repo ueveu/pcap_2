@@ -690,16 +690,17 @@ export const questions = [
     link: "https://www.w3schools.com/python/ref_func_zip.asp",
   },
   {
-    question: "Which of the following is a mutable data type in Python?",
+    question: "Which of the following is a mutable data type in Python? <br><br>(Choose two)",
     answers: [
       { text: "Tuple", correct: false },
       { text: "List", correct: true },
       { text: "String", correct: false },
-      { text: "Set", correct: false },
+      { text: "Set", correct: true },
+      { text: "Dictionary", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>A list is a mutable data type in Python, which means it can be modified after it has been created.",
-    link: "https://www.w3schools.com/python/python_lists.asp",
+      "Explanation:<br><br>Lists can be modified after they are created; you can change their elements, add new elements, or remove elements.<br><br>Sets and Dictionaries are also mutable; you can add or remove elements from a them.",
+    link: "https://www.scaler.com/topics/mutable-data-types-in-python/asp",
   },
   {
     question: "What is the output of the following code snippet?",
