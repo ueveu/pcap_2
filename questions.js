@@ -1134,7 +1134,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The key benefit of the with statement is that it ensures that resources are automatically cleaned up after their use, even if an error occurs. For example, when opening a file using with, the file will be closed automatically once the block of code inside the with statement is done, without needing to call file.close() manually.",
+      "Explanation:<br><br>The key benefit of the with statement is that it ensures that resources are automatically cleaned up after their use, even if an error occurs. <br><br>For example, when opening a file using with, the file will be closed automatically once the block of code inside the with statement is done, without needing to call file.close() manually.",
     link: "https://www.geeksforgeeks.org/with-statement-in-python/",
   },
   {
@@ -6810,7 +6810,7 @@ export const questions = [
       { text: "C) tup[0]", correct: false },
       { text: "D) del tup", correct: true },
     ],    
-    explanation: "Explanation:<br><br>A) creates a slice of the tuple. Since the tuple is empty, tup[:] would also result in an empty tuple (). This operation is valid for tuples.<br><br>B) Tuples in Python are immutable, meaning their elements cannot be changed or appended after creation. The append() method is not available for tuples, so this action is not valid.<br><br>C): Attempting to access an element at index 0 in an empty tuple will result in an IndexError because there are no elements in the tuple. Therefore, this action is not valid.<br><br>In C), the del statement can be used to delete a variable, including tuples. After del tup, the variable tup would be removed from the namespace.",
+    explanation: "Explanation:<br><br>A) creates a slice of the tuple. Since the tuple is empty, tup[:] would also result in an empty tuple (). This operation is valid for tuples.<br><br>B) Tuples in Python are immutable, meaning their elements cannot be changed or appended after creation. The append() method is not available for tuples, so this action is not valid.<br><br>C): Attempting to access an element at index 0 in an empty tuple will result in an IndexError because there are no elements in the tuple. Therefore, this action is not valid.<br><br>In D), the del statement can be used to delete a variable, including tuples. After del tup, the variable tup would be removed from the namespace.",
     link: "https://docs.python.org/3/library/stdtypes.html#tuple",
   },
   {
