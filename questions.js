@@ -1405,7 +1405,7 @@ export const questions = [
       { text: "Dictionary", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'set' data structure is ideal for storing a collection of unique elements.",
+      "Explanation:<br><br>A set automatically ensures that all elements are unique, so it is the most suitable data structure when you need to store and manage a collection of items without duplicates.<br><br>• Lists can contain duplicate elements and are not designed specifically for uniqueness.<br><br>• Tuples are immutable sequences that can also contain duplicate elements.<br><br>• Dictionaries store key-value pairs, where keys must be unique, but the values can be duplicated.",
     link: "https://www.w3schools.com/python/python_sets.asp",
   },
   {
@@ -3229,7 +3229,7 @@ export const questions = [
       { text: "The code is erroneous.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The output of the code snippet is 2. This is because the method set updates self.x to 2 + 3 (which is 5) but returns the original value of x (which is 2). Thus, when print(a.set(a.x + 1)) is executed, it prints 2, which is the value returned by the set method.",
+      "Explanation:<br><br>The output of the code snippet is 2. This is because the method set updates self.x to 2 + 3 (which is 5) but returns the original value of x (which is 2). <br><br>Thus, when print(a.set(a.x + 1)) is executed, it prints 2, which is the value returned by the set method.",
     link: "https://www.programiz.com/python-programming/methods",
   },
   {
@@ -6063,7 +6063,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The .read() method in Python file handling is used to read the contents of a file. It allows you to read the entire content of a file as a string or a specified number of bytes from the file. When called without any arguments, file.read() reads the entire content of the file and returns it as a single string.",
+      "Explanation:<br><br>The .read() method in Python file handling is used to read the contents of a file. It allows you to read the entire content of a file as a string or a specified number of bytes from the file. <br><br>When called without any arguments, file.read() reads the entire content of the file and returns it as a single string.",
     link: "https://www.w3schools.com/python/ref_file_read.asp",
   },
   {
