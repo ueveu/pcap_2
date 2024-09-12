@@ -102,10 +102,10 @@ export const questions = [
     question:
       "How do you pass a variable number of arguments to a Python function?",
     answers: [
-      { text: "Using a tuple", correct: false },
-      { text: "Using a list", correct: false },
-      { text: "Using the *args syntax", correct: true },
-      { text: "Using the **kwargs syntax", correct: false },
+      { text: "using a tuple", correct: false },
+      { text: "using a list", correct: false },
+      { text: "using the *args syntax", correct: true },
+      { text: "using the **kwargs syntax", correct: false },
     ],
     explanation:
       "Explanation:<br><br>In Python, you can pass a variable (or arbitrary) number of positional arguments to a function using the *args syntax. The *args collects all additional positional arguments into a tuple, allowing the function to handle more arguments than initially specified.<br><br>*args allows a function to accept any number of positional arguments.<br><br>**kwargs allows a function to accept a variable number of keyword arguments (key-value pairs), but this is not relevant for positional arguments.",
@@ -1359,7 +1359,7 @@ export const questions = [
         text: "To make the data look more visually appealing.",
         correct: false,
       },
-      { text: "To remove all missing values from the dataset", correct: false },
+      { text: "To remove all missing values from the dataset.", correct: false },
       {
         text: "To transform the data into a different data type.",
         correct: false,
@@ -1370,7 +1370,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>Data cleaning is the process of removing or correcting errors in data.",
+      "Explanation:<br><br>Data cleaning involves identifying and correcting errors or inconsistencies in the data, handling missing values, and ensuring that the dataset is in a suitable format for analysis. This process helps improve the quality of the data and ensures that the subsequent analysis yields reliable and meaningful results.",
     link: "https://en.wikipedia.org/wiki/Data_cleaning",
   },
   {
@@ -2457,7 +2457,7 @@ export const questions = [
       { text: "The code is erroneous and cannot be run.", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>In Python you cannot add/concatenate an integer to a string, only strings can be concatenated.<br>Therefore plane + 2 will not work, making the code erroneous.",
+      "Explanation:<br><br>In Python you cannot add/concatenate an integer to a string, only strings can be concatenated.<br><br>Therefore plane + 2 will not work, making the code erroneous.",
   },
   {
     question: "What is the expected output of the following code?",
@@ -2788,7 +2788,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>First we got a nested list comprehension that generates a list of lists:<br>The outer loop for r in range(3) iterates over the range 0, 1, 2. For each value of r, the inner loop for c in range(r) creates a list of integers from 0 to r-1. <br><br>Let's break down the list comprehension for each value of r: <br>When r = 0, the inner loop for c in range(0) generates an empty list [ ] because the range is 0. <br>When r = 1, the inner loop for c in range(1) generates [0]. <br>When r = 2, the inner loop for c in range(2) generates [0, 1]. <br><br>Combining these, the result of the list comprehension is: lst = [[ ], [0], [0, 1]]<br><br>Now let's examine how the nested for loop processes the list lst: <br>For the first sublist [ ], there are no elements to iterate over, so nothing is printed. <br>For the second sublist [0], the only element is 0. Since 0 < 2, an asterisk '*' is printed. <br>For the third sublist [0, 1], the elements are 0 and 1. <br><br>Both satisfy y < 2, so two asterisks '*' are printed.",
+      "Explanation:<br><br>The code constructs a nested list where:<br><br>• For r = 0, it creates an empty list.<br>• For r = 1, it creates a list with one element: [0].<br>• For r = 2, it creates a list with two elements: [0, 1].<br><br>The resulting list is [[ ], [0], [0, 1]].<br><br>The nested loops then iterate through this list. They print an asterisk for each element less than 2. The first sublist is empty, so no asterisks are printed from it. In the second sublist, 0 is less than 2, so one asterisk is printed. In the third sublist, both 0 and 1 are less than 2, leading to two more asterisks being printed.<br><br>Thus, the final output is three asterisks (***).",
     link: "https://www.w3schools.com/python/python_lists_comprehension.asp",
   },
   {
@@ -3344,7 +3344,7 @@ export const questions = [
       { text: "It raises an exception", correct: false },
     ],
     explanation:
-      'Explanation:<br><br>The output is True. The split method creates a list of strings without separators, and join concatenates them into "alphabetagamme", which contains only alphabetic characters. Thus, isalpha() returns True.',
+      'Explanation:<br><br>The output is True. The split method creates a list of strings without separators, and join concatenates them into "alphabetagamme", which contains only alphabetic characters. <br><br>Thus, isalpha() returns True.',
     link: "https://www.w3schools.com/python/ref_string_isalpha.asp",
   },
   {
@@ -3641,7 +3641,7 @@ export const questions = [
       { text: "D", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>For A, 'xYz'.lower() > 'XY', the .lower() method converts the string 'xYz' to lowercase, resulting in 'xyz'. When comparing 'xyz' with 'XY', Python compares the strings lexicographically based on Unicode values. The lowercase 'x' has a higher Unicode value than the uppercase 'X', so 'xyz' > 'XY' is true.<br><br>In B, '8' + '8' != 2 * '8', the operation '8' + '8' concatenates the two strings, resulting in '88'. The expression 2 * '8' repeats the string '8' twice, also resulting in '88'. Since '88' is equal to '88', the expression '8' + '8' != 2 * '8' is false.<br><br>For C, float('3.14') == str('3.' + '14'), the float('3.14') converts the string '3.14' to the float 3.14. The str('3.' + '14') first concatenates the strings '3.' and '14' to form '3.14', and then converts it to a string, which remains '3.14'. However, a float 3.14 is not equal to a string '3.14', so this expression is false.<br><br>In D, 121 + 1 == int('1' + 2 * '2'), the calculation 121 + 1 results in 122. The expression '1' + 2 * '2' first repeats the string '2' twice to get '22', and then concatenates it with '1' to form '122'. Converting this string '122' to an integer using int('122') results in the integer 122. Since 122 == 122, this expression is true.",
+      "Explanation:<br><br>For A), 'xYz'.lower() > 'XY', the .lower() method converts the string 'xYz' to lowercase, resulting in 'xyz'. When comparing 'xyz' with 'XY', Python compares the strings lexicographically based on Unicode values. The lowercase 'x' has a higher Unicode value than the uppercase 'X', so 'xyz' > 'XY' is true.<br><br>In B), '8' + '8' != 2 * '8', the operation '8' + '8' concatenates the two strings, resulting in '88'. The expression 2 * '8' repeats the string '8' twice, also resulting in '88'. Since '88' is equal to '88', the expression '8' + '8' != 2 * '8' is false.<br><br>For C), float('3.14') == str('3.' + '14'), the float('3.14') converts the string '3.14' to the float 3.14. The str('3.' + '14') first concatenates the strings '3.' and '14' to form '3.14', and then converts it to a string, which remains '3.14'. However, a float 3.14 is not equal to a string '3.14', so this expression is false.<br><br>In D), 121 + 1 == int('1' + 2 * '2'), the calculation 121 + 1 results in 122. The expression '1' + 2 * '2' first repeats the string '2' twice to get '22', and then concatenates it with '1' to form '122'. Converting this string '122' to an integer using int('122') results in the integer 122. Since 122 == 122, this expression is true.",
     link: "https://docs.python.org/3/reference/expressions.html#value-comparisons",
   },
   {
@@ -5636,7 +5636,7 @@ export const questions = [
       { text: "C", correct: true },
       { text: "D", correct: false },
     ],
-    explanation: `Explanation:<br><br>In A, the code will execute without raising any unhandled exceptions. Although 0/0 will raise a ZeroDivisionError, this exception is caught by the except block. The except block then executes successfully with 0/1, and since the else block is skipped due to the exception, no further issues occur.<br><br>In B, the code will raise an unhandled exception. The int("0") conversion succeeds without any issues, but when it reaches the else block, int("") raises a ValueError, which is not handled by the except clause. This results in an unhandled exception.<br><br>In C, the code will also execute without raising any unhandled exceptions. The math.sqrt(-1) call raises a ValueError, but this exception is caught by the except block, which successfully executes math.sqrt(0). Since an exception was caught, the else block does not execute, and no further issues arise.<br><br>In D, the code will raise an unhandled exception. The float("1e1") conversion succeeds, but when the else block is reached, float("1c1") raises a ValueError. Since this exception is not caught, the snippet results in an unhandled exception.`,
+    explanation: `Explanation:<br><br>In A), the code will execute without raising any unhandled exceptions. Although 0/0 will raise a ZeroDivisionError, this exception is caught by the except block. The except block then executes successfully with 0/1, and since the else block is skipped due to the exception, no further issues occur.<br><br>In B), the code will raise an unhandled exception. The int("0") conversion succeeds without any issues, but when it reaches the else block, int("") raises a ValueError, which is not handled by the except clause. This results in an unhandled exception.<br><br>In C), the code will also execute without raising any unhandled exceptions. The math.sqrt(-1) call raises a ValueError, but this exception is caught by the except block, which successfully executes math.sqrt(0). Since an exception was caught, the else block does not execute, and no further issues arise.<br><br>In D), the code will raise an unhandled exception. The float("1e1") conversion succeeds, but when the else block is reached, float("1c1") raises a ValueError. Since this exception is not caught, the snippet results in an unhandled exception.`,
     link: "https://docs.python.org/3/library/functions.html#int",
   },
   {
@@ -6906,7 +6906,7 @@ export const questions = [
       { text: "False" + "\n" + "True" + "\n" + "True", correct: false },
       { text: "False" + "\n" + "False" + "\n" + "False", correct: false },
     ],    
-    explanation: "Explanation:<br><br>isinstance(obj, A) returns True because obj is an instance of class B which is inherited from class A. isinstance(obj, B) returns True because obj is an instance of class B. <br><br>isinstance(obj, object) returns True because all classes in Python inherit from the object class.",
+    explanation: "Explanation:<br><br>isinstance(obj, A) returns True because obj is an instance of class B which is inherited from class A. <br><br>isinstance(obj, B) returns True because obj is an instance of class B. <br><br>isinstance(obj, object) returns True because all classes in Python inherit from the object class.",
     link: "https://www.w3schools.com/python/ref_func_isinstance.asp",
   },
   {
