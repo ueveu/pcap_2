@@ -5886,7 +5886,7 @@ export const questions = [
     answers: [
       {
         text: "A) a code designed to initialize a package's state should be placed inside a file named init.py",
-        correct: false,
+        correct: true,
       },
       {
         text: "B) a package contents can be stored and distributed as an mp3 file",
@@ -5894,7 +5894,7 @@ export const questions = [
       },
       {
         text: "C) _pycache_is a folder that stores semi-completed Python modules",
-        correct: true,
+        correct: false,
       },
       { text: "D) the sys.path variable is a list of strings", correct: true },
     ],
