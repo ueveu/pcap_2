@@ -445,7 +445,8 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>In object-oriented programming, abstraction involves hiding the complex implementation details of objects and exposing only essential features or functionalities to the outside world. This simplifies the usage of objects, enhances code readability, and allows programmers to focus on the high-level structure and behavior of their systems.",
+      "Explanation:<br><br>In object-oriented programming, abstraction involves hiding the complex implementation details of objects and exposing only essential features or functionalities to the outside world. <br><br>This simplifies the usage of objects, enhances code readability, and allows programmers to focus on the high-level structure and behavior of their systems.",
+    link: "https://softwareengineering.stackexchange.com/questions/230401/confused-about-the-definition-of-abstraction-in-oop",
   },
   {
     question:
@@ -1280,7 +1281,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>Polymorphism allows different classes to be treated as instances of the same class, enabling more flexible and generic code.",
+      "Explanation:<br><br>Polymorphism allows methods to do different things based on the object it is acting upon, even though they share the same name. This concept is crucial for designing flexible and reusable code, enabling a single interface to represent different underlying forms (data types).",
     link: "https://www.geeksforgeeks.org/polymorphism-in-python/",
   },
   {
@@ -1333,7 +1334,7 @@ export const questions = [
       { text: "To call a method from a superclass.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>n Python, the raise statement is used to manually trigger an exception. This is helpful when you want to signal that an error or unusual condition has occurred in your program, and it allows you to define custom error messages or handle specific error cases.",
+      "Explanation:<br><br>In Python, the raise statement is used to manually trigger an exception. This is helpful when you want to signal that an error or unusual condition has occurred in your program, and it allows you to define custom error messages or handle specific error cases.",
     link: "https://www.w3schools.com/python/python_raise.asp",
   },
   {
@@ -1854,7 +1855,7 @@ export const questions = [
       { text: "19/11/27 11:27:22", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>'%y' = year, <br>'%B' = month fully written, <br>'%d' = day, <br>'%H' = hour, <br>'%M' = minute, <br>'%S' = second. <br><br>The format is '2019/Nov/27 11:27:22'.",
+      "Explanation:<br><br>'%y' = year <br>'%B' = month (fully written) <br>'%d' = day <br>'%H' = hour <br>'%M' = minute <br>'%S' = second <br><br>The format is '2019/Nov/27 11:27:22'",
     link: "https://www.w3schools.com/python/python_datetime.asp",
   },
   {
@@ -2120,7 +2121,7 @@ export const questions = [
       { text: "17.5", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The operators here come from three different groups:<br>'Exponent' ** has the highest precedence. Followed by 'Multiplication, Division, Floor division, Modulus'.<br><br>'Addition, Subtraction' has the lowest precedence.<br><br>Therefore the order of operations here is:  **  →  /  →  //  →  +<br><br>x = 1/2 + 3 // 3 + 4**2 = 0.5 + 1 + 16 = 17.5",
+      "Explanation:<br><br>The operators here come from three different groups:<br><br>'Exponent' ** has the highest precedence. Followed by 'Multiplication, Division, Floor division, Modulus'.<br><br>'Addition, Subtraction' has the lowest precedence.<br><br>Therefore the order of operations here is:  **  →  /  →  //  →  +<br><br>x = 1/2 + 3 // 3 + 4**2 = 0.5 + 1 + 16 = 17.5",
     link: "https://www.w3schools.com/python/python_operators.asp",
   },
   {
