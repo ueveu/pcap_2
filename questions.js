@@ -2282,7 +2282,7 @@ export const questions = [
       { text: "eight", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The code will print 4 asterisks to the monitor. The << operator is a bitwise left shift operator, which effectively doubles the value of x on each iteration of the loop.<br>In each iteration, x is left-shifted by 1, effectively doubling its value (1 << 1 becomes 2, 2 << 1 becomes 4, etc.).",
+      "Explanation:<br><br>The code will print 4 asterisks to the monitor. The << operator is a bitwise left shift operator, which effectively doubles the value of x on each iteration of the loop.<br><br>In each iteration, x is left-shifted by 1, effectively doubling its value (1 << 1 becomes 2, 2 << 1 becomes 4, etc.).",
   },
   {
     question: "The += operator, when applied to strings, performs:",
@@ -4231,7 +4231,7 @@ export const questions = [
       { text: "D", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Lambda functions are used for creating small anonymous functions in Python.<br><br>Line A defines a valid lambda function that takes one parameter x and returns x + 1.<br><br>Line B is invalid because there are    parentheses around a single parameter, which is not allowed in Python 3. Lambda functions do not use return statements, they are meant to be single-expression functions.<br><br>Line C defines a valid lambda function that takes one parameter x and returns None<br><br>Line D is invalid because lambda functions cannot have default arguments that depend on the value of the parameter itself. The syntax for lambda functions does not support such default arguments.",
+      "Explanation:<br><br>Lambda functions are used for creating small anonymous functions in Python.<br><br>A) defines a valid lambda function that takes one parameter x and returns x + 1.<br><br>B) is invalid because there are    parentheses around a single parameter, which is not allowed in Python 3. Lambda functions do not use return statements, they are meant to be single-expression functions.<br><br>C) defines a valid lambda function that takes one parameter x and returns None<br><br>D) is invalid because lambda functions cannot have default arguments that depend on the value of the parameter itself. The syntax for lambda functions does not support such default arguments.",
     link: "https://docs.python.org/3/reference/compound_stmts.html#lambda",
   },
   {
@@ -4878,7 +4878,7 @@ export const questions = [
       { text: "ch = s.read(1)", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>In Python, to read a specific number of characters from a stream, such as reading just one character, you use the read() method of the stream object. By passing 1 as an argument to s.read(), you instruct Python to read one character from the stream s.",
+      "Explanation:<br><br>In Python, to read a specific number of characters from a stream, such as reading just one character, you use the read() method of the stream object. <br><br>By passing 1 as an argument to s.read(), you instruct Python to read one character from the stream s.",
     link: "https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files",
   },
   {
@@ -4991,7 +4991,7 @@ export const questions = [
       { text: "__main__", correct: true },
       { text: "___main___", correct: false },
     ],
-    explanation: `Explanation:<br><br>In Python, when a script is run directly, the special variable __name__ is set to "__main__". Therefore, to print out the module name when the script is executed directly, you should check if __name__ is equal to "__main__".`,
+    explanation: `Explanation:<br><br>In Python, when a script is run directly, the special variable __name__ is set to "__main__". <br><br>Therefore, to print out the module name when the script is executed directly, you should check if __name__ is equal to "__main__".`,
     link: "https://docs.python.org/3/tutorial/modules.html",
   },
   {
