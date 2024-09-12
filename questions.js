@@ -6547,7 +6547,7 @@ export const questions = [
     answers: [
       { text: "A) the interpreter used to generate the file is version 3.6", correct: true },
       { text: "B) it has been produced by CPython", correct: true },
-      { text: "C) . version of the file", correct: false },
+      { text: "C) 36. version of the file", correct: false },
       { text: "D) the file comes from the services.py source file", correct: true },
     ],
     explanation: "Explanation:<br><br>A) is True: The -36 in the filename indicates that the Python version used to generate the file was Python 3.6.<br><br>B) is True: The cpython in the filename indicates that the file was produced by the CPython implementation of Python.<br><br>C) is False: The 36 does not refer to the version of the file but to the Python interpreter version (3.6) used to generate the file.<br><br>D) is True: The services prefix suggests that the .pyc file was generated from the services.py source file.",
