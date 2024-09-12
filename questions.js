@@ -322,7 +322,7 @@ export const questions = [
       { text: "To call a method from within another method.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The primary purpose of the classmethod decorator in Python is to define a method that is bound to the class rather than an instance of the class. This allows the method to access and modify class-level data or perform operations that are related to the class itself, rather than individual objects.",
+      "Explanation:<br><br>The primary purpose of the classmethod decorator in Python is to define a method that is bound to the class rather than an instance of the class. <br><br>This allows the method to access and modify class-level data or perform operations that are related to the class itself, rather than individual objects.",
     link: "https://www.geeksforgeeks.org/classmethod-in-python/",
   },
   {
@@ -1119,7 +1119,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>Modules in Python are reusable pieces of code that can contain functions, variables, classes, and runnable code. They allow you to organize and reuse code efficiently.<br><br>Option A is incorrect because modules are indeed reusable pieces of code.<br><br>Option B is incorrect because modules can contain both functions and variables, as well as classes and executable code.<br><br>Option D is incorrect because modules are not limited to graphical user interfaces; they can be used for a wide range of purposes including data processing, file handling, networking, and more.<br><br>Option C is correct because modules can be organized into packages. A package is a collection of modules organized in directories, which helps in structuring code hierarchically and managing complex codebases.",
+      "Explanation:<br><br>Modules in Python are reusable pieces of code that can contain functions, variables, classes, and runnable code. They allow you to organize and reuse code efficiently.<br><br>A) is incorrect because modules are indeed reusable pieces of code.<br><br>B) is incorrect because modules can contain both functions and variables, as well as classes and executable code.<br><br>C) is correct because modules can be organized into packages. A package is a collection of modules organized in directories, which helps in structuring code hierarchically and managing complex codebases.<br><br>D) is incorrect because modules are not limited to graphical user interfaces; they can be used for a wide range of purposes including data processing, file handling, networking, and more.",
     link: "https://www.geeksforgeeks.org/modules-in-python/",
   },
   {
@@ -1965,7 +1965,7 @@ export const questions = [
       { text: "Error.Error.Error.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The length of kangaroo is 8 and the length of 0 is 1, so 1 * 2 -> 2, leading to 8 / 2 -> 4.0 .",
+      "Explanation:<br><br>The length of kangaroo is 8, and the length of 0 is 1<br><br>Therefore, we get 8 / 2 -> 4.0",
     link: "https://www.w3schools.com/python/ref_func_len.asp",
   },
   {
@@ -2836,7 +2836,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br> The function fun calculates a raised to the power of b raised to the power of c. In this specific call fun(b=2, a=2, c=3), it computes 2 ** (2 ** 3), which results in 256. <br><br>Therefore, the output of the print statement is 256.",
+      "Explanation:<br><br> The function fun calculates a raised to the power of b raised to the power of c. <br><br>In this specific call fun(b=2, a=2, c=3), it computes 2 ** (2 ** 3), which results in 256.",
     link: "https://www.w3schools.com/python/python_operators.asp",
   },
   {
@@ -3627,7 +3627,7 @@ export const questions = [
       { text: "C", correct: true },
       { text: "D", correct: false },
     ],
-    explanation: `Explanation:<br><br>For A, ord("0") - ord("9") == 10, the ord("0") function returns the ASCII value of "0", which is 48, and ord("9") returns the ASCII value of "9", which is 57. Subtracting these values gives 48 - 57, which equals -9. Since -9 is not equal to 10, this expression is false.<br><br>In B, len("''") == 2, checks the length of the string ''. The string contains two single quotes, so its length is indeed 2. Therefore, this expression is true.<br><br>For C, chr(ord('z') - 1) == 'y', ord('z') gives the ASCII value of 'z', which is 122. Subtracting 1 from 122 gives 121, and chr(121) returns the character 'y'. Since 'y' is indeed equal to 'y', this expression is true.<br><br>In D, len(''1234'') == 4, contains an incorrectly formatted string (''1234''), which would cause a syntax error in Python. If the string were properly formatted as "1234", its length would be 4. However, as it is written, the expression is invalid and does not evaluate to anything.`,
+    explanation: `Explanation:<br><br>For A), ord("0") - ord("9") == 10, the ord("0") function returns the ASCII value of "0", which is 48, and ord("9") returns the ASCII value of "9", which is 57. Subtracting these values gives 48 - 57, which equals -9. Since -9 is not equal to 10, this expression is false.<br><br>In B), len("''") == 2, checks the length of the string ''. The string contains two single quotes, so its length is indeed 2. Therefore, this expression is true.<br><br>For C), chr(ord('z') - 1) == 'y', ord('z') gives the ASCII value of 'z', which is 122. Subtracting 1 from 122 gives 121, and chr(121) returns the character 'y'. Since 'y' is indeed equal to 'y', this expression is true.<br><br>In D), len(''1234'') == 4, contains an incorrectly formatted string (''1234''), which would cause a syntax error in Python. If the string were properly formatted as "1234", its length would be 4. However, as it is written, the expression is invalid and does not evaluate to anything.`,
     link: "https://python-reference.readthedocs.io/en/latest/docs/str/ASCII.html",
   },
   {
@@ -5126,7 +5126,7 @@ export const questions = [
       { text: "except Ex1+Ex2:", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>In Python, if you want to handle multiple exceptions in a single except block, you can group them together inside parentheses, separated by commas. This way, if either Ex1 or Ex2 is raised, the except block will be executed.",
+      "Explanation:<br><br>In Python, if you want to handle multiple exceptions in a single except block, you can group them together inside parentheses, separated by commas. <br><br>This way, if either Ex1 or Ex2 is raised, the except block will be executed.",
     link: "https://docs.python.org/3/tutorial/errors.html#handling-exceptions",
   },
   {
