@@ -690,7 +690,7 @@ export const questions = [
     link: "https://www.w3schools.com/python/ref_func_zip.asp",
   },
   {
-    question: "Which of the following is a mutable data type in Python? <br><br>(Choose two)",
+    question: "Which of the following is a mutable data type in Python? <br><br>(Choose three)",
     answers: [
       { text: "Tuple", correct: false },
       { text: "List", correct: true },
