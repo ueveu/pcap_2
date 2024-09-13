@@ -2681,8 +2681,8 @@ export const questions = [
     question: "What is the result of the following comparison?",
     image: "images/image80.png",
     answers: [
-      { text: "True", correct: false },
-      { text: "False", correct: true },
+      { text: "True", correct: true },
+      { text: "False", correct: false },
       { text: "None", correct: false },
       {
         text: "The comparison causes a runtime exception/error.",
@@ -2690,7 +2690,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The variables x and y are strings, not numbers. When Python compares strings using >, it does so lexicographically, meaning character by character, like in a dictionary. For '20' and '30', it compares the first characters: '2' and '3'. <br><br>The Unicode value of '2' is 50, and '3' is 51. Since 50 is less than 51, '20' is less than '30'. Therefore, x > y evaluates to False, and the code prints False.",
+      "Explanation:<br><br>The variables x and y are strings, not numbers. When Python compares strings using >, it does so lexicographically, meaning character by character, like in a dictionary. For '20' and '30', it compares the first characters: '2' and '3'. <br><br>The Unicode value of '2' is 50, and '3' is 51. Since 50 is less than 51, '20' is less than '30'. Therefore, x < y evaluates to True.",
     link: "https://www.geeksforgeeks.org/string-comparison-in-python/",
   },
   {
