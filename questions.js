@@ -4285,7 +4285,7 @@ export const questions = [
       { text: "D", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>A will raise an exception. The string 'kevin' has only 5 characters, indexed from 0 to 4. Trying to access s[9] will result in an IndexError because index 9 is out of range.<br><br>B will raise an exception. Strings in Python are immutable, meaning they cannot be changed after they are created. Attempting to assign a new value to s[0] will raise a TypeError.<br><br>C will not raise an exception. The slicing operation s[::2] creates a new string by taking every second character of the original string 'kevin'. The resulting string would be 'kvi'.<br><br>D will not raise an exception. The slicing operation s[::-2] creates a new string by taking every second character of the original string 'kevin', but in reverse order. The resulting string would be 'nve'.",
+      "Explanation:<br><br>A) will raise an exception. The string 'kevin' has only 5 characters, indexed from 0 to 4. Trying to access s[5] will result in an IndexError because index 5 is out of range.<br><br>B) will raise an exception. Strings in Python are immutable, meaning they cannot be changed after they are created. Attempting to assign a new value to s[0] will raise a TypeError.<br><br>C) will NOT raise an exception. The slicing operation s[::2] creates a new string by taking every second character of the original string 'kevin'. The resulting string would be 'kvi'.<br><br>D) will NOT raise an exception. The slicing operation s[::-2] creates a new string by taking every second character of the original string 'kevin', but in reverse order. The resulting string would be 'nve'.",
     link: "https://www.w3schools.com/python/python_strings_slicing.asp",
   },
   {
