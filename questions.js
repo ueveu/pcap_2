@@ -1692,7 +1692,7 @@ export const questions = [
   },
   {
     question:
-      "Knowing that a function named randint() resides in the module named random choose the proper way to import it:",
+      "Knowing that a function named randint() resides in the module named random, choose the proper way to import it:",
     answers: [
       { text: "from randint import random", correct: false },
       { text: "import randint", correct: false },
@@ -3104,9 +3104,12 @@ export const questions = [
     image: "images/image105.png",
     answers: [
       { text: "44", correct: false },
-      { text: "(4,)", correct: false },
-      { text: "(4)", correct: false },
+      { text: "(4,)", correct: false },      
       { text: "4", correct: true },
+      { text: "8", correct: false },
+      { text: "(8)", correct: false },
+      { text: "2", correct: false },
+      { text: "(4)", correct: false },
     ],
     explanation:
       "Explanation:<br><br>Initially, data is assigned a tuple (1, 2, 4, 8). The slicing operation data[-2:-1] extracts a portion of this tuple, specifically creating a new tuple containing just the second-to-last element, which is (4,). Then, data is reassigned to the last element of this new tuple, which is simply 4. <br><br>Therefore, when the final value of data is printed, the output is 4.",
