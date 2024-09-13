@@ -1944,7 +1944,7 @@ export const questions = [
       { text: '"Deleting System32"', correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The length of kangaroo is 8, and the length of 0 is 1<br><br>Therefore, we get 8 / 2 -> 4.0",
+      "Explanation:<br><br>The length of 'Gandalf' is 7, and the length of 0 is 1<br><br>Therefore, we get 7 / 2 = 3.5",
     link: "https://www.w3schools.com/python/ref_func_len.asp",
   },
   {
