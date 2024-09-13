@@ -1935,13 +1935,13 @@ export const questions = [
   },
   {
     question:
-      "What is the output of the following program if the user enters 'kangaroo' at the first prompt and '0' at the second prompt?",
+      "What is the output of the following program if the user enters 'Gandalf' at the first prompt and '0' at the second prompt?",
     image: "images/image44.png",
     answers: [
-      { text: "Wrong value.", correct: false },
-      { text: "Do not divide by zero!", correct: false },
-      { text: "4.0", correct: true },
-      { text: "Error.Error.Error.", correct: false },
+      { text: '"Hobbits..."', correct: false },
+      { text: '"You shall not divide by zero!"', correct: false },
+      { text: "3.5", correct: true },
+      { text: '"Deleting System32"', correct: false },
     ],
     explanation:
       "Explanation:<br><br>The length of kangaroo is 8, and the length of 0 is 1<br><br>Therefore, we get 8 / 2 -> 4.0",
