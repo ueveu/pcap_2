@@ -4426,7 +4426,7 @@ export const questions = [
   },
   {
     question:
-      "You are writing code that generates a random integer with a minimum value of 5 and a maximum value of 11.",
+      "You are writing code that generates a random integer with a minimum value of 5 and a maximum value of 11. <br><br>(Choose two)",
     answers: [
       { text: "random.randrange (5, 12, 1)", correct: true },
       { text: "random.randrange (5, 11, 1)", correct: false },
