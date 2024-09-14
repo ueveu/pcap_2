@@ -3211,7 +3211,7 @@ export const questions = [
       { text: "The code is erroneous.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The output of the code snippet is 2. This is because the method set updates self.x to 2 + 3 (which is 5) but returns the original value of x (which is 2). <br><br>Thus, when print(a.set(a.x + 1)) is executed, it prints 2, which is the value returned by the set method.",
+      "Explanation:<br><br>• __init__ method initializes an instance of A with a default value of 1 for x.<br><br>• set method updates the instance variable x by adding 3 to the argument x and returns the argument x.<br><br>• Line 10 creates an instance a of class A. The default value for x is used, so a.x is initialized to 1.<br><br>Calling the set Method:<br><br>• In Line 11, a.x is currently 1, so a.x + 1 evaluates to 2.<br>• The set method is called with the argument 2.<br><br>Within the set method:<br><br>• self.x is updated to 2 + 3, which is 5.<br>• The method then returns 2.<br><br>• The print statement will output the value returned by set, which is 2.",
     link: "https://www.programiz.com/python-programming/methods",
   },
   {
