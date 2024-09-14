@@ -813,9 +813,9 @@ export const questions = [
     question: "What is the output of the following code snippet?",
     image: "images/image10.png",
     answers: [
-      { text: "Result: 5 Finally block", correct: true },
-      { text: "Result: 5", correct: false },
-      { text: "Division by zero Finally block", correct: false },
+    { text: "Result: 5.0" + "\n" + "Finally block", correct: true },
+      { text: "Result: 5.0", correct: false },
+      { text: "Division by zero" + "\n" + "Finally block", correct: false },
       { text: "Division by zero", correct: false },
     ],
     explanation: `Explanation:<br><br>When the function divide(10, 2) is called, it first enters the try block, where it attempts to divide 10 by 2. Since dividing by 2 is a valid operation and does not result in a ZeroDivisionError, the division succeeds, and the result, 5.0, is stored in the variable result.<br><br>Next, because no exception occurred, the except block is skipped entirely. The code then proceeds to the else block, which is executed because the try block completed successfully. In the else block, the function prints the message "Result: " followed by the value of result, which is 5.0.<br><br>Finally, the finally block is executed. This block runs regardless of whether an exception occurred or not. It prints the message "Finally block".`,
