@@ -3082,7 +3082,7 @@ export const questions = [
       { text: "The code is erroneous.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The code snippet iterates through a list named data to count how many elements within it are lists themselves. It initializes a variable count to 0 and then uses a for loop to iterate over each index of the data list. During each iteration, it checks if the type of the element at the current index (data[i]) is a list using the condition if type(data[i]) == list. If the condition is true, indicating that data[i] is indeed a list, it increments the count variable by 1. After completing the loop, the code prints out the final value of count, which represents the total number of elements in the data list that are lists themselves. <br><br>In the context of the provided data = [1, 2, [3, 4], [5, 6], 7, [8, 9]], the output of the code will be 3, as there are three elements in data that are lists ([3, 4], [5, 6], and [8, 9]). This example demonstrates how Python allows for flexible handling of different types of data within a single list structure, and how simple type checking can be used to filter and process elements based on their data type.",
+      "Explanation:<br><br>The code counts the number of list elements in the data list. It initializes count to 0, iterates over data, and increments count each time an element is a list (checked using type(data[i]) == list). For data = [1, 2, [3, 4], [5, 6], 7, [8, 9]], the output will be 3, as there are three lists within data. This example shows how Python's type checking can identify and count list elements in a mixed-type list.",
     link: "https://realpython.com/python-type-checking/",
   },
   {
