@@ -538,7 +538,7 @@ export const questions = [
       { text: "Enforcing encapsulation principles.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Inheritance in object-oriented programming is primarily used for code reuse and establishing hierarchical relationships between classes. It allows subclasses to inherit attributes and methods from a superclass, promoting modularity, extensibility, and abstraction in software design.",
+      "Explanation:<br><br>Inheritance in object-oriented programming is primarily used for code reuse and establishing hierarchical relationships between classes. <br><br>It allows subclasses to inherit attributes and methods from a superclass, promoting modularity, extensibility, and abstraction in software design.",
     link: "https://www.w3schools.com/python/python_inheritance.asp",
   },
   {
@@ -1408,7 +1408,7 @@ export const questions = [
       { text: "Tuple", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The 'tuple' data type is an immutable data type in Python.",
+      "Explanation:<br><br>•List: Mutable. You can change, add, or remove elements after the list is created.<br><br>• Set: Mutable. You can add or remove elements from a set.<br><br>• Dictionary: Mutable. You can add, modify, or delete key-value pairs in a dictionary.<br><br>• Tuple: Immutable. Once a tuple is created, its contents cannot be changed.",
     link: "https://realpython.com/python-tuples/",
   },
   {
@@ -1666,7 +1666,7 @@ export const questions = [
   },
   {
     question:
-      "You want to check, whether the variable obj contains an object of the class A. Which of the following statements can you use?",
+      "You want to check whether the variable obj contains an object of the class A. Which of the following statements can you use?",
     answers: [
       { text: "A.isinstance(obj)", correct: false },
       { text: "obj.isinstance(A)", correct: false },
