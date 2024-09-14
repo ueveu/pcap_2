@@ -1412,18 +1412,6 @@ export const questions = [
     link: "https://realpython.com/python-tuples/",
   },
   {
-    question: "What is the purpose of a generator expression in Python?",
-    answers: [
-      { text: "To create a new generator object.", correct: false },
-      { text: "To build complex data structures.", correct: false },
-      { text: "To generate a sequence of values lazily.", correct: true },
-      { text: "To create a list comprehensions.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'generator expression' is used to create a new generator object.",
-    link: "https://realpython.com/python-generator-expressions/",
-  },
-  {
     question:
       "What is the primary advantage of using a frozenset over a regular set in Python?",
     answers: [
