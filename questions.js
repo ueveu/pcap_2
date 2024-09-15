@@ -845,7 +845,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br> Inheritance allows a new class to inherit properties and behaviors from an existing class, creating a hierarchy of classes.",
     link: "https://www.geeksforgeeks.org/inheritance-in-python/",
-  },
+  },/* 
   {
     question:
       "Which of the following statements about polymorphism is correct?",
@@ -870,7 +870,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br> Polymorphism allows objects of different classes to be treated as objects of a common base class, enabling code to be written more generically.",
     link: "https://www.geeksforgeeks.org/polymorphism-in-python/",
-  },
+  }, */
   {
     question:
       "What does the 'try-except' block in Python's exception handling do?",
@@ -3746,7 +3746,7 @@ export const questions = [
       { text: "D", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Expression A, 'stuff' in binder.__dict__, evaluates to False because after the method dispose() is called on the binder object, the stuff attribute is deleted. As a result, 'stuff' is no longer present in binder.__dict__.<br><br>Expression B, len(binder.__dict__) != len(Collection.__dict__), evaluates to True. After dispose() is called, binder.__dict__ is likely empty, while Collection.__dict__ still contains the class attributes, including stamps. Since the lengths of these dictionaries are different, this expression is true.<br><br>Expression C, 'stamps' in Collection.__dict__, evaluates to True. The stamps attribute is a class attribute of the Collection class, and it remains in Collection.__dict__, so this expression is true.<br><br>Expression D, len(binder.__dict__) > 0, evaluates to False. After the dispose() method deletes the stuff attribute, binder.__dict__ becomes empty, so its length is not greater than zero.",
+      "Explanation:<br><br>A) evaluates to False because after the method dispose() is called on the binder object, the stuff attribute is deleted. As a result, 'stuff' is no longer present in binder.__dict__.<br><br>B) evaluates to True. After dispose() is called, binder.__dict__ is likely empty, while Collection.__dict__ still contains the class attributes, including stamps. Since the lengths of these dictionaries are different, this expression is true.<br><br>C) evaluates to True. The stamps attribute is a class attribute of the Collection class, and it remains in Collection.__dict__, so this expression is true.<br><br>D) evaluates to False. After the dispose() method deletes the stuff attribute, binder.__dict__ becomes empty, so its length is not greater than zero.",
     link: "https://docs.python.org/3/library/functions.html#len",
   },
   {
@@ -3761,7 +3761,7 @@ export const questions = [
       { text: "E", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>A is valid because it passes four positional arguments that directly match the parameters a, b, c, and d in the function's definition.<br><br> B is also valid. It uses three positional arguments for the parameters a, b, and c, and assigns a value to d using a keyword argument, which is perfectly acceptable in Python.<br><br>C is invalid because it incorrectly mixes keyword arguments with a positional argument that comes after them. In Python, once you start using keyword arguments, all subsequent arguments must also be passed as keyword arguments.<br><br>D is valid. It uses keyword arguments for all four parameters, matching the function's signature exactly, which is allowed and correct.<br><br>Lastly, E is invalid because it starts with a keyword argument and then follows with positional arguments. In Python, after using a keyword argument, all subsequent arguments must also be passed as keyword arguments.",
+      "Explanation:<br><br>A) is valid because it passes four positional arguments that directly match the parameters a, b, c, and d in the function's definition.<br><br>B) is also valid. It uses three positional arguments for the parameters a, b, and c, and assigns a value to d using a keyword argument, which is perfectly acceptable in Python.<br><br>C) is invalid because it incorrectly mixes keyword arguments with a positional argument that comes after them. In Python, once you start using keyword arguments, all subsequent arguments must also be passed as keyword arguments.<br><br>D) is valid. It uses keyword arguments for all four parameters, matching the function's signature exactly, which is allowed and correct.<br><br>E) is invalid because it starts with a keyword argument and then follows with positional arguments. In Python, after using a keyword argument, all subsequent arguments must also be passed as keyword arguments.",
     link: "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
   },
   {
