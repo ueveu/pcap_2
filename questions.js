@@ -29,9 +29,9 @@ export const questions = [
     question: "What is the the output of the following code snippet?",
     image: "images/image3.png",
     answers: [
-      { text: '"Python."', correct: false },
-      { text: '"nohtyP."', correct: true },
-      { text: '"nythoP."', correct: false },
+      { text: '"Python"', correct: false },
+      { text: '"nohtyP"', correct: true },
+      { text: '"nythoP"', correct: false },
       { text: "Error: invalid syntax", correct: false },
     ],
     explanation:
