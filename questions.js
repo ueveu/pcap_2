@@ -486,7 +486,7 @@ export const questions = [
       { text: "Objects cannot inherit from each other.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'is-a' relationship in object-oriented programming refers to inheritance, where a subclass is said to 'be' a superclass, implying a hierarchical relationship between classes. It indicates that the subclass shares common characteristics and behaviors with the superclass and can be treated as an instance of the superclass.",
+      "Explanation:<br><br>The 'is-a' relationship in object-oriented programming refers to inheritance, where a subclass is said to 'be' a superclass, implying a hierarchical relationship between classes. <br><br>It indicates that the subclass shares common characteristics and behaviors with the superclass and can be treated as an instance of the superclass.",
     link: "https://www.geeksforgeeks.org/implementation-of-composition-has-a-relation-in-python/",
   },
   {
@@ -833,7 +833,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br> Constructors are used to initialize objects of a class. They are called when an object is created.",
     link: "https://www.geeksforgeeks.org/constructors-in-python/",
-  },
+  },/*
   {
     question: "Inheritance is a concept in OOP that involves:",
     answers: [
@@ -845,7 +845,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br> Inheritance allows a new class to inherit properties and behaviors from an existing class, creating a hierarchy of classes.",
     link: "https://www.geeksforgeeks.org/inheritance-in-python/",
-  },/* 
+  },
   {
     question:
       "Which of the following statements about polymorphism is correct?",
@@ -1688,7 +1688,7 @@ export const questions = [
       { text: "import randint from random", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The module name is random. You have to write the module first. And you import from a module. from the module random you want to import the method randint.",
+      "Explanation:<br><br>from random import randint is correct because it uses the correct Python syntax to import a specific function (randint) from a module (random). This method provides direct access to the function, making it easy to use without additional module prefixing.",
     link: "https://www.w3schools.com/python/module_random.asp",
   },
   {
@@ -3695,7 +3695,7 @@ export const questions = [
       { text: "D", correct: true },
     ],
     explanation:
-      "Explanation: <br><br>A is invalid because you cannot use return in a lambda function. Lambda functions are meant to be single expressions, not statements.<br><br>B is valid. It defines a lambda function that takes two arguments a and b, and returns a if a is less than b, otherwise it returns b. <br><br>C is invalid. Lambda functions do not support default argument values in this manner. <br><br>D is valid. It defines a lambda function that takes two arguments a and b but always returns True, regardless of the values of a and b.",
+      "Explanation: <br><br>A) is invalid because you cannot use return in a lambda function. Lambda functions are meant to be single expressions, not statements.<br><br>B) is valid. It defines a lambda function that takes two arguments a and b, and returns a if a is less than b, otherwise it returns b. <br><br>C) is invalid. Lambda functions do not support default argument values in this manner. <br><br>D) is valid. It defines a lambda function that takes two arguments a and b but always returns True, regardless of the values of a and b.",
     link: "https://docs.python.org/3/reference/compound_stmts.html#lambda",
   },
   {
@@ -3861,7 +3861,7 @@ export const questions = [
       { text: "D", correct: true },
     ],
     explanation:
-      "Explanation: <br><br>Expression A compares if selection and element are the same object in memory. Since selection is an instance of Radio and element is an instance of Control, they are different objects and the expression evaluates to False.<br><br>In expression B, selection is an instance of Radio. In Radio, my_ID is inherited from Button, which is 2. Thus, selection.my_ID evaluates to 2, so this expression evaluates to True.<br><br>In expression C, start is an instance of Button, where my_ID is 2. This expression compares start.my_ID with -2, which is not equal. Thus, this expression evaluates to False.<br><br>In expression D, start is an instance of Button, so isinstance(start, Button) evaluates to True.",
+      "Explanation: <br><brA) compares if selection and element are the same object in memory. Since selection is an instance of Radio and element is an instance of Control, they are different objects and the expression evaluates to False.<br><br>In B), selection is an instance of Radio. In Radio, my_ID is inherited from Button, which is 2. Thus, selection.my_ID evaluates to 2, so this expression evaluates to True.<br><br>In C), start is an instance of Button, where my_ID is 2. This expression compares start.my_ID with -2, which is not equal. Thus, this expression evaluates to False.<br><br>In d), start is an instance of Button, so isinstance(start, Button) evaluates to True.",
     link: "https://docs.python.org/3/library/functions.html#isinstance",
   },
   {
@@ -4635,7 +4635,7 @@ export const questions = [
     image: "images/image136.png",
     answers: [
       { text: "abc", correct: false },
-      { text: "The code will raise a Type Error", correct: true },
+      { text: "The code will raise a TypeError", correct: true },
       { text: "ABC", correct: false },
       { text: "123", correct: false },
     ],
@@ -4674,7 +4674,7 @@ export const questions = [
         correct: false,
       },
     ],
-    explanation: `Explanation:<br><br>A Python module can run like regular code and can differentiate its behavior based on how it is executed. If a module is run directly, the code under the if __name__ == "__main__": block will execute. If the module is imported, this block will be skipped, allowing the module to adapt its behavior depending on whether it is run as a script or imported.`,
+    explanation: `Explanation:<br><br>A Python module can run like regular code and can differentiate its behavior based on how it is executed. If a module is run directly, the code under the if __name__ == "__main__": block will execute. <br><br>If the module is imported, this block will be skipped, allowing the module to adapt its behavior depending on whether it is run as a script or imported.`,
     link: "https://docs.python.org/3/tutorial/modules.html",
   },
   {
@@ -6901,7 +6901,7 @@ export const questions = [
       { text: "The code is erronous.", correct: false },
       { text: "None of the above.", correct: false },
     ],    
-    explanation: `Explanation:<br><br>s1.strip(): This method removes any leading and trailing whitespace from the string s1. After this operation, s1 becomes "Nicht so tief, Rüdiger! Keine Kapriolen!".<br><br>s1.strip().split(): This method splits the string into a list of words based on whitespace. After splitting, the list s2 is ['Nicht', 'so', 'tief,', 'Rüdiger!', 'Keine', 'Kapriolen!'].<br><br>"".join(s2): This method joins the elements of the list s2 into a single string without any separators. The resulting string s3 is "Nichtso tief,Rüdiger!KeineKapriolen!".<br><br>s3.endswith("!"): This method checks if the string s3 ends with the character !. In this case, s3 does indeed end with an exclamation mark because "Kapriolen!" is the last part of the joined string.`
+    explanation: `Explanation:<br><br>s1.strip(): This method removes any leading and trailing whitespace from the string s1. After this operation, s1 becomes "Nicht so tief, Rüdiger! Keine Kapriolen!".<br><br>s1.strip().split(): This method splits the string into a list of words based on whitespace. After splitting, the list s2 is ['Nicht', 'so', 'tief,', 'Rüdiger!', 'Keine', 'Kapriolen!'].<br><br>"".join(s2): This method joins the elements of the list s2 into a single string without any separators. The resulting string s3 is "Nichtsotief,Rüdiger!KeineKapriolen!".<br><br>s3.endswith("!"): This method checks if the string s3 ends with the character !. In this case, s3 does indeed end with an exclamation mark because "Kapriolen!" is the last part of the joined string.`
   },
   {
     question: "How can you import math and random module? <br><br>(Choose two)",
