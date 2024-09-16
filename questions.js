@@ -4754,7 +4754,7 @@ export const questions = [
       { text: "print 3", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>In the code snippet, the function x is initially defined to return the value 2. However, the subsequent line x = 1 + x() reassigns x. Here, x() is called, which returns 2, so the expression 1 + x() evaluates to 1 + 2, resulting in 3. As a result, x is assigned the value 3. Consequently, the print(x) statement outputs 3.",
+      "Explanation:<br><br>In the code snippet, the function x is initially defined to return the value 2. However, the subsequent line x = 1 + x() reassigns x. Here, x() is called, which returns 2, so the expression 1 + x() evaluates to 1 + 2, resulting in 3. As a result, x is assigned the value 3. <br><br>Consequently, the print(x) statement outputs 3.",
     link: "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
   },
   {
@@ -6992,16 +6992,19 @@ export const questions = [
     ],    
     explanation: "Explanation:<br><br>A) checks if obj_a is an instance of the class A or a subclass thereof. ince obj_a is indeed an instance of class A, this expression evaluates to True.<br><br>B) A.VarA is a class attribute of A, and it is set to 1 in the class definition. herefore, A.VarA is 1, so this expression evaluates to True.<br><br>C) obj_a and obj_aa are two distinct instances of the class A. The is operator checks for identity, meaning it checks if two references point to the exact same object in memory. Since obj_a and obj_aa are different instances, obj_a is obj_aa evaluates to False.<br><br>D) B.VarA refers to the class attribute VarA in class B. B is a subclass of A, and it overrides VarA with the value 2. herefore, B.VarA is 2, not 1, so this expression evaluates to False.",
     link: "https://pynative.com/python-instance-variables/",
-  },/*
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
   },
+  {
+    question: "Which of the following lines of code will work flawlessly when put independently inside the add_new() method in order to make the snippet's output equal to [0, 1, 2]? <br><br>(Choose two)",
+    image: "images/image257.png",
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: false },
+    ],
+    explanation: "Explanation:<br><br>We want the final output of print(Object.get()) to be [0, 1, 2]. This means we need to add 2 to the list [0, 1].<br><br>A)<br> • self.get_last() returns the last element of self.queue, which is 1.<br> • self.get_last() + 1 calculates 1 + 1, which is 2.<br> • self.queue.append(2) adds 2 to the end of the list.<br><br>So, this option correctly appends 2 to self.queue, resulting in [0, 1, 2].<br><br>B)<br>• get_last() without self. would cause a NameError because it is a method and should be called with self.get_last().<br> • This code will not work as intended due to the missing self.<br><br>C)<br>• self.queue[-1] directly accesses the last element of self.queue, which is 1.<br>• self.queue[-1] + 1 calculates 1 + 1, which is 2.<br>• self.queue.append(2) adds 2 to the end of the list.<br><br>So, this option also correctly appends 2 to self.queue, resulting in [0, 1, 2].<br><br>D)<br>• queue is not defined in the add_new() method; it should be self.queue.<br>• This code will result in a NameError due to the undefined queue.",
+    link: "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists",
+  },/*
   {
     question: "",
     answers: [
