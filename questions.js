@@ -4245,7 +4245,7 @@ export const questions = [
     link: "https://docs.python.org/3/tutorial/errors.html#user-defined-exceptions",
   },
   {
-    question: "Which of the following statements are true?",
+    question: "Which of the following statements are true? <br><br>(Choose two)",
     answers: [
       {
         text: "A)   Variables with names starting with two underscores are considered private within their class due to name mangling.",
