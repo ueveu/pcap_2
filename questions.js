@@ -197,7 +197,7 @@ export const questions = [
       { text: "Retrieves the element at a specific index.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'pop' method removes the element at the specified index and returns it, for example: <br><br>list.pop(0)<br><br>If the index is not specified, the 'pop' method removes and returns the last element in the list.",
+      "Explanation:<br><br>The 'pop' method removes the element at the specified index and returns it, for example: <br><br>list.pop(0)<br><br>If the index is not specified, the 'pop' method removes the last element in the list.",
     link: "https://www.w3schools.com/python/ref_list_pop.asp",
   },
   {
