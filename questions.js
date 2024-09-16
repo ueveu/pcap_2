@@ -189,15 +189,15 @@ export const questions = [
     link: "https://www.w3schools.com/python/python_modules.asp",
   },
   {
-    question: "What is the purpose of the 'pop' method in Python lists?",
+    question: "What is the purpose of the 'pop' method in Python lists? <br><br><br><br>",
     answers: [
       { text: "Appends an element to the end of the list.", correct: false },
-      { text: "Removes the last element from the list.", correct: false },
+      { text: "Removes the last element from the list.", correct: true },
       { text: "Removes the element at a specific index.", correct: true },
       { text: "Retrieves the element at a specific index.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'pop' method removes the element at the specified index and returns it, for example: <br><br>list.pop(0).",
+      "Explanation:<br><br>The 'pop' method removes the element at the specified index and returns it, for example: <br><br>list.pop(0)<br><br>If the index is not specified, the 'pop' method removes and returns the last element in the list.",
     link: "https://www.w3schools.com/python/ref_list_pop.asp",
   },
   {
@@ -3058,7 +3058,7 @@ export const questions = [
       { text: "3", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>In the code snippet, a function named inc is defined. This function takes a parameter inc, which is used within its nested function do. Inside inc, do is defined to accept another parameter val. When do is invoked with a value for val, it returns val + inc.<br><br> In the main execution of the code, inc(-1) is assigned to action. This means that action now holds the inner function do with inc set to -1. Later, action is called with 2 as its argument (action(2)). This call computes 2 + (-1), resulting in 1. <br><br>Therefore, when the statement print(action(2)) is executed, it outputs 1. This demonstrates how the function inc creates a closure around the parameter inc, allowing action to modify its input by adding -1 to it before returning the result.",
+      "Explanation:<br><br>• inc is a function that takes a parameter inc.<br><br>• Inside inc, there's another function defined, do, which takes a parameter val and returns the result of val + inc.<br><br>• The inc function returns the do function.<br><br>• inc(-1) is called, which means inc is given the value -1.<br><br>• This call returns the do function, where inc is now bound to -1.<br><br>• So, action is now a function where inc is effectively -1.<br><br>• Calling action(2) invokes the do function with val set to 2.<br><br>• Inside do, it computes val + inc, which is 2 + (-1), resulting in 1.",
     link: "https://www.geeksforgeeks.org/closures-and-decorators-in-python/",
   },
   {
@@ -6864,7 +6864,7 @@ export const questions = [
       { text: "1", correct: false },
       { text: "2", correct: false },
     ],    
-    explanation: "Explanation:<br><br>1. Define a class named A.<br><br>2. Inside the A class, define a class-level variable X and set its value to 0.<br><br>3. Define a constructor method named __init__ which takes an argument v with a default value of 0.<br><br>4. Inside the __init__ method, set the instance variable Y to the value of v.<br><br>5. Inside the __init__ method, increment the class-level variable X by the value of v.<br><br>6. Create an instance of A and assign it to the variable a. This will call the __init__ method with the default argument value.<br><br>7. Create an instance of A with the argument value of 1 and assign it to the variable b. This will call the __init__ method with the argument value of 1.<br><br>8. Create an instance of A with the argument value of 2 and assign it to the variable c. This will call the __init__ method with the argument value of 2.<br><br>9. Print the value of the class-level variable X of the c instance, which should be the sum of the argument values passed to the constructors of b and c, i.e., 1 + 2 = 3.",
+    explanation: "Explanation:<br><br• X is a class attribute initialized to 0.<br><br>• The __init__ method is the constructor that initializes an instance of A.<br><br>• self.Y is an instance attribute that stores the value v.<br><br>• A.X is updated by adding v to it. Note that A.X modifies the class attribute X, not an instance attribute.<br><br>When a = A() is executed:<br><br>• v is 0 (the default value).<br><br>• self.Y is set to 0.<br><br>• A.X is updated by adding 0, so A.X remains 0.<br><br>When b = A(1) is executed:<br><br>• v is 1.<br><br>• self.Y is set to 1.<br><br>• A.X is updated by adding 1, so A.X becomes 1.<br><br>So c = A(2) gives us A.X = 3<br><br>c.X accesses the class attribute X of class A, which is 3.",
     link: "https://www.w3schools.com/python/python_classes.asp",
   },
   {
