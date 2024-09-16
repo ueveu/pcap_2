@@ -488,7 +488,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The 'is-a' relationship in object-oriented programming refers to inheritance, where a subclass is said to 'be' a superclass, implying a hierarchical relationship between classes. <br><br>It indicates that the subclass shares common characteristics and behaviors with the superclass and can be treated as an instance of the superclass.",
     link: "https://www.geeksforgeeks.org/implementation-of-composition-has-a-relation-in-python/",
-  },
+  },/* 
   {
     question: "What does the term 'method overloading' refer to in Python?",
     answers: [
@@ -503,7 +503,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>In Python, method overloading refers to defining multiple methods with the same name in a class, but with different parameters or argument types. This allows the same method name to behave differently based on the number or type of arguments passed to it.",
     link: "https://www.geeksforgeeks.org/python-method-overloading/",
-  },
+  }, */
   {
     question:
       "How does encapsulation contribute to the principle of data protection in objectoriented programming?",
