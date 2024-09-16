@@ -2756,7 +2756,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The code constructs a nested list where:<br><br>• For r = 0, it creates an empty list.<br>• For r = 1, it creates a list with one element: [0].<br>• For r = 2, it creates a list with two elements: [0, 1].<br><br>The resulting list is [[ ], [0], [0, 1]].<br><br>The nested loops then iterate through this list. They print an asterisk for each element less than 2. The first sublist is empty, so no asterisks are printed from it. In the second sublist, 0 is less than 2, so one asterisk is printed. In the third sublist, both 0 and 1 are less than 2, leading to two more asterisks being printed.<br><br>Thus, the final output is three asterisks (***).",
+      "Explanation:<br><br>The list comprehension [[c for c in range(r)] for r in range(3)] creates a list of lists where each inner list contains integers from 0 up to r-1, based on the value of r. When evaluated:<br><br>• For r = 0, the inner list is empty ([])<br>• For r = 1, the inner list contains [0]<br>• For r = 2, the inner list contains [0, 1]<br><br>Thus, the resulting list is [[], [0], [0, 1]].<br><br>The nested for loops iterate over each sublist and each item within those sublists. For each item, if it is less than 2, an asterisk (*) is printed.<br><br>• The first sublist is empty, so no asterisks are printed for this sublist.<br>• In the second sublist [0], the value 0 is less than 2, so one asterisk is printed.<br>• In the third sublist [0, 1], both values 0 and 1 are less than 2, so two asterisks are printed.",
     link: "https://www.w3schools.com/python/python_lists_comprehension.asp",
   },
   {
