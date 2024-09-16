@@ -3364,10 +3364,11 @@ export const questions = [
       { text: "It outputs 6", correct: false },
       { text: "It raises an exception", correct: false },
       { text: "It outputs 1", correct: false },
-      { text: "It outputs 2", correct: true },
+      { text: "It outputs 2", correct: false },
+      { text: "It outputs 3", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The provided code defines a class Class with a private class variable __Var initialized to 0. The class also has a method foo, which increments Class.__Var by 1 and assigns this incremented value to an instance variable __prop, which is also private.<br><br>When o1, an instance of Class, is created and its foo method is called, Class.__Var is incremented from 0 to 1, and o1.__prop is set to this value 1. Afterward, another instance o2 is created, but its foo method is not called. This means that o2's __prop is never assigned, and Class.__Var remains 1.<br><br>In the final print statement, the code attempts to access the private class variable __Var and the private instance variable __prop. These private variables are accessed using their name-mangled versions: _Class__Var for the class variable and _Class__prop for the instance variable.<br><br>The expression o2._Class__Var + o1._Class__prop adds 1 (the value of Class.__Var via o2._Class__Var) to 1 (the value of o1._Class__prop). As a result, the output of the code is 2.",
+      "Explanation:<br><br>• __Var is a class attribute with name mangling. The actual name will be _Class__Var.<br><br>• foo() increments the class attribute __Var and assigns the new value to an instance attribute __prop. The actual name for __prop will be _Class__prop.<br><br>• o1 is an instance of Class.<br><br>Calling o1.foo():<br>• Class.__Var is incremented from 0 to 1.<br>• o1.__prop is assigned the value 1 (the new value of Class.__Var).<br><br>• o2 is another instance of Class.<br><br>Calling o2.foo():<br>• Class.__Var is incremented from 1 to 2.<br>• o2.__prop is assigned the value 2 (the new value of Class.__Var).<br><br>• o2._Class__Var accesses the class attribute __Var from o2, which is 2.<br>• o1._Class__prop accesses the instance attribute __prop from o1, which is 1.<br><br>Therefore, the expression o2._Class__Var + o1._Class__prop evaluates to 2 + 1.",
     link: "https://docs.python.org/3/tutorial/classes.html#private-variables",
   },
   {
