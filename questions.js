@@ -1386,7 +1386,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>A set automatically ensures that all elements are unique, so it is the most suitable data structure when you need to store and manage a collection of items without duplicates.<br><br>• Lists can contain duplicate elements and are not designed specifically for uniqueness.<br><br>• Tuples are immutable sequences that can also contain duplicate elements.<br><br>• Dictionaries store key-value pairs, where keys must be unique, but the values can be duplicated.",
     link: "https://www.w3schools.com/python/python_sets.asp",
-  },
+  },/* 
   {
     question: "What is a major difference between a stack and a queue?",
     answers: [
@@ -1398,7 +1398,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The 'stack' data structure follows LIFO (Last In First Out) and the 'queue' data structure follows FIFO (First In First Out).",
     link: "https://realpython.com/queue-in-python/",
-  },
+  }, */
   {
     question: "Which of the following is an immutable data type in Python?",
     answers: [
