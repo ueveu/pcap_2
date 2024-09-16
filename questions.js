@@ -820,7 +820,7 @@ export const questions = [
     ],
     explanation: `Explanation:<br><br>When the function divide(10, 2) is called, it first enters the try block, where it attempts to divide 10 by 2. Since dividing by 2 is a valid operation and does not result in a ZeroDivisionError, the division succeeds, and the result, 5.0, is stored in the variable result.<br><br>Next, because no exception occurred, the except block is skipped entirely. The code then proceeds to the else block, which is executed because the try block completed successfully. In the else block, the function prints the message "Result: " followed by the value of result, which is 5.0.<br><br>Finally, the finally block is executed. This block runs regardless of whether an exception occurred or not. It prints the message "Finally block".`,
     link: "https://www.programiz.com/python-programming/exception-handling",
-  },
+  },/*
   {
     question:
       "What is the purpose of constructors in object-oriented programming?",
@@ -833,7 +833,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br> Constructors are used to initialize objects of a class. They are called when an object is created.",
     link: "https://www.geeksforgeeks.org/constructors-in-python/",
-  },/*
+  },
   {
     question: "Inheritance is a concept in OOP that involves:",
     answers: [
