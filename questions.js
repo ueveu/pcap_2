@@ -3861,7 +3861,7 @@ export const questions = [
       { text: "D", correct: true },
     ],
     explanation:
-      "Explanation: <br><brA) compares if selection and element are the same object in memory. Since selection is an instance of Radio and element is an instance of Control, they are different objects and the expression evaluates to False.<br><br>In B), selection is an instance of Radio. In Radio, my_ID is inherited from Button, which is 2. Thus, selection.my_ID evaluates to 2, so this expression evaluates to True.<br><br>In C), start is an instance of Button, where my_ID is 2. This expression compares start.my_ID with -2, which is not equal. Thus, this expression evaluates to False.<br><br>In d), start is an instance of Button, so isinstance(start, Button) evaluates to True.",
+      "Explanation: <br><br>A) compares if selection and element are the same object in memory. Since selection is an instance of Radio and element is an instance of Control, they are different objects and the expression evaluates to False.<br><br>In B), selection is an instance of Radio. In Radio, my_ID is inherited from Button, which is 2. Thus, selection.my_ID evaluates to 2, so this expression evaluates to True.<br><br>In C), start is an instance of Button, where my_ID is 2. This expression compares start.my_ID with -2, which is not equal. Thus, this expression evaluates to False.<br><br>In D), start is an instance of Button, so isinstance(start, Button) evaluates to True.",
     link: "https://docs.python.org/3/library/functions.html#isinstance",
   },
   {
