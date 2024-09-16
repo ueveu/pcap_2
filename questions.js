@@ -2020,10 +2020,10 @@ export const questions = [
       "Which of the following expressions evaluates to True and raises no exception?",
       image: "images/image745.png",
     answers: [
-      { text: "10 != '1' + '0'", correct: true },
-      { text: "'AI' * 2 != 2 * 'AI'", correct: false },
-      { text: "'9' * 3 > '9' * 9", correct: false },
-      { text: "'9' * 1 < 1 * 2", correct: false },
+      { text: "A", correct: true },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: false },
     ],
     explanation:
       "Explanation:<br><br>A) evaluates to True, since the integer 10 is not equal to the string '10'.<br><br>B) evaluates to False, because we got 999 on the left side and 999999999 on the right side.<br><br>C) evaluates to False, because we got 9 on the left side and 2 on the right side.<br><br>D) evaluates to False, since both sides are equal.",
