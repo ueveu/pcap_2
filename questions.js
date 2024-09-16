@@ -327,35 +327,6 @@ export const questions = [
   },
   {
     question:
-      "Why is multiple inheritance considered a complex feature in object-oriented programming?",
-    answers: [
-      { text: "It leads to code redundancy.", correct: false },
-      { text: "It can result in the 'diamond problem'.", correct: true },
-      { text: "It restricts code organization.", correct: false },
-      { text: "It simplifies method resolution order.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The diamond problem is an ambiguity that arises in multiple inheritance when a class inherits from two classes that both inherit from a common base class. This creates a diamond-shaped hierarchy, leading to ambiguity about which inherited version of methods or properties from the base class the final class should use.",
-    link: "https://stackoverflow.com/questions/225929/what-is-the-exact-problem-with-multiple-inheritance",
-  },
-  {
-    question:
-      "What is the primary purpose of encapsulation in object-oriented programming?",
-    answers: [
-      { text: "To simplify code and reduce redundancy.", correct: false },
-      { text: "To achieve code reusability.", correct: false },
-      {
-        text: "To hide implementation details and protect data.",
-        correct: true,
-      },
-      { text: "To facilitate communication between objects.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The primary purpose of encapsulation in object-oriented programming is to restrict direct access to an object's internal data and methods, thereby protecting the object's state and ensuring controlled interaction through defined interfaces. <br><br>This promotes data integrity and abstraction by allowing internal implementation details to be hidden from the outside world.",
-    link: "https://stackoverflow.com/questions/75715054/need-help-to-verify-own-interpretation-of-the-main-purpose-of-the-encapsulation",
-  },
-  {
-    question:
       "In Python, what is the relationship between a subclass and a superclass?",
     answers: [
       { text: "A subclass is derived from a superclass.", correct: true },
@@ -488,22 +459,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The 'is-a' relationship in object-oriented programming refers to inheritance, where a subclass is said to 'be' a superclass, implying a hierarchical relationship between classes. <br><br>It indicates that the subclass shares common characteristics and behaviors with the superclass and can be treated as an instance of the superclass.",
     link: "https://www.geeksforgeeks.org/implementation-of-composition-has-a-relation-in-python/",
-  },/* 
-  {
-    question: "What does the term 'method overloading' refer to in Python?",
-    answers: [
-      { text: "Calling a method from within another method.", correct: false },
-      { text: "Creating multiple instances of a class.", correct: false },
-      {
-        text: "Defining multiple methods with the same name but different implementations in a class.",
-        correct: true,
-      },
-      { text: "Overriding a method in a subclass.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>In Python, method overloading refers to defining multiple methods with the same name in a class, but with different parameters or argument types. This allows the same method name to behave differently based on the number or type of arguments passed to it.",
-    link: "https://www.geeksforgeeks.org/python-method-overloading/",
-  }, */
+  },
   {
     question:
       "How does encapsulation contribute to the principle of data protection in objectoriented programming?",
