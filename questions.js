@@ -1408,7 +1408,7 @@ export const questions = [
       { text: "Tuple", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>•List: Mutable. You can change, add, or remove elements after the list is created.<br><br>• Set: Mutable. You can add or remove elements from a set.<br><br>• Dictionary: Mutable. You can add, modify, or delete key-value pairs in a dictionary.<br><br>• Tuple: Immutable. Once a tuple is created, its contents cannot be changed.",
+      "Explanation:<br><br>• List: Mutable. You can change, add, or remove elements after the list is created.<br><br>• Set: Mutable. You can add or remove elements from a set.<br><br>• Dictionary: Mutable. You can add, modify, or delete key-value pairs in a dictionary.<br><br>• Tuple: Immutable. Once a tuple is created, its contents cannot be changed.",
     link: "https://realpython.com/python-tuples/",
   },
   {
@@ -6977,16 +6977,19 @@ export const questions = [
     ],    
     explanation: "Explanation:<br><br>• The class Class has a class attribute Variable initialized to 0 and an instance attribute value initialized to 0 in the constructor.<br><br>• When object_1 is created, it sets object_1.Variable to 1, creating an instance attribute Variable specific to object_1. This does not change the class attribute Variable.<br><br>• When object_2 is created, it does not have an instance attribute Variable, so it uses the class attribute Variable, which remains 0. <br><br>• object_2.value is incremented by 1, making object_2.value equal to 1.<br><br>• The print statement calculates object_2.Variable + object_1.value.<br><br>Here, object_2.Variable is 0 (the class attribute), and object_1.value is 0 (since object_1.value was not modified).<br><br>Thus, the expression object_2.Variable + object_1.value evaluates to 0 + 0, resulting in an output of 0.",
     link: "https://pynative.com/python-instance-variables/",
-  },/*
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
   },
+  {
+    question: "Assuming that the following piece of code has been executed successfully, which of the expressions evaluate to True?<br><br>(Choose two)",
+    image: "images/image256.png",
+    answers: [
+      { text: "A", correct: true },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>A) checks if obj_a is an instance of the class A or a subclass thereof. ince obj_a is indeed an instance of class A, this expression evaluates to True.<br><br>B) A.VarA is a class attribute of A, and it is set to 1 in the class definition. herefore, A.VarA is 1, so this expression evaluates to True.<br><br>C) obj_a and obj_aa are two distinct instances of the class A. The is operator checks for identity, meaning it checks if two references point to the exact same object in memory. Since obj_a and obj_aa are different instances, obj_a is obj_aa evaluates to False.<br><br>D) B.VarA refers to the class attribute VarA in class B. B is a subclass of A, and it overrides VarA with the value 2. herefore, B.VarA is 2, not 1, so this expression evaluates to False.",
+    link: "https://pynative.com/python-instance-variables/",
+  },/*
   {
     question: "",
     answers: [
