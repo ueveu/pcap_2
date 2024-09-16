@@ -7004,25 +7004,31 @@ export const questions = [
     ],
     explanation: "Explanation:<br><br>We want the final output of print(Object.get()) to be [0, 1, 2]. This means we need to add 2 to the list [0, 1].<br><br>A)<br> • self.get_last() returns the last element of self.queue, which is 1.<br> • self.get_last() + 1 calculates 1 + 1, which is 2.<br> • self.queue.append(2) adds 2 to the end of the list.<br><br>So, this option correctly appends 2 to self.queue, resulting in [0, 1, 2].<br><br>B)<br>• get_last() without self. would cause a NameError because it is a method and should be called with self.get_last().<br> • This code will not work as intended due to the missing self.<br><br>C)<br>• self.queue[-1] directly accesses the last element of self.queue, which is 1.<br>• self.queue[-1] + 1 calculates 1 + 1, which is 2.<br>• self.queue.append(2) adds 2 to the end of the list.<br><br>So, this option also correctly appends 2 to self.queue, resulting in [0, 1, 2].<br><br>D)<br>• queue is not defined in the add_new() method; it should be self.queue.<br>• This code will result in a NameError due to the undefined queue.",
     link: "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists",
+  },
+  {
+    question: "What is the expected output of the following code if there is no file named non_existing_file inside the working directory?",
+    image: "images/image258.png",
+    answers: [
+      { text: "1 2 4", correct: false },
+      { text: "1 2 3 4", correct: false },
+      { text: "2 4", correct: false },
+      { text: "1 3", correct: true },
+    ],    
+    explanation: "Explanation:<br><br>• The file 'non_existing_file' is opened in write mode ('w'), which creates the file if it does not exist, so no IOError is raised at this step.<br><br>• The statement print(1, end=' ') will print the number 1 followed by a space.<br><br>• The line s = f.readline() attempts to read from the file, but since the file is in write mode, this raises an IOError.<br><br>• As a result, the code jumps to the except block, which prints 3.<br><br>• The else block is not executed because an exception occurred.",
+    link: "https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files",
+  },
+  {
+    question: "A Python module named pymod.py contains a variable named pyvar. Which of the following snippets will let you access the variable? <br><br>(Choose two)",
+    image: "images/image259.png",
+    answers: [
+      { text: "A", correct: true },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
+    ],    
+    explanation: "Explanation:<br><br>A) imports the entire pymod module. You can then access and modify pyvar using the pymod namespace. This approach is clean and avoids potential naming conflicts.<br><br>B) is incorrect and will raise a syntax error. You cannot import a variable using this syntax.<br><br>C) imports pyvar from pymod but tries to call it as if it were a function. This will raise a TypeError if pyvar is not a callable function.<br><br>D) imports all public names from pymod directly into the current namespace. You can then directly access and modify pyvar. However, this method is less recommended because it can lead to naming conflicts and makes it harder to track where names come from.",
+    link: "https://docs.python.org/3/tutorial/modules.html#modules",
   },/*
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
   {
     question: "",
     answers: [
