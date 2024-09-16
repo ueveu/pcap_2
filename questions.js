@@ -189,7 +189,7 @@ export const questions = [
     link: "https://www.w3schools.com/python/python_modules.asp",
   },
   {
-    question: "What is the purpose of the 'pop' method in Python lists? <br><br><br><br>",
+    question: "What is the purpose of the 'pop' method in Python lists? <br><br>(Choose two)",
     answers: [
       { text: "Appends an element to the end of the list.", correct: false },
       { text: "Removes the last element from the list.", correct: true },
