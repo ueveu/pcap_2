@@ -5094,7 +5094,7 @@ export const questions = [
       "If you need to serve two different exceptions called Ex1 and Ex2 in one except branch, you can write:",
     answers: [
       { text: "except Ex1 Ex2:", correct: false },
-      { text: "except (Ex1, Ex2)", correct: true },
+      { text: "except (Ex1, Ex2):", correct: true },
       { text: "except Ex1, Ex2:", correct: false },
       { text: "except Ex1+Ex2:", correct: false },
     ],
