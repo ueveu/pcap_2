@@ -339,19 +339,6 @@ export const questions = [
     link: "https://python-course.eu/oop/inheritance.php",
   },
   {
-    question:
-      "What is the purpose of polymorphism in object-oriented programming?",
-    answers: [
-      { text: "To organize code into modular units.", correct: false },
-      { text: "To achieve code reusability.", correct: false },
-      { text: "To allow objects to take on multiple forms.", correct: true },
-      { text: "To enforce data hiding and protection.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>Polymorphism is the ability of an object to take on multiple forms. It allows objects to have different behaviors or actions based on their data or state.",
-    link: "https://stackoverflow.com/questions/1031273/what-is-polymorphism-what-is-it-for-and-how-is-it-used",
-  },
-  {
     question: "How does a class in Python differ from an object?",
     answers: [
       {
