@@ -2012,7 +2012,7 @@ export const questions = [
       { text: "True", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>C is a subclass of A. <br>C is a grandchild of A, so to speak.<br>B is a subclass of A<br>C is a subclass of B<br>And therefore C is a subclass of A",
+      "Explanation:<br><br>C is a subclass of A. <br>C is a grandchild of A, so to speak.<br>B is a subclass of A<br>C is a subclass of B<br><br>And therefore C is a subclass of A",
     link: "https://www.w3schools.com/python/ref_func_issubclass.asp",
   },
   {
@@ -6963,17 +6963,21 @@ export const questions = [
       { text: "69, 420", correct: false },
       { text: "The code is erroneous.", correct: false },
     ],   
-    explanation: `Explanation:<br><br>In the provided code, a Point class is defined with two methods: __init__ and __str__. The __init__ method initializes an instance of Point with x and y coordinates. The __str__ method provides a string representation of the Point instance in the format (x, y).<br><br>When the Point instance p is created with the arguments 70-1 and 210*2, the expressions evaluate to 69 and 420, respectively. Thus, the Point object p is initialized with x set to 69 and y set to 420.<br><br>When print(p) is executed, Python calls the __str__ method to obtain the string representation of p. The __str__ method formats the output as "(69, 420)".`
-  },/*
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
+    explanation: `Explanation:<br><br>In the provided code, a Point class is defined with two methods: __init__ and __str__. The __init__ method initializes an instance of Point with x and y coordinates. The __str__ method provides a string representation of the Point instance in the format (x, y).<br><br>When the Point instance p is created with the arguments 70-1 and 210*2, the expressions evaluate to 69 and 420, respectively. Thus, the Point object p is initialized with x set to 69 and y set to 420.<br><br>When print(p) is executed, Python calls the __str__ method to obtain the string representation of p. The __str__ method formats the output as "(69, 420)".`,
+    link: "https://www.educative.io/answers/what-is-the-str-method-in-python",
   },
+  {
+    question: "What is the expected behavior of the following code?",
+    image: "images/image255.png",
+    answers: [
+      { text: "it outputs 0", correct: true },
+      { text: "it raises an exception", correct: false },
+      { text: "it outputs 1", correct: false },
+      { text: "it outputs 2", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>• The class Class has a class attribute Variable initialized to 0 and an instance attribute value initialized to 0 in the constructor.<br><br>• When object_1 is created, it sets object_1.Variable to 1, creating an instance attribute Variable specific to object_1. This does not change the class attribute Variable.<br><br>• When object_2 is created, it does not have an instance attribute Variable, so it uses the class attribute Variable, which remains 0. <br><br>• object_2.value is incremented by 1, making object_2.value equal to 1.<br><br>• The print statement calculates object_2.Variable + object_1.value.<br><br>Here, object_2.Variable is 0 (the class attribute), and object_1.value is 0 (since object_1.value was not modified).<br><br>Thus, the expression object_2.Variable + object_1.value evaluates to 0 + 0, resulting in an output of 0.",
+    link: "https://pynative.com/python-instance-variables/",
+  },/*
   {
     question: "",
     answers: [
