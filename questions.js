@@ -172,7 +172,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The 'finally' clause is used to execute code, regardless of whether an exception occurs or not, for example:<br><br>try: print('Hello') <br>finally: print('World').",
+      "Explanation:<br><br>The 'finally' clause is used to execute code, regardless of whether an exception occurs or not, for example:<br><br>try: <br>print('Hello') <br>finally: <br>print('World').",
     link: "https://www.w3schools.com/python/python_try_except.asp",
   },
   {
