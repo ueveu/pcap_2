@@ -2980,7 +2980,7 @@ export const questions = [
       { text: "The code is erroneous.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The provided Python code defines a generator function named func(n) that takes an integer parameter n. Inside this function, an empty string s is initialized. A for loop iterates i from 0 to n-1. During each iteration, an asterisk ('*') is appended to the string s, and then yield s is used to yield the current value of s to the caller.<br><br> Outside the function, a for loop iterates over the generator object returned by func(3). During each iteration, it prints the value yielded by the generator function without adding a newline (end=''). This results in the consecutive printing of the string values '*', '**', and '***'.",
+      "Explanation:<br><br>• func(3) creates a generator that will produce a sequence of strings.<br><br>• The for loop iterates over the values produced by this generator.<br><br>• print(x, end='') prints each value x without adding a newline character (end='').<br><br>First Iteration:<br>• s starts as an empty string ('').<br>• In the first iteration of the loop (i = 0), s becomes '*'.<br>• yield returns '*'.<br><br>Second Iteration:<br>• In the second iteration (i = 1), s becomes '**'.<br>• yield returns '**'.<br><br>Third Iteration:<br>• In the third iteration (i = 2), s becomes '***'.<br>• yield returns '***'.<br><br>The for loop collects these values and prints them consecutively without newlines.",
     link: "https://www.geeksforgeeks.org/generators-in-python/",
   },
   {
