@@ -621,7 +621,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The 'pop()' method is used to remove the last element from a list in Python, for example: <br><br> list.pop()",
     link: "https://www.w3schools.com/python/ref_list_pop.asp",
-  },
+  },/* 
   {
     question:
       "What data structure is best suited for implementing a LIFO (Last In, First Out) structure?",
@@ -634,7 +634,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>A stack is designed to follow the LIFO principle, making it the most suitable data structure for such a scenario. It allows elements to be added and removed only from the top.",
     link: "https://realpython.com/queue-in-python/#stack-last-in-first-out-lifo",
-  },
+  }, */
   {
     question:
       "Which built-in function in Python is used to find the length of a list?",
