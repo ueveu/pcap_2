@@ -6997,9 +6997,9 @@ export const questions = [
     question: "Which of the following lines of code will work flawlessly when put independently inside the add_new() method in order to make the snippet's output equal to [0, 1, 2]? <br><br>(Choose two)",
     image: "images/image257.png",
     answers: [
-      { text: "A", correct: false },
+      { text: "A", correct: true },
       { text: "B", correct: false },
-      { text: "C", correct: false },
+      { text: "C", correct: true },
       { text: "D", correct: false },
     ],
     explanation: "Explanation:<br><br>We want the final output of print(Object.get()) to be [0, 1, 2]. This means we need to add 2 to the list [0, 1].<br><br>A)<br> • self.get_last() returns the last element of self.queue, which is 1.<br> • self.get_last() + 1 calculates 1 + 1, which is 2.<br> • self.queue.append(2) adds 2 to the end of the list.<br><br>So, this option correctly appends 2 to self.queue, resulting in [0, 1, 2].<br><br>B)<br>• get_last() without self. would cause a NameError because it is a method and should be called with self.get_last().<br> • This code will not work as intended due to the missing self.<br><br>C)<br>• self.queue[-1] directly accesses the last element of self.queue, which is 1.<br>• self.queue[-1] + 1 calculates 1 + 1, which is 2.<br>• self.queue.append(2) adds 2 to the end of the list.<br><br>So, this option also correctly appends 2 to self.queue, resulting in [0, 1, 2].<br><br>D)<br>• queue is not defined in the add_new() method; it should be self.queue.<br>• This code will result in a NameError due to the undefined queue.",
