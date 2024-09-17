@@ -1143,7 +1143,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>Encapsulation is used to hide the implementation details of a class from the outside world.",
     link: "https://stackoverflow.com/questions/75715054/need-help-to-verify-own-interpretation-of-the-main-purpose-of-the-encapsulation",
-  },
+  },/* 
   {
     question:
       "In Python, a class can have multiple methods with the same name but different parameters. This is known as:",
@@ -1156,7 +1156,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>Method overloading is used to create multiple methods with the same name but different parameters in a class.",
     link: "https://www.geeksforgeeks.org/method-overloading-in-python/",
-  },
+  }, */
   {
     question: "What is the output of the following code?",
     image: "images/image16.png",
