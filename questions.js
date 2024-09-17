@@ -1294,7 +1294,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>Data cleaning involves identifying and correcting errors or inconsistencies in the data, handling missing values, and ensuring that the dataset is in a suitable format for analysis. This process helps improve the quality of the data and ensures that the subsequent analysis yields reliable and meaningful results.",
     link: "https://en.wikipedia.org/wiki/Data_cleaning",
-  },
+  },/* 
   {
     question:
       "When integrating multiple modules and libraries in a Python project, what is the purpose of virtual environments?",
@@ -1316,7 +1316,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The 'virtualenv' module in Python is used to create isolated environments for different project versions.",
     link: "https://docs.python.org/3/library/virtualenv.html",
-  },
+  }, */
   {
     question:
       "Which data structure is ideal for storing a collection of unique elements?",
