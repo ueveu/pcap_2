@@ -4120,7 +4120,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>A) In hierarchy diagrams, the superclass is above the subclass.<br><br>B) Encapsulation hides internal details of a class.<br><br>C) Objects of the same class have the same set of attributes, though their values may differ.<br><br>D) A constructor initializes new objects in a class.",
     link: "https://www.programiz.com/python-programming/object-oriented-programming",
-  },
+  },/* 
   {
     question:
       "Which of the following code snippets will expand the code, so that 100 will be printed? <br><br>(Choose two)",
@@ -4134,7 +4134,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>Snippet A will add 100 to res for each name in the tuple that is present in data. If only one name is in data, res will be 100. If two or more names are in data, res will be greater than 100.<br><br>Snippet B will add 100 to res for each name in the tuple that is not present in data. To get a total of 100, exactly one name must be missing from data.<br><br>Snippet C will add 50 to res for each name in the tuple that is present in data. To get a total of 100, exactly two names must be in data.<br><br>Snippet D will add 50 to res for each name in the tuple that is not present in data. To get a total of 100, exactly two names must be missing from data.",
     link: "https://docs.python.org/3/tutorial/controlflow.html#list-comprehensions",
-  },
+  }, */
   {
     question:
       "Which of the following lines contain valid Python code? <br><br>(Choose two)",
