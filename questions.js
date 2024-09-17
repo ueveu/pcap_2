@@ -1372,7 +1372,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The 'frozenset' data type is an immutable data type in Python.",
     link: "https://realpython.com/python-frozensets/",
-  },
+  },/* 
   {
     question: "What is the primary purpose of a comprehension in Python?",
     answers: [
@@ -1393,7 +1393,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The primary purpose of a comprehension in Python is to provide a concise and efficient way to create new sequences, such as lists, sets, or dictionaries, by iterating over an existing iterable and applying a condition or transformation to its elements.",
     link: "https://realpython.com/python-list-comprehension/",
-  },
+  }, */
   {
     question:
       "Which data structure is used for mapping keys to values in Python?",
