@@ -848,7 +848,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>Context managers with the 'with' statement are used for automatic resource management and improved exception handling, but they are not directly related to regular expression matching.",
     link: "https://realpython.com/python-with-statement/#using-the-python-with-statement",
-  },
+  },/* 
   {
     question: "What is the purpose of regular expressions in Python?",
     answers: [
@@ -863,7 +863,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br> Regular expressions are used to match and manipulate strings based on patterns, which are used in various programming languages.",
     link: "https://docs.python.org/3/library/re.html",
-  },
+  }, */
   {
     question:
       "Which file mode is used to open a file for both reading and writing in binary format?",
