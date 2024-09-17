@@ -4372,7 +4372,7 @@ export const questions = [
   },
   {
     question:
-      "Which of the following literals reflect the value given as 34.23?",
+      "Which of the following literals reflect the value given as 34.23?<br><br>(Choose two)",
     answers: [
       { text: ".3423e2", correct: true },
       { text: "3423e-2", correct: true },
