@@ -835,7 +835,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br> The 'try-except' block is used to catch and handle exceptions that may occur withing a specific block of code.",
     link: "https://www.programiz.com/python-programming/exception-handling",
-  },
+  },/*
   {
     question:
       "Which of the following is NOT a benefit of using context managers with the 'with' statement in Python?",
@@ -848,7 +848,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>Context managers with the 'with' statement are used for automatic resource management and improved exception handling, but they are not directly related to regular expression matching.",
     link: "https://realpython.com/python-with-statement/#using-the-python-with-statement",
-  },/* 
+  }, 
   {
     question: "What is the purpose of regular expressions in Python?",
     answers: [
