@@ -990,7 +990,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>Functional programming is a programming paradigm that is distinct from object-oriented programming.",
     link: "https://en.wikipedia.org/wiki/Functional_programming",
-  },
+  },/* 
   {
     question:
       "What is the purpose of the 'finally' block in exception handling?",
@@ -1006,7 +1006,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br> The 'finally' block in exception handling is used to execute code, whether an exception is raised or not.",
     link: "https://www.programiz.com/python-programming/exception-handling",
-  },
+  }, */
   {
     question: "What is the purpose of the __init__ method in a Python class?",
     answers: [
