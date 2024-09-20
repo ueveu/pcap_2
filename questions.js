@@ -114,13 +114,13 @@ export const questions = [
   {
     question: "In Python, what does the 'pass' statement do?",
     answers: [
-      { text: "Terminates the program.", correct: false },
-      { text: "Skips the current iteration in a loop.", correct: false },
-      { text: "Raises an exception.", correct: false },
-      { text: "Has no effect; it is a null operation.", correct: true },
+      { text: "A) Terminates the program.", correct: false },
+      { text: "B) Skips the current iteration in a loop.", correct: false },
+      { text: "C) Raises an exception.", correct: false },
+      { text: "D) Has no effect; it is a null operation.", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The pass statement is a null operation—it doesn't do anything and is used as a placeholder. You can use pass in situations where a statement is syntactically required but you don't want to execute any code at that moment.<br><br>This can be useful when you're writing code that hasn't been fully implemented yet, or when you're constructing loops, functions, or classes that don't have any content initially but are syntactically required.",
+      "Explanation:<br><br>The 'pass' statement is used as a placeholder. You can use 'pass' in situations where a statement is syntactically required but you don't want to execute any code at that moment.<br><br>This can be useful when you're writing code that hasn't been fully implemented yet, or when you're constructing loops, functions, or classes that don't have any content initially but are syntactically required.<br><br>Terminating the program would be done using 'exit()', 'quit()', or 'sys.exit()'.<br><br>Skipping the current iteration in a loop would be done using 'continue'.<br><br>Raising an exception is done with the 'raise' statement.",
     link: "https://www.w3schools.com/python/ref_keyword_pass.asp",
   },
   {
@@ -138,7 +138,7 @@ export const questions = [
       { text: "D) Has no effect on the loop.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>A) is incorrect because break doesn't continue with the next iteration; it exits the loop altogether.<br><br>B) correctly describes the behavior of the break statement, as it stops the loop entirely and moves to the code that comes after the loop.<br><br>C) is incorrect. The continue statement does that, not break.<br><br>D) is clearly incorrect. The break statement does have an effect, as it exits the loop.",
+      `Explanation:<br><br>A) "Exits the loop and continues with the next iteration" describes the behavior of the continue statement, not break.<br><br>B) correctly describes the behavior of the break statement, as it stops the loop entirely and moves to the code that comes after the loop.<br><br>C) "Skips the current iteration and continues with the next one" is also the behavior of the continue statement, not break.<br><br>D) "Has no effect on the loop" is incorrect since break has a very specific effect of terminating the loop.`,
     link: "https://www.tutorialspoint.com/python/python_break_statement.htm",
   },
   {
@@ -172,7 +172,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The 'finally' clause is used to execute code, regardless of whether an exception occurs or not, for example:<br><br>try: <br>print('Hello') <br>finally: <br>print('World').",
+      "Explanation:<br><br>The finally clause in a try-except-finally block is designed to execute no matter what happens, whether an exception is raised or not. It is typically used for cleaning up resources like closing files or releasing locks, ensuring that this cleanup happens whether or not an error occurred in the try block.",
     link: "https://www.w3schools.com/python/python_try_except.asp",
   },
   {
@@ -185,19 +185,19 @@ export const questions = [
       { text: "include example", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'import' statement is used to import a module.",
+      "Explanation:<br><br>n Python, the correct way to import a module is by using the import statement. When you write import example, Python loads the module named example so you can use its functions, classes, or variables in your code.",
     link: "https://www.w3schools.com/python/python_modules.asp",
   },
   {
-    question: "What is the purpose of the 'pop' method in Python lists? <br><br>(Choose two)",
+    question: "What is the purpose of the 'pop()' method in Python lists? <br><br>(Choose two)",
     answers: [
       { text: "Appends an element to the end of the list.", correct: false },
-      { text: "Removes the last element from the list.", correct: true },
-      { text: "Removes the element at a specific index.", correct: true },
-      { text: "Retrieves the element at a specific index.", correct: false },
+      { text: "Removes the last element from the list by default.", correct: true },
+      { text: "Removes the element at a specific index, when given.", correct: true },
+      { text: "Deletes the list.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'pop' method removes the element at the specified index and returns it, for example: <br><br>list.pop(0)<br><br>If the index is not specified, the 'pop' method removes the last element in the list.",
+      "Explanation:<br><br>The 'pop()' method removes the element at the specified index and returns it, for example: <br><br>list.pop(0)<br><br>If the index is not specified, the 'pop()' method removes the last element in the list.",
     link: "https://www.w3schools.com/python/ref_list_pop.asp",
   },
   {
@@ -210,35 +210,21 @@ export const questions = [
       { text: "open('example.txt', 'r').read()", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'with' statement is used to open a file and automatically close it when done, for example:<br><br>with open('example.txt', 'r') as file:",
+      "Explanation:<br><br>The with statement is the correct and most Pythonic way to open a file, ensuring that the file is automatically closed once the block of code inside the with statement is executed, even if an exception occurs. It simplifies file handling and makes the code cleaner and safer. <br><br>For example:<br><br>with open('example.txt', 'r') as file:",
     link: "https://www.geeksforgeeks.org/with-statement-in-python/",
   },
   {
-    question: "What is the purpose of the 'zip' function in Python?",
-    answers: [
-      { text: "Compresses files into a zip archive.", correct: false },
-      { text: "Combines two or more lists into pairs.", correct: true },
-      {
-        text: "Creates a zip file containing the program code.",
-        correct: false,
-      },
-      { text: "Unzips compressed files.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'zip' function combines two or more lists into pairs, for example:<br><br>zip(list1, list2)",
-    link: "https://www.w3schools.com/python/ref_func_zip.asp",
-  },
-  {
     question:
-      "Which of the following is a correct way to concatenate two strings in Python?",
+      "Which of the following is a correct way to concatenate these two strings in Python?",
+      image: "imgages/image746.png",
     answers: [
-      { text: 'str1 = "Hello"', correct: false },
-      { text: 'str2 = "World"', correct: false },
-      { text: "result = str1 + str2", correct: true },
-      { text: "result = str1 - str2", correct: false },
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'str1' and 'str2' variables are used to concatenate the strings, for example:<br><br>str1 = 'Hello'<br><br>str2 = 'World'<br><br>result = str1 + str2.",
+      "Explanation:<br><br>In Python, the + operator is used to concatenate two strings. When you use str1 + str2, the two strings are joined together into a single string.<br><br>",
     link: "https://www.w3schools.com/python/gloss_python_string_concatenation.asp",
   },
   {
@@ -253,27 +239,11 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The 'lambda' keyword is used to create an anonymous function, for example: lambda x: x + 1. <br>It can be used as a shorthand for defining a function with only one line of code.",
+      "Explanation:<br><br>The lambda keyword in Python is used to create anonymous (inline) functions. These are functions that are defined without a name and are usually used for short, simple operations. <br><br>A lambda function can take any number of arguments but can only have a single expression.",
     link: "https://www.w3schools.com/python/python_lambda.asp",
   },
   {
-    question:
-      "What does the term 'abstraction' mean in the context of object-oriented programming?",
-    answers: [
-      { text: "Exposing all internal details of an object.", correct: false },
-      {
-        text: "Hiding implementation details and exposing only essential features.",
-        correct: true,
-      },
-      { text: "Creating objects without defining a class.", correct: false },
-      { text: "Using abstract classes exclusively.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'abstraction' term means hiding implementation details and exposing only relevant features, for example: abstraction is used to create objects without defining a class.",
-    link: "https://softwareengineering.stackexchange.com/questions/230401/confused-about-the-definition-of-abstraction-in-oop",
-  },
-  {
-    question: "What is the role of the'__str__' method in Python classes?",
+    question: "What is the role of the '__str__' method in Python classes?",
     answers: [
       { text: "To create a new instance of the class.", correct: false },
       { text: "To define a subclass.", correct: false },
@@ -284,45 +254,20 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The '__str__' method is used to convert an object to a string representation, for example: str(object). It is used to print the object's value when it is converted to a string.",
+      "Explanation:<br><br>The __str__ method in Python is a special method used to define the string representation of an object. It is called when you use the str() function or print() on an instance of the class. The method should return a human-readable string that describes the object.",
     link: "https://www.educative.io/answers/what-is-the-str-method-in-python",
   },
   {
     question:
-      "How does the 'protected' access modifier in Python contribute to encapsulation?",
+      "What is the primary purpose of the '@classmethod' decorator in Python?",
     answers: [
-      {
-        text: "It allows unrestricted access to attributes from outside the class.",
-        correct: false,
-      },
-      {
-        text: "It restricts access to attributes only within the same module.",
-        correct: false,
-      },
-      {
-        text: "It restricts access to attributes within the class and its subclasses.",
-        correct: true,
-      },
-      {
-        text: "It prohibits access to attributes within the class.",
-        correct: false,
-      },
+      { text: "A) To create a new instance of the class.", correct: false },
+      { text: "B) To define a static method.", correct: false },
+      { text: "C) To access class-specific data.", correct: true },
+      { text: "D) To call a method from within another method.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'protected' access modifier in Python allows access to attributes within the class and its subclasses, for example: protected attribute.",
-    link: "https://www.geeksforgeeks.org/access-modifiers-in-python-public-private-and-protected/",
-  },
-  {
-    question:
-      "What is the primary purpose of the 'classmethod' decorator in Python?",
-    answers: [
-      { text: "To create a new instance of the class.", correct: false },
-      { text: "To define a static method.", correct: false },
-      { text: "To access class-specific data.", correct: true },
-      { text: "To call a method from within another method.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The primary purpose of the classmethod decorator in Python is to define a method that is bound to the class rather than an instance of the class. <br><br>This allows the method to access and modify class-level data or perform operations that are related to the class itself, rather than individual objects.",
+      "Explanation:<br><br>The @classmethod decorator in Python is used to define a method that is bound to the class and not the instance of the class. This means it can access class-specific data, such as class attributes, and it is passed the class (cls) as its first argument rather than the instance (self).<br><br>A) is false: To create a new instance, you typically use __init__ method.<br><br>B) is false: This is done with the @staticmethod decorator.<br><br>D) is false: Methods can call other methods regardless of whether they are class methods.",
     link: "https://www.geeksforgeeks.org/classmethod-in-python/",
   },
   {
@@ -356,7 +301,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>In Python, a class is a blueprint for creating objects, defining their attributes and behaviors, while an object is an instance of a class, representing a specific entity with its unique state and behavior. Classes serve as templates for creating multiple objects with similar properties and methods.",
+      "Explanation:<br><br>In Python, a class is a blueprint for creating objects, defining their attributes and behaviors, while an object is an instance of a class, representing a specific entity with its unique state and behavior. <br><br>Classes serve as templates for creating multiple objects with similar properties and methods.",
     link: "https://www.w3schools.com/python/python_classes.asp",
   },
   {
@@ -369,7 +314,7 @@ export const questions = [
       { text: "create", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The '__init__' method is used to initialize class variables, for example:<br><br>def __init__(self, arg1, arg2): <br>pass",
+      "Explanation:<br><br>The '__init__' method is used to initialize class variables.",
     link: "https://www.geeksforgeeks.org/__init__-in-python/",
   },
   {
@@ -381,7 +326,7 @@ export const questions = [
       { text: "To define a subclass.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'super()' function is used to call the superclass constructor, for example: <br><br>super().__init__(arg1, arg2)",
+      "Explanation:<br><br>The super() function is used to call methods from a parent or superclass, allowing you to extend or modify inherited behavior in a subclass. <br><br>It's commonly used in the constructor of a subclass to ensure that the initialization from the superclass is executed.",
     link: "https://www.w3schools.com/python/ref_func_super.asp",
   },
   {
@@ -422,7 +367,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The 'self' parameter in Python class methods refers to the instance of the class itself, allowing methods to access and modify the object's attributes and methods. It enables object-oriented programming principles such as encapsulation and allows for the distinction between instance and class variables.",
+      "Explanation:<br><br>In Python class methods, self is a conventional name for the first parameter, and it is used to access instance attributes and methods. When you create an object of a class, self allows you to refer to that specific instance within class methods.",
     link: "https://www.geeksforgeeks.org/self-in-python-class/",
   },
   {
@@ -444,7 +389,7 @@ export const questions = [
       { text: "Objects cannot inherit from each other.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'is-a' relationship in object-oriented programming refers to inheritance, where a subclass is said to 'be' a superclass, implying a hierarchical relationship between classes. <br><br>It indicates that the subclass shares common characteristics and behaviors with the superclass and can be treated as an instance of the superclass.",
+      `Explanation:<br><br>In object-oriented programming, the 'is-a' relationship describes inheritance, where a subclass (or derived class) is a specialized version of a superclass (or base class). <br><br>This means that an instance of the subclass can be treated as an instance of the superclass. <br><br>For example, if you have a class Animal and a subclass Dog, you can say that a Dog "is an" Animal. <br><br>This allows for polymorphism, where different types can be used interchangeably if they share a common superclass.`,
     link: "https://www.geeksforgeeks.org/implementation-of-composition-has-a-relation-in-python/",
   },
   {
@@ -456,7 +401,7 @@ export const questions = [
         correct: false,
       },
       {
-        text: "Encapsulation allows data to be modified directly by external code.,",
+        text: "Encapsulation allows data to be modified directly by external code.",
         correct: false,
       },
       {
@@ -469,7 +414,8 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>Encapsulation in object-oriented programming contributes to data protection by restricting direct access to an object's internal data, allowing access only through defined interfaces (methods). This prevents unauthorized modification or access to the object's state, enhancing data security and integrity.",
+      "Explanation:<br><br>Encapsulation is a fundamental principle of object-oriented programming that combines data (attributes) and methods (functions) into a single unit, typically a class. By restricting access to certain attributes and methods, encapsulation protects the integrity of the object's data.",
+    link: "https://stackify.com/oop-concept-for-beginners-what-is-encapsulation/",
   },
   {
     question:
@@ -481,11 +427,11 @@ export const questions = [
       { text: "Enforcing encapsulation principles.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Inheritance in object-oriented programming is primarily used for code reuse and establishing hierarchical relationships between classes. <br><br>It allows subclasses to inherit attributes and methods from a superclass, promoting modularity, extensibility, and abstraction in software design.",
+      "Explanation:<br><br>Inheritance allows a new class (the subclass) to inherit attributes and methods from an existing class (the superclass). <br><br>This means that the subclass can reuse code, which reduces duplication and enhances maintainability. <br><br>By extending or overriding the behavior of the superclass, developers can create a more specialized implementation without having to rewrite the existing code.",
     link: "https://www.w3schools.com/python/python_inheritance.asp",
   },
   {
-    question: "What is the purpose of the 'del' statement in Python?",
+    question: "What is the purpose of the 'del' keyword in Python?",
     answers: [
       { text: "To delete a class definition.", correct: false },
       { text: "To remove an element from a list.", correct: false },
@@ -493,7 +439,7 @@ export const questions = [
       { text: "To delete a method from a class.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The del statement in Python is used to delete variables, items from collections, or attributes from objects. When you use del on a variable, it removes the reference to that variable. For collections like lists or dictionaries, del can be used to remove specific items. <br><br>Additionally, you can use del to remove attributes from objects. The actual memory is freed only when there are no remaining references to the object.",
+      "Explanation:<br><br>The del keyword in Python is used to delete variables, items from collections, or attributes from objects. <br><br>When you use del on a variable, it removes the reference to that variable. For collections like lists or dictionaries, del can be used to remove specific items. <br><br>Additionally, you can use del to remove attributes from objects. The actual memory is freed only when there are no remaining references to the object.",
     link: "https://www.w3schools.com/python/ref_keyword_del.asp",
   },
   {
