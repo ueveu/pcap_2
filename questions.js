@@ -482,7 +482,7 @@ export const questions = [
       { text: "Returns the maximum value in an iterable", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'ord()' function in Python converts a character to its Unicode code point. It returns the integer value of the character, for example: <br><br> ord('a') = 97",
+      "Explanation:<br><br>The 'ord()' function in Python converts a character to its Unicode code point. It returns the integer value of the character. <br><br>For example: <br><br> ord('a') = 97, ord('b') = 98, etc.",
     link: "https://www.w3schools.com/python/ref_func_ord.asp",
   },
   {
@@ -510,20 +510,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The 'pop()' method is used to remove the last element from a list in Python, for example: <br><br> list.pop()",
     link: "https://www.w3schools.com/python/ref_list_pop.asp",
-  },/* 
-  {
-    question:
-      "What data structure is best suited for implementing a LIFO (Last In, First Out) structure?",
-    answers: [
-      { text: "List", correct: false },
-      { text: "Set", correct: false },
-      { text: "Queue", correct: false },
-      { text: "Stack", correct: true },
-    ],
-    explanation:
-      "Explanation:<br><br>A stack is designed to follow the LIFO principle, making it the most suitable data structure for such a scenario. It allows elements to be added and removed only from the top.",
-    link: "https://realpython.com/queue-in-python/#stack-last-in-first-out-lifo",
-  }, */
+  },
   {
     question:
       "Which built-in function in Python is used to find the length of a list?",
@@ -549,34 +536,6 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The list comprehension squares only the even numbers from the original list, resulting in [4, 16].",
     link: "https://www.w3schools.com/python/python_lists_comprehension.asp",
-  },
-  {
-    question:
-      "In Python, which module is used for regular expression (RegEx) operations?",
-    answers: [
-      { text: "regex", correct: false },
-      { text: "re", correct: true },
-      { text: "regexpy", correct: false },
-      { text: "reg", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 're' module in Python provides support for regular expressions (RegEx), allowing manipulation and searching of strings based on specific patterns.",
-    link: "https://www.w3schools.com/python/python_regex.asp",
-  },
-  {
-    question: "What is the purpose of the 'zip()' function in Python?",
-    answers: [
-      { text: "To compress files and folders", correct: false },
-      { text: "To create a ZIP archive of multiple files", correct: false },
-      {
-        text: "To combine multiple iterables into tuples of corresponding elements",
-        correct: true,
-      },
-      { text: "To extract files from a ZIP archive", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'zip()' function in Python is used to combine multiple iterables into tuples of corresponding elements, for example: <br><br> zip(list1, list2, list3)",
-    link: "https://www.w3schools.com/python/ref_func_zip.asp",
   },
   {
     question: "Which of the following is a mutable data type in Python? <br><br>(Choose three)",
@@ -643,19 +602,6 @@ export const questions = [
     link: "https://www.w3schools.com/python/ref_func_open.asp",
   },
   {
-    question:
-      "What is the purpose of the 'setdefault()' method in a Python dictionary?",
-    answers: [
-      { text: "To set the default value for a key", correct: true },
-      { text: "To check if a key exists in the dictionary", correct: false },
-      { text: "To add a key-value pair to the dictionary", correct: false },
-      { text: "To remove a key from the dictionary", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'setdefault()' method in Python is used to set the default value for a key, for example: <br><br> dictionary.setdefault(key, value)",
-    link: "https://www.w3schools.com/python/ref_dictionary_setdefault.asp",
-  },
-  {
     question: "What is the output of the following code snippet?",
     image: "images/image9.png",
     answers: [
@@ -680,7 +626,7 @@ export const questions = [
       { text: "Removes leading and trailing whitespaces", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'join()' method in Python is used to concatenate elements of a list into a single string, for example: <br><br> string.join(list)",
+      "Explanation:<br><br>In Python, the join() method is used to concatenate a sequence of strings into a single string, with a specified separator between each element. The method is called on the separator string and takes an iterable (like a list or tuple) of strings as its argument.<br><br>Example:<br><br>fruits = ['apple', 'banana', 'cherry']<br>result = ', '.join(fruits)<br>print(result)  # Output: apple, banana, cherry",
     link: "https://www.w3schools.com/python/ref_string_join.asp",
   },
   {
