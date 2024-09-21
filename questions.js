@@ -6927,7 +6927,7 @@ export const questions = [
     ],    
     explanation: `Explanation:<br><br>The code initializes the dictionary 'my_dict' with three key-value pairs. <br><br>The 'try' block attempts to access my_dict['d'], but since the key 'd' doesn't exist, a 'KeyError' is raised. <br><br>The 'KeyError' is caught by its corresponding 'except' block, so "C" is printed. <br><br>The other 'except' blocks are skipped because the error has already been handled.`,
     link: "https://docs.python.org/3/tutorial/errors.html",
-  },/*
+  }, /*
   {
     question: "",
     answers: [
