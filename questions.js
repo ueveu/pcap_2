@@ -130,15 +130,17 @@ export const questions = [
         text: "A) Exits the loop and continues with the next iteration.",
         correct: false,
       },
-      { text: "B) Exits the loop entirely and continues execution with the statement following the loop.", correct: true },
+      {
+        text: "B) Exits the loop entirely and continues execution with the statement following the loop.",
+        correct: true,
+      },
       {
         text: "C) Skips the current iteration and continues with the next one.",
         correct: false,
       },
       { text: "D) Has no effect on the loop.", correct: false },
     ],
-    explanation:
-      `Explanation:<br><br>A) "Exits the loop and continues with the next iteration" describes the behavior of the continue statement, not break.<br><br>B) correctly describes the behavior of the break statement, as it stops the loop entirely and moves to the code that comes after the loop.<br><br>C) "Skips the current iteration and continues with the next one" is also the behavior of the continue statement, not break.<br><br>D) "Has no effect on the loop" is incorrect since break has a very specific effect of terminating the loop.`,
+    explanation: `Explanation:<br><br>A) "Exits the loop and continues with the next iteration" describes the behavior of the continue statement, not break.<br><br>B) correctly describes the behavior of the break statement, as it stops the loop entirely and moves to the code that comes after the loop.<br><br>C) "Skips the current iteration and continues with the next one" is also the behavior of the continue statement, not break.<br><br>D) "Has no effect on the loop" is incorrect since break has a very specific effect of terminating the loop.`,
     link: "https://www.tutorialspoint.com/python/python_break_statement.htm",
   },
   {
@@ -189,11 +191,18 @@ export const questions = [
     link: "https://www.w3schools.com/python/python_modules.asp",
   },
   {
-    question: "What is the purpose of the 'pop()' method in Python lists? <br><br>(Choose two)",
+    question:
+      "What is the purpose of the 'pop()' method in Python lists? <br><br>(Choose two)",
     answers: [
       { text: "Appends an element to the end of the list.", correct: false },
-      { text: "Removes the last element from the list by default.", correct: true },
-      { text: "Removes the element at a specific index, when given.", correct: true },
+      {
+        text: "Removes the last element from the list by default.",
+        correct: true,
+      },
+      {
+        text: "Removes the element at a specific index, when given.",
+        correct: true,
+      },
       { text: "Deletes the list.", correct: false },
     ],
     explanation:
@@ -216,7 +225,7 @@ export const questions = [
   {
     question:
       "Which of the following is a correct way to concatenate these two strings in Python?",
-      image: "imgages/image746.png",
+    image: "imgages/image746.png",
     answers: [
       { text: "A", correct: false },
       { text: "B", correct: false },
@@ -264,7 +273,10 @@ export const questions = [
       { text: "A) To create a new instance of the class.", correct: false },
       { text: "B) To define a static method.", correct: false },
       { text: "C) To access class-specific data.", correct: true },
-      { text: "D) To call a method from within another method.", correct: false },
+      {
+        text: "D) To call a method from within another method.",
+        correct: false,
+      },
     ],
     explanation:
       "Explanation:<br><br>The @classmethod decorator in Python is used to define a method that is bound to the class and not the instance of the class. This means it can access class-specific data, such as class attributes, and it is passed the class (cls) as its first argument rather than the instance (self).<br><br>A) is false: To create a new instance, you typically use __init__ method.<br><br>B) is false: This is done with the @staticmethod decorator.<br><br>D) is false: Methods can call other methods regardless of whether they are class methods.",
@@ -388,8 +400,7 @@ export const questions = [
       },
       { text: "Objects cannot inherit from each other.", correct: false },
     ],
-    explanation:
-      `Explanation:<br><br>In object-oriented programming, the 'is-a' relationship describes inheritance, where a subclass (or derived class) is a specialized version of a superclass (or base class). <br><br>This means that an instance of the subclass can be treated as an instance of the superclass. <br><br>For example, if you have a class Animal and a subclass Dog, you can say that a Dog "is an" Animal. <br><br>This allows for polymorphism, where different types can be used interchangeably if they share a common superclass.`,
+    explanation: `Explanation:<br><br>In object-oriented programming, the 'is-a' relationship describes inheritance, where a subclass (or derived class) is a specialized version of a superclass (or base class). <br><br>This means that an instance of the subclass can be treated as an instance of the superclass. <br><br>For example, if you have a class Animal and a subclass Dog, you can say that a Dog "is an" Animal. <br><br>This allows for polymorphism, where different types can be used interchangeably if they share a common superclass.`,
     link: "https://www.geeksforgeeks.org/implementation-of-composition-has-a-relation-in-python/",
   },
   {
@@ -494,8 +505,7 @@ export const questions = [
       { text: "python", correct: false },
       { text: "ythonp", correct: false },
     ],
-    explanation:
-      `Explanation:<br><br>In this code, the variable text is initialized with the string "python". The expression text[::-1] is used to reverse the string. This is done through slicing, where the [::-1] syntax means that the string will be traversed from the end to the beginning, effectively reversing it.<br><br>The -1 indicates the step, meaning it moves backwards through the string. The reversed version of "python" is "nohtyp", which is then assigned to the variable result. Finally, the print(result) statement outputs the reversed string, "nohtyp".`,
+    explanation: `Explanation:<br><br>In this code, the variable text is initialized with the string "python". The expression text[::-1] is used to reverse the string. This is done through slicing, where the [::-1] syntax means that the string will be traversed from the end to the beginning, effectively reversing it.<br><br>The -1 indicates the step, meaning it moves backwards through the string. The reversed version of "python" is "nohtyp", which is then assigned to the variable result. Finally, the print(result) statement outputs the reversed string, "nohtyp".`,
     link: "https://www.w3schools.com/python/python_strings_slicing.asp",
   },
   {
@@ -538,7 +548,8 @@ export const questions = [
     link: "https://www.w3schools.com/python/python_lists_comprehension.asp",
   },
   {
-    question: "Which of the following is a mutable data type in Python? <br><br>(Choose three)",
+    question:
+      "Which of the following is a mutable data type in Python? <br><br>(Choose three)",
     answers: [
       { text: "Tuple", correct: false },
       { text: "List", correct: true },
@@ -626,86 +637,21 @@ export const questions = [
       { text: "Removes leading and trailing whitespaces", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>In Python, the join() method is used to concatenate a sequence of strings into a single string, with a specified separator between each element. The method is called on the separator string and takes an iterable (like a list or tuple) of strings as its argument.<br><br>Example:<br><br>fruits = ['apple', 'banana', 'cherry']<br>result = ', '.join(fruits)<br>print(result)  # Output: apple, banana, cherry",
+      "Explanation:<br><br>In Python, the join() method is used to concatenate a sequence of strings into a single string, with a specified separator between each element. The method is called on the separator string and takes an iterable (like a list or tuple) of strings as its argument.<br><br>Example:<br><br>fruits = ['apple', 'banana', 'cherry']<br>result = ', '.join(fruits)<br>print(result)  # Output: 'apple, banana, cherry'",
     link: "https://www.w3schools.com/python/ref_string_join.asp",
-  },
-  {
-    question: "In the context of Python, what does CRUD operations refer to?",
-    answers: [
-      { text: "Cryptographic functions", correct: false },
-      { text: "File manipulation operations", correct: false },
-      { text: "Web scraping techniques", correct: false },
-      {
-        text: "Database operations (Create, Read, Update, Delete)",
-        correct: true,
-      },
-    ],
-    explanation:
-      "Explanation:<br><br>In the context of Python, CRUD operations refer to the basic operations performed on data in a persistent storage system, such as a database or file.",
-    link: "https://en.wikipedia.org/wiki/Create,_read,_update_and_delete",
   },
   {
     question: "What is the output of the following code snippet?",
     image: "images/image10.png",
     answers: [
-    { text: "Result: 5.0" + "\n" + "Finally block", correct: true },
+      { text: "Result: 5.0" + "\n" + "Finally block", correct: true },
       { text: "Result: 5.0", correct: false },
       { text: "Division by zero" + "\n" + "Finally block", correct: false },
       { text: "Division by zero", correct: false },
     ],
     explanation: `Explanation:<br><br>When the function divide(10, 2) is called, it first enters the try block, where it attempts to divide 10 by 2. Since dividing by 2 is a valid operation and does not result in a ZeroDivisionError, the division succeeds, and the result, 5.0, is stored in the variable result.<br><br>Next, because no exception occurred, the except block is skipped entirely. The code then proceeds to the else block, which is executed because the try block completed successfully. In the else block, the function prints the message "Result: " followed by the value of result, which is 5.0.<br><br>Finally, the finally block is executed. This block runs regardless of whether an exception occurred or not. It prints the message "Finally block".`,
     link: "https://www.programiz.com/python-programming/exception-handling",
-  },/*
-  {
-    question:
-      "What is the purpose of constructors in object-oriented programming?",
-    answers: [
-      { text: "To provide access modifiers to class members.", correct: false },
-      { text: "To provide access modifiers to class members.", correct: false },
-      { text: "To define static methods.", correct: false },
-      { text: "To create objects of a class.", correct: true },
-    ],
-    explanation:
-      "Explanation:<br><br> Constructors are used to initialize objects of a class. They are called when an object is created.",
-    link: "https://www.geeksforgeeks.org/constructors-in-python/",
   },
-  {
-    question: "Inheritance is a concept in OOP that involves:",
-    answers: [
-      { text: "Redefining existing methods.", correct: false },
-      { text: "Hiding class implementation details.", correct: false },
-      { text: "Creating a new class from an existing class.", correct: true },
-      { text: "Restricting access to class members.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br> Inheritance allows a new class to inherit properties and behaviors from an existing class, creating a hierarchy of classes.",
-    link: "https://www.geeksforgeeks.org/inheritance-in-python/",
-  },
-  {
-    question:
-      "Which of the following statements about polymorphism is correct?",
-    answers: [
-      {
-        text: "Polymorphism allows objects of different classes to be treated as objects of a common base class.",
-        correct: true,
-      },
-      {
-        text: "Polymorphism allows a class to hide its implementation details.",
-        correct: false,
-      },
-      {
-        text: "Polymorphism is achieved only through class inheritance.",
-        correct: false,
-      },
-      {
-        text: "Polymorphism is used to define static methods.",
-        correct: false,
-      },
-    ],
-    explanation:
-      "Explanation:<br><br> Polymorphism allows objects of different classes to be treated as objects of a common base class, enabling code to be written more generically.",
-    link: "https://www.geeksforgeeks.org/polymorphism-in-python/",
-  }, */
   {
     question:
       "What does the 'try-except' block in Python's exception handling do?",
@@ -725,37 +671,9 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br> The 'try-except' block is used to catch and handle exceptions that may occur withing a specific block of code.",
+      "Explanation:<br><br>The try-except block in Python is used to catch exceptions that may occur in the try block and handle them in the except block, preventing the program from crashing.",
     link: "https://www.programiz.com/python-programming/exception-handling",
-  },/*
-  {
-    question:
-      "Which of the following is NOT a benefit of using context managers with the 'with' statement in Python?",
-    answers: [
-      { text: "Automatic resource management.", correct: false },
-      { text: "Improved exception handling.", correct: false },
-      { text: "Cleaner and more readable code.", correct: false },
-      { text: "Simplified regular expression matching.", correct: true },
-    ],
-    explanation:
-      "Explanation:<br><br>Context managers with the 'with' statement are used for automatic resource management and improved exception handling, but they are not directly related to regular expression matching.",
-    link: "https://realpython.com/python-with-statement/#using-the-python-with-statement",
-  }, 
-  {
-    question: "What is the purpose of regular expressions in Python?",
-    answers: [
-      { text: "To perform arithmetic calculations.", correct: false },
-      { text: "To manipulate image files.", correct: false },
-      {
-        text: "To match and manipulate strings based on patterns.",
-        correct: true,
-      },
-      { text: "To manage networking operations.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br> Regular expressions are used to match and manipulate strings based on patterns, which are used in various programming languages.",
-    link: "https://docs.python.org/3/library/re.html",
-  }, */
+  },
   {
     question:
       "Which file mode is used to open a file for both reading and writing in binary format?",
@@ -781,7 +699,7 @@ export const questions = [
       { text: "It is used to manage exception handling.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br> The 'super' keyword is used to refer to the parent class of a derived class, allowing access to its methods and attributes.",
+      "Explanation:<br><br>In Python, the super() keyword is used to call methods from a parent or superclass within a subclass. It allows you to access inherited methods and properties, facilitating code reuse and extending functionality.",
     link: "https://www.geeksforgeeks.org/python-super/",
   },
   {
@@ -845,7 +763,7 @@ export const questions = [
       { text: "It represents a placeholder for future code.", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The purpose of the 'pass* statement is to act as a placeholder in the code where a statement is syntactically required but no action is needed. <br><br>It allows the code to be syntactically complete without performing any operation, often used in stubs for future code or in loops and conditional statements where logic is yet to be implemented.",
+      "Explanation:<br><br>The purpose of the 'pass' statement is to act as a placeholder in the code where a statement is syntactically required but no action is needed. <br><br>It allows the code to be syntactically complete without performing any operation, often used in stubs for future code or in loops and conditional statements where logic is yet to be implemented.",
     link: "https://www.programiz.com/python-programming/pass-statement",
   },
   {
@@ -867,7 +785,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>Binary files can be read and written in Python using the binary mode ('b') with the open() function. This mode allows you to handle file data as raw bytes, preserving the exact byte values without any encoding or decoding.",
+      "Explanation:<br><br>In Python, binary files can be handled by opening them in binary mode using the 'rb' (read binary) or 'wb' (write binary) modes. This allows you to read and write binary data (like images or executable files) directly without any conversion to text format.",
     link: "https://www.geeksforgeeks.org/file-handling-python/",
   },
   {
@@ -880,25 +798,9 @@ export const questions = [
       { text: "Polymorphism", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Functional programming is a programming paradigm that is distinct from object-oriented programming.",
+      "Explanation:<br><br>Functional programming is a different programming paradigm that emphasizes the use of functions and immutability, rather than the concepts of objects and classes found in object-oriented programming (OOP). <br><br>The other options—encapsulation, inheritance, and polymorphism—are all key characteristics of OOP.",
     link: "https://en.wikipedia.org/wiki/Functional_programming",
-  },/* 
-  {
-    question:
-      "What is the purpose of the 'finally' block in exception handling?",
-    answers: [
-      { text: "It is used to raise custom exceptions.", correct: false },
-      {
-        text: "It contains code that always executes, whether an exception is raised or not.",
-        correct: true,
-      },
-      { text: "It is used to define exception classes.", correct: false },
-      { text: "It is used to suppress exceptions.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br> The 'finally' block in exception handling is used to execute code, whether an exception is raised or not.",
-    link: "https://www.programiz.com/python-programming/exception-handling",
-  }, */
+  },
   {
     question: "What is the purpose of the __init__ method in a Python class?",
     answers: [
@@ -911,19 +813,19 @@ export const questions = [
       { text: "It defines the class's superclass.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br> The __init__ method is used to initialize the class attributes of a class when an object of the class is created.",
+      "Explanation:<br><br>The __init__ method in a Python class serves as the constructor. <br><br>Its primary purpose is to initialize a newly created object. This method is automatically called when an instance of the class is created, allowing you to set initial values for the object's attributes.",
     link: "https://www.geeksforgeeks.org/__init__-in-python/",
   },
   {
     question: "Functions in Python allow you to:",
     answers: [
-      { text: "Execute a block of code only once.", correct: false },
-      { text: "Perform arithmetic operations.", correct: false },
-      { text: "Group code into reusable blocks.", correct: true },
-      { text: "Automatically import modules.", correct: false },
+      { text: "A) Execute a block of code only once.", correct: false },
+      { text: "B) Perform arithmetic operations.", correct: false },
+      { text: "C) Group code into reusable blocks.", correct: true },
+      { text: "D) Automatically import modules.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Functions in Python are used to group code into reusable block that can be called upon when needed.",
+      "Explanation:<br><br>Functions in Python are designed to encapsulate code into reusable blocks that can be called multiple times throughout a program, helping to improve code organization and maintainability. <br><br>While functions can perform arithmetic operations (B) or execute code (A), their primary purpose is to promote code reuse. Functions do not automatically import modules (D).",
     link: "https://www.w3schools.com/python/python_functions.asp",
   },
   {
@@ -1035,20 +937,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>Encapsulation is used to hide the implementation details of a class from the outside world.",
     link: "https://stackoverflow.com/questions/75715054/need-help-to-verify-own-interpretation-of-the-main-purpose-of-the-encapsulation",
-  },/* 
-  {
-    question:
-      "In Python, a class can have multiple methods with the same name but different parameters. This is known as:",
-    answers: [
-      { text: "Method overriding", correct: false },
-      { text: "Method overloading", correct: true },
-      { text: "Method encapsulation", correct: false },
-      { text: "Method abstraction", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>Method overloading is used to create multiple methods with the same name but different parameters in a class.",
-    link: "https://www.geeksforgeeks.org/method-overloading-in-python/",
-  }, */
+  },
   {
     question: "What is the output of the following code?",
     image: "images/image16.png",
@@ -1058,8 +947,7 @@ export const questions = [
       { text: "Both A and B", correct: false },
       { text: "Error: Cannot instantiate B", correct: false },
     ],
-    explanation:
-      `Explanation:<br><br>In this code, class A defines a method called show() that prints the string "A". Class B inherits from class A but overrides the show() method with its own version that prints "B".<br><br>When an instance of class B is created and the show() method is called using obj.show(), Python looks for the method in class B first. Since class B has its own show() method, it is executed, and the string "B" is printed.<br><br>This is an example of method overriding, where the child class (B) provides its own implementation of a method that exists in the parent class (A). As a result, the overridden method in class B is called, and "B" is printed.`,
+    explanation: `Explanation:<br><br>In this code, class A defines a method called show() that prints the string "A". Class B inherits from class A but overrides the show() method with its own version that prints "B".<br><br>When an instance of class B is created and the show() method is called using obj.show(), Python looks for the method in class B first. Since class B has its own show() method, it is executed, and the string "B" is printed.<br><br>This is an example of method overriding, where the child class (B) provides its own implementation of a method that exists in the parent class (A). As a result, the overridden method in class B is called, and "B" is printed.`,
     link: "https://www.programiz.com/python-programming/inheritance",
   },
   {
@@ -1173,7 +1061,10 @@ export const questions = [
         text: "To make the data look more visually appealing.",
         correct: false,
       },
-      { text: "To remove all missing values from the dataset.", correct: false },
+      {
+        text: "To remove all missing values from the dataset.",
+        correct: false,
+      },
       {
         text: "To transform the data into a different data type.",
         correct: false,
@@ -1186,29 +1077,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>Data cleaning involves identifying and correcting errors or inconsistencies in the data, handling missing values, and ensuring that the dataset is in a suitable format for analysis. This process helps improve the quality of the data and ensures that the subsequent analysis yields reliable and meaningful results.",
     link: "https://en.wikipedia.org/wiki/Data_cleaning",
-  },/* 
-  {
-    question:
-      "When integrating multiple modules and libraries in a Python project, what is the purpose of virtual environments?",
-    answers: [
-      {
-        text: "To simulate real-world scenarios for testing purposes.",
-        correct: false,
-      },
-      {
-        text: "To create isolated environments for different project versions.",
-        correct: true,
-      },
-      {
-        text: "To provide graphical user interfaces for the project.",
-        correct: false,
-      },
-      { text: "To automatically generate code documentation.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'virtualenv' module in Python is used to create isolated environments for different project versions.",
-    link: "https://docs.python.org/3/library/virtualenv.html",
-  }, */
+  },
   {
     question:
       "Which data structure is ideal for storing a collection of unique elements?",
@@ -1221,19 +1090,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>A set automatically ensures that all elements are unique, so it is the most suitable data structure when you need to store and manage a collection of items without duplicates.<br><br>• Lists can contain duplicate elements and are not designed specifically for uniqueness.<br><br>• Tuples are immutable sequences that can also contain duplicate elements.<br><br>• Dictionaries store key-value pairs, where keys must be unique, but the values can be duplicated.",
     link: "https://www.w3schools.com/python/python_sets.asp",
-  },/* 
-  {
-    question: "What is a major difference between a stack and a queue?",
-    answers: [
-      { text: "Stacks follow LIFO, while queues follow FIFO.", correct: true },
-      { text: "Stacks follow FIFO, while queues follow LIFO.", correct: false },
-      { text: "Stacks and queues both follow LIFO.", correct: false },
-      { text: "Stacks and queues both follow FIFO.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The 'stack' data structure follows LIFO (Last In First Out) and the 'queue' data structure follows FIFO (First In First Out).",
-    link: "https://realpython.com/queue-in-python/",
-  }, */
+  },
   {
     question: "Which of the following is an immutable data type in Python?",
     answers: [
@@ -1264,28 +1121,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The 'frozenset' data type is an immutable data type in Python.",
     link: "https://realpython.com/python-frozensets/",
-  },/* 
-  {
-    question: "What is the primary purpose of a comprehension in Python?",
-    answers: [
-      { text: "To generate a sequence of numbers.", correct: false },
-      {
-        text: "To simplify the process of creating complex data structures.",
-        correct: true,
-      },
-      {
-        text: "To perform mathematical calculations efficiently.",
-        correct: false,
-      },
-      {
-        text: "To create user-friendly command-line interfaces.",
-        correct: false,
-      },
-    ],
-    explanation:
-      "Explanation:<br><br>The primary purpose of a comprehension in Python is to provide a concise and efficient way to create new sequences, such as lists, sets, or dictionaries, by iterating over an existing iterable and applying a condition or transformation to its elements.",
-    link: "https://realpython.com/python-list-comprehension/",
-  }, */
+  },
   {
     question:
       "Which data structure is used for mapping keys to values in Python?",
@@ -1538,8 +1374,7 @@ export const questions = [
       { text: "It outputs False.", correct: true },
       { text: "It outputs True.", correct: false },
     ],
-    explanation:
-    `Explanation:<br><br>In this code, the class Content has a class variable title set to "None". The __init__ method of the class takes a parameter this and initializes an instance variable name with the value of this followed by " than " and then the class variable Content.title.<br><br>When text_1 is created as an instance of Content with "Paper" as the argument, the name attribute of text_1 is set to "Paper than None". Similarly, when text_2 is created with "Article" as the argument, the name attribute of text_2 is set to "Article than None".<br><br>The comparison text_1.title == text_2.name checks whether the class variable title, which is "None", is equal to the instance variable name of text_2, which is "Article than None". Since these two values are not the same, the result of the comparison is False.`,
+    explanation: `Explanation:<br><br>In this code, the class Content has a class variable title set to "None". The __init__ method of the class takes a parameter this and initializes an instance variable name with the value of this followed by " than " and then the class variable Content.title.<br><br>When text_1 is created as an instance of Content with "Paper" as the argument, the name attribute of text_1 is set to "Paper than None". Similarly, when text_2 is created with "Article" as the argument, the name attribute of text_2 is set to "Article than None".<br><br>The comparison text_1.title == text_2.name checks whether the class variable title, which is "None", is equal to the instance variable name of text_2, which is "Article than None". Since these two values are not the same, the result of the comparison is False.`,
     link: "https://docs.python.org/3/tutorial/classes.html",
   },
   {
@@ -1853,7 +1688,7 @@ export const questions = [
   {
     question:
       "Which of the following expressions evaluates to True and raises no exception?",
-      image: "images/image745.png",
+    image: "images/image745.png",
     answers: [
       { text: "A", correct: true },
       { text: "B", correct: false },
@@ -2928,7 +2763,7 @@ export const questions = [
     image: "images/image105.png",
     answers: [
       { text: "44", correct: false },
-      { text: "(4,)", correct: false },      
+      { text: "(4,)", correct: false },
       { text: "4", correct: true },
       { text: "8", correct: false },
       { text: "(8)", correct: false },
@@ -3123,8 +2958,7 @@ export const questions = [
       { text: "The code is erroneous and will not execute", correct: false },
       { text: "It outputs list assignment index out of range", correct: true },
     ],
-    explanation:
-      `Explanation:<br><br>The output of the provided code will be "list assignment index out of range". <br><br>This happens because the code tries to assign a value to my_list[3], which does not exist in the list my_list that has only three elements with valid indices 0, 1, and 2. <br><br>When the code tries to access index 3, an IndexError is raised. The except block catches this error and prints out the error message "list assignment index out of range".`,
+    explanation: `Explanation:<br><br>The output of the provided code will be "list assignment index out of range". <br><br>This happens because the code tries to assign a value to my_list[3], which does not exist in the list my_list that has only three elements with valid indices 0, 1, and 2. <br><br>When the code tries to access index 3, an IndexError is raised. The except block catches this error and prints out the error message "list assignment index out of range".`,
     link: "https://www.freecodecamp.org/news/list-index-out-of-range-python-error-message-solved/",
   },
   {
@@ -3136,8 +2970,7 @@ export const questions = [
       { text: "It outputs 0", correct: false },
       { text: "It raises an exception", correct: false },
     ],
-    explanation:
-      `Explanation:<br><br>In this code, the expression str(1/3) calculates the result of dividing 1 by 3, which gives approximately 0.3333333333333333. This result is then converted to a string, so the variable string holds the value "0.3333333333333333".<br><br>The variable dummy is initialized as an empty string. The for loop iterates over each character in the string and concatenates each character to dummy. As a result, dummy ends up being the same as string.<br><br>After the loop completes, dummy contains the string "0.3333333333333333". The print(dummy[-1]) statement prints the last character of this string, which is '3'.`,
+    explanation: `Explanation:<br><br>In this code, the expression str(1/3) calculates the result of dividing 1 by 3, which gives approximately 0.3333333333333333. This result is then converted to a string, so the variable string holds the value "0.3333333333333333".<br><br>The variable dummy is initialized as an empty string. The for loop iterates over each character in the string and concatenates each character to dummy. As a result, dummy ends up being the same as string.<br><br>After the loop completes, dummy contains the string "0.3333333333333333". The print(dummy[-1]) statement prints the last character of this string, which is '3'.`,
     link: "https://www.geeksforgeeks.org/convert-integer-to-string-in-python/",
   },
   {
@@ -3507,7 +3340,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>A) is true because 'var' is a class variable and exists in Class.__dict__.<br><br>B) is false because 'data' is not an instance variable and will not be in Object.__dict__.<br><br>C) is false because Class.__dict__ contains more than one entry.<br><br>D) is true because 'data' is a class variable and exists in Class.__dict__.",
     link: "https://docs.python.org/3/reference/datamodel.html#object.__dict__",
-  }, 
+  },
   {
     question: "What is true about lambda function? <br><br>(Choose two)",
     answers: [
@@ -3769,7 +3602,7 @@ export const questions = [
   {
     question:
       "Which of the following snippets output ABC to the screen? <br><br>(Choose two)",
-      image: "images/image734.png",
+    image: "images/image734.png",
     answers: [
       { text: "A", correct: true },
       { text: "B", correct: false },
@@ -3918,7 +3751,8 @@ export const questions = [
     link: "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists",
   },
   {
-    question: "Which of the following code snippets will print 124, when the user enters 123? <br><br>(Choose three)",
+    question:
+      "Which of the following code snippets will print 124, when the user enters 123? <br><br>(Choose three)",
     image: "images/image720.png",
     answers: [
       { text: "A", correct: true },
@@ -4012,25 +3846,11 @@ export const questions = [
     explanation:
       "Explanation:<br><br>A) In hierarchy diagrams, the superclass is above the subclass.<br><br>B) Encapsulation hides internal details of a class.<br><br>C) Objects of the same class have the same set of attributes, though their values may differ.<br><br>D) A constructor initializes new objects in a class.",
     link: "https://www.programiz.com/python-programming/object-oriented-programming",
-  },/* 
-  {
-    question:
-      "Which of the following code snippets will expand the code, so that 100 will be printed? <br><br>(Choose two)",
-    image: "images/image722.png",
-    answers: [
-      { text: "A", correct: false },
-      { text: "B", correct: true },
-      { text: "C", correct: true },
-      { text: "D", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>Snippet A will add 100 to res for each name in the tuple that is present in data. If only one name is in data, res will be 100. If two or more names are in data, res will be greater than 100.<br><br>Snippet B will add 100 to res for each name in the tuple that is not present in data. To get a total of 100, exactly one name must be missing from data.<br><br>Snippet C will add 50 to res for each name in the tuple that is present in data. To get a total of 100, exactly two names must be in data.<br><br>Snippet D will add 50 to res for each name in the tuple that is not present in data. To get a total of 100, exactly two names must be missing from data.",
-    link: "https://docs.python.org/3/tutorial/controlflow.html#list-comprehensions",
-  }, */
+  },
   {
     question:
       "Which of the following lines contain valid Python code? <br><br>(Choose two)",
-      image: "images/image736.png",
+    image: "images/image736.png",
     answers: [
       { text: "A", correct: true },
       { text: "B", correct: false },
@@ -4080,7 +3900,8 @@ export const questions = [
     link: "https://docs.python.org/3/tutorial/errors.html#user-defined-exceptions",
   },
   {
-    question: "Which of the following statements are true? <br><br>(Choose two)",
+    question:
+      "Which of the following statements are true? <br><br>(Choose two)",
     answers: [
       {
         text: "A)   Variables with names starting with two underscores are considered private within their class due to name mangling.",
@@ -4304,7 +4125,8 @@ export const questions = [
     link: "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists",
   },
   {
-    question: "Which of the following statements are true? <br><br>(Choose two)",
+    question:
+      "Which of the following statements are true? <br><br>(Choose two)",
     answers: [
       { text: "A) Python strings are actually lists", correct: false },
       { text: "B) Python strings can be concatenated", correct: true },
@@ -4328,7 +4150,8 @@ export const questions = [
     link: "https://docs.python.org/3/library/stdtypes.html#tuple",
   },
   {
-    question: "Which of the following expression evaluate to True? <br><br>(Choose two)",
+    question:
+      "Which of the following expression evaluate to True? <br><br>(Choose two)",
     image: "images/image731.png",
     answers: [
       { text: "A", correct: true },
@@ -4340,7 +4163,8 @@ export const questions = [
     link: "https://docs.python.org/3/library/functions.html#ord",
   },
   {
-    question: "Which of the following expression evaluate to True? <br><br>(Choose three)",
+    question:
+      "Which of the following expression evaluate to True? <br><br>(Choose three)",
     image: "images/image732.png",
     answers: [
       { text: "A", correct: false },
@@ -4352,7 +4176,8 @@ export const questions = [
     link: "https://docs.python.org/3/library/functions.html#ord",
   },
   {
-    question: "What is a true about python class constructors? <br><br>(Choose two)",
+    question:
+      "What is a true about python class constructors? <br><br>(Choose two)",
     answers: [
       {
         text: "A) the constructor must have at least one parameter",
@@ -4376,7 +4201,8 @@ export const questions = [
     link: "https://www.geeksforgeeks.org/python-classes/",
   },
   {
-    question: "Which of the following expressions evaluate to True? <br><br>(Choose three)",
+    question:
+      "Which of the following expressions evaluate to True? <br><br>(Choose three)",
     image: "images/image733.png",
     answers: [
       { text: "A", correct: true },
@@ -4389,7 +4215,8 @@ export const questions = [
     link: "https://docs.python.org/3/library/stdtypes.html#str",
   },
   {
-    question: "An operator able to perform bitwise shifts is coded as... <br><br>(Choose two)",
+    question:
+      "An operator able to perform bitwise shifts is coded as... <br><br>(Choose two)",
     answers: [
       { text: "--", correct: false },
       { text: "++", correct: false },
@@ -5018,20 +4845,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The dir(math) function returns a list of names of the attributes of the math module. Each name in this list is a string, so type(dir(math)[0]) checks the type of the first item in this list, which is indeed a string. Therefore, b1 is True.<br><br>The dir(sys.path) function returns a list of names of attributes and methods for the sys.path object. Since sys.path is a list, the dir(sys.path) call returns the list of attributes and methods available for lists. Each item in this list is a string, so type(dir(sys.path)[-1]) checks the type of the last item in this list, which is also a string. Hence, b2 is True.<br><br>Since both b1 and b2 are True, the final output of the print statement will be True.",
     link: "https://docs.python.org/3/library/functions.html#dir",
-  },/* 
-  {
-    question: "What is the expected behavior of the following code?",
-    image: "images/image156.png",
-    answers: [
-      { text: "it outputs 3", correct: true },
-      { text: "it outputs 1", correct: false },
-      { text: "the code is erroneous and it will not execute", correct: false },
-      { text: "it outputs 2", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The code initializes a global variable m to 0. It defines a function 'foo(n)' that asserts m is 0, then tries to return 1 / n. If n is 0, a ZeroDivisionError occurs, which is caught as an ArithmeticError. <<br><br>In the exception block, m is incremented by 1, and the exception is re-raised.<br><br>In the outer try block, 'foo(0)' is called, which raises the ArithmeticError. This is caught by the except ArithmeticError block, which increments m by 2. <br><br>Since no other exceptions are raised, and the re-raised exception is not caught by any other block, the final value of m is 2.<br><br>Therefore, when the print(m) statement is executed, it outputs 2.",
-    link: "https://docs.python.org/3/tutorial/errors.html#handling-exceptions",
-  }, */
+  },
   {
     question: "What is the expected behavior of the following code?",
     image: "images/image157.png",
@@ -5460,11 +5274,11 @@ export const questions = [
     ],
     explanation: `Explanation:<br><br>A) evaluates to false. The ASCII value of "Z" is 90, and the ASCII value of "z" is 122. Subtracting these values gives -32, while the ASCII value of "0" is 48. Since -32 does not equal 48, this expression is false.<br><br>B) evaluates to true. The ord('A') function returns 65, and adding 1 results in 66. The chr(66) function converts this back to the character 'B', so the expression chr(ord('A') + 1) indeed results in 'B'.<br><br>C) evaluates to true. The string '\' contains a single character, which is a single quote. Its length is 1, making the expression len('\'') == 1 true.<br><br>D) evaluates to false. The string """ """ is a multi-line string that contains one space character. Thus, its length is 1, not 0. Therefore, this expression is false.`,
     link: "https://docs.python.org/3/library/functions.html#ord",
-  }, 
+  },
   {
     question:
       "Which of the following expressions evaluate to True? <br><br>(Choose two)",
-      image: "images/image742.png",
+    image: "images/image742.png",
     answers: [
       { text: "A", correct: true },
       { text: "B", correct: false },
@@ -5630,7 +5444,7 @@ export const questions = [
   {
     question:
       "Which of the following expressions evaluate to True? <br><br>(Choose two)",
-      image: "images/image743.png",
+    image: "images/image743.png",
     answers: [
       { text: "A", correct: false },
       { text: "B", correct: false },
@@ -5820,7 +5634,7 @@ export const questions = [
   {
     question: "What is the expected output of the following code?",
     image: "images/image188.png",
-    answers: [      
+    answers: [
       { text: "1", correct: true },
       { text: "3", correct: false },
       { text: "2", correct: false },
@@ -6023,21 +5837,50 @@ export const questions = [
     explanation: `Explanation:<br><br>sys.path.append() is used to add a new directory to Python's module search path.<br><br>
     The path "C:\Python\Project\Modules" uses double backslashes (\\) to escape the backslash character properly in Python strings. Single backslashes (\) would cause errors because they are interpreted as escape sequences (e.g., \n for newline).`,
     link: "https://www.geeksforgeeks.org/sys-path-in-python/",
-  }, 
+  },
   {
     question: "What is the expected output of the following code?",
     image: "images/image201.png",
     answers: [
-      { text: "[ upsilon]" + "\n" + "procoding" + "\n" + "[tau]" + "\n" + "[aleph]", correct: false },
-      { text: "[ upsilon]" + "\n" + "procoding" + "\n" + "[tau ]" + "\n" + "[aleph]", correct: true },
-      { text: "[upsilon]" + "\n" + "procoding" + "\n" + "[tau ]" + "\n" + "[aleph]", correct: false },
-      { text: "[ upsilon ]" + "\n" + "procoding" + "\n" + "[ tau ]" + "\n" + "[aleph]", correct: false },
+      {
+        text:
+          "[ upsilon]" + "\n" + "procoding" + "\n" + "[tau]" + "\n" + "[aleph]",
+        correct: false,
+      },
+      {
+        text:
+          "[ upsilon]" +
+          "\n" +
+          "procoding" +
+          "\n" +
+          "[tau ]" +
+          "\n" +
+          "[aleph]",
+        correct: true,
+      },
+      {
+        text:
+          "[upsilon]" + "\n" + "procoding" + "\n" + "[tau ]" + "\n" + "[aleph]",
+        correct: false,
+      },
+      {
+        text:
+          "[ upsilon ]" +
+          "\n" +
+          "procoding" +
+          "\n" +
+          "[ tau ]" +
+          "\n" +
+          "[aleph]",
+        correct: false,
+      },
     ],
     explanation: `Explanation:<br><br>The first print statement uses the rstrip() (right strip) method to remove the whitespace at the end of the string " upsilon ", and then concatenates the resulting string with "[" and "]" to produce "[ upsilon]".<br><br>The second print statement uses the rstrip() method again, this time with the argument ".rs" to remove the ".rs" suffix from the string "procoding.rs", resulting in the string "procoding".<br><br>The third print statement uses the lstrip() (left strip) method to remove the whitespace at the beginning of the string " tau ", and then concatenates the resulting string with "[" and "]" to produce "[tau ]".<br><br>The fourth print statement uses the strip() method to remove the whitespace at both the beginning and end of the string " aleph ", and then concatenates the resulting string with "[" and "]" to produce "[aleph]".`,
     link: "https://www.programiz.com/python-programming/methods/string/strip",
   },
   {
-    question: "Select the possible outputs of the following Python code. <br><br>(Choose two)",
+    question:
+      "Select the possible outputs of the following Python code. <br><br>(Choose two)",
     image: "images/image202.png",
     answers: [
       { text: "0 0 0 1", correct: true },
@@ -6045,7 +5888,8 @@ export const questions = [
       { text: "0 0 1 1", correct: false },
       { text: "1 0 0 1", correct: false },
     ],
-    explanation: "Explanation:<br><br>Note that the randrange(start, stop, step) function returns a randomly selected element from the range created by the arguments start, stop, and step.<br><br>If start is omitted, it defaults to 0. In our case, since we have randrange(1), start is 0 by default, and the range is [0]. If stop is omitted, it defaults to start, and the range is [0]. If step is omitted, it defaults to 1.<br><br>Therefore, randrange(0, 1, 1) is equivalent to randrange(0, 1) and generates only 0. The randint(a, b) function returns a random integer n such that a <= n <= b. In our case, randint(0, 1) generates either 0 or 1 randomly.",
+    explanation:
+      "Explanation:<br><br>Note that the randrange(start, stop, step) function returns a randomly selected element from the range created by the arguments start, stop, and step.<br><br>If start is omitted, it defaults to 0. In our case, since we have randrange(1), start is 0 by default, and the range is [0]. If stop is omitted, it defaults to start, and the range is [0]. If step is omitted, it defaults to 1.<br><br>Therefore, randrange(0, 1, 1) is equivalent to randrange(0, 1) and generates only 0. The randint(a, b) function returns a random integer n such that a <= n <= b. In our case, randint(0, 1) generates either 0 or 1 randomly.",
     link: "https://www.w3schools.com/python/ref_random_randrange.asp",
   },
   {
@@ -6069,29 +5913,50 @@ export const questions = [
       { text: "b'Hello world!'", correct: true },
       { text: "None", correct: false },
     ],
-    explanation: "Explanation:<br><br>The file 'file.txt' is initially opened in write mode with the 'w' mode and data is written as a string 'Hello world!'.<br><br>Then the file is opened in read mode with 'r', and the data is read as a string. The string is then encoded into bytes using the .encode() method and written to the file in binary mode using the 'wb' mode.<br><br>Finally, the file is opened in binary mode with 'rb', and the data is read as a bytes object.",
+    explanation:
+      "Explanation:<br><br>The file 'file.txt' is initially opened in write mode with the 'w' mode and data is written as a string 'Hello world!'.<br><br>Then the file is opened in read mode with 'r', and the data is read as a string. The string is then encoded into bytes using the .encode() method and written to the file in binary mode using the 'wb' mode.<br><br>Finally, the file is opened in binary mode with 'rb', and the data is read as a bytes object.",
     link: "https://www.w3schools.com/python/ref_func_open.asp",
   },
   {
     question: "Which of the following statements is true?",
     answers: [
-      { text: "A) A try statement can either have a finally clause or an except clause.", correct: false },
-      { text: "B) A try statement can have a finally clause without an except clause.", correct: true },
-      { text: "C) A try statement cannot have more except clauses.", correct: false },
-      { text: "D) A try statement can have one or more finally clauses.", correct: false },
+      {
+        text: "A) A try statement can either have a finally clause or an except clause.",
+        correct: false,
+      },
+      {
+        text: "B) A try statement can have a finally clause without an except clause.",
+        correct: true,
+      },
+      {
+        text: "C) A try statement cannot have more except clauses.",
+        correct: false,
+      },
+      {
+        text: "D) A try statement can have one or more finally clauses.",
+        correct: false,
+      },
     ],
-    explanation: "Explanation:<br><br>A) is false because a try statement can have both an except clause and a finally clause at the same time.<br><br>B) is true. You don't need an except clause if you're using a finally clause. The finally clause is useful when you want to ensure that some cleanup or finishing code is executed, regardless of whether an exception occurred or not.<br><br>C) is false. A try statement can have multiple except clauses to handle different types of exceptions. This allows you to catch and handle specific exceptions in different ways.<br><br>D) is false. A try statement can have only one finally clause. The finally clause is intended to ensure that certain code always runs after the try block, regardless of whether an exception occurs or not, but there can only be one finally block.",
+    explanation:
+      "Explanation:<br><br>A) is false because a try statement can have both an except clause and a finally clause at the same time.<br><br>B) is true. You don't need an except clause if you're using a finally clause. The finally clause is useful when you want to ensure that some cleanup or finishing code is executed, regardless of whether an exception occurred or not.<br><br>C) is false. A try statement can have multiple except clauses to handle different types of exceptions. This allows you to catch and handle specific exceptions in different ways.<br><br>D) is false. A try statement can have only one finally clause. The finally clause is intended to ensure that certain code always runs after the try block, regardless of whether an exception occurs or not, but there can only be one finally block.",
     link: "https://docs.python.org/3/tutorial/errors.html",
   },
   {
     question: "What statement is true? <br><br>(Choose two)",
     answers: [
       { text: "The constructor can return a value.", correct: false },
-      { text: "The self parameter is used to obtain access to the object's instance and class variables.", correct: true },
-      { text: "Reflection is the ability of a program to examine the type or properties of an object at runtime.", correct: false },
+      {
+        text: "The self parameter is used to obtain access to the object's instance and class variables.",
+        correct: true,
+      },
+      {
+        text: "Reflection is the ability of a program to examine the type or properties of an object at runtime.",
+        correct: false,
+      },
       { text: "The constructor cannot return a value.", correct: true },
     ],
-    explanation: "Explanation:<br><br>The self parameter is used to refer to the instance of the object on which a method is being called. This allows the method to access and modify the instance variables of that object, as well as any class variables that are shared among all instances of the class. By convention, the first parameter of every method in a Python class is self, though you can technically use any name for this parameter.<br><br>In Python, the constructor method __init__() cannot return a value explicitly using the return keyword. It is because the __init__() method is called automatically when an object is created, and its main purpose is to initialize the object's attributes.<br><br>Introspection is the ability of a program to examine the type or properties of an object at runtime.<br><br>Reflection is the ability of a program to manipulate the values, properties and/or functions of an object at runtime.",
+    explanation:
+      "Explanation:<br><br>The self parameter is used to refer to the instance of the object on which a method is being called. This allows the method to access and modify the instance variables of that object, as well as any class variables that are shared among all instances of the class. By convention, the first parameter of every method in a Python class is self, though you can technically use any name for this parameter.<br><br>In Python, the constructor method __init__() cannot return a value explicitly using the return keyword. It is because the __init__() method is called automatically when an object is created, and its main purpose is to initialize the object's attributes.<br><br>Introspection is the ability of a program to examine the type or properties of an object at runtime.<br><br>Reflection is the ability of a program to manipulate the values, properties and/or functions of an object at runtime.",
     link: "https://docs.python.org/3/tutorial/classes.html",
   },
   {
@@ -6103,16 +5968,26 @@ export const questions = [
       { text: "Abc23!", correct: false },
       { text: "ABC23", correct: false },
     ],
-    explanation: "Explanation:<br><br>The isalnum() method returns True if all characters in the string are alphanumeric (letters or numbers), and False otherwise. Since s contains only letters and numbers, the if statement will always be true.<br><br>The replace() method replaces all occurrences of a given substring in a string with another substring. In this case, the 1 is replaced with an empty string, effectively removing it from the original string.<br><br>The if statement checks if the character 3 is in the modified string. If it is, the exclamation point is added to the end of the string. If it's not, the string is converted to uppercase.<br><br>The final string is printed, which is abc23!.",
+    explanation:
+      "Explanation:<br><br>The isalnum() method returns True if all characters in the string are alphanumeric (letters or numbers), and False otherwise. Since s contains only letters and numbers, the if statement will always be true.<br><br>The replace() method replaces all occurrences of a given substring in a string with another substring. In this case, the 1 is replaced with an empty string, effectively removing it from the original string.<br><br>The if statement checks if the character 3 is in the modified string. If it is, the exclamation point is added to the end of the string. If it's not, the string is converted to uppercase.<br><br>The final string is printed, which is abc23!.",
     link: "https://www.geeksforgeeks.org/python-string-isalnum-method/",
   },
   {
     question: "What is the output of the following code?",
     image: "images/image206.png",
     answers: [
-      { text: "Triangle is a Shape" + "\n" + "Shape can be a Shape", correct: true },
-      { text: "Shape is a Shape" + "\n" + "Shape can be a Shape", correct: false },
-      { text: "Triangle is a Shape" + "\n" + "Triangle can be a Shape", correct: false },
+      {
+        text: "Triangle is a Shape" + "\n" + "Shape can be a Shape",
+        correct: true,
+      },
+      {
+        text: "Shape is a Shape" + "\n" + "Shape can be a Shape",
+        correct: false,
+      },
+      {
+        text: "Triangle is a Shape" + "\n" + "Triangle can be a Shape",
+        correct: false,
+      },
       { text: "None of these", correct: false },
     ],
     explanation: `Explanation:<br><br>This code defines a class hierarchy with Shape as the base class and Triangle as a derived class. Neither class has methods or attributes.<br><br>The code uses print() statements to show the relationship between the two classes. The first print statement indicates that Triangle is a subclass of Shape. The second shows that Shape is a superclass of Triangle.<br><br>Key points:<br><br>• Triangle.__name__ returns "Triangle".<br><br>• Shape.__name__ returns "Shape".<br><br> • Triangle.__bases__ returns a tuple of base classes, which includes Shape.<br><br>• Triangle.__bases__[0].__name__ returns "Shape", the base class of Triangle`,
@@ -6139,7 +6014,7 @@ export const questions = [
       { text: "2" + "\n" + "16", correct: false },
       { text: "4" + "\n" + "15", correct: false },
       { text: "4" + "\n" + "14", correct: false },
-      { text: "2" + "\n" + "15", correct: false },      
+      { text: "2" + "\n" + "15", correct: false },
     ],
     explanation: `Explanation:<br><br>The first section defines a string i_am with the value "I'm". Since the apostrophe is an escape character, it is represented as \'. The len() function is then called on this string, which returns 3, the length of the string.<br><br>The second section defines a string multiline with multiple lines using triple quotes ('''). This string contains 14 characters plus 1 newline character, for a total length of 15. The len() function is then called on this string, which returns 15.`,
     link: "https://llego.dev/posts/determining-string-length-python-using-len/",
@@ -6165,7 +6040,8 @@ export const questions = [
       { text: "2", correct: false },
       { text: "Error", correct: false },
     ],
-    explanation: "Explanation:<br><br>In the first line, the string 'hello world' is assigned to the variable s. In the second line, we use the replace() method to replace the first occurrence of the lowercase letter 'l' in s with the uppercase letter 'L'.<br><br> This gives us the string 'heLlo world'. <br><br>Then, we use the count() method to count the number of uppercase 'L's in s, which is 1",
+    explanation:
+      "Explanation:<br><br>In the first line, the string 'hello world' is assigned to the variable s. In the second line, we use the replace() method to replace the first occurrence of the lowercase letter 'l' in s with the uppercase letter 'L'.<br><br> This gives us the string 'heLlo world'. <br><br>Then, we use the count() method to count the number of uppercase 'L's in s, which is 1",
     link: "https://docs.python.org/3/library/stdtypes.html#str.count",
   },
   {
@@ -6204,10 +6080,12 @@ export const questions = [
       { text: "['GeneraLKenobi']", correct: true },
       { text: "The code is erroneous", correct: false },
     ],
-    explanation: "Explanation:<br><br>The code slices the string up to the first 7 characters (s[:7]), which results in 'Genera'. In this slice, the lowercase 'l' is replaced with an uppercase 'L', producing 'GeneraL'. <br><br>The next part of the code, s[8:], retrieves the remaining characters of the string starting from the 8th position, which is 'Kenobi'. These two parts are then concatenated to form the new string 'GeneraL Kenobi'.<br><br>When you use s[:7] + s[8:], it effectively removes the space between 'General' and 'Kenobi'.<br><br>Finally, s.split() splits the string into a list of words, which is ['GeneraLKenobi']."
+    explanation:
+      "Explanation:<br><br>The code slices the string up to the first 7 characters (s[:7]), which results in 'Genera'. In this slice, the lowercase 'l' is replaced with an uppercase 'L', producing 'GeneraL'. <br><br>The next part of the code, s[8:], retrieves the remaining characters of the string starting from the 8th position, which is 'Kenobi'. These two parts are then concatenated to form the new string 'GeneraL Kenobi'.<br><br>When you use s[:7] + s[8:], it effectively removes the space between 'General' and 'Kenobi'.<br><br>Finally, s.split() splits the string into a list of words, which is ['GeneraLKenobi'].",
   },
   {
-    question: "What will the value of the i variable be when the following loop finishes its execution?",
+    question:
+      "What will the value of the i variable be when the following loop finishes its execution?",
     image: "images/image214.png",
     answers: [
       { text: "10", correct: false },
@@ -6215,7 +6093,8 @@ export const questions = [
       { text: "9", correct: true },
       { text: "the variable becomes unavailable", correct: false },
     ],
-    explanation: "Explanation:<br><br>The variable i will take on values from 0 to 9 during the loop execution because the range(10) function generates numbers from 0 to 9 (10 numbers in total).<br><br>Since the pass statement does nothing, the loop runs without any action being performed for each value of i. When the loop finishes, i will hold the value of the last number in the range, which is 9.",
+    explanation:
+      "Explanation:<br><br>The variable i will take on values from 0 to 9 during the loop execution because the range(10) function generates numbers from 0 to 9 (10 numbers in total).<br><br>Since the pass statement does nothing, the loop runs without any action being performed for each value of i. When the loop finishes, i will hold the value of the last number in the range, which is 9.",
     link: "https://wiki.python.org/moin/ForLoop",
   },
   {
@@ -6227,7 +6106,8 @@ export const questions = [
       { text: "7", correct: false },
       { text: "15", correct: false },
     ],
-    explanation: "Explanation:<br><br>In the if statement, it should be == (for comparison) instead of = (which is for assignment). Therefore, the code is erroneous.",
+    explanation:
+      "Explanation:<br><br>In the if statement, it should be == (for comparison) instead of = (which is for assignment). Therefore, the code is erroneous.",
     link: "https://www.w3schools.com/python/gloss_python_comparison_operators.asp",
   },
   {
@@ -6242,15 +6122,17 @@ export const questions = [
     explanation: `Explanation:<br><br>The for loop iterates over the numbers 1 and 2 generated by range(1, 3). On each iteration, the print("*", end="") statement outputs a * without moving to a new line because of the end="" parameter, which keeps the output on the same line.<br><br>After the loop completes its iterations, the else block is executed, and the print("*") statement prints another * in the same line. In total, there are three *** printed.`,
   },
   {
-    question: "Which snippet would be the best to use in order to get the following result (list): [1, 3, 5]",
+    question:
+      "Which snippet would be the best to use in order to get the following result (list): [1, 3, 5]",
     image: "images/image217.png",
     answers: [
       { text: "A", correct: false },
       { text: "B", correct: false },
       { text: "C", correct: true },
       { text: "D", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>C) is correct because it filters the list my_list = [0, 1, 2, 3, 4, 5, 6] by selecting only the odd numbers. The expression x % 2 == 1 checks if each number in the list is odd, and the filter() function returns a new list containing only the odd numbers, which are 1, 3, and 5. <br><br>Therefore, option C gives the desired result [1, 3, 5].",
+    ],
+    explanation:
+      "Explanation:<br><br>C) is correct because it filters the list my_list = [0, 1, 2, 3, 4, 5, 6] by selecting only the odd numbers. The expression x % 2 == 1 checks if each number in the list is odd, and the filter() function returns a new list containing only the odd numbers, which are 1, 3, and 5. <br><br>Therefore, option C gives the desired result [1, 3, 5].",
     link: "https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions",
   },
   {
@@ -6261,20 +6143,23 @@ export const questions = [
       { text: "{'__x': 42}", correct: false },
       { text: "{'_MyClass__x': 42}", correct: true },
       { text: "{'x': 42}", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>When you run the code and execute print(obj.__dict__), the output will be {'_MyClass__x': 42}.<br><br>This happens because the attribute __x in the MyClass is marked as private by using a double underscore. In Python, when you use double underscores, it triggers name mangling, which changes the name of the attribute internally to _MyClass__x. This is done to avoid accidental access or modification of the private attribute from outside the class. <br><br>As a result, when you print obj.__dict__, the internal dictionary shows the mangled attribute name as _MyClass__x, with its value being 42.",
+    ],
+    explanation:
+      "Explanation:<br><br>When you run the code and execute print(obj.__dict__), the output will be {'_MyClass__x': 42}.<br><br>This happens because the attribute __x in the MyClass is marked as private by using a double underscore. In Python, when you use double underscores, it triggers name mangling, which changes the name of the attribute internally to _MyClass__x. This is done to avoid accidental access or modification of the private attribute from outside the class. <br><br>As a result, when you print obj.__dict__, the internal dictionary shows the mangled attribute name as _MyClass__x, with its value being 42.",
     link: "https://docs.python.org/3/tutorial/classes.html#private-attributes",
   },
   {
-    question: "With regards to the directory structure below, select the proper forms of the directives in order to import module_a. <br><br>(Choose two)",
+    question:
+      "With regards to the directory structure below, select the proper forms of the directives in order to import module_a. <br><br>(Choose two)",
     image: "images/image219.png",
     answers: [
       { text: "A) from pypack import module_a", correct: true },
       { text: "B) import module_a from pypack", correct: false },
       { text: "C) import module_a", correct: false },
       { text: "D) import pypack.module_a", correct: true },
-    ],    
-    explanation: "A) from pypack import module_a: This form is valid when importing module_a from the pypack directory when you're working from outside the pypack directory.<br><br>B) import module_a from pypack: This is invalid Python syntax.<br><br>C) import module_a: This would only work if you're working within the pypack directory itself, but since the question is asking for general imports from a package structure, this is not applicable in most scenarios where module_a needs to be accessed from outside the pypack directory.<br><br>D) import pypack.module_a: This form is also correct. It explicitly imports module_a by referencing its full path within the pypack directory structure, which is valid if pypack is treated as a package.",
+    ],
+    explanation:
+      "A) from pypack import module_a: This form is valid when importing module_a from the pypack directory when you're working from outside the pypack directory.<br><br>B) import module_a from pypack: This is invalid Python syntax.<br><br>C) import module_a: This would only work if you're working within the pypack directory itself, but since the question is asking for general imports from a package structure, this is not applicable in most scenarios where module_a needs to be accessed from outside the pypack directory.<br><br>D) import pypack.module_a: This form is also correct. It explicitly imports module_a by referencing its full path within the pypack directory structure, which is valid if pypack is treated as a package.",
     link: "https://docs.python.org/3/tutorial/modules.html#tut-package",
   },
   {
@@ -6285,7 +6170,7 @@ export const questions = [
       { text: "True" + "\n" + "True" + "\n" + "True", correct: true },
       { text: "True" + "\n" + "False" + "\n" + "True", correct: false },
       { text: "True" + "\n" + "True" + "\n" + "False", correct: false },
-    ],    
+    ],
     explanation: `Explanation:<br><br>"a" > "" is True because the empty string "" is considered to be less than any non-empty string.<br><br>"69" > "420" is Truebecause strings are compared character by character. The first characters  compared are "6" and "4", and since "6" is greater than "4", the comparison returns True.<br><br>"Marvin" > "MARVIN" is True because uppercase letters have a smaller Unicode value than lowercase letters. In this case, "M" has a smaller Unicode value than "m", so "Marvin" is considered to be greater than "MARVIN".`,
     link: "https://docs.python.org/3/library/stdtypes.html#str",
   },
@@ -6294,11 +6179,15 @@ export const questions = [
     image: "images/image221.png",
     answers: [
       { text: "54321 will be printed on the standard output", correct: false },
-      { text: "1 2 3 4 5 will be printed on the standard output", correct: false },
+      {
+        text: "1 2 3 4 5 will be printed on the standard output",
+        correct: false,
+      },
       { text: "12345 will be printed on the standard output", correct: true },
       { text: "None of these", correct: false },
     ],
-    explanation: "Explanation:<br><br>First, the sys module is imported to access system-specific functionality, including sys.stdout for writing output. The list numbers contains the integers [1, 2, 3, 4, 5]. The for loop iterates over each number in this list. <br><br>Inside the loop, each number is converted to a string using str(n) and then written to the standard output with sys.stdout.write().<br><br>Since sys.stdout.write() does not add any additional characters between the outputs, the numbers are printed consecutively as a single, unbroken string.",
+    explanation:
+      "Explanation:<br><br>First, the sys module is imported to access system-specific functionality, including sys.stdout for writing output. The list numbers contains the integers [1, 2, 3, 4, 5]. The for loop iterates over each number in this list. <br><br>Inside the loop, each number is converted to a string using str(n) and then written to the standard output with sys.stdout.write().<br><br>Since sys.stdout.write() does not add any additional characters between the outputs, the numbers are printed consecutively as a single, unbroken string.",
     link: "https://docs.python.org/3/library/sys.html#sys.stdout",
   },
   {
@@ -6309,8 +6198,9 @@ export const questions = [
       { text: "AttributeError", correct: false },
       { text: "NameError", correct: false },
       { text: "TypeError", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>The given code creates a class hierarchy involving Animal, Cat, and Persian.<br><br>In this case, the Animal class is the base class, the Cat class inherits from Animal, and the Persian class inherits from Cat. <br><br>Each class has its own __init__() method to initialize the instance variables.<br><br>When an instance of the Persian class, p, is created using the statement Persian('Fluffy', 'white'), it invokes the __init__() method of the Persian class. However, since the Persian class does not define its own __init__() method, it will look for one in its immediate superclass, Cat.<br><br> Similarly, if not found in Cat, it will continue searching in the next superclass, Animal.<br><br> The __init__() method of the Cat class is called using super().__init__(name) to ensure that the initialization logic of the Cat class is executed. This initializes the name attribute inherited from the Animal class. <br><br>Then, the color attribute specific to the Cat class is initialized. Therefore, when the statement print(p.name, p.color) is executed, it will print the values of the name and color attributes of the p instance, which are 'Fluffy' and 'white', respectively.",
+    ],
+    explanation:
+      "Explanation:<br><br>The given code creates a class hierarchy involving Animal, Cat, and Persian.<br><br>In this case, the Animal class is the base class, the Cat class inherits from Animal, and the Persian class inherits from Cat. <br><br>Each class has its own __init__() method to initialize the instance variables.<br><br>When an instance of the Persian class, p, is created using the statement Persian('Fluffy', 'white'), it invokes the __init__() method of the Persian class. However, since the Persian class does not define its own __init__() method, it will look for one in its immediate superclass, Cat.<br><br> Similarly, if not found in Cat, it will continue searching in the next superclass, Animal.<br><br> The __init__() method of the Cat class is called using super().__init__(name) to ensure that the initialization logic of the Cat class is executed. This initializes the name attribute inherited from the Animal class. <br><br>Then, the color attribute specific to the Cat class is initialized. Therefore, when the statement print(p.name, p.color) is executed, it will print the values of the name and color attributes of the p instance, which are 'Fluffy' and 'white', respectively.",
     link: "https://docs.python.org/3/tutorial/classes.html#inheriting-from-classes",
   },
   {
@@ -6321,8 +6211,9 @@ export const questions = [
       { text: "1 2 3", correct: false },
       { text: "1 4 9", correct: false },
       { text: "0 1 2", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>• The squares() function generates an iterator that yields the square of each number from 0 up to n-1<br><br>• In the for loop, we iterate over the values generated by calling squares(3)<br><br>• The first iteration generates 0 (0 ** 2), which is printed to the console<br><br>• The second iteration generates 1 (1 ** 2), which is printed to the console<br><br>• The third iteration generates 4 (2 ** 2), which is printed to the console<br><br>• The loop then exits",
+    ],
+    explanation:
+      "Explanation:<br><br>• The squares() function generates an iterator that yields the square of each number from 0 up to n-1<br><br>• In the for loop, we iterate over the values generated by calling squares(3)<br><br>• The first iteration generates 0 (0 ** 2), which is printed to the console<br><br>• The second iteration generates 1 (1 ** 2), which is printed to the console<br><br>• The third iteration generates 4 (2 ** 2), which is printed to the console<br><br>• The loop then exits",
     link: "https://docs.python.org/3/library/functions.html#squares",
   },
   {
@@ -6333,7 +6224,7 @@ export const questions = [
       { text: "4", correct: false },
       { text: "3", correct: false },
       { text: "1", correct: false },
-    ],    
+    ],
     explanation: `Explanation:<br><br>The string "Lernen für das Zertifikat ist öde" is sliced from index 1 up to, but not including, index 32, with a step size of 11. This slicing operation selects characters at the specified indices with the given step.<br><br>Specifically:<br><br>• At index 1, the character is 'e'<br><br>• At index 12, the character is 'a'<br><br>• At index 23, the character is 'a'.<br><br>These characters are extracted and combined to form the substring 'eaa'.<br><br>The count() method returns the number of elements with the specified value, in this case 'a'.<br><br>Since we got 2 'a's, the output is 2.`,
     link: "https://docs.python.org/3/library/stdtypes.html#str.count",
   },
@@ -6347,19 +6238,27 @@ export const questions = [
       { text: "Hand schütteln möchte", correct: false },
       { text: "brauche", correct: false },
       { text: "Leiter", correct: true },
-    ],    
+    ],
     explanation: `Explanation:<br><br>my_string.split() splits the original string into a list of words using whitespace as the delimiter, resulting in:<br><br>['Wenn', 'ich', 'Kevin', 'die', 'Hand', 'schütteln', 'möchte,', 'brauche', 'ich', 'ne', 'Leiter!']<br><br>This slice operation reverses the order of the elements in the list, giving us:<br><br>['Leiter!', 'ne', 'ich', 'brauche', 'möchte,', 'schütteln', 'Hand', 'die', 'Kevin', 'ich', 'Wenn']<br><br>[0] selects the first element from the reversed list, whichis 'Leiter!'<br><br>.rstrip("!") removes the trailing exclamation mark '!' from the end of the string 'Leiter!', so the resulting string is 'Leiter'.`,
     link: "https://docs.python.org/3/library/stdtypes.html#str.split",
   },
   {
-    question: "A file name like this one below says that: services.cpython-36.pyc<br><br>(Choose three)",
+    question:
+      "A file name like this one below says that: services.cpython-36.pyc<br><br>(Choose three)",
     answers: [
-      { text: "A) the interpreter used to generate the file is version 3.6", correct: true },
+      {
+        text: "A) the interpreter used to generate the file is version 3.6",
+        correct: true,
+      },
       { text: "B) it has been produced by CPython", correct: true },
       { text: "C) 36. version of the file", correct: false },
-      { text: "D) the file comes from the services.py source file", correct: true },
+      {
+        text: "D) the file comes from the services.py source file",
+        correct: true,
+      },
     ],
-    explanation: "Explanation:<br><br>A) is True: The -36 in the filename indicates that the Python version used to generate the file was Python 3.6.<br><br>B) is True: The cpython in the filename indicates that the file was produced by the CPython implementation of Python.<br><br>C) is False: The 36 does not refer to the version of the file but to the Python interpreter version (3.6) used to generate the file.<br><br>D) is True: The services prefix suggests that the .pyc file was generated from the services.py source file.",
+    explanation:
+      "Explanation:<br><br>A) is True: The -36 in the filename indicates that the Python version used to generate the file was Python 3.6.<br><br>B) is True: The cpython in the filename indicates that the file was produced by the CPython implementation of Python.<br><br>C) is False: The 36 does not refer to the version of the file but to the Python interpreter version (3.6) used to generate the file.<br><br>D) is True: The services prefix suggests that the .pyc file was generated from the services.py source file.",
     link: "https://codefather.tech/blog/difference-between-py-and-pyc-files-python/",
   },
   {
@@ -6367,10 +6266,19 @@ export const questions = [
     image: "images/image226.png",
     answers: [
       { text: "The code will raise a TypeError.", correct: false },
-      { text: "The code will print the result of the division.", correct: false },
-      { text: `The code will not print "Invalid input." if the user enters a zero.`, correct: false },
-      { text: `The code will print "Invalid input." if the user enters a non-numeric value.`, correct: true },
-    ],    
+      {
+        text: "The code will print the result of the division.",
+        correct: false,
+      },
+      {
+        text: `The code will not print "Invalid input." if the user enters a zero.`,
+        correct: false,
+      },
+      {
+        text: `The code will print "Invalid input." if the user enters a non-numeric value.`,
+        correct: true,
+      },
+    ],
     explanation: `Explanation:<br><br>The code uses a try-except block to handle two exceptions: ValueError if the user enters a non-numeric value, and ZeroDivisionError if the user enters a zero. <br><br>If the user enters a non-numeric value, the int() function will raise a ValueError, and the except block will execute and print "Invalid input." <br><br>The code will not raise a TypeError, and it will not print the result of the division.`,
     link: "https://www.programiz.com/python-programming/exceptions",
   },
@@ -6382,8 +6290,9 @@ export const questions = [
       { text: "0 1 2", correct: false },
       { text: "0 1 4", correct: true },
       { text: "1 4 9", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>The fun(n) generator function yields i*i for each value of i in the range from 0 to n-1. In the for loop that follows, the values yielded by fun(3) are printed, separated by spaces. <br><br>So the output is 0 1 4, which are the squares of 0, 1, and 2.",
+    ],
+    explanation:
+      "Explanation:<br><br>The fun(n) generator function yields i*i for each value of i in the range from 0 to n-1. In the for loop that follows, the values yielded by fun(3) are printed, separated by spaces. <br><br>So the output is 0 1 4, which are the squares of 0, 1, and 2.",
     link: "https://www.programiz.com/python-programming/generator",
   },
   {
@@ -6394,8 +6303,9 @@ export const questions = [
       { text: "7", correct: false },
       { text: "12", correct: true },
       { text: "None", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>• The custom_func function takes three parameters: x, y, and operation. It calls the operation function with x and y as arguments and returns the result.<br><br>• result is assigned the result of calling custom_func with arguments 3, 4, and a lambda function lambda x, y: x * y. This lambda function multiplies its two arguments x and y.<br><br>• When custom_func is called, it passes 3 as x, 4 as y, and the lambdafunction lambda x, y: x * y as operation.<br><br>• Inside custom_func, it calls operation(3, 4), which invokes the lambda function with x=3 and y=4. The lambda function performs the multiplication and returns the result.<br><br>• The returned result from custom_func is stored in the result variable.<br><br>• Finally, print(result) outputs the value of result, which is the result of the multiplication, 12.",
+    ],
+    explanation:
+      "Explanation:<br><br>• The custom_func function takes three parameters: x, y, and operation. It calls the operation function with x and y as arguments and returns the result.<br><br>• result is assigned the result of calling custom_func with arguments 3, 4, and a lambda function lambda x, y: x * y. This lambda function multiplies its two arguments x and y.<br><br>• When custom_func is called, it passes 3 as x, 4 as y, and the lambdafunction lambda x, y: x * y as operation.<br><br>• Inside custom_func, it calls operation(3, 4), which invokes the lambda function with x=3 and y=4. The lambda function performs the multiplication and returns the result.<br><br>• The returned result from custom_func is stored in the result variable.<br><br>• Finally, print(result) outputs the value of result, which is the result of the multiplication, 12.",
     link: "https://realpython.com/python-lambda/#anonymous-functions",
   },
   {
@@ -6405,7 +6315,7 @@ export const questions = [
       { text: "*", correct: true },
       { text: "/", correct: false },
       { text: "*=", correct: true },
-    ],    
+    ],
     explanation: `Explanation:<br><br>*= is a valid string operator in Python. It is used for string repetition. For example, the expression "abc" *= 3 would result in the string "abcabcabc".<br><br></br>The * operator can be used with strings in Python to repeat the string a certain number of times. For example, "hello" * 3 would produce the string "hellohellohello".<br><br>The / operator is used for division of numerical types, and is not applicable to strings.<br><br>The - operator is not a valid string operator in Python. It is used for subtraction of numerical types, and is not applicable to strings.`,
     link: "https://www.programiz.com/python-programming/operators",
   },
@@ -6418,7 +6328,7 @@ export const questions = [
       { text: "Marvin Benjamin Kevin Benjamin ", correct: true },
       { text: "Kevin Marvin Benjamin", correct: false },
       { text: "The code is erroneous", correct: false },
-    ],    
+    ],
     explanation: `Explanation:<br><br>When the function f is called with f(40), it executes the code in the try block without raising any exceptions, so it goes to the else block and prints "Marvin". <br><br>Then it goes to the finally block and prints "Benjamin".<br><br>When the function f is called with f(0), it executes the code in the try block, but the expression a / a raises a ZeroDivisionError. So it goes to the except block and prints "Kevin".<br><br> Then it goes to the finally block and prints "Benjamin".<br><br>Everything will be written on the same line because of end=" "`,
     link: "https://www.programiz.com/python-programming/exceptions",
   },
@@ -6431,7 +6341,7 @@ export const questions = [
       { text: "44", correct: false },
       { text: "5", correct: true },
       { text: "The code is erroneous.", correct: false },
-    ],    
+    ],
     explanation: `Explanation:<br><br>When the raise statement is executed, it raises an Exception object with five arguments: 420, 69, 44, 123456, and "Ja moin"<br><br>When the except block catches the exception, it assigns it to the variable e. <br><br>The len(e.args) statement then returns the length of the args attribute of the Exception object, which is 5.`,
     link: "https://www.programiz.com/python-programming/exceptions",
   },
@@ -6444,7 +6354,8 @@ export const questions = [
       { text: "[[1, 4, 7], [2, 5, 8], [3, 6, 9]]", correct: true },
       { text: "None of these.", correct: false },
     ],
-    explanation: "Explanation:<br><br>This code is using list comprehension to create a new 2D list that is the transpose of the original matrix. <br><br>The inner comprehension [row[i] for row in matrix] selects the i-th element from each row of matrix, and the outer comprehension [...] for i in range(len(matrix[0]))] iterates over the indices of the columns in matrix. <br><br>Therefore, the resulting transpose list has rows corresponding to columns of matrix and columns corresponding to rows of matrix.",
+    explanation:
+      "Explanation:<br><br>This code is using list comprehension to create a new 2D list that is the transpose of the original matrix. <br><br>The inner comprehension [row[i] for row in matrix] selects the i-th element from each row of matrix, and the outer comprehension [...] for i in range(len(matrix[0]))] iterates over the indices of the columns in matrix. <br><br>Therefore, the resulting transpose list has rows corresponding to columns of matrix and columns corresponding to rows of matrix.",
     link: "https://www.geeksforgeeks.org/python-matrix/",
   },
   {
@@ -6456,8 +6367,9 @@ export const questions = [
       { text: `"am Main an der Oder"`, correct: false },
       { text: `"Frankfurt an der Oder"`, correct: true },
       { text: "None", correct: false },
-    ],    
-    explanation: "Explanation:<br><br> The replace() method returns a copy of the string with all occurrences of a specified substring replaced with another string.",
+    ],
+    explanation:
+      "Explanation:<br><br> The replace() method returns a copy of the string with all occurrences of a specified substring replaced with another string.",
     link: "https://www.programiz.com/python-programming/methods/string/replace",
   },
   {
@@ -6468,42 +6380,75 @@ export const questions = [
       { text: "B", correct: true },
       { text: "C", correct: false },
       { text: "The code is erroneus.", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>In this example, D class inherits from B and C, and B class overrides the method method() inherited from A class. Since B class is listed first in the inheritance list, its implementation of method() is called when obj.method() is called.",
+    ],
+    explanation:
+      "Explanation:<br><br>In this example, D class inherits from B and C, and B class overrides the method method() inherited from A class. Since B class is listed first in the inheritance list, its implementation of method() is called when obj.method() is called.",
     link: "https://www.codecademy.com/resources/docs/python/inheritance",
   },
   {
     question: "What will be printed when the following code is executed?",
     image: "images/image234.png",
     answers: [
-      { text: "Klappt das hier?" + "\n" + "€" + "\n" + "Nice!", correct: false },
+      {
+        text: "Klappt das hier?" + "\n" + "€" + "\n" + "Nice!",
+        correct: false,
+      },
       { text: "Klappt das hier?" + "\n" + "Nice!", correct: false },
-      { text: "Klappt das hier?" + "\n" + "Nope..." + "\n" + "Delete System32", correct: true },
+      {
+        text: "Klappt das hier?" + "\n" + "Nope..." + "\n" + "Delete System32",
+        correct: true,
+      },
       { text: "Nope..." + "\n" + "Delete System32", correct: false },
-    ],    
+    ],
     explanation: `Explanation:<br><br>The program will enter the try block and execute the first print statement, which will output the string "Klappt das hier?" to the console.<br><br>The program will then execute the second print statement, which will try to access the character at index 2 of the string "€€". However, since the string only has two characters (max index [1]), this will raise an IndexError exception.<br><br>The program will catch the IndexError exception and execute the code in the except block, which will print the message "Nope..." to the console.<br><br>The program will then execute the final print statement, which will output the string "Delete System32" to the console.`,
     link: "https://www.programiz.com/python-programming/exceptions",
   },
   {
     question: "What statement is true? <br><br>(Choose all that apply)",
     answers: [
-      { text: "The part of the code where you think an exception may occur should be placed inside the except branch.", correct: false },
-      { text: "The part of the code where the handling of an exception takes place should be placed inside the exception branch.", correct: false },
-      { text: "The part of the code where the handling of an exception takes place should be placed inside the except branch.", correct: true },
-      { text: "The part of the code where you think an exception may occur should be placed inside the try branch.", correct: true },
-    ],    
-    explanation: "Explanation:<br><br>In Python, you should put the part of the code where you think an exception may occur inside a try block. The try block is used to enclose the code that may raise an exception.<br><br>Also, it's generally a good practice to specify the specific type of exception that you expect to be raised inside the except block. This allows you to handle different exceptions differently and avoid catching unintended exceptions.",
+      {
+        text: "The part of the code where you think an exception may occur should be placed inside the except branch.",
+        correct: false,
+      },
+      {
+        text: "The part of the code where the handling of an exception takes place should be placed inside the exception branch.",
+        correct: false,
+      },
+      {
+        text: "The part of the code where the handling of an exception takes place should be placed inside the except branch.",
+        correct: true,
+      },
+      {
+        text: "The part of the code where you think an exception may occur should be placed inside the try branch.",
+        correct: true,
+      },
+    ],
+    explanation:
+      "Explanation:<br><br>In Python, you should put the part of the code where you think an exception may occur inside a try block. The try block is used to enclose the code that may raise an exception.<br><br>Also, it's generally a good practice to specify the specific type of exception that you expect to be raised inside the except block. This allows you to handle different exceptions differently and avoid catching unintended exceptions.",
     link: "https://www.w3schools.com/python/python_try_except.asp",
   },
   {
     question: "Is the __dict__ property available for all Python objects?",
     answers: [
-      { text: "A) No, it is only available for instances of built-in classes.", correct: false },
-      { text: "B) Yes, it is available for all objects that are instances of user-defined classes.", correct: true },
-      { text: "C) No, it is only available for instances of user-defined classes.", correct: false },
-      { text: "D) Yes, it is available for instances of all Python objects.", correct: false },
+      {
+        text: "A) No, it is only available for instances of built-in classes.",
+        correct: false,
+      },
+      {
+        text: "B) Yes, it is available for all objects that are instances of user-defined classes.",
+        correct: true,
+      },
+      {
+        text: "C) No, it is only available for instances of user-defined classes.",
+        correct: false,
+      },
+      {
+        text: "D) Yes, it is available for instances of all Python objects.",
+        correct: false,
+      },
     ],
-    explanation: "Explanation:<br><br>A) is incorrect because built-in class instances generally do not have a __dict__.<br><br>B) is correct. The __dict__ attribute is available for objects that are instances of user-defined classes, allowing access to their attributes. It stores the object's namespace in a dictionary. However, objects of some built-in types like int, str, or float don't have a __dict__.<br><br>C) implies it's exclusive to user-defined class instances, which is mostly true but not absolute since some custom optimizations or settings can remove it (e.g., by using __slots__).<br><br>D) is incorrect because not all objects (like built-in types) have the __dict__ attribute.",
+    explanation:
+      "Explanation:<br><br>A) is incorrect because built-in class instances generally do not have a __dict__.<br><br>B) is correct. The __dict__ attribute is available for objects that are instances of user-defined classes, allowing access to their attributes. It stores the object's namespace in a dictionary. However, objects of some built-in types like int, str, or float don't have a __dict__.<br><br>C) implies it's exclusive to user-defined class instances, which is mostly true but not absolute since some custom optimizations or settings can remove it (e.g., by using __slots__).<br><br>D) is incorrect because not all objects (like built-in types) have the __dict__ attribute.",
     link: "https://docs.python.org/3/reference/datamodel.html#object.__dict__",
   },
   {
@@ -6514,19 +6459,20 @@ export const questions = [
       { text: "True", correct: false },
       { text: "False", correct: false },
       { text: "The code is erroneous.", correct: true },
-    ],    
+    ],
     explanation: `Explanation:<br><br>The code tries to convert the string '12.8' to an integer using the int() function.<br><br> However, since the string contains a decimal point, which is not a valid digit in an integer, a ValueError is raised with the message "invalid literal for int() with base 10: '12.8'".`,
     link: "https://docs.python.org/3/library/functions.html#int",
-  },  
+  },
   {
-    question: "Consider the following code. Which of the assignments are valid? <br><br>(Choose two)",
+    question:
+      "Consider the following code. Which of the assignments are valid? <br><br>(Choose two)",
     image: "images/image236.png",
     answers: [
       { text: "A", correct: true },
       { text: "B", correct: true },
       { text: "C", correct: false },
       { text: "D", correct: false },
-    ],    
+    ],
     explanation: `Explanation:<br><br>A) is valid: This call provides both required positional arguments (name and age), so it will work.<br><br>B) is valid: This call uses keyword arguments (age=256 and name="Kevin"), and the order doesn't matter as long as both arguments are provided.<br><br>C) is invalid: This call only provides one argument (name="Marvin"), but the constructor requires two arguments (name and age). This will result in a TypeError.<br><br>D) is invalid: This call provides no arguments, but the constructor requires two (name and age). This will result in a TypeError.`,
     link: "https://pythongeeks.org/constructor-in-python/",
   },
@@ -6537,8 +6483,11 @@ export const questions = [
       { text: `The program will print "You shall not pass!"`, correct: false },
       { text: `The program will print "Hobbites."`, correct: false },
       { text: `The program will print 0.7`, correct: true },
-      { text: `The program will print "One does not simply walk into Mordor."`, correct: false },
-    ],    
+      {
+        text: `The program will print "One does not simply walk into Mordor."`,
+        correct: false,
+      },
+    ],
     explanation: `When the user enters "Gandalf", the program calculates the length of the string "Gandalf", which is 7, and assigns it to a.<br><br>When the user enters "Frodo", it calculates the length of the string "Frodo", which is 5, and multiplies it by 2, resulting in b = 10.<br><br>The program then attempts to calculate a / b, which in this case is 7 / 10. The result is 0.7.<br><br>Since no errors occur during this process (there's no division by zero, value error, or any other general exception), the try block runs successfully. Therefore, the result 0.7 is printed to the screen, and none of the except blocks are triggered.`,
     link: "https://www.programiz.com/python-programming/exception-handling",
   },
@@ -6550,7 +6499,7 @@ export const questions = [
       { text: "NameError", correct: false },
       { text: "SyntaxError", correct: false },
       { text: "Nothing will be printed", correct: false },
-    ],    
+    ],
     explanation: `Explanation:<br><br>The code defines a class MyClass with a method my_method that prints "How much is the fish?".<br><br> An object obj of the MyClass class is created and its method my_method is called, which prints "How much is the fish?".`,
     link: "https://docs.python.org/3/tutorial/classes.html",
   },
@@ -6562,8 +6511,9 @@ export const questions = [
       { text: "10" + "\n" + "21", correct: true },
       { text: "6" + "\n" + "14", correct: false },
       { text: "2" + "\n" + "3", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>• The make_multiplier function takes a parameter n and returns a lambda function that multiplies its input x by n.<br><br>• times_two is assigned the result of calling make_multiplier with an argument of 2, creating a lambda function that multiplies its input by 2.<br><br>• times_three is assigned the result of calling make_multiplier with an argument of 3, creating a lambda function that multiplies its input by 3.<br><br>• times_two(5) calls the lambda function stored in times_two with an input value of 5. This results in multiplying 5 by 2, so the output is 10.<br><br>• times_three(7) calls the lambda function stored in times_three with an input value of 7. This results in multiplying 7 by 3, so the output is 21.",
+    ],
+    explanation:
+      "Explanation:<br><br>• The make_multiplier function takes a parameter n and returns a lambda function that multiplies its input x by n.<br><br>• times_two is assigned the result of calling make_multiplier with an argument of 2, creating a lambda function that multiplies its input by 2.<br><br>• times_three is assigned the result of calling make_multiplier with an argument of 3, creating a lambda function that multiplies its input by 3.<br><br>• times_two(5) calls the lambda function stored in times_two with an input value of 5. This results in multiplying 5 by 2, so the output is 10.<br><br>• times_three(7) calls the lambda function stored in times_three with an input value of 7. This results in multiplying 7 by 3, so the output is 21.",
     link: "https://realpython.com/python-lambda/#anonymous-functions",
   },
   {
@@ -6574,8 +6524,9 @@ export const questions = [
       { text: "15", correct: false },
       { text: "30", correct: true },
       { text: "20", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>• First, an instance of MyClass is created with a value of 5, and assigned to variable 'a'.<br><br>• Next, variable 'b' is assigned the same instance of MyClass as variable 'a'. This means that 'a' and 'b' both refer to the same object in memory.<br><br>• Then, the 'add_value' method is called on variable 'b' with an argument of 10. This adds 10 to the value of the object that 'b' refers to, which is the same object as 'a'.<br><br>• Finally, the sum of 'a.value' and 'b.value' is printed, which is 30. This is because the value of the object that 'a' and 'b' both refer to has been modified by the call to 'add_value' on 'b'.",
+    ],
+    explanation:
+      "Explanation:<br><br>• First, an instance of MyClass is created with a value of 5, and assigned to variable 'a'.<br><br>• Next, variable 'b' is assigned the same instance of MyClass as variable 'a'. This means that 'a' and 'b' both refer to the same object in memory.<br><br>• Then, the 'add_value' method is called on variable 'b' with an argument of 10. This adds 10 to the value of the object that 'b' refers to, which is the same object as 'a'.<br><br>• Finally, the sum of 'a.value' and 'b.value' is printed, which is 30. This is because the value of the object that 'a' and 'b' both refer to has been modified by the call to 'add_value' on 'b'.",
     link: "https://docs.python.org/3/reference/datamodel.html#object-references",
   },
   {
@@ -6585,19 +6536,22 @@ export const questions = [
       { text: "B) is defined by Python's lexis", correct: true },
       { text: "C) is also known as a reserved word", correct: true },
       { text: "D) cannot be used in the user's code", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>A) is False. Keywords cannot be used as identifiers (e.g., variable names, function names) because they are reserved for special purposes within the language.<br><br>B) is True. Keywords are defined by the language's lexical rules. They are part of the syntax and grammar of the language.<br><br>C) is True. Keywords are also known as reserved words because they are reserved by the language and cannot be used for other purposes.<br><br>D) is False. While keywords cannot be used as identifiers (like variable names, function names, etc.), they can still be used in user code within their defined context.",
+    ],
+    explanation:
+      "Explanation:<br><br>A) is False. Keywords cannot be used as identifiers (e.g., variable names, function names) because they are reserved for special purposes within the language.<br><br>B) is True. Keywords are defined by the language's lexical rules. They are part of the syntax and grammar of the language.<br><br>C) is True. Keywords are also known as reserved words because they are reserved by the language and cannot be used for other purposes.<br><br>D) is False. While keywords cannot be used as identifiers (like variable names, function names, etc.), they can still be used in user code within their defined context.",
     link: "https://docs.python.org/3/reference/lexical_analysis.html#keywords",
   },
   {
-    question: "Assuming that the V variable holds an integer value to 2, which of the following operators should be used instead of OPER to make the expression equal to 1?<br><br>V OPER 1",
+    question:
+      "Assuming that the V variable holds an integer value to 2, which of the following operators should be used instead of OPER to make the expression equal to 1?<br><br>V OPER 1",
     answers: [
       { text: "<<<", correct: false },
       { text: ">>>", correct: false },
       { text: ">>", correct: true },
       { text: "<<", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>The operator >> is correct because it performs a bitwise right shift, which is what we need to convert the integer value 2 to 1. <br><br>In binary, 2 is represented as 10. <br><br>When you apply the right shift operator (2 >> 1), it shifts the bits one position to the right, resulting in 01, which is the binary representation of 1. <br><br>Therefore, 2 >> 1 yields 1, making >> the appropriate operator for this transformation.",
+    ],
+    explanation:
+      "Explanation:<br><br>The operator >> is correct because it performs a bitwise right shift, which is what we need to convert the integer value 2 to 1. <br><br>In binary, 2 is represented as 10. <br><br>When you apply the right shift operator (2 >> 1), it shifts the bits one position to the right, resulting in 01, which is the binary representation of 1. <br><br>Therefore, 2 >> 1 yields 1, making >> the appropriate operator for this transformation.",
     link: "https://docs.python.org/3/reference/expressions.html#operator-precedence",
   },
   {
@@ -6607,66 +6561,86 @@ export const questions = [
       { text: "B) a standard for encoding and handling texts", correct: true },
       { text: "C) the name of a programming language", correct: false },
       { text: "D) the name of a text processor", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>UNICODE is a standard for encoding and handling text. It provides a universal character encoding system that covers most of the world's writing systems, ensuring that text can be consistently represented and manipulated across different platforms and applications.",
+    ],
+    explanation:
+      "Explanation:<br><br>UNICODE is a standard for encoding and handling text. It provides a universal character encoding system that covers most of the world's writing systems, ensuring that text can be consistently represented and manipulated across different platforms and applications.",
     link: "https://en.wikipedia.org/wiki/Unicode",
   },
   {
-    question: "Which of the listed actions can be applied to the following tuple?<br><br>tup = ()<br><br>(Choose two)",
+    question:
+      "Which of the listed actions can be applied to the following tuple?<br><br>tup = ()<br><br>(Choose two)",
     answers: [
       { text: "A) tup[:]", correct: true },
       { text: "B) tup.append(0)", correct: false },
       { text: "C) tup[0]", correct: false },
       { text: "D) del tup", correct: true },
-    ],    
-    explanation: "Explanation:<br><br>A) creates a slice of the tuple. Since the tuple is empty, tup[:] would also result in an empty tuple (). This operation is valid for tuples.<br><br>B) Tuples in Python are immutable, meaning their elements cannot be changed or appended after creation. The append() method is not available for tuples, so this action is not valid.<br><br>C): Attempting to access an element at index 0 in an empty tuple will result in an IndexError because there are no elements in the tuple. Therefore, this action is not valid.<br><br>In D), the del statement can be used to delete a variable, including tuples. After del tup, the variable tup would be removed from the namespace.",
+    ],
+    explanation:
+      "Explanation:<br><br>A) creates a slice of the tuple. Since the tuple is empty, tup[:] would also result in an empty tuple (). This operation is valid for tuples.<br><br>B) Tuples in Python are immutable, meaning their elements cannot be changed or appended after creation. The append() method is not available for tuples, so this action is not valid.<br><br>C): Attempting to access an element at index 0 in an empty tuple will result in an IndexError because there are no elements in the tuple. Therefore, this action is not valid.<br><br>In D), the del statement can be used to delete a variable, including tuples. After del tup, the variable tup would be removed from the namespace.",
     link: "https://docs.python.org/3/library/stdtypes.html#tuple",
   },
   {
-    question: "If you want to transform a string into a list of words, as seen in the code below, what invocation would you use?<br><br>Expected output:<br><br>They're, taking, the, Hobbits, to, Isengard!,<br><br>(Choose two)",
+    question:
+      "If you want to transform a string into a list of words, as seen in the code below, what invocation would you use?<br><br>Expected output:<br><br>They're, taking, the, Hobbits, to, Isengard!,<br><br>(Choose two)",
     image: "images/image241.png",
     answers: [
       { text: "A) s.split()", correct: true },
       { text: "B) split(s, ' ')", correct: false },
       { text: "C) s.split(' ')", correct: true },
       { text: "D) split(s)", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>A) correctly splits the string s into a list of words using whitespace as the delimiter. This is the standard way to convert a string into a list of words.<br><br>B) is incorrect because split() is a method of string objects and should be called as s.split(' ')<br><br>C) is also correct and explicitly splits the string s using a space as the delimiter. This works but is a bit more specific than necessary since s.split() would handle all whitespace.<br><br>D) is incorrect because split is not a standalone function and must be called as a method on a string object.",
+    ],
+    explanation:
+      "Explanation:<br><br>A) correctly splits the string s into a list of words using whitespace as the delimiter. This is the standard way to convert a string into a list of words.<br><br>B) is incorrect because split() is a method of string objects and should be called as s.split(' ')<br><br>C) is also correct and explicitly splits the string s using a space as the delimiter. This works but is a bit more specific than necessary since s.split() would handle all whitespace.<br><br>D) is incorrect because split is not a standalone function and must be called as a method on a string object.",
     link: "https://docs.python.org/3/library/stdtypes.html#str.split",
   },
   {
-    question: "What can you deduce from the line below?<br><br>x = a.b.c.f()<br><br>(Choose two)",
+    question:
+      "What can you deduce from the line below?<br><br>x = a.b.c.f()<br><br>(Choose two)",
     answers: [
-      { text: "A) import a.b.c should be placed before that line", correct: true },
-      { text: "B) f() is located in subpackage c of subpackage b of package a", correct: true },
+      {
+        text: "A) import a.b.c should be placed before that line",
+        correct: true,
+      },
+      {
+        text: "B) f() is located in subpackage c of subpackage b of package a",
+        correct: true,
+      },
       { text: "C) the line is incorrect", correct: false },
-      { text: "D) the function being invoked is called a.b.c.f()", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>A) is true. Import statements are typically required to bring modules or packages into scope.<br><br>B) is true. f() is located in subpackage c of subpackage b of package a is correct because a.b.c.f() represents a function f() that is defined in module c, which is a subpackage of module b, which is itself a subpackage of package a. This notation follows Python's hierarchical module structure.<br><br>C) is not inherently incorrect if a, b, c, and f are properly defined and imported. The correctness depends on the actual setup of the modules and packages.<br><br>D) is incorrect because a.b.c.f() represents a function call, not the function name. The function being called is f(), which resides in the c module.",
+      {
+        text: "D) the function being invoked is called a.b.c.f()",
+        correct: false,
+      },
+    ],
+    explanation:
+      "Explanation:<br><br>A) is true. Import statements are typically required to bring modules or packages into scope.<br><br>B) is true. f() is located in subpackage c of subpackage b of package a is correct because a.b.c.f() represents a function f() that is defined in module c, which is a subpackage of module b, which is itself a subpackage of package a. This notation follows Python's hierarchical module structure.<br><br>C) is not inherently incorrect if a, b, c, and f are properly defined and imported. The correctness depends on the actual setup of the modules and packages.<br><br>D) is incorrect because a.b.c.f() represents a function call, not the function name. The function being called is f(), which resides in the c module.",
     link: "https://docs.python.org/3/tutorial/modules.html",
   },
   {
-    question: "A Python module named pymod.py contains a function named pyfun(). Which of the following snippets will let you invoke the function? <br><br>(Choose two)",
+    question:
+      "A Python module named pymod.py contains a function named pyfun(). Which of the following snippets will let you invoke the function? <br><br>(Choose two)",
     image: "images/image242.png",
     answers: [
       { text: "A", correct: true },
       { text: "B", correct: true },
       { text: "C", correct: false },
       { text: "D", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>A) imports the entire pymod module and calls the pyfun function using the module name. This is a correct and standard way to use functions from a module.<br><br>B) imports only the pyfun function from the pymod module directly into the current namespace. You can then call pyfun() directly. This is also a correct way to call the function, and it can be more convenient if you only need specific functions from the module.<br><br>C) will result in a NameError because pymod is not in the current namespace.<br><br>D) is incorrect syntax. The correct syntax for importing is import module or from module import function, but import pyfun from pymod is not valid Python syntax.",
+    ],
+    explanation:
+      "Explanation:<br><br>A) imports the entire pymod module and calls the pyfun function using the module name. This is a correct and standard way to use functions from a module.<br><br>B) imports only the pyfun function from the pymod module directly into the current namespace. You can then call pyfun() directly. This is also a correct way to call the function, and it can be more convenient if you only need specific functions from the module.<br><br>C) will result in a NameError because pymod is not in the current namespace.<br><br>D) is incorrect syntax. The correct syntax for importing is import module or from module import function, but import pyfun from pymod is not valid Python syntax.",
     link: "https://docs.python.org/3/tutorial/modules.html#modules",
   },
   {
-    question: "You are going to read 16 bytes from a binary file into a bytearray called data. Which lines would you use?<br><br>(Choose two)",
+    question:
+      "You are going to read 16 bytes from a binary file into a bytearray called data. Which lines would you use?<br><br>(Choose two)",
     image: "images/image243.png",
     answers: [
       { text: "A", correct: true },
       { text: "B", correct: false },
       { text: "C", correct: false },
       { text: "D", correct: true },
-    ],    
-    explanation: "Explanation:<br><br>A) initializes a bytearray with 16 bytes and then uses the readinto method to read data directly into this bytearray. This is useful for efficient file reading when you need to work with a pre-allocated buffer.<br><br>B) is incorrect because binfile.read() expects an integer argument specifying the number of bytes to read, not a bytearray. It will result in a TypeError.<br><br>C) is incorrect because readinto() does not accept keyword arguments. Instead, it requires the bytearray object as its positional argument.<br><br>D) reads 16 bytes from the file using binfile.read(16), which returns a bytes object. The bytearray() constructor is then used to convert this bytes object into a bytearray. This method is straightforward and works well for cases where you want to read and convert data in one step.",
+    ],
+    explanation:
+      "Explanation:<br><br>A) initializes a bytearray with 16 bytes and then uses the readinto method to read data directly into this bytearray. This is useful for efficient file reading when you need to work with a pre-allocated buffer.<br><br>B) is incorrect because binfile.read() expects an integer argument specifying the number of bytes to read, not a bytearray. It will result in a TypeError.<br><br>C) is incorrect because readinto() does not accept keyword arguments. Instead, it requires the bytearray object as its positional argument.<br><br>D) reads 16 bytes from the file using binfile.read(16), which returns a bytes object. The bytearray() constructor is then used to convert this bytes object into a bytearray. This method is straightforward and works well for cases where you want to read and convert data in one step.",
     link: "https://docs.python.org/3/library/stdtypes.html#bytearray",
   },
   {
@@ -6677,8 +6651,9 @@ export const questions = [
       { text: "0", correct: false },
       { text: "True", correct: false },
       { text: "None", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>• b1 = type(dir(sys)) is str: The dir(sys) function returns a list of names in the sys module. Therefore, type(dir(sys)) is list, not str. Hence, type(dir(sys)) is str evaluates to False.<br><br>• b2 = type(sys.path[-1]) is str: sys.path is a list of strings representing the module search path. sys.path[-1] retrieves the last item in this list, which is a string. Thus, type(sys.path[-1]) is str, and type(sys.path[-1]) is str evaluates to True.<br><br>• print(b1 and b2): Since b1 is False and b2 is True, the logical and operation between them results in False because False and True evaluates to False.",
+    ],
+    explanation:
+      "Explanation:<br><br>• b1 = type(dir(sys)) is str: The dir(sys) function returns a list of names in the sys module. Therefore, type(dir(sys)) is list, not str. Hence, type(dir(sys)) is str evaluates to False.<br><br>• b2 = type(sys.path[-1]) is str: sys.path is a list of strings representing the module search path. sys.path[-1] retrieves the last item in this list, which is a string. Thus, type(sys.path[-1]) is str, and type(sys.path[-1]) is str evaluates to True.<br><br>• print(b1 and b2): Since b1 is False and b2 is True, the logical and operation between them results in False because False and True evaluates to False.",
     link: "https://docs.python.org/3/library/functions.html#type",
   },
   {
@@ -6689,8 +6664,9 @@ export const questions = [
       { text: "2" + "\n" + "2", correct: false },
       { text: "1" + "\n" + "2", correct: false },
       { text: "1" + "\n" + "1", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>• The func1 function is defined with a local variable x set to 1.<br><br>• The func2 function is defined inside func1 and it modifies the value of x using the nonlocal keyword.<br><br>• When func1 is called, it invokes func2 twice using the statements func2() and func2() consecutively.<br><br>• During the first call to func2, the value of x is incremented by 1 using x += 1, resulting in x being equal to 2.<br><br>• The first print statement print(x) inside func2 outputs the value of x, which is 2.<br><br>• During the second call to func2, the value of x is incremented again, making it equal to 3.<br><br>• The second print statement print(x) inside func2 outputs the updated value of x, which is 3.<br><br>In summary, the code demonstrates the concept of a nested function and the usage of the nonlocal keyword to modify a variable defined in the enclosing scope. Each call to func2 modifies and prints the updated value of x.",
+    ],
+    explanation:
+      "Explanation:<br><br>• The func1 function is defined with a local variable x set to 1.<br><br>• The func2 function is defined inside func1 and it modifies the value of x using the nonlocal keyword.<br><br>• When func1 is called, it invokes func2 twice using the statements func2() and func2() consecutively.<br><br>• During the first call to func2, the value of x is incremented by 1 using x += 1, resulting in x being equal to 2.<br><br>• The first print statement print(x) inside func2 outputs the value of x, which is 2.<br><br>• During the second call to func2, the value of x is incremented again, making it equal to 3.<br><br>• The second print statement print(x) inside func2 outputs the updated value of x, which is 3.<br><br>In summary, the code demonstrates the concept of a nested function and the usage of the nonlocal keyword to modify a variable defined in the enclosing scope. Each call to func2 modifies and prints the updated value of x.",
     link: "https://www.w3schools.com/python/ref_keyword_nonlocal.asp",
   },
   {
@@ -6701,8 +6677,9 @@ export const questions = [
       { text: "0", correct: false },
       { text: "1", correct: false },
       { text: "2", correct: false },
-    ],    
-    explanation: "Explanation:<br><br• X is a class attribute initialized to 0.<br><br>• The __init__ method is the constructor that initializes an instance of A.<br><br>• self.Y is an instance attribute that stores the value v.<br><br>• A.X is updated by adding v to it. Note that A.X modifies the class attribute X, not an instance attribute.<br><br>When a = A() is executed:<br><br>• v is 0 (the default value).<br><br>• self.Y is set to 0.<br><br>• A.X is updated by adding 0, so A.X remains 0.<br><br>When b = A(1) is executed:<br><br>• v is 1.<br><br>• self.Y is set to 1.<br><br>• A.X is updated by adding 1, so A.X becomes 1.<br><br>So c = A(2) gives us A.X = 3<br><br>c.X accesses the class attribute X of class A, which is 3.",
+    ],
+    explanation:
+      "Explanation:<br><br• X is a class attribute initialized to 0.<br><br>• The __init__ method is the constructor that initializes an instance of A.<br><br>• self.Y is an instance attribute that stores the value v.<br><br>• A.X is updated by adding v to it. Note that A.X modifies the class attribute X, not an instance attribute.<br><br>When a = A() is executed:<br><br>• v is 0 (the default value).<br><br>• self.Y is set to 0.<br><br>• A.X is updated by adding 0, so A.X remains 0.<br><br>When b = A(1) is executed:<br><br>• v is 1.<br><br>• self.Y is set to 1.<br><br>• A.X is updated by adding 1, so A.X becomes 1.<br><br>So c = A(2) gives us A.X = 3<br><br>c.X accesses the class attribute X of class A, which is 3.",
     link: "https://www.w3schools.com/python/python_classes.asp",
   },
   {
@@ -6714,8 +6691,9 @@ export const questions = [
       { text: "True" + "\n" + "False" + "\n" + "False", correct: false },
       { text: "False" + "\n" + "True" + "\n" + "True", correct: false },
       { text: "False" + "\n" + "False" + "\n" + "False", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>isinstance(obj, A) returns True because obj is an instance of class B which is inherited from class A. <br><br>isinstance(obj, B) returns True because obj is an instance of class B. <br><br>isinstance(obj, object) returns True because all classes in Python inherit from the object class.",
+    ],
+    explanation:
+      "Explanation:<br><br>isinstance(obj, A) returns True because obj is an instance of class B which is inherited from class A. <br><br>isinstance(obj, B) returns True because obj is an instance of class B. <br><br>isinstance(obj, object) returns True because all classes in Python inherit from the object class.",
     link: "https://www.w3schools.com/python/ref_func_isinstance.asp",
   },
   {
@@ -6725,9 +6703,13 @@ export const questions = [
       { text: "33, 44, 34, or 43", correct: true },
       { text: "only 34", correct: false },
       { text: "34 or 43", correct: false },
-      { text: "There are many possible combinations, and we cannot predict them.", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>The possible outputs of the following code snippet in Python are:<br><br>• 33 - both random integers generated by randint(3, 4) are 3.<br><br>• 44 - both random integers generated by randint(3, 4) are 4.<br><br>• 34 - the first random integer generated by randint(3, 4) is 3 and the second is 4.<br><br>• 43 - the first random integer generated by randint(3, 4) is 4 and the second is 3.<br><br>Note that since there are only two possible values (3 and 4), and the end parameter of the print function is set to an empty string, the output will always be a string of length two. The order of the two digits will be random, and each digit will be equally likely to occur.",
+      {
+        text: "There are many possible combinations, and we cannot predict them.",
+        correct: false,
+      },
+    ],
+    explanation:
+      "Explanation:<br><br>The possible outputs of the following code snippet in Python are:<br><br>• 33 - both random integers generated by randint(3, 4) are 3.<br><br>• 44 - both random integers generated by randint(3, 4) are 4.<br><br>• 34 - the first random integer generated by randint(3, 4) is 3 and the second is 4.<br><br>• 43 - the first random integer generated by randint(3, 4) is 4 and the second is 3.<br><br>Note that since there are only two possible values (3 and 4), and the end parameter of the print function is set to an empty string, the output will always be a string of length two. The order of the two digits will be random, and each digit will be equally likely to occur.",
     link: "https://www.w3schools.com/python/ref_func_print.asp",
   },
   {
@@ -6738,8 +6720,8 @@ export const questions = [
       { text: "True", correct: true },
       { text: "The code is erronous.", correct: false },
       { text: "None of the above.", correct: false },
-    ],    
-    explanation: `Explanation:<br><br>s1.strip(): This method removes any leading and trailing whitespace from the string s1. After this operation, s1 becomes "Nicht so tief, Rüdiger! Keine Kapriolen!".<br><br>s1.strip().split(): This method splits the string into a list of words based on whitespace. After splitting, the list s2 is ['Nicht', 'so', 'tief,', 'Rüdiger!', 'Keine', 'Kapriolen!'].<br><br>"".join(s2): This method joins the elements of the list s2 into a single string without any separators. The resulting string s3 is "Nichtsotief,Rüdiger!KeineKapriolen!".<br><br>s3.endswith("!"): This method checks if the string s3 ends with the character !. In this case, s3 does indeed end with an exclamation mark because "Kapriolen!" is the last part of the joined string.`
+    ],
+    explanation: `Explanation:<br><br>s1.strip(): This method removes any leading and trailing whitespace from the string s1. After this operation, s1 becomes "Nicht so tief, Rüdiger! Keine Kapriolen!".<br><br>s1.strip().split(): This method splits the string into a list of words based on whitespace. After splitting, the list s2 is ['Nicht', 'so', 'tief,', 'Rüdiger!', 'Keine', 'Kapriolen!'].<br><br>"".join(s2): This method joins the elements of the list s2 into a single string without any separators. The resulting string s3 is "Nichtsotief,Rüdiger!KeineKapriolen!".<br><br>s3.endswith("!"): This method checks if the string s3 ends with the character !. In this case, s3 does indeed end with an exclamation mark because "Kapriolen!" is the last part of the joined string.`,
   },
   {
     question: "How can you import math and random module? <br><br>(Choose two)",
@@ -6749,9 +6731,10 @@ export const questions = [
       { text: "B", correct: false },
       { text: "C", correct: false },
       { text: "D", correct: true },
-    ],   
-    explanation: "Explanation:<br><br>A) imports both the 'math' and 'random' modules in a single line. This is a valid and concise way to import multiple modules at once.<br><br>B) is incorrect because 'random' is not a part of the 'math' module. Instead, 'random' is a separate module in Python.<br><br>C) is incorrect because 'from ... import ...' requires specifying what is being imported from a module. Simply stating 'from math' and 'from random' without specifying what to import will result in a syntax error.<br><br>D) is another valid way to import both modules. It imports each module separately, one on each line. This method is clear and straightforward, making it easy to understand which modules are being imported.",
-    link: "https://www.programiz.com/python-programming/modules", 
+    ],
+    explanation:
+      "Explanation:<br><br>A) imports both the 'math' and 'random' modules in a single line. This is a valid and concise way to import multiple modules at once.<br><br>B) is incorrect because 'random' is not a part of the 'math' module. Instead, 'random' is a separate module in Python.<br><br>C) is incorrect because 'from ... import ...' requires specifying what is being imported from a module. Simply stating 'from math' and 'from random' without specifying what to import will result in a syntax error.<br><br>D) is another valid way to import both modules. It imports each module separately, one on each line. This method is clear and straightforward, making it easy to understand which modules are being imported.",
+    link: "https://www.programiz.com/python-programming/modules",
   },
   {
     question: "What is the output of the following code?",
@@ -6761,8 +6744,9 @@ export const questions = [
       { text: "0" + "\n" + "1" + "\n" + "2", correct: true },
       { text: "2" + "\n" + "2" + "\n" + "2", correct: false },
       { text: "This code will raise an error", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>The code defines a function outer_func(num) that creates and returns an inner function inner_func. This inner function prints the value of num, which is captured from the outer_func scope.<br><br>When the code executes, it initializes an empty list named funcs. It then uses a for loop to iterate over the range from 0 to 2. In each iteration, outer_func(i) is called with the current value of i. Each call to outer_func returns an inner_func that remembers the value of i at that point and appends it to the funcs list.<br><br>After the loop, funcs contains three inner_func functions, each with a different value of num captured (0, 1, and 2). Another for loop then iterates over the funcs list and calls each function. Each call prints the value of num that was captured when the function was created.<br><br>Thus, when the functions are called, they print 0, 1, and 2 in that order.",
+    ],
+    explanation:
+      "Explanation:<br><br>The code defines a function outer_func(num) that creates and returns an inner function inner_func. This inner function prints the value of num, which is captured from the outer_func scope.<br><br>When the code executes, it initializes an empty list named funcs. It then uses a for loop to iterate over the range from 0 to 2. In each iteration, outer_func(i) is called with the current value of i. Each call to outer_func returns an inner_func that remembers the value of i at that point and appends it to the funcs list.<br><br>After the loop, funcs contains three inner_func functions, each with a different value of num captured (0, 1, and 2). Another for loop then iterates over the funcs list and calls each function. Each call prints the value of num that was captured when the function was created.<br><br>Thus, when the functions are called, they print 0, 1, and 2 in that order.",
     link: "https://www.geeksforgeeks.org/python-inner-functions/",
   },
   {
@@ -6774,21 +6758,35 @@ export const questions = [
       { text: "Wodka-Martini.-Geschüttelt,-nicht-gerührt.", correct: true },
       { text: "Geschüttelt,nichtgerührt.WodkaMartini.", correct: false },
       { text: "None of the above", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>The strip() method removes any whitespace characters from the beginning and end of the string, and the replace() method replaces all spaces with hyphens (-).",
+    ],
+    explanation:
+      "Explanation:<br><br>The strip() method removes any whitespace characters from the beginning and end of the string, and the replace() method replaces all spaces with hyphens (-).",
     link: "https://www.w3schools.com/python/ref_string_strip.asp",
   },
   {
     question: "What is the purpose of the __init__ method in this code?",
     image: "images/image253.png",
     answers: [
-      { text: "A) It is a constructor method that initializes the object's attributes with the values passed to it.", correct: true },
-      { text: "B) It is a method that is used to create new instances of the class.", correct: false },
-      { text: "C) It is a special method that gets called when the object is created.", correct: false },
-      { text: "D) It is a method that defines the behavior of the object.", correct: false },
-    ], 
-    explanation: "Explanation:<br><br>A) is correct because the __init__ method is specifically designed to initialize the attributes of an object when a new instance of the class is created. It assigns the values passed as arguments to the instance attributes.<br><br>B) is incorrect because __init__ does not create new instances of the class; it initializes an instance after it has been created. The creation of an instance is handled by the class constructor, not the __init__ method.<br><br>C) is partially correct but incomplete. While it is true that __init__ is a special method called when an object is created, its main role is to initialize the object's attributes.<br><br>D) is incorrect because defining behavior is typically done with other methods within the class, not with the __init__ method. The __init__ method specifically sets up the initial state of the object.",
-    link: "https://www.geeksforgeeks.org/__init__-in-python/",   
+      {
+        text: "A) It is a constructor method that initializes the object's attributes with the values passed to it.",
+        correct: true,
+      },
+      {
+        text: "B) It is a method that is used to create new instances of the class.",
+        correct: false,
+      },
+      {
+        text: "C) It is a special method that gets called when the object is created.",
+        correct: false,
+      },
+      {
+        text: "D) It is a method that defines the behavior of the object.",
+        correct: false,
+      },
+    ],
+    explanation:
+      "Explanation:<br><br>A) is correct because the __init__ method is specifically designed to initialize the attributes of an object when a new instance of the class is created. It assigns the values passed as arguments to the instance attributes.<br><br>B) is incorrect because __init__ does not create new instances of the class; it initializes an instance after it has been created. The creation of an instance is handled by the class constructor, not the __init__ method.<br><br>C) is partially correct but incomplete. While it is true that __init__ is a special method called when an object is created, its main role is to initialize the object's attributes.<br><br>D) is incorrect because defining behavior is typically done with other methods within the class, not with the __init__ method. The __init__ method specifically sets up the initial state of the object.",
+    link: "https://www.geeksforgeeks.org/__init__-in-python/",
   },
   {
     question: "What is the output of the following code?",
@@ -6800,7 +6798,7 @@ export const questions = [
       { text: "70, 210", correct: false },
       { text: "69, 420", correct: false },
       { text: "The code is erroneous.", correct: false },
-    ],   
+    ],
     explanation: `Explanation:<br><br>In the provided code, a Point class is defined with two methods: __init__ and __str__. The __init__ method initializes an instance of Point with x and y coordinates. The __str__ method provides a string representation of the Point instance in the format (x, y).<br><br>When the Point instance p is created with the arguments 70-1 and 210*2, the expressions evaluate to 69 and 420, respectively. Thus, the Point object p is initialized with x set to 69 and y set to 420.<br><br>When print(p) is executed, Python calls the __str__ method to obtain the string representation of p. The __str__ method formats the output as "(69, 420)".`,
     link: "https://www.educative.io/answers/what-is-the-str-method-in-python",
   },
@@ -6812,24 +6810,28 @@ export const questions = [
       { text: "it raises an exception", correct: false },
       { text: "it outputs 1", correct: false },
       { text: "it outputs 2", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>• The class Class has a class attribute Variable initialized to 0 and an instance attribute value initialized to 0 in the constructor.<br><br>• When object_1 is created, it sets object_1.Variable to 1, creating an instance attribute Variable specific to object_1. This does not change the class attribute Variable.<br><br>• When object_2 is created, it does not have an instance attribute Variable, so it uses the class attribute Variable, which remains 0. <br><br>• object_2.value is incremented by 1, making object_2.value equal to 1.<br><br>• The print statement calculates object_2.Variable + object_1.value.<br><br>Here, object_2.Variable is 0 (the class attribute), and object_1.value is 0 (since object_1.value was not modified).<br><br>Thus, the expression object_2.Variable + object_1.value evaluates to 0 + 0, resulting in an output of 0.",
+    ],
+    explanation:
+      "Explanation:<br><br>• The class Class has a class attribute Variable initialized to 0 and an instance attribute value initialized to 0 in the constructor.<br><br>• When object_1 is created, it sets object_1.Variable to 1, creating an instance attribute Variable specific to object_1. This does not change the class attribute Variable.<br><br>• When object_2 is created, it does not have an instance attribute Variable, so it uses the class attribute Variable, which remains 0. <br><br>• object_2.value is incremented by 1, making object_2.value equal to 1.<br><br>• The print statement calculates object_2.Variable + object_1.value.<br><br>Here, object_2.Variable is 0 (the class attribute), and object_1.value is 0 (since object_1.value was not modified).<br><br>Thus, the expression object_2.Variable + object_1.value evaluates to 0 + 0, resulting in an output of 0.",
     link: "https://pynative.com/python-instance-variables/",
   },
   {
-    question: "Assuming that the following piece of code has been executed successfully, which of the expressions evaluate to True?<br><br>(Choose two)",
+    question:
+      "Assuming that the following piece of code has been executed successfully, which of the expressions evaluate to True?<br><br>(Choose two)",
     image: "images/image256.png",
     answers: [
       { text: "A", correct: true },
       { text: "B", correct: true },
       { text: "C", correct: false },
       { text: "D", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>A) checks if obj_a is an instance of the class A or a subclass thereof. ince obj_a is indeed an instance of class A, this expression evaluates to True.<br><br>B) A.VarA is a class attribute of A, and it is set to 1 in the class definition. herefore, A.VarA is 1, so this expression evaluates to True.<br><br>C) obj_a and obj_aa are two distinct instances of the class A. The is operator checks for identity, meaning it checks if two references point to the exact same object in memory. Since obj_a and obj_aa are different instances, obj_a is obj_aa evaluates to False.<br><br>D) B.VarA refers to the class attribute VarA in class B. B is a subclass of A, and it overrides VarA with the value 2. herefore, B.VarA is 2, not 1, so this expression evaluates to False.",
+    ],
+    explanation:
+      "Explanation:<br><br>A) checks if obj_a is an instance of the class A or a subclass thereof. ince obj_a is indeed an instance of class A, this expression evaluates to True.<br><br>B) A.VarA is a class attribute of A, and it is set to 1 in the class definition. herefore, A.VarA is 1, so this expression evaluates to True.<br><br>C) obj_a and obj_aa are two distinct instances of the class A. The is operator checks for identity, meaning it checks if two references point to the exact same object in memory. Since obj_a and obj_aa are different instances, obj_a is obj_aa evaluates to False.<br><br>D) B.VarA refers to the class attribute VarA in class B. B is a subclass of A, and it overrides VarA with the value 2. herefore, B.VarA is 2, not 1, so this expression evaluates to False.",
     link: "https://pynative.com/python-instance-variables/",
   },
   {
-    question: "Which of the following lines of code will work flawlessly when put independently inside the add_new() method in order to make the snippet's output equal to [0, 1, 2]? <br><br>(Choose two)",
+    question:
+      "Which of the following lines of code will work flawlessly when put independently inside the add_new() method in order to make the snippet's output equal to [0, 1, 2]? <br><br>(Choose two)",
     image: "images/image257.png",
     answers: [
       { text: "A", correct: true },
@@ -6837,32 +6839,94 @@ export const questions = [
       { text: "C", correct: true },
       { text: "D", correct: false },
     ],
-    explanation: "Explanation:<br><br>We want the final output of print(Object.get()) to be [0, 1, 2]. This means we need to add 2 to the list [0, 1].<br><br>A)<br> • self.get_last() returns the last element of self.queue, which is 1.<br> • self.get_last() + 1 calculates 1 + 1, which is 2.<br> • self.queue.append(2) adds 2 to the end of the list.<br><br>So, this option correctly appends 2 to self.queue, resulting in [0, 1, 2].<br><br>B)<br>• get_last() without self. would cause a NameError because it is a method and should be called with self.get_last().<br> • This code will not work as intended due to the missing self.<br><br>C)<br>• self.queue[-1] directly accesses the last element of self.queue, which is 1.<br>• self.queue[-1] + 1 calculates 1 + 1, which is 2.<br>• self.queue.append(2) adds 2 to the end of the list.<br><br>So, this option also correctly appends 2 to self.queue, resulting in [0, 1, 2].<br><br>D)<br>• queue is not defined in the add_new() method; it should be self.queue.<br>• This code will result in a NameError due to the undefined queue.",
+    explanation:
+      "Explanation:<br><br>We want the final output of print(Object.get()) to be [0, 1, 2]. This means we need to add 2 to the list [0, 1].<br><br>A)<br> • self.get_last() returns the last element of self.queue, which is 1.<br> • self.get_last() + 1 calculates 1 + 1, which is 2.<br> • self.queue.append(2) adds 2 to the end of the list.<br><br>So, this option correctly appends 2 to self.queue, resulting in [0, 1, 2].<br><br>B)<br>• get_last() without self. would cause a NameError because it is a method and should be called with self.get_last().<br> • This code will not work as intended due to the missing self.<br><br>C)<br>• self.queue[-1] directly accesses the last element of self.queue, which is 1.<br>• self.queue[-1] + 1 calculates 1 + 1, which is 2.<br>• self.queue.append(2) adds 2 to the end of the list.<br><br>So, this option also correctly appends 2 to self.queue, resulting in [0, 1, 2].<br><br>D)<br>• queue is not defined in the add_new() method; it should be self.queue.<br>• This code will result in a NameError due to the undefined queue.",
     link: "https://docs.python.org/3/tutorial/datastructures.html#more-on-lists",
   },
   {
-    question: "What is the expected output of the following code if there is no file named non_existing_file inside the working directory?",
+    question:
+      "What is the expected output of the following code if there is no file named non_existing_file inside the working directory?",
     image: "images/image258.png",
     answers: [
       { text: "1 2 4", correct: false },
       { text: "1 2 3 4", correct: false },
       { text: "2 4", correct: false },
       { text: "1 3", correct: true },
-    ],    
-    explanation: "Explanation:<br><br>• The file 'non_existing_file' is opened in write mode ('w'), which creates the file if it does not exist, so no IOError is raised at this step.<br><br>• The statement print(1, end=' ') will print the number 1 followed by a space.<br><br>• The line s = f.readline() attempts to read from the file, but since the file is in write mode, this raises an IOError.<br><br>• As a result, the code jumps to the except block, which prints 3.<br><br>• The else block is not executed because an exception occurred.",
+    ],
+    explanation:
+      "Explanation:<br><br>• The file 'non_existing_file' is opened in write mode ('w'), which creates the file if it does not exist, so no IOError is raised at this step.<br><br>• The statement print(1, end=' ') will print the number 1 followed by a space.<br><br>• The line s = f.readline() attempts to read from the file, but since the file is in write mode, this raises an IOError.<br><br>• As a result, the code jumps to the except block, which prints 3.<br><br>• The else block is not executed because an exception occurred.",
     link: "https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files",
   },
   {
-    question: "A Python module named pymod.py contains a variable named pyvar. Which of the following snippets will let you access the variable? <br><br>(Choose two)",
+    question:
+      "A Python module named pymod.py contains a variable named pyvar. Which of the following snippets will let you access the variable? <br><br>(Choose two)",
     image: "images/image259.png",
     answers: [
       { text: "A", correct: true },
       { text: "B", correct: false },
       { text: "C", correct: false },
       { text: "D", correct: true },
-    ],    
-    explanation: "Explanation:<br><br>A) imports the entire pymod module. You can then access and modify pyvar using the pymod namespace. This approach is clean and avoids potential naming conflicts.<br><br>B) is incorrect and will raise a syntax error. You cannot import a variable using this syntax.<br><br>C) imports pyvar from pymod but tries to call it as if it were a function. This will raise a TypeError if pyvar is not a callable function.<br><br>D) imports all public names from pymod directly into the current namespace. You can then directly access and modify pyvar. However, this method is less recommended because it can lead to naming conflicts and makes it harder to track where names come from.",
+    ],
+    explanation:
+      "Explanation:<br><br>A) imports the entire pymod module. You can then access and modify pyvar using the pymod namespace. This approach is clean and avoids potential naming conflicts.<br><br>B) is incorrect and will raise a syntax error. You cannot import a variable using this syntax.<br><br>C) imports pyvar from pymod but tries to call it as if it were a function. This will raise a TypeError if pyvar is not a callable function.<br><br>D) imports all public names from pymod directly into the current namespace. You can then directly access and modify pyvar. However, this method is less recommended because it can lead to naming conflicts and makes it harder to track where names come from.",
     link: "https://docs.python.org/3/tutorial/modules.html#modules",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image261.png",
+    answers: [
+      {
+        text: "Ach du grüne Neune" + "\n" + "Ich bin Python-Prof!",
+        correct: false,
+      },
+      { text: "Holla die Waldfee", correct: false },
+      {
+        text: "Ich versteh' nur Bahnhof" + "\n" + "Ich bin Python-Prof!",
+        correct: false,
+      },
+      {
+        text: "Aber else muss klappen" + "\n" + "Ich bin Python-Prof!",
+        correct: false,
+      },
+      {
+        text: "Ich versteh' nur Bahnhof" + "\n" + "Ich bin Python-Profi!",
+        correct: false,
+      },
+      {
+        text: "Holla die Waldfee" + "\n" + "Ich bin Python-Prof!",
+        correct: true,
+      },
+      { text: "Ich bin Python-Profi!", correct: false },
+    ],
+    explanation:
+      "Explanation:<br><br>The code first initializes the list 'my_list' with three elements. In the 'try' block, it attempts to access my_list[2] and my_list[3]. Accessing my_list[2] is fine, but trying to access my_list[3] raises an 'IndexError' because the index is out of bounds.<br><br>The first 'except' block catches 'KeyError', but since we're working with a list, not a dictionary, this block is ignored. <br><br>The 'LookupError' block catches the 'IndexError' (because 'IndexError' is a subclass of 'LookupError').<br><br>The 'else' block is skipped because an exception was raised. The 'finally' block always runs.",
+    link: "https://docs.python.org/3/tutorial/errors.html",
+  },  
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image262.png",
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
+      { text: "E", correct: false },
+    ],    
+    explanation: `Explanation:<br><br>The code initializes the list 'my_list' with three elements. <br><br>The 'try' block accesses my_list[1] and my_list[2] successfully, but trying to access my_list[3] raises an 'IndexError' because the index is out of bounds. <br><br>The 'IndexError' is caught by its corresponding 'except' block, so "D" is printed. <br><br>The final 'except' block isn't reached since the error is already handled.`,
+    link: "https://docs.python.org/3/tutorial/errors.html",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image263.png",
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
+      { text: "E", correct: false },
+    ],    
+    explanation: `Explanation:<br><br>The code initializes the dictionary 'my_dict' with three key-value pairs. <br><br>The 'try' block attempts to access my_dict['d'], but since the key 'd' doesn't exist, a 'KeyError' is raised. <br><br>The 'KeyError' is caught by its corresponding 'except' block, so "C" is printed. <br><br>The other 'except' blocks are skipped because the error has already been handled.`,
+    link: "https://docs.python.org/3/tutorial/errors.html",
   },/*
   {
     question: "",
@@ -6919,51 +6983,30 @@ export const questions = [
     ],    
   },
   {
-    question: "",
+    question: "What is the expected behavior of the following code?",
+    image: "images/image156.png",
     answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
+      { text: "it outputs 3", correct: true },
+      { text: "it outputs 1", correct: false },
+      { text: "the code is erroneous and it will not execute", correct: false },
+      { text: "it outputs 2", correct: false },
+    ],
+    explanation:
+      "Explanation:<br><br>The code initializes a global variable m to 0. It defines a function 'foo(n)' that asserts m is 0, then tries to return 1 / n. If n is 0, a ZeroDivisionError occurs, which is caught as an ArithmeticError. <<br><br>In the exception block, m is incremented by 1, and the exception is re-raised.<br><br>In the outer try block, 'foo(0)' is called, which raises the ArithmeticError. This is caught by the except ArithmeticError block, which increments m by 2. <br><br>Since no other exceptions are raised, and the re-raised exception is not caught by any other block, the final value of m is 2.<br><br>Therefore, when the print(m) statement is executed, it outputs 2.",
+    link: "https://docs.python.org/3/tutorial/errors.html#handling-exceptions",
+  }, 
+   {
+    question:
+      "Which of the following code snippets will expand the code, so that 100 will be printed? <br><br>(Choose two)",
+    image: "images/image722.png",
     answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  */
-  
-  
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
+    ],
+    explanation:
+      "Explanation:<br><br>Snippet A will add 100 to res for each name in the tuple that is present in data. If only one name is in data, res will be 100. If two or more names are in data, res will be greater than 100.<br><br>Snippet B will add 100 to res for each name in the tuple that is not present in data. To get a total of 100, exactly one name must be missing from data.<br><br>Snippet C will add 50 to res for each name in the tuple that is present in data. To get a total of 100, exactly two names must be in data.<br><br>Snippet D will add 50 to res for each name in the tuple that is not present in data. To get a total of 100, exactly two names must be missing from data.",
+    link: "https://docs.python.org/3/tutorial/controlflow.html#list-comprehensions",
+  }, */
 ];
