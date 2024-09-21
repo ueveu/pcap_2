@@ -225,7 +225,7 @@ export const questions = [
   {
     question:
       "Which of the following is a correct way to concatenate these two strings in Python?",
-    image: "imgages/image746.png",
+    image: "images/image746.png",
     answers: [
       { text: "A", correct: false },
       { text: "B", correct: false },
