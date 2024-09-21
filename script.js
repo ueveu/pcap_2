@@ -18,6 +18,7 @@ let timeLeft = 86400; // 65 minutes in seconds
 let timerInterval;
 let quizEnded = false;
 
+
 // Store a subset of 40 random questions
 let selectedQuestions = [];
 
