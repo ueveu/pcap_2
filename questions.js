@@ -1119,7 +1119,7 @@ export const questions = [
       { text: "Frozensets have a smaller memory footprint.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'frozenset' data type is an immutable data type in Python.",
+      "Explanation:<br><br>The 'frozenset' data type is an immutable data type in Python.<br><br>This immutability allows frozensets to be hashable, meaning they can be used as keys in a dictionary or as elements in another set. Regular sets, being mutable, cannot be used in these contexts because their contents might change, affecting their hash value.",
     link: "https://realpython.com/python-frozensets/",
   },
   {
@@ -1132,7 +1132,7 @@ export const questions = [
       { text: "Dictionary", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The 'dictionary' data type is used for mapping keys to values in Python.",
+      "Explanation:<br><br>In Python, a dictionary is the data structure used for mapping keys to values. It allows you to associate a unique key with a specific value, forming key-value pairs. <br><br>This provides fast lookups, insertions, and deletions based on the key.",
     link: "https://realpython.com/python-dictionaries/",
   },
   {
@@ -1154,7 +1154,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The primary purpose of an API (Application Programming Interface) is to enable different software systems to communicate and interact with each other. It allows one program to access and use the functionality or data of another program, typically through well-defined protocols. <br><br>APIs streamline integration and data exchange between applications or services.",
+      "Explanation:<br><br>The primary purpose of an API is to enable different software systems to communicate and interact with each other. It allows one program to access and use the functionality or data of another program, typically through well-defined protocols. <br><br>APIs streamline integration and data exchange between applications or services.",
     link: "https://realpython.com/python-api/",
   },
   {
@@ -1187,7 +1187,7 @@ export const questions = [
       { text: "z", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The 'x' variable will contain False, because the list is basically empty.",
+      "Explanation:<br><br>The 'x' variable will contain False because the list is basically empty.",
     link: "https://www.datacamp.com/tutorial/python-empty-list",
   },
   {
@@ -1333,7 +1333,7 @@ export const questions = [
       { text: "isinstance(obj, A)", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The isinstance() function returns True if the specified object is of the specified type, otherwise False.",
+      "Explanation:<br><br>The isinstance(first argument, second argument) function in Python checks if an object (first argument) is an instance or subclass of a particular class or a tuple of classes (second argument).<br><br>It is commonly used in Python to ensure that variables are of expected types or to implement type-specific behavior in functions.",
     link: "https://www.w3schools.com/python/ref_func_isinstance.asp",
   },
   {
@@ -1359,7 +1359,7 @@ export const questions = [
       { text: "import randint from random", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>from random import randint is correct because it uses the correct Python syntax to import a specific function (randint) from a module (random). This method provides direct access to the function, making it easy to use without additional module prefixing.",
+      "Explanation:<br><br>from random import randint is correct because it uses the correct Python syntax to import a specific function (randint) from a module (random). <br><br>This method provides direct access to the function, making it easy to use without additional module prefixing.",
     link: "https://www.w3schools.com/python/module_random.asp",
   },
   {
@@ -1652,10 +1652,11 @@ export const questions = [
       { text: "(a + b ) * ( c - d )", correct: false },
       { text: "A + ( ( b * c ) - d )", correct: false },
       { text: "(a + (b * c ) ) - d", correct: true },
+      { text: "((a + b ) * c ) - d", correct: false },
       { text: "None of the above", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>This question is about operator precedence: <br><br>The multiplication operator has the highest precedence and is therefore executed first. That leaves the addition operator and the subtraction  operator. They both are from the same group and therefore have the same precedence. That group has a left-to-right associativity. <br><br>The addition operator is on the left and is therefore  executed next. And the last one to be executed is the subtraction operator.",
+      "Explanation:<br><br>This question is about operator precedence: <br><br>The multiplication operator has the highest precedence and is therefore executed first. That leaves the addition operator and the subtraction  operator. They both are from the same group and therefore have the same precedence. That group has a left-to-right associativity. <br><br>The addition operator is on the left and is therefore  executed next. <br><br>And the last one to be executed is the subtraction operator.",
   },
   {
     question: "What is the output of the following code snippet?",
@@ -1708,7 +1709,7 @@ export const questions = [
       { text: "random.shuffleList(people)", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The shuffle() function in Python is used to shuffle the elements of a list. Only usable when imported from the random module.",
+      "Explanation:<br><br>The shuffle() function in Python is used to shuffle the elements of a list. <br><br>Note: Only usable when imported from the random module.",
     link: "https://www.w3schools.com/python/ref_random_shuffle.asp",
   },
   {
@@ -1756,25 +1757,14 @@ export const questions = [
     answers: [
       { text: "17", correct: false },
       { text: "8.5", correct: false },
+      { text: "9", correct: false },
       { text: "8", correct: false },
       { text: "17.5", correct: true },
+      { text: "8.0", correct: false },
     ],
     explanation:
       "Explanation:<br><br>The operators here come from three different groups:<br><br>'Exponent' ** has the highest precedence. Followed by 'Multiplication, Division, Floor division, Modulus'.<br><br>'Addition, Subtraction' has the lowest precedence.<br><br>Therefore the order of operations here is:  **  →  /  →  //  →  +<br><br>x = 1/2 + 3 // 3 + 4**2 = 0.5 + 1 + 16 = 17.5",
     link: "https://www.w3schools.com/python/python_operators.asp",
-  },
-  {
-    question:
-      "The part of your code where you think an exception may occur should be placed inside:",
-    answers: [
-      { text: "the try: block", correct: true },
-      { text: "the except: block", correct: false },
-      { text: "the exception: block", correct: false },
-      { text: "None of the above.", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>The try: block is used to check if an exception is raised. The except: block is used to handle the exception.",
-    link: "https://www.w3schools.com/python/python_try_except.asp",
   },
   {
     question: "What is the expected output of the following code?",
@@ -1797,10 +1787,10 @@ export const questions = [
     answers: [
       { text: "3 1", correct: true },
       { text: "1 3", correct: false },
+      { text: "1" + "\n" + "3", correct: false },
       { text: "1 1", correct: false },
       { text: "3 3", correct: false },
-      { text: "3" + "\n" + "1", correct: false },
-      { text: "1" + "\n" + "3", correct: false },
+      { text: "3" + "\n" + "1", correct: false },      
       { text: "The code is erroneous.", correct: false },
     ],
     explanation:
@@ -1816,7 +1806,7 @@ export const questions = [
       { text: "will stop the program if x is not equal to 0", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The statement assert x == 0 checks if x is equal to 0. If it's not, it raises an AssertionError, helping to catch bugs or unexpected states during development.",
+      "Explanation:<br><br>In Python, assert is a statement used for debugging purposes. <br><br>It tests a condition and triggers an error if the condition evaluates to False. The primary use of assert is to catch programming errors by checking assumptions made by the programmer.<br><br>In this case, assert x == 0 checks if x is equal to 0. <br><br>If it's not, it raises an AssertionError.",
     link: "https://www.w3schools.com/python/ref_keyword_assert.asp",
   },
   {
@@ -1843,7 +1833,7 @@ export const questions = [
       { text: "None", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The sys.exit() function in Python is used to terminate a program immediately. It raises the SystemExit exception, which can be caught if needed, but by default, it stops the program execution.",
+      "Explanation:<br><br>The sys.exit() function in Python is used to terminate a program immediately. <br><br>It raises the SystemExit exception, which can be caught if needed, but by default, it stops the program execution.",
     link: "https://docs.python.org/2/library/exceptions.html#exceptions.SystemExit",
   },
   {
@@ -1855,21 +1845,8 @@ export const questions = [
       { text: "None of the above.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>A code point is a unique numeric value that corresponds to a specific character in a character encoding standard, such as Unicode. It allows each character to be uniquely identified and represented in digital systems.",
+      "Explanation:<br><br>A code point is a unique numeric value that corresponds to a specific character in a character encoding standard, such as Unicode. <br><br>It allows each character to be uniquely identified and represented in digital systems.",
     link: "https://en.wikipedia.org/wiki/Code_point",
-  },
-  {
-    question:
-      "The part of your code where the handling of an exception takes place should be placed inside:",
-    answers: [
-      { text: "the except: block", correct: true },
-      { text: "the exception: block", correct: false },
-      { text: "the try: block", correct: false },
-      { text: "None of the above", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>In Python, the except: block is used to handle exceptions that occur within the corresponding try: block. When an exception occurs, control transfers to the except: block to execute the error-handling code.",
-    link: "https://www.w3schools.com/python/python_try_except.asp",
   },
   {
     question:
@@ -1920,7 +1897,7 @@ export const questions = [
       { text: "eight", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The code will print 4 asterisks to the monitor. The << operator is a bitwise left shift operator, which effectively doubles the value of x on each iteration of the loop.<br><br>In each iteration, x is left-shifted by 1, effectively doubling its value (1 << 1 becomes 2, 2 << 1 becomes 4, etc.).",
+      "Explanation:<br><br>The code will print 4 asterisks (*) to the monitor. <br><br>The << operator is a bitwise left shift operator, which effectively doubles the value of x on each iteration of the loop.<br><br>In each iteration, x is left-shifted by 1, effectively doubling its value (1 << 1 becomes 2, 2 << 1 becomes 4, etc.).",
   },
   {
     question: "The += operator, when applied to strings, performs:",
@@ -1931,7 +1908,7 @@ export const questions = [
       { text: "None of the above.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The += operator, when applied to strings, concatenates the right operand to the left operand.",
+      `Explanation:<br><br>The += operator, when applied to strings, concatenates the right operand to the left operand.<br><br>Example:<br><br>s = "Hello"<br>s += " World"<br>print(s)  # Output: "Hello World"`,
     link: "https://www.w3schools.com/python/gloss_python_string_concatenation.asp",
   },
   {
@@ -1953,7 +1930,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>random.shuffle() is a function that shuffles the elements of the list in-place.",
+      "Explanation:<br><br>The random.shuffle() function in Python randomly rearranges the elements of a list in place. <br><br>This means it modifies the original list and does not return a new list.",
     link: "https://www.w3schools.com/python/ref_random_shuffle.asp",
   },
   {
@@ -1981,7 +1958,7 @@ export const questions = [
       { text: "None of the above.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>In Python, you can use the issubclass() function to check if a class is a subclass of another class. It returns True if the first argument is a subclass of the second argument, otherwise, it returns False.",
+      "Explanation:<br><br>In Python, you can use the issubclass(first argument, second argument) function to check if a class is a subclass of another class. <br><br>It returns True if the first argument is a subclass of the second argument, otherwise, it returns False.",
     link: "https://www.w3schools.com/python/ref_func_issubclass.asp",
   },
   {
@@ -2005,7 +1982,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>In Python, a try statement can have only one finally clause. The finally clause is used to execute cleanup code regardless of whether an exception occurs, and there can only be one such block associated with a try statement.",
+      "Explanation:<br><br>In Python, a try statement can have only one finally clause. <br><br>The finally clause is used to execute cleanup code regardless of whether an exception occurs, and there can only be one such block associated with a try statement.",
     link: "https://www.w3schools.com/python/gloss_python_try_except.asp",
   },
   {
@@ -2159,7 +2136,7 @@ export const questions = [
       { text: "open('data.txt' , 'wb')", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>The 'wb' mode opens the file for binary writing and truncates the file if it already exists.",
+      "Explanation:<br><br>The 'wb' is used to open a file named data.txt in write-binary mode. This means that if the file does not already exist, it will be created. <br><br>The 'w' indicates that the file is being opened for writing, which will erase any existing contents if the file already exists. The 'b' specifies that the file is being opened in binary format, making it suitable for writing binary data such as images or other non-text files.<br><br>If the file data.txt already exists and you open it in this mode, its contents will be truncated, meaning they will be erased. <br><br>As a result, you will start with an empty file, and any new data written will completely overwrite what was previously in the file.",
     link: "https://www.w3schools.com/python/python_file_open.asp",
   },
   {
