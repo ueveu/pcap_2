@@ -2306,6 +2306,7 @@ export const questions = [
     question: "How many stars (*) does the following snippet print?",
     image: "images/image79.png",
     answers: [
+      { text: "4", correct: false },
       { text: "3", correct: true },
       { text: "2", correct: false },
       { text: "1", correct: false },
