@@ -2219,9 +2219,10 @@ export const questions = [
       { text: "raised", correct: true },
       { text: "dropped", correct: false },
       { text: "picked", correct: false },
+      { text: "shot", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>In Python, exceptions can be handled using a try statement. The critical operation which can raise an exception is placed inside the try clause. The code that handles the exceptions is written in the except clause.",
+      `Explanation:<br><br>In Python, when an exception occurs, we say that it has been "raised."<br><br>For example, when an error happens, Python raises an exception, which can then be caught and handled using a try-except block.`,
     link: "https://www.programiz.com/python-programming/exception-handling",
   },
   {
@@ -2368,7 +2369,7 @@ export const questions = [
       { text: "The code is erroneous", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>In the for loop 'for item in dict:', the term ''item'' refers to the keys of the dictionary. Since dictionaries in Python are collections of key-value pairs, iterating over them by default gives you the keys. <br><br>Thus, in this case, 'a', 'b', and 'c' are the ''items'' being printed. These keys are the elements enclosed in single quotes in the dictionary, distinguishing them from the associated values (1, 2, and 3) which are not printed in this loop.",
+      `Explanation:<br><br>In the for loop 'for item in dict:', the term "item" refers to the keys of the dictionary. <br><br>Since dictionaries in Python are collections of key-value pairs, iterating over them by default gives you the keys. <br><br>Thus, in this case, 'a', 'b', and 'c' are the "items" being printed. <br><br>These keys are the elements enclosed in single quotes in the dictionary, distinguishing them from the associated values (1, 2, and 3) which are not printed in this loop.`,
     link: "https://www.w3schools.com/python/python_dictionaries.asp",
   },
   {
@@ -2434,7 +2435,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>lst2 = lst1.split(',') splits the string lst1 at each comma (,). After splitting, lst2 becomes ['12', '34']. This creates a list where each element is a substring from lst1 separated by commas. <br><br>len(lst1) gives the length of the string lst1, which is 5 (counting each character including the comma). <br><br>len(lst2) gives the length of the list lst2, which is 2 (since it contains two elements after splitting). <br><br>So in this case, 5 < 2 evaluates to False.",
+      "Explanation:<br><br>lst2 = lst1.split(',') splits the string lst1 at each comma (,). <br><br>After splitting, lst2 becomes ['12', '34']. This creates a list where each element is a substring from lst1 separated by commas. <br><br>len(lst1) gives the length of the string lst1, which is 5 (counting each character including the comma). <br><br>len(lst2) gives the length of the list lst2, which is 2 (since it contains two elements after splitting). <br><br>So in this case, 5 < 2 evaluates to False.",
     link: "https://www.w3schools.com/python/ref_string_split.asp",
   },
   {
@@ -2481,7 +2482,7 @@ export const questions = [
       { text: "runtime error on line 5", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The given code snippet starts by assigning the value `1` to the variable `x`. It then defines a function named `a` that takes a single argument `x` and returns twice its value. After defining the function, the code calculates `x = 2 + a(x)`. <br><br>At this point, the function `a` is called with the current value of `x`, which is `1`. The function returns `2` (since `2 * 1 = 2`), and this result is added to `2`, giving a new value of `4` for `x`. <br><br>Next, the code executes `print(a(x))`. Here, the function `a` is called again, but this time with the updated value of `x`, which is `4`. The function computes `2 * 4`, which results in `8`. This value, `8`, is then printed to the console.<br><br> Thus, the expected output of the code is `8`.",
+      "Explanation:<br><br>The given code snippet starts by assigning the value `1` to the variable `x`. It then defines a function named `a` that takes a single argument `x` and returns twice its value. <br><br>After defining the function, the code calculates `x = 2 + a(x)`. <br><br>At this point, the function `a` is called with the current value of `x`, which is `1`. The function returns `2` (since `2 * 1 = 2`), and this result is added to `2`, giving a new value of `4` for `x`. <br><br>Next, the code executes `print(a(x))`. Here, the function `a` is called again, but this time with the updated value of `x`, which is `4`. <br><br>The function computes `2 * 4`, which results in `8`. This value, `8`, is then printed to the console.<br><br> Thus, the expected output of the code is `8`.",
     link: "https://www.w3schools.com/python/python_functions.asp",
   },
   {
@@ -2513,7 +2514,7 @@ export const questions = [
       { text: "It will print an empty line", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>In this code, the variable s is defined globally as the string 'SPAM'. The function f(x) takes one argument, x, but the value of x is not used inside the function. Instead, the function uses the global variable s and concatenates it with the string 'MAPS', returning the result.<br><br>When print(f(s)) is called, the function f(s) executes, and it concatenates the global variable s (which is 'SPAM') with 'MAPS'. This results in the string 'SPAMMAPS', which is then printed by the print() statement.<br><br>The important thing to note is that even though the function accepts an argument, it does not use it and instead operates on the global variable s. Therefore, the output is 'SPAMMAPS'.",
+      "Explanation:<br><br>In this code, the variable s is defined globally as the string 'SPAM'. The function f(x) takes one argument, x, but the value of x is not used inside the function. Instead, the function uses the global variable s and concatenates it with the string 'MAPS', returning the result.<br><br>When print(f(s)) is called, the function f(s) executes, and it concatenates the global variable s (which is 'SPAM') with 'MAPS'. <br><br>This results in the string 'SPAMMAPS', which is then printed by the print() statement.<br><br>The important thing to note is that even though the function accepts an argument, it does not use it and instead operates on the global variable s. Therefore, the output is 'SPAMMAPS'.",
     link: "https://www.w3schools.com/python/python_functions.asp",
   },
   {
@@ -2588,7 +2589,7 @@ export const questions = [
       { text: "It will print an empty line.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The function I() is defined to work with the string 'abcdef'. Within this function, the slice notation s[::2] is applied to the string s, creating a new string consisting of every second character from the original string. This slicing operation results in the string 'ace'. The for loop inside the function then iterates over each character in this sliced string and yields each character one by one. <br><br>Outside the function, a for loop is used to iterate over the characters produced by the generator function I(). For each character yielded by the generator, the print function outputs the character. The end='' parameter in the print function ensures that the characters are printed consecutively without any spaces or newlines between them. <br><br>During the execution, the generator function I() yields the characters 'a', 'c', and 'e' from the string 'ace'. As the loop iterates over these yielded characters, it prints them sequentially. <br><br>The combined effect is that the code prints the characters 'a', 'c', and 'e' in a continuous manner. Thus, the final output of the code is the string 'ace'.",
+      "Explanation:<br><br>The function I() is defined to work with the string 'abcdef'. Within this function, the slice notation s[::2] is applied to the string s, creating a new string consisting of every second character from the original string. <br><br>This slicing operation results in the string 'ace'. The for loop inside the function then iterates over each character in this sliced string and yields each character one by one. <br><br>Outside the function, a for loop is used to iterate over the characters produced by the generator function I(). For each character yielded by the generator, the print function outputs the character. <br><br>The end='' parameter in the print function ensures that the characters are printed consecutively without any spaces or newlines between them. <br><br>During the execution, the generator function I() yields the characters 'a', 'c', and 'e' from the string 'ace'. As the loop iterates over these yielded characters, it prints them sequentially. <br><br>The combined effect is that the code prints the characters 'a', 'c', and 'e' in a continuous manner. Thus, the final output of the code is the string 'ace'.",
     link: "https://wiki.python.org/moin/Generators",
   },
   {
@@ -2692,7 +2693,7 @@ export const questions = [
       { text: "__modname__", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The name of the predefined variable is __name__.",
+      `Explanation:<br><br>In Python, the predefined variable __name__ stores the name of the current module. <br><br>If a script is being run directly, the value of __name__ will be "__main__". <br><br>If the script is being imported as a module in another script, __name__ will be set to the module's name.`,
     link: "https://docs.python.org/3/tutorial/modules.html",
   },
   {
@@ -2761,7 +2762,7 @@ export const questions = [
       { text: "readlines( )", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The readline() method reads the next line from the file and returns it as a string. It is similar to the read() method, except it reads only one line at a time.",
+      "Explanation:<br><br>The readline() method reads the next line from the file and returns it as a string. <br><br>It is similar to the read() method, except it reads only one line at a time.",
     link: "https://www.w3schools.com/python/ref_file_readline.asp",
   },
   {
@@ -2779,7 +2780,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>A built-in function is a function which comes with Python, and is an integral part of Python. It is one of the fundamental building blocks of any programming language.",
+      "Explanation:<br><br>A built-in function is a function which comes with Python, and is an integral part of Python. <br><br>It is one of the fundamental building blocks of any programming language.",
     link: "https://www.geeksforgeeks.org/python-built-in-functions/",
   },
   {
@@ -2792,7 +2793,7 @@ export const questions = [
       { text: "os.path.isFile( )", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The os.path.isfile() function checks if the path is an existing regular file. It returns True if it exists and False if it does not.",
+      "Explanation:<br><br>The os.path.isfile() function in Python is used to check whether a given path refers to an existing regular file. <br><br>It returns True if the path points to a file, and False otherwise.",
     link: "https://www.geeksforgeeks.org/python-os-path-isfile-method/",
   },
   {
@@ -2878,13 +2879,15 @@ export const questions = [
     question:
       "Which of the follwing returns a random floating number between 0 and 1?",
     answers: [
+      { text: "math.random(1)", correct: false },
       { text: "math.random()", correct: false },
       { text: "math.random(1.0)", correct: false },
       { text: "random.random()", correct: true },
       { text: "random.random(1.0)", correct: false },
+      { text: "random.random(1)", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>random.random() in Python generates a random floating-point number between 0.0 (inclusive) and 1.0 (exclusive). It returns a value in the range [0.0, 1.0)",
+      "Explanation:<br><br>random.random() generates a random floating-point number between 0.0 (inclusive) and 1.0 (exclusive). <br><br>So it returns a value in the range [0.0, 1.0)",
     link: "https://www.w3schools.com/python/ref_random_random.asp",
   },
   {
@@ -2923,7 +2926,7 @@ export const questions = [
       { text: "The code is erroneous and will not execute", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The output is 3. The foo(0) call triggers a ZeroDivisionError, an ArithmeticError subclass. This increments m by 1 and re-raises the exception. The outer try-except block catches the ArithmeticError, adding 2 more to m, resulting in a final value of 3.",
+      "Explanation:<br><br>The output is 3. The foo(0) call triggers a ZeroDivisionError, an ArithmeticError subclass. This increments m by 1 and re-raises the exception. <br><br>The outer try-except block catches the ArithmeticError, adding 2 more to m, resulting in a final value of 3.",
     link: "https://docs.python.org/3/library/exceptions.html#base-classes",
   },
   {
@@ -3281,9 +3284,10 @@ export const questions = [
       { text: "'in' in 'Hamburg'", correct: false },
       { text: "'in not' in 'not'", correct: false },
       { text: "'m'.upper() in 'Marvin'", correct: true },
+      { text: "'B'.lower() in 'Benjamin'", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>'in' in 'in' - This is valid. The expression checks if the substring 'in' is present in the string 'in'. Since both are the same, the result is True.<br><br>'in' in 'Hamburg' - This is not valid. The expression checks if the substring 'in' is present in the string 'Hamburg'. Since 'in' is not present in 'Hamburg', the result is False.<br><br>'in not' in 'not' - This is not valid. The expression checks if the substring 'in not' is present in the string 'not'. Since 'in not' is longer and doesn't exist in 'not', the result is False.<br><br>'m'.upper() in 'Marvin' - This is valid. The expression converts 'm' to its uppercase form 'M' and checks if 'M' is present in the string 'Marvin'. Since 'M' is indeed in 'Marvin', the result is True.",
+      "Explanation:<br><br>'in' in 'in' - This is valid. The expression checks if the substring 'in' is present in the string 'in'. Since both are the same, the result is True.<br><br>'in' in 'Hamburg' - This is not valid. The expression checks if the substring 'in' is present in the string 'Hamburg'. Since 'in' is not present in 'Hamburg', the result is False.<br><br>'in not' in 'not' - This is not valid. The expression checks if the substring 'in not' is present in the string 'not'. Since 'in not' is longer and doesn't exist in 'not', the result is False.<br><br>'m'.upper() in 'Marvin' - This is valid. The expression converts 'm' to its uppercase form 'M' and checks if 'M' is present in the string 'Marvin'. Since 'M' is indeed in 'Marvin', the result is True.<br><br>'B'.lower() in 'Benjamin' - This is not valid. The expression converts 'B' to its lowercase form 'b' and checks if 'b' is present in the string 'Benjamin'. Since 'b' is not in 'Benjamin', the result is False.",
     link: "https://docs.python.org/3/reference/expressions.html#membership-test-operations",
   },
   {
@@ -3301,7 +3305,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>ASCII (American Standard Code for Information Interchange) is a character encoding standard that uses 7 bits to represent 128 characters. Unicode is a more extensive encoding system that encompasses ASCII as its first 128 characters, allowing for the representation of a much wider array of characters and symbols from various languages and scripts.<br><br>In Unicode, a code point is a unique number assigned to each character in the Unicode standard. For example, the code point for the letter 'A' is U+0041.",
+      "Explanation:<br><br>ASCII (American Standard Code for Information Interchange) is a character encoding standard that uses 7 bits to represent 128 characters. <br><br>Unicode is a more extensive encoding system that encompasses ASCII as its first 128 characters, allowing for the representation of a much wider array of characters and symbols from various languages and scripts.<br><br>In Unicode, a code point is a unique number assigned to each character in the Unicode standard. For example, the code point for the letter 'A' is U+0041.",
     link: "https://en.wikipedia.org/wiki/ASCII",
   },
   {
@@ -3327,7 +3331,7 @@ export const questions = [
       { text: "They can have zero arguments", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>Lambda functions in Python are indeed known as anonymous functions because they are defined without a name. They are often used for short, throwaway functions where defining a full function with a name would be unnecessarily verbose.<br><br>A lambda function in Python can have any number of arguments, including zero arguments. Lambda function with no arguments performs a simple operation without needing any inputs. However, they cannot have zero parameters.",
+      "Explanation:<br><br>Lambda functions in Python are indeed known as anonymous functions because they are defined without a name. <br><br>They are often used for short, throwaway functions where defining a full function with a name would be unnecessarily verbose.<br><br>A lambda function in Python can have any number of arguments, including zero arguments. <br><br>Lambda function with no arguments performs a simple operation without needing any inputs. <br><br>However, they cannot have zero parameters.",
     link: "https://docs.python.org/3/reference/compound_stmts.html#lambda",
   },
   {
@@ -3366,7 +3370,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The map() function can accept more than two arguments. The first argument is a function, and subsequent arguments are iterables. If there are multiple iterables, map() will apply the function using corresponding elements from each iterable.<br><br>The second argument (and any subsequent arguments) to map() can be lists (or other iterables). These iterables are used as inputs to the function provided as the first argument.",
+      "Explanation:<br><br>The map() function can accept more than two arguments. <br><br>The first argument is a function, and subsequent arguments are iterables. If there are multiple iterables, map() will apply the function using corresponding elements from each iterable.<br><br>The second argument (and any subsequent arguments) to map() can be lists (or other iterables). These iterables are used as inputs to the function provided as the first argument.",
     link: "https://docs.python.org/3/library/functions.html#map",
   },
   {
@@ -3432,7 +3436,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>Lambda functions can have any number of arguments but only one expression. The expression is evaluated and returned. Lambda functions can be used wherever function objects are required.",
+      "Explanation:<br><br>A lambda function in Python is designed to evaluate a single expression. It cannot contain multiple expressions or statements within its body. <br><br>Lambda functions are meant to be concise and are typically used for simple operations. <br><br>It can accept any number of arguments, including zero, and there is no restriction on how many arguments it can take. <br><br>The only limitation is that the function body must contain a single expression, regardless of the number of arguments.",
     link: "https://www.programiz.com/python-programming/anonymous-function#how",
   },
   {
@@ -3457,7 +3461,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>In OOP, a class is indeed like a blueprint or template that defines the properties (attributes) and behaviors (methods) that objects created from the class will have. Objects are instances of classes.<br><br>A class can be defined without creating any objects from it. However, an object cannot exist without a class because the class defines the structure and behavior of the object.",
+      "Explanation:<br><br>A class in OOP is essentially a template or blueprint that defines the properties (attributes) and behaviors (methods) of objects. Objects are instances of a class, and each object can have its own data but share the structure defined by the class.<br><br>A class can exist independently without any objects being instantiated from it. However, objects are always created from a class, meaning an object cannot exist without the class that defines it.<br><br>The relationship between a superclass and its subclass is not called fraternity. It is referred to as inheritance.<br><br>Polymorphism in OOP does not refer to having many classes with the same name. Instead, polymorphism allows objects of different classes to be treated as objects of a common superclass, especially when they share the same method name but have different implementations.",
     link: "https://www.programiz.com/python-programming/object-oriented-programming",
   },
   {
@@ -3493,7 +3497,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The filter() function returns an iterator that can be used to iterate over the filtered results. In Python 3, it doesn't return a list directly but an iterator object that yields items one by one.<br><br>The filter() function takes two arguments: a function and an iterable. The function is applied to each item in the iterable, and only items for which the function returns True are included in the iterator returned by filter().",
+      "Explanation:<br><br>The filter() function returns an iterator that filters elements from an iterable based on a condition defined by the function passed to it.<br><br>The correct syntax for the filter() function is filter(function, iterable), where the function is applied to each element of the iterable, and only the elements that return True are included in the result.",
     link: "https://www.programiz.com/python-programming/methods/built-in/filter",
   },
   {
@@ -6904,25 +6908,31 @@ export const questions = [
     ],    
     explanation: `Explanation:<br><br>The code initializes the dictionary 'my_dict' with three key-value pairs. <br><br>The 'try' block attempts to access my_dict['d'], but since the key 'd' doesn't exist, a 'KeyError' is raised. <br><br>The 'KeyError' is caught by its corresponding 'except' block, so "C" is printed. <br><br>The other 'except' blocks are skipped because the error has already been handled.`,
     link: "https://docs.python.org/3/tutorial/errors.html",
-  }, /*
+  }, 
   {
-    question: "",
+    question: "What is the output of the following code?",
+    image: "images/image264.png",
     answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
+      { text: "Method in C" + "\n" + "Method in D" + "\n" + "Method in A" + "\n" + "Method in B", correct: false },
+      { text: "Method in D" + "\n" + "Method in C" + "\n" + "Method in B" + "\n" + "Method in A", correct: false },
+      { text: "Method in D" + "\n" + "Method in B" + "\n" + "Method in C" + "\n" + "Method in A", correct: true },
+      { text: "The code is erroneous.", correct: false },
     ],    
+    explanation: `Explanation:<br><br>When the code is executed and d.method() is called, Python follows the Method Resolution Order (MRO) to determine the sequence in which the methods are invoked. <br><br>The MRO for class D is: D -> B -> C -> A -> object. <br><br>This means that Python will first check class D, then B, then C, and finally A to resolve method calls.<br><br>The method() in class D is executed first because d is an instance of D. This prints "Method in D". Then, super().method() is called, which refers to the next class in the MRO, which is class B.<br><br>The method() in class B is executed next. It prints "Method in B", and again super().method() is called. This time, super() refers to the next class in the MRO, which is class C.<br><br>The method() in class C is executed. It prints "Method in C", and then super().method() is called once more. Now, super() refers to class A, which is next in the MRO.<br><br>Finally, the method() in class A is executed, printing "Method in A".<br><br>Since A does not call super().method(), the method chain ends there.`,
+    link: "https://docs.python.org/3/tutorial/classes.html",
   },
   {
-    question: "",
+    question: "What is the output of the following code?",
+    image: "images/image265.png",
     answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
+      { text: "Method in C" + "\n" + "Method in D", correct: false },
+      { text: "Method in D" + "\n" + "Method in B", correct: true },
+      { text: "Method in B" + "\n" + "Method in C", correct: false },
+      { text: "The code is erroneous.", correct: false },
+    ],   
+    explanation: `Explanation:<br><br>When the code is executed and d.method() is called, Python will again use the Method Resolution Order (MRO) to determine the order in which the methods are invoked. The MRO for class D can be obtained using D.__mro__, and it will be D -> B -> C -> A -> object.<br><br>The method() in class D is called first because d is an instance of D. This prints "Method in D". After this, super().method() is invoked, which refers to the next class in the MRO, which is class B.<br><br>The method() in class B is executed next. It prints "Method in B". Since there is no call to super().method() in class B, the method execution ends here.<br><br>The method() in class C is not executed because the MRO has already resolved to class B after D. Therefore, the method() in class C, which would have called super().method() to invoke A's method, is skipped in this case.<br><br>Finally, the method() in class A is also not called because the call to super() in class D went directly to class B`,
+    link: "https://docs.python.org/3/tutorial/classes.html",
+  },/*
   {
     question: "",
     answers: [
