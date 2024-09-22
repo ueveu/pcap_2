@@ -2878,7 +2878,7 @@ export const questions = [
   },
   {
     question:
-      "Which of the follwing returns a random floating number between 0 and 1?",
+      "Which of the following returns a random floating number between 0 and 1?",
     answers: [
       { text: "math.random(1)", correct: false },
       { text: "math.random()", correct: false },
