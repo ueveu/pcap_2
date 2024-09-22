@@ -5359,7 +5359,7 @@ export const questions = [
         correct: true,
       },
       {
-        text: "instd, outstd. errstd are the names of pre-opened streams",
+        text: "'instd', 'outstd' and 'errstd' are the names of pre-opened streams",
         correct: false,
       },
     ],
@@ -6857,16 +6857,16 @@ export const questions = [
     image: "images/image261.png",
     answers: [
       {
-        text: "Ach du grüne Neune" + "\n" + "Ich bin Python-Prof!",
+        text: "Ach du grüne Neune" + "\n" + "Ich bin Python-Profi!",
         correct: false,
       },
       { text: "Holla die Waldfee", correct: false },
       {
-        text: "Ich versteh' nur Bahnhof" + "\n" + "Ich bin Python-Prof!",
+        text: "Ich versteh' nur Bahnhof" + "\n" + "Ich bin Python-Profi!",
         correct: false,
       },
       {
-        text: "Aber else muss klappen" + "\n" + "Ich bin Python-Prof!",
+        text: "Aber else muss klappen" + "\n" + "Ich bin Python-Profi!",
         correct: false,
       },
       {
@@ -6874,7 +6874,7 @@ export const questions = [
         correct: false,
       },
       {
-        text: "Holla die Waldfee" + "\n" + "Ich bin Python-Prof!",
+        text: "Holla die Waldfee" + "\n" + "Ich bin Python-Profi!",
         correct: true,
       },
       { text: "Ich bin Python-Profi!", correct: false },
@@ -6932,34 +6932,42 @@ export const questions = [
     ],   
     explanation: `Explanation:<br><br>When the code is executed and d.method() is called, Python will again use the Method Resolution Order (MRO) to determine the order in which the methods are invoked. The MRO for class D can be obtained using D.__mro__, and it will be D -> B -> C -> A -> object.<br><br>The method() in class D is called first because d is an instance of D. This prints "Method in D". After this, super().method() is invoked, which refers to the next class in the MRO, which is class B.<br><br>The method() in class B is executed next. It prints "Method in B". Since there is no call to super().method() in class B, the method execution ends here.<br><br>The method() in class C is not executed because the MRO has already resolved to class B after D. Therefore, the method() in class C, which would have called super().method() to invoke A's method, is skipped in this case.<br><br>Finally, the method() in class A is also not called because the call to super() in class D went directly to class B`,
     link: "https://docs.python.org/3/tutorial/classes.html",
+  },
+  {
+    question: "Assuming that the following piece of code has been executed successfully, which of the expressions evaluate to True? <br><br>(Choose two)",
+    image: "images/image266.png",
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
+      { text: "D", correct: true },
+    ],    
+    explanation: "Explanation:<br><br>A) checks if obj_b is an instance of class C. Since obj_b is an instance of B, this will return False.<br><br>B) checks if the private variable in class C, __VarA, equals 2. Since C has its own private variable __VarA, which is actually 3 (mangled to _C__VarA), this will evaluate to False.<br><br>C) checks if class B has an attribute named get. Since B indeed defines a method called get, this will return True.<br><br>D) calls the get() method on obj_c, which is an instance of C. The get() method in class C does not directly reference __VarA from class C, but instead, it will look for __VarA in the method resolution order. The get() method from B will be executed, and it will return the value of _B__VarA, which is 2. Thus, this statement will evaluate to True.",
+    link: "https://www.w3schools.com/python/ref_func_isinstance.asp",
+  },
+  {
+    question: "Assuming that the following code has been executed successfully, select the expressions which evaluate to True? <br><br>(Choose two)",
+    image: "images/image267.png",
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
+    ],    
+    explanation: "Explanation:<br><br>A) checks if a and b are the same object. Since a and b are both different instances of g() returned from different calls to f(), this statement is False.<br><br>B) The b() function will return the current value of var, which is 3. Since 3 > 2 is True, this statement is True.<br><br>C) The a() function will return the current value of var, which has been incremented to 3. Thus, 3 == 2 is False.<br><br>D) The variable a is assigned the function g() returned by f(). Since g() is a valid function object, a is not None. Therefore, this statement is True.",
+    link: "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+  },
+  {
+    question: "What is true about Object-Oriented Programming in Python? <br><br>(Choose two)",
+    answers: [
+      { text: "A. encapsulation allows you to protect some data from uncontrolled access", correct: true },
+      { text: "B. the arrows on a class diagram are always directed from a superclass towards its subclass", correct: false },
+      { text: "C. inheritance is the relation between a superclass and a subclass", correct: true },
+      { text: "D. an object is a recipe for a class", correct: false },
+    ],    
+    explanation: `Explanation:<br><br>A) is true. Encapsulation is a fundamental principle of OOP that restricts access to certain details of an object, thereby protecting the internal state of the object from outside interference and misuse. This is typically achieved through private or protected attributes and methods.<br><br>B) is false. In class diagrams, the arrows indicating inheritance actually point from the subclass towards the superclass. This represents the relationship where the subclass inherits attributes and methods from the superclass.<br><br>C) is true. Inheritance is a key feature of OOP that establishes a relationship between a superclass (parent class) and a subclass (child class). The subclass inherits properties and behaviors from the superclass, allowing for code reuse and a hierarchical class structure.<br><br>D) is false. An object is an instance of a class, while a class itself can be thought of as the "recipe" or blueprint that defines the properties and behaviors of the objects. Objects are created based on the class definition.`,
+    link: "https://www.programiz.com/python-programming/object-oriented-programming",
   },/*
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
   {
     question: "",
     answers: [
