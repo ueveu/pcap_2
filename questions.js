@@ -1995,7 +1995,7 @@ export const questions = [
       { text: "The snippet will enter an infinite loop.", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>In this code, a while loop is set to run as long as the condition i < i + 2 is true. Since this condition is always true for any finite value of i (because i will always be less than i + 2), the loop will run indefinitely. Inside the loop, the variable i is incremented by 1 each time, and an asterisk ('*') is printed. As a result, the code creates an infinite loop that continuously prints '*', and the else block is never executed because the loop does not terminate.",
+      "Explanation:<br><br>In this code, a while loop is set to run as long as the condition i < i + 2 is true. <br><br>Since this condition is always true for any finite value of i (because i will always be less than i + 2), the loop will run indefinitely. <br><br>Inside the loop, the variable i is incremented by 1 each time, and an asterisk ('*') is printed. <br><br>As a result, the code creates an infinite loop that continuously prints '*', and the else block is never executed because the loop does not terminate.",
     link: "https://www.w3schools.com/python/python_while_loops.asp",
   },
   {
