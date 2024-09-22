@@ -6158,22 +6158,6 @@ export const questions = [
   },
   {
     question: "What is the output of the following code in Python?",
-    image: "images/image221.png",
-    answers: [
-      { text: "54321 will be printed on the standard output", correct: false },
-      {
-        text: "1 2 3 4 5 will be printed on the standard output",
-        correct: false,
-      },
-      { text: "12345 will be printed on the standard output", correct: true },
-      { text: "None of these", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>First, the sys module is imported to access system-specific functionality, including sys.stdout for writing output. The list numbers contains the integers [1, 2, 3, 4, 5]. The for loop iterates over each number in this list. <br><br>Inside the loop, each number is converted to a string using str(n) and then written to the standard output with sys.stdout.write().<br><br>Since sys.stdout.write() does not add any additional characters between the outputs, the numbers are printed consecutively as a single, unbroken string.",
-    link: "https://docs.python.org/3/library/sys.html#sys.stdout",
-  },
-  {
-    question: "What is the output of the following code in Python?",
     image: "images/image222.png",
     answers: [
       { text: "Fluffy white", correct: true },
