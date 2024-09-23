@@ -4029,7 +4029,7 @@ export const questions = [
     link: "https://docs.python.org/3/library/math.html",
   },
   {
-    question: "Which of the following statements are correct?",
+    question: "Which of the following statements are correct? <br><br>(Choose two)",
     answers: [
       { text: "A) True or False evaluates to True", correct: true },
       { text: "B) True + 1 evaluates to 2", correct: true },
