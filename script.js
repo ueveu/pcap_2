@@ -14,13 +14,16 @@ const incorrectSound = new Audio('audio/incorrect_answer.mp3');
 
 let currentQuestionIndex = 0; // Track current question index
 let score = 0; // Track user's score
+let incorrectCount = 0; // Track number of incorrect questions
 let timeLeft = 3900; // 65 minutes in seconds
 let timerInterval;
 let quizEnded = false;
 
-
 // Store a subset of 40 random questions
 let selectedQuestions = [];
+
+// Array to keep track of each question's state
+let questionStates = []; // Each element will be { incorrect: boolean, correctSelected: number, totalCorrect: number }
 
 // Start the quiz by resetting the question index and score, and show the first question
 function startQuiz() {
@@ -29,6 +32,7 @@ function startQuiz() {
 
   currentQuestionIndex = 0; // Reset question index
   score = 0; // Reset score
+  incorrectCount = 0; // Reset incorrect count
   timeLeft = 3900; // Reset timer
   nextButton.innerHTML = "Next"; // Update next button text
   backButton.innerHTML = "Back"; // Update back button text
