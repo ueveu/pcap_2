@@ -1,4 +1,4 @@
-# PCAP Quiz - Certified Associate Python Programmer (still in development)
+# PCAP Training - Certified Associate Python Programmer (still in development)
 
 
 
@@ -8,13 +8,13 @@
 
 ---
 
-- [Start Quiz](https://gude44.github.io/PCAP_Quiz/)
+- [Start Training](https://gude44.github.io/PCAP_Training/)
 
 
 
 # English
 
-Welcome to the PCAP Quiz project! This project is a web-based application designed to help users prepare for the Certified Associate Python Programmer (PCAP) certification (31-03) through an interactive quiz.
+Welcome to the PCAP Training project! This project is a web-based application designed to help users prepare for the Certified Associate Python Programmer (PCAP) certification (31-03) through an interactive quiz.
 
 ## Table of Contents
 
@@ -29,7 +29,7 @@ Welcome to the PCAP Quiz project! This project is a web-based application design
 
 ## Project Overview
 
-The PCAP Quiz project aims to provide a user-friendly platform for users to practice and test their knowledge in preparation for the Certified Associate Python Programmer certification. It includes a structured quiz layout, styled with CSS, and enhanced with JavaScript functionalities to offer an interactive experience.
+The PCAP Training project aims to provide a user-friendly platform for users to practice and test their knowledge in preparation for the Certified Associate Python Programmer certification. It includes a structured quiz layout, styled with CSS, and enhanced with JavaScript functionalities to offer an interactive experience.
 
 ## Features
 
@@ -40,16 +40,16 @@ The PCAP Quiz project aims to provide a user-friendly platform for users to prac
 
 ## Installation
 
-To get started with the PCAP Quiz project, follow this step:
+To get started with the PCAP Training project, follow this step:
 
 **Clone the repository:**
     ```bash
-    git clone https://github.com/gude44/PCAP_Quiz.git
+    git clone https://github.com/gude44/PCAP_Training.git
     ```
 
 ## Usage
 
-To run the project locally, open the `quiz.html` file in your preferred web browser. This will load the main page of the application, which includes the quiz interface.
+To run the project locally, open the `index.html` file in your preferred web browser. This will load the main page of the application, which includes the quiz interface.
 
 ### Running the Quiz
 
@@ -93,7 +93,7 @@ If you have any questions or feedback, feel free to reach out to the project mai
 
 # Deutsch
 
-Willkommen zum PCAP Quiz Projekt! Dieses Projekt ist eine webbasierte Anwendung, die Benutzern hilft, sich durch ein interaktives Quiz auf die Zertifizierung (31-03) zum Certified Associate Python Programmer (PCAP) vorzubereiten.
+Willkommen zum PCAP Training Projekt! Dieses Projekt ist eine webbasierte Anwendung, die Benutzern hilft, sich durch ein interaktives Quiz auf die Zertifizierung (31-03) zum Certified Associate Python Programmer (PCAP) vorzubereiten.
 
 ## Inhaltsverzeichnis
 
@@ -108,7 +108,7 @@ Willkommen zum PCAP Quiz Projekt! Dieses Projekt ist eine webbasierte Anwendung,
 
 ## Projektübersicht
 
-Das PCAP Quiz Projekt bietet eine benutzerfreundliche Plattform, auf der Benutzer ihr Wissen testen und üben können, um sich auf die Zertifizierung zum Certified Associate Python Programmer vorzubereiten. Es umfasst ein strukturiertes Quiz-Layout, das mit CSS gestaltet und mit JavaScript-Funktionalitäten verbessert wurde, um ein interaktives Erlebnis zu bieten.
+Das PCAP Training Projekt bietet eine benutzerfreundliche Plattform, auf der Benutzer ihr Wissen testen und üben können, um sich auf die Zertifizierung zum Certified Associate Python Programmer vorzubereiten. Es umfasst ein strukturiertes Quiz-Layout, das mit CSS gestaltet und mit JavaScript-Funktionalitäten verbessert wurde, um ein interaktives Erlebnis zu bieten.
 
 ## Funktionen
 
@@ -119,16 +119,16 @@ Das PCAP Quiz Projekt bietet eine benutzerfreundliche Plattform, auf der Benutze
 
 ## Installation
 
-Um mit dem PCAP Quiz Projekt zu beginnen, folgen Sie diesem Schritt:
+Um mit dem PCAP Training Projekt zu beginnen, folgen Sie diesem Schritt:
 
 **Repository klonen:**
     ```bash
-    git clone https://github.com/gude44/PCAP_Quiz.git    ```
+    git clone https://github.com/gude44/PCAP_Training.git    ```
 
 
 ## Verwendung
 
-Um das Projekt lokal auszuführen, öffnen Sie die Datei `quiz.html` in Ihrem bevorzugten Webbrowser. Dies lädt die Hauptseite der Anwendung, die die Quiz-Oberfläche enthält.
+Um das Projekt lokal auszuführen, öffnen Sie die Datei `index.html` in Ihrem bevorzugten Webbrowser. Dies lädt die Hauptseite der Anwendung, die die Quiz-Oberfläche enthält.
 
 ### Quiz starten
 
