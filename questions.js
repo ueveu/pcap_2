@@ -3764,7 +3764,7 @@ export const questions = [
       },
     ],
     explanation:
-      "Explanation:<br><br>The correct escape sequence for a new-line character in Python is \n, not /n.<br><br>ython source files can indeed be encoded in UTF-8. This allows the use of a wide range of characters and symbols in source code, including non-English characters.<br><br>ASCII (American Standard Code for Information Interchange) is a character encoding standard that includes 128 characters. Unicode is a more comprehensive character encoding standard that includes all ASCII characters and many more. Thus, ASCII is a subset of Unicode.<br><br>In ASCII, the code points for upper-case letters (A-Z) are actually less than those for lower-case letters (a-z). For example, the code point for 'A' is 65, while the code point for 'a' is 97.",
+      "Explanation:<br><br>The correct escape sequence for a new-line character in Python is (backslash)n, not /n.<br><br>ython source files can indeed be encoded in UTF-8. This allows the use of a wide range of characters and symbols in source code, including non-English characters.<br><br>ASCII (American Standard Code for Information Interchange) is a character encoding standard that includes 128 characters. Unicode is a more comprehensive character encoding standard that includes all ASCII characters and many more. Thus, ASCII is a subset of Unicode.<br><br>In ASCII, the code points for upper-case letters (A-Z) are actually less than those for lower-case letters (a-z). For example, the code point for 'A' is 65, while the code point for 'a' is 97.",
     link: "https://en.wikipedia.org/wiki/ASCII",
   },
   {
@@ -7015,16 +7015,19 @@ export const questions = [
     ],    
     explanation: "Explanation:<br><br>The function hello_there(n) recursively calculates the sum of the digits of a number. <br><br>If n is 0, the function returns 0. <br><br>Otherwise, it adds the last digit (n % 10) to the result of a recursive call on the remaining digits (n // 10).<br><br>For the input 123, the function computes 3 + 2 + 1 + 0, which equals 6.",
     link: "https://www.programiz.com/python-programming/recursive-functions",
-  },/*
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
   },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image272.png",
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
+    ],    
+    explanation: "Explanation:<br><br>The code first creates a tuple List = (1, 2, 4, 8). <br><br>It then applies a slice operation with List[1:-2], which selects elements starting from index 1 up to, but not including, the second-to-last element. This results in the tuple (2,) because only the element 2 is within the specified range. The first print(List) statement outputs (2,), reflecting the sliced tuple.<br><br>Next, the tuple List is converted into a list using List = list(List), which changes it to [2]. The second print(List) statement then outputs [2], displaying the converted list.<br><br>In summary, the code first prints (2,) and then prints [2], which corresponds to option D: (2,) and [2].",
+    link: "https://www.tutorialspoint.com/How-to-index-and-slice-a-tuple-in-Python",
+  },/*
   {
     question: "",
     answers: [
