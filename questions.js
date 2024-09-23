@@ -6952,15 +6952,6 @@ export const questions = [
     ],    
     explanation: `Explanation:<br><br>A) is true. Encapsulation is a fundamental principle of OOP that restricts access to certain details of an object, thereby protecting the internal state of the object from outside interference and misuse. This is typically achieved through private or protected attributes and methods.<br><br>B) is false. In class diagrams, the arrows indicating inheritance actually point from the subclass towards the superclass. This represents the relationship where the subclass inherits attributes and methods from the superclass.<br><br>C) is true. Inheritance is a key feature of OOP that establishes a relationship between a superclass (parent class) and a subclass (child class). The subclass inherits properties and behaviors from the superclass, allowing for code reuse and a hierarchical class structure.<br><br>D) is false. An object is an instance of a class, while a class itself can be thought of as the "recipe" or blueprint that defines the properties and behaviors of the objects. Objects are created based on the class definition.`,
     link: "https://www.programiz.com/python-programming/object-oriented-programming",
-  },/*
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
   },
   {
     question: "What is the expected behavior of the following code?",
@@ -6972,21 +6963,74 @@ export const questions = [
       { text: "it outputs 2", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The code initializes a global variable m to 0. It defines a function 'foo(n)' that asserts m is 0, then tries to return 1 / n. If n is 0, a ZeroDivisionError occurs, which is caught as an ArithmeticError. <<br><br>In the exception block, m is incremented by 1, and the exception is re-raised.<br><br>In the outer try block, 'foo(0)' is called, which raises the ArithmeticError. This is caught by the except ArithmeticError block, which increments m by 2. <br><br>Since no other exceptions are raised, and the re-raised exception is not caught by any other block, the final value of m is 2.<br><br>Therefore, when the print(m) statement is executed, it outputs 2.",
+      "Explanation:<br><br>The code initializes a global variable m to 0. It defines a function 'foo(n)' that asserts m is 0, then tries to return 1 / n. If n is 0, a ZeroDivisionError occurs, which is caught as an ArithmeticError. <<br><br>In the exception block, m is incremented by 1, and the exception is re-raised.<br><br>In the outer try block, 'foo(0)' is called, which raises the ArithmeticError. This is caught by the except ArithmeticError block, which increments m by 2. <br><br>Since no other exceptions are raised, and the re-raised exception is not caught by any other block, the final value of m is 2.<br><br>Therefore, when the print(m) statement is executed, it outputs 3.",
     link: "https://docs.python.org/3/tutorial/errors.html#handling-exceptions",
   }, 
-   {
-    question:
-      "Which of the following code snippets will expand the code, so that 100 will be printed? <br><br>(Choose two)",
-    image: "images/image722.png",
+  {
+    question: "What is the expected output of the following snippet?",
+    image: "images/image268.png",
     answers: [
-      { text: "A", correct: false },
-      { text: "B", correct: true },
-      { text: "C", correct: true },
-      { text: "D", correct: false },
-    ],
-    explanation:
-      "Explanation:<br><br>Snippet A will add 100 to res for each name in the tuple that is present in data. If only one name is in data, res will be 100. If two or more names are in data, res will be greater than 100.<br><br>Snippet B will add 100 to res for each name in the tuple that is not present in data. To get a total of 100, exactly one name must be missing from data.<br><br>Snippet C will add 50 to res for each name in the tuple that is present in data. To get a total of 100, exactly two names must be in data.<br><br>Snippet D will add 50 to res for each name in the tuple that is not present in data. To get a total of 100, exactly two names must be missing from data.",
-    link: "https://docs.python.org/3/tutorial/controlflow.html#list-comprehensions",
-  }, */
+      { text: "abc", correct: false },
+      { text: "ABC", correct: false },
+      { text: "123", correct: false },
+      { text: "The code will cause a runtime exception", correct: true },
+    ],    
+    explanation: "Explanation:<br><br>Line 2 will raise a TypeError. The len(s) returns an integer (the length of the string), and you cannot directly iterate over an integer in a for loop.<br><br>Strings in Python are immutable, which means you cannot modify individual characters of a string directly (e.g., s[i] = ...). You will need to create a new string with the modifications instead.",
+    link: "https://www.w3schools.com/python/python_for_loops.asp",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image269.png",
+    answers: [
+      { text: "4 3 2 1 0", correct: false },
+      { text: "4 3 2 1", correct: false },
+      { text: "5 4 3 2 1 0", correct: true },
+      { text: "The code will raise a TypeError", correct: false },
+    ],    
+    explanation: `Explanation:<br><br>The code defines a recursive function countdown(n) that prints a countdown from n to 0 as a string.<br><br>Steps:<br><br>For n = 5:<br><br>countdown(5) returns "5 " + countdown(4)<br>countdown(4) returns "4 " + countdown(3)<br>countdown(3) returns "3 " + countdown(2)<br>countdown(2) returns "2 " + countdown(1)<br>countdown(1) returns "1 " + countdown(0)<br>countdown(0) returns "0"`,
+    link: "https://www.programiz.com/python-programming/recursion",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image270.png",
+    answers: [
+      { text: "1 2 3 4", correct: false },
+      { text: "10", correct: true },
+      { text: "1234", correct: false },
+      { text: "The code will raise a TypeError", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>The function what_am_i_doing(lst) recursively sums the elements of a list.<br><br>If the list is empty, it returns 0 (base case).<br><br>Otherwise, it adds the first element (lst[0]) to the result of a recursive call on the rest of the list (lst[1:]).<br><br>For the input [1, 2, 3, 4], the function sums the elements step by step: 1 + 2 + 3 + 4 + 0, which results in 10.",
+    link: "https://www.programiz.com/python-programming/recursive-functions",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image271.png",
+    answers: [
+      { text: "321", correct: false },
+      { text: "123", correct: false },
+      { text: "0", correct: false },
+      { text: "6", correct: true },
+    ],    
+    explanation: "Explanation:<br><br>The function hello_there(n) recursively calculates the sum of the digits of a number. <br><br>If n is 0, the function returns 0. <br><br>Otherwise, it adds the last digit (n % 10) to the result of a recursive call on the remaining digits (n // 10).<br><br>For the input 123, the function computes 3 + 2 + 1 + 0, which equals 6.",
+    link: "https://www.programiz.com/python-programming/recursive-functions",
+  },/*
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  },  
+  */
 ];
