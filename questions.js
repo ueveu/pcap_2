@@ -450,7 +450,7 @@ export const questions = [
       { text: "To delete a method from a class.", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The del keyword in Python is used to delete variables, items from collections, or attributes from objects. <br><br>When you use del on a variable, it removes the reference to that variable. For collections like lists or dictionaries, del can be used to remove specific items. <br><br>Additionally, you can use del to remove attributes from objects. The actual memory is freed only when there are no remaining references to the object.",
+      "Explanation:<br><br>The del keyword in Python is used to delete variables, items from collections, or attributes from objects. <br><br>When you use del on a variable, it removes the reference to that variable. For collections like lists or dictionaries, del can be used to remove specific items.",
     link: "https://www.w3schools.com/python/ref_keyword_del.asp",
   },
   {
