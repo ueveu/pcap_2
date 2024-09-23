@@ -442,7 +442,8 @@ export const questions = [
     link: "https://www.w3schools.com/python/python_inheritance.asp",
   },
   {
-    question: "What is the purpose of the 'del' keyword in Python? <br><br>(Choose two)",
+    question:
+      "What is the purpose of the 'del' keyword in Python? <br><br>(Choose two)",
     answers: [
       { text: "To delete a class definition.", correct: false },
       { text: "To remove an element from a list.", correct: true },
@@ -1792,7 +1793,7 @@ export const questions = [
       { text: "1" + "\n" + "3", correct: false },
       { text: "1 1", correct: false },
       { text: "3 3", correct: false },
-      { text: "3" + "\n" + "1", correct: false },      
+      { text: "3" + "\n" + "1", correct: false },
       { text: "The code is erroneous.", correct: false },
     ],
     explanation:
@@ -1909,8 +1910,7 @@ export const questions = [
       { text: "Subtraction", correct: false },
       { text: "None of the above.", correct: false },
     ],
-    explanation:
-      `Explanation:<br><br>The += operator, when applied to strings, concatenates the right operand to the left operand.<br><br>Example:<br><br>s = "Hello"<br>s += " World"<br>print(s)  # Output: "Hello World"`,
+    explanation: `Explanation:<br><br>The += operator, when applied to strings, concatenates the right operand to the left operand.<br><br>Example:<br><br>s = "Hello"<br>s += " World"<br>print(s)  # Output: "Hello World"`,
     link: "https://www.w3schools.com/python/gloss_python_string_concatenation.asp",
   },
   {
@@ -2223,8 +2223,7 @@ export const questions = [
       { text: "picked", correct: false },
       { text: "shot", correct: false },
     ],
-    explanation:
-      `Explanation:<br><br>In Python, when an exception occurs, we say that it has been "raised."<br><br>For example, when an error happens, Python raises an exception, which can then be caught and handled using a try-except block.`,
+    explanation: `Explanation:<br><br>In Python, when an exception occurs, we say that it has been "raised."<br><br>For example, when an error happens, Python raises an exception, which can then be caught and handled using a try-except block.`,
     link: "https://www.programiz.com/python-programming/exception-handling",
   },
   {
@@ -2371,8 +2370,7 @@ export const questions = [
       { text: "0" + "\n" + "1" + "\n" + "2", correct: false },
       { text: "The code is erroneous", correct: false },
     ],
-    explanation:
-      `Explanation:<br><br>In the for loop 'for item in dict:', the term "item" refers to the keys of the dictionary. <br><br>Since dictionaries in Python are collections of key-value pairs, iterating over them by default gives you the keys. <br><br>Thus, in this case, 'a', 'b', and 'c' are the "items" being printed. <br><br>These keys are the elements enclosed in single quotes in the dictionary, distinguishing them from the associated values (1, 2, and 3) which are not printed in this loop.`,
+    explanation: `Explanation:<br><br>In the for loop 'for item in dict:', the term "item" refers to the keys of the dictionary. <br><br>Since dictionaries in Python are collections of key-value pairs, iterating over them by default gives you the keys. <br><br>Thus, in this case, 'a', 'b', and 'c' are the "items" being printed. <br><br>These keys are the elements enclosed in single quotes in the dictionary, distinguishing them from the associated values (1, 2, and 3) which are not printed in this loop.`,
     link: "https://www.w3schools.com/python/python_dictionaries.asp",
   },
   {
@@ -2695,8 +2693,7 @@ export const questions = [
       { text: "__name__", correct: true },
       { text: "__modname__", correct: false },
     ],
-    explanation:
-      `Explanation:<br><br>In Python, the predefined variable __name__ stores the name of the current module. <br><br>If a script is being run directly, the value of __name__ will be "__main__". <br><br>If the script is being imported as a module in another script, __name__ will be set to the module's name.`,
+    explanation: `Explanation:<br><br>In Python, the predefined variable __name__ stores the name of the current module. <br><br>If a script is being run directly, the value of __name__ will be "__main__". <br><br>If the script is being imported as a module in another script, __name__ will be set to the module's name.`,
     link: "https://docs.python.org/3/tutorial/modules.html",
   },
   {
@@ -4029,7 +4026,8 @@ export const questions = [
     link: "https://docs.python.org/3/library/math.html",
   },
   {
-    question: "Which of the following statements are correct? <br><br>(Choose two)",
+    question:
+      "Which of the following statements are correct? <br><br>(Choose two)",
     answers: [
       { text: "A) True or False evaluates to True", correct: true },
       { text: "B) True + 1 evaluates to 2", correct: true },
@@ -4122,7 +4120,8 @@ export const questions = [
     link: "https://docs.python.org/3/library/stdtypes.html#str",
   },
   {
-    question: "Which of the following statements are true? <br><br>(Choose two)",
+    question:
+      "Which of the following statements are true? <br><br>(Choose two)",
     answers: [
       { text: "A)   Lists may not be stored inside tuples", correct: false },
       { text: "B)   Tuples may be stored inside lists", correct: true },
@@ -6869,7 +6868,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The code first initializes the list 'my_list' with three elements. In the 'try' block, it attempts to access my_list[2] and my_list[3]. Accessing my_list[2] is fine, but trying to access my_list[3] raises an 'IndexError' because the index is out of bounds.<br><br>The first 'except' block catches 'KeyError', but since we're working with a list, not a dictionary, this block is ignored. <br><br>The 'LookupError' block catches the 'IndexError' (because 'IndexError' is a subclass of 'LookupError').<br><br>The 'else' block is skipped because an exception was raised. The 'finally' block always runs.",
     link: "https://docs.python.org/3/tutorial/errors.html",
-  },  
+  },
   {
     question: "What is the expected output of the following code?",
     image: "images/image262.png",
@@ -6879,7 +6878,7 @@ export const questions = [
       { text: "C", correct: false },
       { text: "D", correct: true },
       { text: "E", correct: false },
-    ],    
+    ],
     explanation: `Explanation:<br><br>The code initializes the list 'my_list' with three elements. <br><br>The 'try' block accesses my_list[1] and my_list[2] successfully, but trying to access my_list[3] raises an 'IndexError' because the index is out of bounds. <br><br>The 'IndexError' is caught by its corresponding 'except' block, so "D" is printed. <br><br>The final 'except' block isn't reached since the error is already handled.`,
     link: "https://docs.python.org/3/tutorial/errors.html",
   },
@@ -6892,19 +6891,49 @@ export const questions = [
       { text: "C", correct: true },
       { text: "D", correct: false },
       { text: "E", correct: false },
-    ],    
+    ],
     explanation: `Explanation:<br><br>The code initializes the dictionary 'my_dict' with three key-value pairs. <br><br>The 'try' block attempts to access my_dict['d'], but since the key 'd' doesn't exist, a 'KeyError' is raised. <br><br>The 'KeyError' is caught by its corresponding 'except' block, so "C" is printed. <br><br>The other 'except' blocks are skipped because the error has already been handled.`,
     link: "https://docs.python.org/3/tutorial/errors.html",
-  }, 
+  },
   {
     question: "What is the output of the following code?",
     image: "images/image264.png",
     answers: [
-      { text: "Method in C" + "\n" + "Method in D" + "\n" + "Method in A" + "\n" + "Method in B", correct: false },
-      { text: "Method in D" + "\n" + "Method in C" + "\n" + "Method in B" + "\n" + "Method in A", correct: false },
-      { text: "Method in D" + "\n" + "Method in B" + "\n" + "Method in C" + "\n" + "Method in A", correct: true },
+      {
+        text:
+          "Method in C" +
+          "\n" +
+          "Method in D" +
+          "\n" +
+          "Method in A" +
+          "\n" +
+          "Method in B",
+        correct: false,
+      },
+      {
+        text:
+          "Method in D" +
+          "\n" +
+          "Method in C" +
+          "\n" +
+          "Method in B" +
+          "\n" +
+          "Method in A",
+        correct: false,
+      },
+      {
+        text:
+          "Method in D" +
+          "\n" +
+          "Method in B" +
+          "\n" +
+          "Method in C" +
+          "\n" +
+          "Method in A",
+        correct: true,
+      },
       { text: "The code is erroneous.", correct: false },
-    ],    
+    ],
     explanation: `Explanation:<br><br>When the code is executed and d.method() is called, Python follows the Method Resolution Order (MRO) to determine the sequence in which the methods are invoked. <br><br>The MRO for class D is: D -> B -> C -> A -> object. <br><br>This means that Python will first check class D, then B, then C, and finally A to resolve method calls.<br><br>The method() in class D is executed first because d is an instance of D. This prints "Method in D". Then, super().method() is called, which refers to the next class in the MRO, which is class B.<br><br>The method() in class B is executed next. It prints "Method in B", and again super().method() is called. This time, super() refers to the next class in the MRO, which is class C.<br><br>The method() in class C is executed. It prints "Method in C", and then super().method() is called once more. Now, super() refers to class A, which is next in the MRO.<br><br>Finally, the method() in class A is executed, printing "Method in A".<br><br>Since A does not call super().method(), the method chain ends there.`,
     link: "https://docs.python.org/3/tutorial/classes.html",
   },
@@ -6916,42 +6945,56 @@ export const questions = [
       { text: "Method in D" + "\n" + "Method in B", correct: true },
       { text: "Method in B" + "\n" + "Method in C", correct: false },
       { text: "The code is erroneous.", correct: false },
-    ],   
+    ],
     explanation: `Explanation:<br><br>When the code is executed and d.method() is called, Python will again use the Method Resolution Order (MRO) to determine the order in which the methods are invoked. The MRO for class D can be obtained using D.__mro__, and it will be D -> B -> C -> A -> object.<br><br>The method() in class D is called first because d is an instance of D. This prints "Method in D". After this, super().method() is invoked, which refers to the next class in the MRO, which is class B.<br><br>The method() in class B is executed next. It prints "Method in B". Since there is no call to super().method() in class B, the method execution ends here.<br><br>The method() in class C is not executed because the MRO has already resolved to class B after D. Therefore, the method() in class C, which would have called super().method() to invoke A's method, is skipped in this case.<br><br>Finally, the method() in class A is also not called because the call to super() in class D went directly to class B`,
     link: "https://docs.python.org/3/tutorial/classes.html",
   },
   {
-    question: "Assuming that the following piece of code has been executed successfully, which of the expressions evaluate to True? <br><br>(Choose two)",
+    question:
+      "Assuming that the following piece of code has been executed successfully, which of the expressions evaluate to True? <br><br>(Choose two)",
     image: "images/image266.png",
     answers: [
       { text: "A", correct: false },
       { text: "B", correct: false },
       { text: "C", correct: true },
       { text: "D", correct: true },
-    ],    
-    explanation: "Explanation:<br><br>A) checks if obj_b is an instance of class C. Since obj_b is an instance of B, this will return False.<br><br>B) checks if the private variable in class C, __VarA, equals 2. Since C has its own private variable __VarA, which is actually 3 (mangled to _C__VarA), this will evaluate to False.<br><br>C) checks if class B has an attribute named get. Since B indeed defines a method called get, this will return True.<br><br>D) calls the get() method on obj_c, which is an instance of C. The get() method in class C does not directly reference __VarA from class C, but instead, it will look for __VarA in the method resolution order. The get() method from B will be executed, and it will return the value of _B__VarA, which is 2. Thus, this statement will evaluate to True.",
+    ],
+    explanation:
+      "Explanation:<br><br>A) checks if obj_b is an instance of class C. Since obj_b is an instance of B, this will return False.<br><br>B) checks if the private variable in class C, __VarA, equals 2. Since C has its own private variable __VarA, which is actually 3 (mangled to _C__VarA), this will evaluate to False.<br><br>C) checks if class B has an attribute named get. Since B indeed defines a method called get, this will return True.<br><br>D) calls the get() method on obj_c, which is an instance of C. The get() method in class C does not directly reference __VarA from class C, but instead, it will look for __VarA in the method resolution order. The get() method from B will be executed, and it will return the value of _B__VarA, which is 2. Thus, this statement will evaluate to True.",
     link: "https://www.w3schools.com/python/ref_func_isinstance.asp",
   },
   {
-    question: "Assuming that the following code has been executed successfully, select the expressions which evaluate to True? <br><br>(Choose two)",
+    question:
+      "Assuming that the following code has been executed successfully, select the expressions which evaluate to True? <br><br>(Choose two)",
     image: "images/image267.png",
     answers: [
       { text: "A", correct: false },
       { text: "B", correct: true },
       { text: "C", correct: false },
       { text: "D", correct: true },
-    ],    
-    explanation: "Explanation:<br><br>A) checks if a and b are the same object. Since a and b are both different instances of g() returned from different calls to f(), this statement is False.<br><br>B) The b() function will return the current value of var, which is 3. Since 3 > 2 is True, this statement is True.<br><br>C) The a() function will return the current value of var, which has been incremented to 3. Thus, 3 == 2 is False.<br><br>D) The variable a is assigned the function g() returned by f(). Since g() is a valid function object, a is not None. Therefore, this statement is True.",
+    ],
+    explanation:
+      "Explanation:<br><br>A) checks if a and b are the same object. Since a and b are both different instances of g() returned from different calls to f(), this statement is False.<br><br>B) The b() function will return the current value of var, which is 3. Since 3 > 2 is True, this statement is True.<br><br>C) The a() function will return the current value of var, which has been incremented to 3. Thus, 3 == 2 is False.<br><br>D) The variable a is assigned the function g() returned by f(). Since g() is a valid function object, a is not None. Therefore, this statement is True.",
     link: "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
   },
   {
-    question: "What is true about Object-Oriented Programming in Python? <br><br>(Choose two)",
+    question:
+      "What is true about Object-Oriented Programming in Python? <br><br>(Choose two)",
     answers: [
-      { text: "A. encapsulation allows you to protect some data from uncontrolled access", correct: true },
-      { text: "B. the arrows on a class diagram are always directed from a superclass towards its subclass", correct: false },
-      { text: "C. inheritance is the relation between a superclass and a subclass", correct: true },
+      {
+        text: "A. encapsulation allows you to protect some data from uncontrolled access",
+        correct: true,
+      },
+      {
+        text: "B. the arrows on a class diagram are always directed from a superclass towards its subclass",
+        correct: false,
+      },
+      {
+        text: "C. inheritance is the relation between a superclass and a subclass",
+        correct: true,
+      },
       { text: "D. an object is a recipe for a class", correct: false },
-    ],    
+    ],
     explanation: `Explanation:<br><br>A) is true. Encapsulation is a fundamental principle of OOP that restricts access to certain details of an object, thereby protecting the internal state of the object from outside interference and misuse. This is typically achieved through private or protected attributes and methods.<br><br>B) is false. In class diagrams, the arrows indicating inheritance actually point from the subclass towards the superclass. This represents the relationship where the subclass inherits attributes and methods from the superclass.<br><br>C) is true. Inheritance is a key feature of OOP that establishes a relationship between a superclass (parent class) and a subclass (child class). The subclass inherits properties and behaviors from the superclass, allowing for code reuse and a hierarchical class structure.<br><br>D) is false. An object is an instance of a class, while a class itself can be thought of as the "recipe" or blueprint that defines the properties and behaviors of the objects. Objects are created based on the class definition.`,
     link: "https://www.programiz.com/python-programming/object-oriented-programming",
   },
@@ -6967,7 +7010,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The code initializes a global variable m to 0. It defines a function 'foo(n)' that asserts m is 0, then tries to return 1 / n. If n is 0, a ZeroDivisionError occurs, which is caught as an ArithmeticError. <<br><br>In the exception block, m is incremented by 1, and the exception is re-raised.<br><br>In the outer try block, 'foo(0)' is called, which raises the ArithmeticError. This is caught by the except ArithmeticError block, which increments m by 2. <br><br>Since no other exceptions are raised, and the re-raised exception is not caught by any other block, the final value of m is 2.<br><br>Therefore, when the print(m) statement is executed, it outputs 3.",
     link: "https://docs.python.org/3/tutorial/errors.html#handling-exceptions",
-  }, 
+  },
   {
     question: "What is the expected output of the following snippet?",
     image: "images/image268.png",
@@ -6976,8 +7019,9 @@ export const questions = [
       { text: "ABC", correct: false },
       { text: "123", correct: false },
       { text: "The code will cause a runtime exception", correct: true },
-    ],    
-    explanation: "Explanation:<br><br>Line 2 will raise a TypeError. The len(s) returns an integer (the length of the string), and you cannot directly iterate over an integer in a for loop.<br><br>Strings in Python are immutable, which means you cannot modify individual characters of a string directly (e.g., s[i] = ...). You will need to create a new string with the modifications instead.",
+    ],
+    explanation:
+      "Explanation:<br><br>Line 2 will raise a TypeError. The len(s) returns an integer (the length of the string), and you cannot directly iterate over an integer in a for loop.<br><br>Strings in Python are immutable, which means you cannot modify individual characters of a string directly (e.g., s[i] = ...). You will need to create a new string with the modifications instead.",
     link: "https://www.w3schools.com/python/python_for_loops.asp",
   },
   {
@@ -6988,7 +7032,7 @@ export const questions = [
       { text: "4 3 2 1", correct: false },
       { text: "5 4 3 2 1 0", correct: true },
       { text: "The code will raise a TypeError", correct: false },
-    ],    
+    ],
     explanation: `Explanation:<br><br>The code defines a recursive function countdown(n) that prints a countdown from n to 0 as a string.<br><br>Steps:<br><br>For n = 5:<br><br>countdown(5) returns "5 " + countdown(4)<br>countdown(4) returns "4 " + countdown(3)<br>countdown(3) returns "3 " + countdown(2)<br>countdown(2) returns "2 " + countdown(1)<br>countdown(1) returns "1 " + countdown(0)<br>countdown(0) returns "0"`,
     link: "https://www.programiz.com/python-programming/recursion",
   },
@@ -7000,8 +7044,9 @@ export const questions = [
       { text: "10", correct: true },
       { text: "1234", correct: false },
       { text: "The code will raise a TypeError", correct: false },
-    ],    
-    explanation: "Explanation:<br><br>The function what_am_i_doing(lst) recursively sums the elements of a list.<br><br>If the list is empty, it returns 0 (base case).<br><br>Otherwise, it adds the first element (lst[0]) to the result of a recursive call on the rest of the list (lst[1:]).<br><br>For the input [1, 2, 3, 4], the function sums the elements step by step: 1 + 2 + 3 + 4 + 0, which results in 10.",
+    ],
+    explanation:
+      "Explanation:<br><br>The function what_am_i_doing(lst) recursively sums the elements of a list.<br><br>If the list is empty, it returns 0 (base case).<br><br>Otherwise, it adds the first element (lst[0]) to the result of a recursive call on the rest of the list (lst[1:]).<br><br>For the input [1, 2, 3, 4], the function sums the elements step by step: 1 + 2 + 3 + 4 + 0, which results in 10.",
     link: "https://www.programiz.com/python-programming/recursive-functions",
   },
   {
@@ -7012,8 +7057,9 @@ export const questions = [
       { text: "123", correct: false },
       { text: "0", correct: false },
       { text: "6", correct: true },
-    ],    
-    explanation: "Explanation:<br><br>The function hello_there(n) recursively calculates the sum of the digits of a number. <br><br>If n is 0, the function returns 0. <br><br>Otherwise, it adds the last digit (n % 10) to the result of a recursive call on the remaining digits (n // 10).<br><br>For the input 123, the function computes 3 + 2 + 1 + 0, which equals 6.",
+    ],
+    explanation:
+      "Explanation:<br><br>The function hello_there(n) recursively calculates the sum of the digits of a number. <br><br>If n is 0, the function returns 0. <br><br>Otherwise, it adds the last digit (n % 10) to the result of a recursive call on the remaining digits (n // 10).<br><br>For the input 123, the function computes 3 + 2 + 1 + 0, which equals 6.",
     link: "https://www.programiz.com/python-programming/recursive-functions",
   },
   {
@@ -7024,11 +7070,24 @@ export const questions = [
       { text: "B", correct: false },
       { text: "C", correct: false },
       { text: "D", correct: true },
-    ],    
-    explanation: "Explanation:<br><br>The code first creates a tuple List = (1, 2, 4, 8). <br><br>It then applies a slice operation with List[1:-2], which selects elements starting from index 1 up to, but not including, the second-to-last element. This results in the tuple (2,) because only the element 2 is within the specified range. The first print(List) statement outputs (2,), reflecting the sliced tuple.<br><br>Next, the tuple List is converted into a list using List = list(List), which changes it to [2]. The second print(List) statement then outputs [2], displaying the converted list.<br><br>In summary, the code first prints (2,) and then prints [2], which corresponds to option D: (2,) and [2].",
+    ],
+    explanation:
+      "Explanation:<br><br>The code first creates a tuple List = (1, 2, 4, 8). <br><br>It then applies a slice operation with List[1:-2], which selects elements starting from index 1 up to, but not including, the second-to-last element. This results in the tuple (2,) because only the element 2 is within the specified range. The first print(List) statement outputs (2,), reflecting the sliced tuple.<br><br>Next, the tuple List is converted into a list using List = list(List), which changes it to [2]. The second print(List) statement then outputs [2], displaying the converted list.<br><br>In summary, the code first prints (2,) and then prints [2], which corresponds to option D: (2,) and [2].",
     link: "https://www.tutorialspoint.com/How-to-index-and-slice-a-tuple-in-Python",
-  },/*
+  }, 
   {
+    question: "What is the expected output of the following code?",
+    image: "images/image273.png",
+    answers: [
+      { text: "2 1 0", correct: false },
+      { text: "1 2 0", correct: false },
+      { text: "0 1 2", correct: false },
+      { text: "2 0 0", correct: true },
+    ],    
+    explanation: "Explanation:<br><br>The code begins by assigning x = 1 and y = 2. The variable z is then set to the result of integer division of x by y, so z = 0. <br><br>Next, x, y, and z are reassigned with x = y, y = z, and z = z, resulting in x = 2, y = 0, and z = 0. <br><br>The second reassignment swaps the values again, setting z = x, y = z, and z = y, which leaves the variables as x = 2, y = 0, and z = 0.<br><br>Finally, when print(x, y, z) is executed, the output is 2 0 0.",
+    link: "https://www.programiz.com/python-programming/examples/swap-variables",
+  },/*  
+   {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7036,6 +7095,97 @@ export const questions = [
       { text: "", correct: false },
       { text: "", correct: false },
     ],    
-  },  
-  */
+  }, 
+   {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  }, 
+   {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  }, 
+   {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  }, 
+   {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  }, 
+   {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  }, 
+   {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  }, 
+   {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  }, 
+   {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  }, 
+   {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  }, 
+   {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  }, 
+  
+  */,
 ];
