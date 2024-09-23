@@ -248,6 +248,16 @@ body {
   color: #ffffff; /* Sets the text color to white */
 }
 
+.btn.correct:hover {
+  background: #14ff474b; /* Green for correct on hover */
+}
+
+.btn.incorrect:hover {
+  background: rgba(245, 0, 0, 0.479); /* Red for incorrect on hover */
+}
+
+
+
 /* Styles for the progress bar container */
 #progress-bar {
   margin-bottom: 5px; /* Adds a margin below the progress bar */
