@@ -1,79 +1,79 @@
 /* Navigation Bar styles */
 nav {
-  background-color: #1a222a49;  /* Semi-transparent background */
-  padding: 1rem;                /* Padding inside the nav */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Shadow effect */
+  background-color: #1a222a49; /* Semi-transparent background */
+  padding: 1rem; /* Padding inside the nav */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
 nav .container {
   display: flex;
-  justify-content: space-between;  /* Distributes space evenly */
-  align-items: center;             /* Vertically centers the items */
-  max-width: 1200px;               /* Maximum width */
-  margin: 0 auto;                  /* Centers the container horizontally */
-  flex-wrap: wrap;                 /* Wraps the content on small screens */
+  justify-content: space-between; /* Distributes space evenly */
+  align-items: center; /* Vertically centers the items */
+  max-width: 1200px; /* Maximum width */
+  margin: 0 auto; /* Centers the container horizontally */
+  flex-wrap: wrap; /* Wraps the content on small screens */
 }
 
 /* Navigation Menu toggle button */
 #menu-toggle {
-  display: none;          /* Hides the button by default */
+  display: none; /* Hides the button by default */
   background: none;
   border: none;
   color: #ffffff;
-  font-size: 1.5rem;      /* Font size for the button */
-  cursor: pointer;        /* Shows a pointer cursor on hover */
+  font-size: 1.5rem; /* Font size for the button */
+  cursor: pointer; /* Shows a pointer cursor on hover */
 }
 
 /* Menu toggle button hover effect */
 #menu-toggle:hover {
-  color: #60a5fa;         /* Changes color on hover */
+  color: #60a5fa; /* Changes color on hover */
 }
 
 /* Text styles for large screens */
 nav .text-xl {
-  font-size: 1.25rem;     /* Font size */
-  font-weight: bold;      /* Bold text */
-  color: #ffffff;         /* Text color */
+  font-size: 1.25rem; /* Font size */
+  font-weight: bold; /* Bold text */
+  color: #ffffff; /* Text color */
 }
 
 /* Navigation list styles */
 nav ul {
   display: flex;
-  gap: 1rem;              /* Space between list items */
-  list-style-type: none;  /* Removes bullet points */
-  padding: 0;             /* No padding */
-  margin: 0;              /* No margin */
+  gap: 1rem; /* Space between list items */
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* No padding */
+  margin: 0; /* No margin */
 }
 
 /* Navigation link styles */
 nav a {
-  color: #ffffff;         /* Text color */
-  text-decoration: none;  /* No underline */
+  color: #ffffff; /* Text color */
+  text-decoration: none; /* No underline */
   transition: color 0.3s; /* Smooth color transition on hover */
 }
 
 nav a:hover {
-  color: #60a5fa;         /* Color on hover */
+  color: #60a5fa; /* Color on hover */
 }
 
 /* Responsive styles for tablets and small screens */
 @media (max-width: 768px) {
   /* Show menu toggle button */
   #menu-toggle {
-    display: block;       /* Shows the menu toggle button on small screens */
+    display: block; /* Shows the menu toggle button on small screens */
   }
 
   /* Hide navigation list by default */
   nav ul {
-    display: none;        /* Hides the list by default */
+    display: none; /* Hides the list by default */
     flex-direction: column; /* Arranges list items in a column */
-    width: 100%;          /* Full width */
-    margin-top: 1rem;     /* Margin on top */
+    width: 100%; /* Full width */
+    margin-top: 1rem; /* Margin on top */
   }
 
   /* Show navigation list when toggle is active */
   nav ul.show {
-    display: flex;        /* Shows the list when the toggle button is active */
+    display: flex; /* Shows the list when the toggle button is active */
   }
 
   /* Adjust list item margin */
@@ -83,11 +83,11 @@ nav a:hover {
 
   /* Adjust text styles for smaller screens */
   nav .text-xl {
-    font-size: 1.1rem;    /* Smaller font size */
+    font-size: 1.1rem; /* Smaller font size */
   }
 
   nav a {
-    font-size: 0.95rem;   /* Smaller font size */
+    font-size: 0.95rem; /* Smaller font size */
   }
 }
 
@@ -95,16 +95,16 @@ nav a:hover {
 @media (max-width: 480px) {
   /* Adjust navigation padding */
   nav {
-    padding: 0.5rem;      /* Less padding */
+    padding: 0.5rem; /* Less padding */
   }
 
   /* Adjust text styles further */
   nav .text-xl {
-    font-size: 1rem;      /* Even smaller font size */
+    font-size: 1rem; /* Even smaller font size */
   }
 
   nav a {
-    font-size: 0.9rem;    /* Even smaller font size */
+    font-size: 0.9rem; /* Even smaller font size */
   }
 }
 
@@ -167,8 +167,12 @@ body {
 
 /* Keyframes for rotation */
 @keyframes rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Styles for the header */
@@ -200,7 +204,12 @@ body {
 
 /* Styles for answer buttons */
 .btn {
-  background: rgba(255, 255, 255, 0.884); /* Sets a nearly opaque white background */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.884
+  ); /* Sets a nearly opaque white background */
   font-size: 14px; /* Sets the font size */
   color: #222; /* Sets the text color to dark gray */
   font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -256,8 +265,6 @@ body {
   background: rgba(245, 0, 0, 0.479); /* Red for incorrect on hover */
 }
 
-
-
 /* Styles for the progress bar container */
 #progress-bar {
   margin-bottom: 5px; /* Adds a margin below the progress bar */
@@ -276,7 +283,6 @@ body {
   border-radius: 5px; /* Rounds the corners of the progress bar */
   transition: width 0.8s ease-out; /* Adds a smooth transition effect */
 }
-
 
 /* Styles for the question image */
 .question-image {
@@ -310,7 +316,8 @@ body {
   border: 1px solid #ffffff69; /* Adds a semi-transparent white border */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
   font-size: 14px; /* Sets the font size */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transitions for transformations and shadow changes */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    background-color 0.3s ease-in-out; /* Smooth transitions for transformations and shadow changes */
 }
 
 /* Hover styles for the explanation text */
@@ -341,7 +348,7 @@ body {
 }
 
 .link a:hover::after {
-  content: '\1F913'; /* Inserts an emoji on hover */
+  content: "\1F913"; /* Inserts an emoji on hover */
 }
 
 .link a:hover span {
