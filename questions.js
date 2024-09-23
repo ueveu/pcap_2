@@ -4122,7 +4122,7 @@ export const questions = [
     link: "https://docs.python.org/3/library/stdtypes.html#str",
   },
   {
-    question: "Which of the following statements are true?",
+    question: "Which of the following statements are true? <br><br>(Choose two)",
     answers: [
       { text: "A)   Lists may not be stored inside tuples", correct: false },
       { text: "B)   Tuples may be stored inside lists", correct: true },
