@@ -901,9 +901,11 @@ export const questions = [
     image: "images/image15.png",
     answers: [
       { text: "5.0", correct: true },
+      { text: "2", correct: false },
       { text: "Error: Division by zero", correct: false },
       { text: "0", correct: false },
       { text: "2.0", correct: false },
+      { text: "5", correct: false },
     ],
     explanation:
       "Explanation:<br><br>The code successfully divides 10 by 2, resulting in 5.0 .",
