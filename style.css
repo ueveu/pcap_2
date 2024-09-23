@@ -194,12 +194,12 @@ body {
 }
 
 #correct-count {
-  color: rgb(119, 192, 119); /* Color for correct count */
+  color: rgb(145, 231, 145); /* Color for correct count */
   font-weight: bold;
 }
 
 #incorrect-count {
-  color: rgb(236, 100, 100); /* Color for incorrect count */
+  color: rgb(236, 144, 144); /* Color for incorrect count */
   font-weight: bold;
 }
 
