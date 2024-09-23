@@ -326,7 +326,7 @@ export const questions = [
       { text: "create", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The '__init__' method is used to initialize class variables.",
+      "Explanation:<br><br>In Python, the __init__ method is used as a constructor in a class. It is automatically called when a new instance of the class is created.",
     link: "https://www.geeksforgeeks.org/__init__-in-python/",
   },
   {
