@@ -7086,16 +7086,18 @@ export const questions = [
     ],    
     explanation: "Explanation:<br><br>The code begins by assigning x = 1 and y = 2. The variable z is then set to the result of integer division of x by y, so z = 0. <br><br>Next, x, y, and z are reassigned with x = y, y = z, and z = z, resulting in x = 2, y = 0, and z = 0. <br><br>The second reassignment swaps the values again, setting z = x, y = z, and z = y, which leaves the variables as x = 2, y = 0, and z = 0.<br><br>Finally, when print(x, y, z) is executed, the output is 2 0 0.",
     link: "https://www.programiz.com/python-programming/examples/swap-variables",
-  },/*  
+  },  
    {
-    question: "",
+    question: "What code would you insert instead of the comment to obtain the expected output?<br><br>Expected output:<br><br>Luke<br>Han<br>Leia<br>Ben<br>Anakin",
+    image: "images/image274.png",
     answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
     ],    
-  }, 
+    explanation: `Explanation:<br><br>The code creates a dictionary called my_dict where each key is an index, and the values are tuples containing names from my_list, excluding the last name. In the subsequent loop, the variable j holds each tuple.<br><br>To print just the names, you should use print(j[0]). This accesses the first element of the tuple j, which is the desired name. <br><br>This will output "Luke," "Han," "Leia," "Ben," and "Anakin" as expected.`
+  },/* 
    {
     question: "",
     answers: [
