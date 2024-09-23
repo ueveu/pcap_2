@@ -149,6 +149,7 @@ body {
 }
 
 /* Style adjustments for the timer and question counter */
+/* Style adjustments for the timer and question counter */
 #timer,
 #question-counter {
   font-family: "Whitney", "Helvetica Neue", Helvetica;
@@ -158,6 +159,8 @@ body {
   padding: 7px;
   border-radius: 0px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.315);
+}
+
 }
 
 #timer i {
