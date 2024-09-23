@@ -35,9 +35,10 @@
         <!-- Timer and question counter -->
         <div class="header-controls">
             <div id="timer"><i class="fas fa-hourglass-half"></i> <span id="time-display">65:00</span></div>
-            <div id="question-counter"></div>
+            <div id="question-counter">Question 1 of 40</div>
             <div id="score-counter">
-                <span id="correct-count">: 0</span> | <span id="incorrect-count">Incorrect: 0</Correctspan>
+                <span id="correct-count" class="count-number">0</span> <span class="label"><!-- placeholder --></span> |
+                <span id="incorrect-count" class="count-number">0</span> <span class="label"><!-- placeholder --></span>
             </div>
         </div>
         <!-- Progress bar for quiz -->
@@ -51,12 +52,7 @@
             <div id="image"></div> <!-- Optional image display -->
             <!-- Answer buttons -->
             <div id="answer-buttons" class="btn-group">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
-                <button class="btn">Answer 5</button>
-                <button class="btn">Answer 6</button>
+                <!-- Dynamically generated answer buttons will appear here -->
             </div>
             <div id="explanation" class="explanation"></div> <!-- Explanation area -->
             <div id="link" class="link"></div> <!-- Additional links area -->
