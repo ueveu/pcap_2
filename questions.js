@@ -442,10 +442,10 @@ export const questions = [
     link: "https://www.w3schools.com/python/python_inheritance.asp",
   },
   {
-    question: "What is the purpose of the 'del' keyword in Python?",
+    question: "What is the purpose of the 'del' keyword in Python? <br><br>(Choose two)",
     answers: [
       { text: "To delete a class definition.", correct: false },
-      { text: "To remove an element from a list.", correct: false },
+      { text: "To remove an element from a list.", correct: true },
       { text: "To delete a variable or an object.", correct: true },
       { text: "To delete a method from a class.", correct: false },
     ],
