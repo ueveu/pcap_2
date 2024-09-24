@@ -257,7 +257,7 @@ function updateProgressBar() {
 }
 
 function updateQuestionCounter() {
-  questionCounterElement.innerHTML = `Question ${currentQuestionIndex + 1}`;
+  questionCounterElement.innerHTML = `Question ${currentQuestionIndex + 1}/40`;
 }
 
 function updateScoreCount() {
