@@ -7454,15 +7454,51 @@ export const questions = [
     ],    
     explanation: "Explanation:<br><br>asattr() checks for the existence of an attribute and returns True if it exists, otherwise it returns False without raising any exceptions.",
     link: "https://docs.python.org/3/tutorial/classes.html#private-attributes",
-  }, /* 
+  }, 
    {
-    question: "",
+    question: "What will the following code output?",
+    image: "images/image290.png",
     answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
+      { text: "[5, 3, 7, 5]", correct: false },
+      { text: "[4, 3, 7, 4]", correct: false },
+      { text: "[5, 3, 8, 6]", correct: false },
+      { text: "[5, 6, 8, 5]", correct: true },
     ],    
+    explanation: "Explanation:<br><br>The map() function applies the len function to each name in the names list, returning the length of each string.",
+    link: "https://www.programiz.com/python-programming/methods/built-in/map",
+  },
+   {
+    question: "Which of the following is true about filter()?",
+    answers: [
+      { text: "filter() can only be used with lambda functions.", correct: false },
+      { text: "filter() returns all elements for which the function returns True.", correct: true },
+      { text: "filter() modifies the original list in place.", correct: false },
+      { text: "filter() raises an error if the function does not return True or False.", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>The filter() function returns an iterator containing only the elements for which the filtering function evaluates to True.",
+    link: "https://www.programiz.com/python-programming/methods/built-in/filter",
+  },
+   {
+    question: "What will the following code print?",
+    image: "images/image291.png",
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>When None is passed to filter(), it filters out all elements that are falsy (i.e., 0, None, False, etc.). So 0 is filtered out, and the remaining values are returned.<br><br>In Python, values are classified as either truthy or falsy based on their inherent value. <br><br>Falsy values include 0 (zero), None, False, empty lists [], empty dictionaries {}, and empty strings ''.",
+    link: "https://www.programiz.com/python-programming/methods/built-in/filter",
+  },
+   {
+    question: "Which of the following is true about the map() function?",
+    answers: [
+      { text: "map() returns a list by default in Python.", correct: false },
+      { text: "map() applies a given function to each element of an iterable and returns an iterator.", correct: true },
+      { text: "map() modifies the original iterable in place.", correct: false },
+      { text: "map() raises an error if the iterable contains None values.", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>In Python, map() returns an iterator, not a list (you can convert it to a list by using list()), and it applies the provided function to each element of the iterable. <br><br>It does not modify the original iterable, and it doesn't raise errors for None values unless the function itself does."
   },
    {
     question: "",
@@ -7499,34 +7535,7 @@ export const questions = [
       { text: "", correct: false },
       { text: "", correct: false },
     ],    
-  },
-   {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-   {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
-   {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  },
+  },/* 
    {
     question: "",
     answers: [
