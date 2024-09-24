@@ -1411,7 +1411,7 @@ export const questions = [
       "Which of the following commands can be used to read n characters from a file?",
     answers: [
       { text: "file.read(n)", correct: true },
-      { text: "n = file .read()", correct: false },
+      { text: "n = file.read()", correct: false },
       { text: "n = file.readline()", correct: false },
       { text: "file.readline(n)", correct: false },
     ],
