@@ -7331,7 +7331,7 @@ export const questions = [
       { text: "The program will print The value of x is not 'pcap'.", correct: false },
       { text: "The program will raise an AssertionError with the message The value of x is not 'pcap'.", correct: true },
       { text: "The program will terminate without output.", correct: false },
-      { text: "D) The program will raise a TypeError.", correct: false },
+      { text: "The program will raise a TypeError.", correct: false },
     ],    
     explanation: `Explanation:<br><br>The condition x == "pcap" is False, so an AssertionError is raised with the custom message "The value of x is not 'pcap'".`,
     link: "https://www.w3schools.com/python/python_assert.asp",
