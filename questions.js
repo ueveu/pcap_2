@@ -4444,7 +4444,7 @@ export const questions = [
       { text: "is set by the first argument's value", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The first parameter of each method within a class in Python, commonly named `self`, holds a reference to the instance of the class that is currently being processed. This allows the method to access and manipulate the attributes and other methods of that specific instance. For example, when you call a method on an object, `self` refers to that object, enabling the method to interact with its data.",
+      "Explanation:<br><br>The first parameter of each method within a class in Python, commonly named `self`, holds a reference to the instance of the class that is currently being processed. <br><br>This allows the method to access and manipulate the attributes and other methods of that specific instance. <br><br>For example, when you call a method on an object, `self` refers to that object, enabling the method to interact with its data.",
     link: "https://docs.python.org/3/tutorial/classes.html",
   },
   {
@@ -4485,7 +4485,7 @@ export const questions = [
       { text: "an instance variable", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>In Python, a variable that is stored separately for each instance of a class is called an instance variable. Instance variables are defined within methods (typically in the __init__ method) and are unique to each object created from the class. Each object maintains its own copy of instance variables, allowing them to hold different values for different instances of the class.",
+      "Explanation:<br><br>In Python, a variable that is stored separately for each instance of a class is called an instance variable. Instance variables are defined within methods (typically in the __init__ method) and are unique to each object created from the class.<br><br> Each object maintains its own copy of instance variables, allowing them to hold different values for different instances of the class.",
     link: "https://pynative.com/python-instance-variables/",
   },
   {
@@ -6867,7 +6867,7 @@ export const questions = [
       { text: "Ich bin Python-Profi!", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The code first initializes the list 'my_list' with three elements. In the 'try' block, it attempts to access my_list[2] and my_list[3]. Accessing my_list[2] is fine, but trying to access my_list[3] raises an 'IndexError' because the index is out of bounds.<br><br>The first 'except' block catches 'KeyError', but since we're working with a list, not a dictionary, this block is ignored. <br><br>The 'LookupError' block catches the 'IndexError' (because 'IndexError' is a subclass of 'LookupError').<br><br>The 'else' block is skipped because an exception was raised. The 'finally' block always runs.",
+      "Explanation:<br><br>The code first initializes the list 'my_list' with three elements. In the 'try' block, it attempts to access my_list[2] and my_list[3]. Accessing my_list[2] is fine, but trying to access my_list[3] raises an 'IndexError' because the index is out of bounds.<br><br>The 'LookupError' block catches the 'IndexError' (because 'IndexError' is a subclass of 'LookupError').<br><br>The 'else' block is skipped because an exception was raised. The 'finally' block always runs.",
     link: "https://docs.python.org/3/tutorial/errors.html",
   },
   {
