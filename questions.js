@@ -7301,8 +7301,161 @@ export const questions = [
     ],
     explanation: "Explanation:<br><br>The platform.platform() function provides a comprehensive description of the operating system, including the kernel version, release, architecture, and more. <br><br>It returns everything as a single string, making it useful when you need all the details in one place.",  
     link: "https://docs.python.org/3/library/platform.html#platform.platform",
-  } /*
+  }, 
   {
+    question: "The __bases__ property in Python contains:",
+    answers: [
+      { text: "base class ids (int)", correct: false },
+      { text: "base class locations (addr)", correct: false },
+      { text: "base class names (str)", correct: false },
+      { text: "base class objects (class)", correct: true },
+    ],    
+    explanation: "Explanation:<br><br>The __bases__ property of a class in Python is a tuple that contains the base class objects (actual classes) from which the current class inherits. It does not contain IDs, addresses, or names, but rather the actual class objects.",
+    link: "https://docs.python.org/3/reference/datamodel.html#object.__bases__",
+  }, 
+  {
+    question: "What is the purpose of the assert statement in Python?",
+    answers: [
+      { text: "To halt the program when the condition is True.", correct: false },
+      { text: "To raise an AssertionError when a condition is False.", correct: true },
+      { text: "To print a message when the condition is False.", correct: false },
+      { text: "To log the condition value for debugging purposes.", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>The assert statement is used to test if a condition is True. If it is False, it raises an AssertionError.",
+    link: "https://docs.python.org/3/reference/simple_stmts.html#assert",
+  }, 
+  {
+    question: "What will be the output of the following code?",
+    image: "images/image281.png",
+    answers: [
+      { text: "The program will print The value of x is not 'pcap'.", correct: false },
+      { text: "The program will raise an AssertionError with the message The value of x is not 'pcap'.", correct: true },
+      { text: "The program will terminate without output.", correct: false },
+      { text: "D) The program will raise a TypeError.", correct: false },
+    ],    
+    explanation: `Explanation:<br><br>The condition x == "pcap" is False, so an AssertionError is raised with the custom message "The value of x is not 'pcap'".`,
+    link: "https://www.w3schools.com/python/python_assert.asp",
+  }, 
+  {
+    question: "What will happen when the following code runs?",
+    image: "images/image282.png",
+    answers: [
+      { text: "The program will raise an AssertionError.", correct: false },
+      { text: "The program will print All good!.", correct: true },
+      { text: "The program will not execute due to a syntax error.", correct: false },
+      { text: "The program will terminate before reaching the assert statement.", correct: false },
+    ],    
+    explanation: `Explanation:<br><br>Since the condition x > 5 is True, the assertion will pass, and the program will print "All good!".`,
+    link: "https://www.w3schools.com/python/python_assert.asp",
+
+  }, 
+  {
+    question: "Which of the following is not a valid use of the assert statement?",
+    image: "images/image283.png",
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
+    ],    
+    explanation: "Explanation:<br><br>Option D) does not make sense logically. <br><br>assert should be followed by a condition that evaluates to True or False, and the second part can be a custom error message, not a tuple comparison.",
+    link: "https://www.w3schools.com/python/python_assert.asp",
+  },
+  {
+    question: "What will be the name of the mangled attribute in the following class?",
+    image: "images/image284.png",
+    answers: [
+      { text: "MyClass.__private", correct: false },
+      { text: "MyClass.__private42", correct: false },
+      { text: "_MyClass__private", correct: true },
+      { text: "_private_MyClass", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>In Python, attributes with double underscores (e.g., __private) are name-mangled to prevent accidental access. <br><br>The attribute will be renamed to _MyClass__private",
+    link: "https://docs.python.org/3/tutorial/classes.html#private-attributes",
+  }, 
+  {
+    question: "What is the purpose of name mangling in Python?",
+    answers: [
+      { text: "To completely hide attributes from other classes.", correct: false },
+      { text: "To provide encryption for sensitive data.", correct: false },
+      { text: "To prevent accidental overwriting or access of class attributes.", correct: true },
+      { text: "To automatically optimize code performance.", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>Name mangling helps avoid accidental access or overwriting of attributes in subclasses. <br><br>It's not designed for security, but to avoid name collisions in inheritance chains.",
+    link: "https://docs.python.org/3/tutorial/classes.html#private-attributes",
+  }, 
+  {
+    question: "What will happen if you try to access __secret from outside the class in the following code?",
+    image: "images/image285.png",
+    answers: [
+      { text: `The program will print "hidden".`, correct: false },
+      { text: "The program will raise an AttributeError.", correct: true },
+      { text: "The program will print None.", correct: false },
+      { text: "The program will crash with a NameError.", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>Attempting to access __secret directly outside the class will raise an AttributeError because of name mangling. <br><br>You would need to access it as obj._MyClass__secret",
+    link: "https://docs.python.org/3/tutorial/classes.html#private-attributes",
+  }, 
+  {
+    question: "How can you access a name-mangled variable __var from outside its class?",
+    image: "images/image286.png",
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: true },
+      { text: "D", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>You can access a name-mangled attribute by using the format object._ClassName__var, where ClassName is the name of the class that defines the variable.",
+    link: "https://docs.python.org/3/tutorial/classes.html#private-attributes",
+  }, 
+  {
+    question: "What will the following code print?",
+    image: "images/image287.png",
+    answers: [
+      { text: "False", correct: false },
+      { text: "True", correct: true },
+      { text: "Raises an AttributeError", correct: false },
+      { text: "Raises a NameError", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>The attribute __value is name-mangled to _MyClass__value, so hasattr(obj, '_MyClass__value') will return True.",
+    link: "https://docs.python.org/3/tutorial/classes.html#private-attributes",
+  }, 
+  {
+    question: "What will the following code output?",
+    image: "images/image288.png",
+    answers: [
+      { text: "True", correct: true },
+      { text: "False", correct: false },
+      { text: "None", correct: false },
+      { text: "Raises an AttributeError", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>hasattr() checks if the object obj has an attribute value, and since obj.value exists, it returns True.",
+    link: "https://docs.python.org/3/tutorial/classes.html#private-attributes",
+  }, 
+  {
+    question: "What will happen if the attribute being checked does not exist?",
+    image: "images/image289.png",
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true },
+      { text: "Raises an AttributeError", correct: false },
+      { text: "Raises a NameError", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>Since non_existent is not an attribute of obj, hasattr() will return False without raising an exception.",
+    link: "https://docs.python.org/3/tutorial/classes.html#private-attributes",
+  }, 
+  {
+    question: "Which of the following statements is true about hasattr()?",
+    answers: [
+      { text: "hasattr() returns True if the attribute exists, otherwise it raises an AttributeError.", correct: false },
+      { text: "hasattr() returns True if the attribute exists, otherwise it returns False.", correct: true },
+      { text: "hasattr() always returns True regardless of the attribute's existence.", correct: false },
+      { text: "hasattr() returns None if the attribute does not exist.", correct: false },
+    ],    
+    explanation: "Explanation:<br><br>asattr() checks for the existence of an attribute and returns True if it exists, otherwise it returns False without raising any exceptions.",
+    link: "https://docs.python.org/3/tutorial/classes.html#private-attributes",
+  }, /* 
+   {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7310,8 +7463,8 @@ export const questions = [
       { text: "", correct: false },
       { text: "", correct: false },
     ],    
-  }, 
-  {
+  },
+   {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7319,8 +7472,8 @@ export const questions = [
       { text: "", correct: false },
       { text: "", correct: false },
     ],    
-  }, 
-  {
+  },
+   {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7328,8 +7481,8 @@ export const questions = [
       { text: "", correct: false },
       { text: "", correct: false },
     ],    
-  }, 
-  {
+  },
+   {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7337,8 +7490,8 @@ export const questions = [
       { text: "", correct: false },
       { text: "", correct: false },
     ],    
-  }, 
-  {
+  },
+   {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7346,8 +7499,8 @@ export const questions = [
       { text: "", correct: false },
       { text: "", correct: false },
     ],    
-  }, 
-  {
+  },
+   {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7355,8 +7508,8 @@ export const questions = [
       { text: "", correct: false },
       { text: "", correct: false },
     ],    
-  }, 
-  {
+  },
+   {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7364,8 +7517,8 @@ export const questions = [
       { text: "", correct: false },
       { text: "", correct: false },
     ],    
-  }, 
-  {
+  },
+   {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7373,8 +7526,8 @@ export const questions = [
       { text: "", correct: false },
       { text: "", correct: false },
     ],    
-  }, 
-  {
+  },
+   {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7382,8 +7535,8 @@ export const questions = [
       { text: "", correct: false },
       { text: "", correct: false },
     ],    
-  }, 
-  {
+  },
+   {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7391,33 +7544,6 @@ export const questions = [
       { text: "", correct: false },
       { text: "", correct: false },
     ],    
-  }, 
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  }, 
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  }, 
-  {
-    question: "",
-    answers: [
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-      { text: "", correct: false },
-    ],    
-  }, 
+  },
   */,
 ];
