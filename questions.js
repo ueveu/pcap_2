@@ -2297,6 +2297,7 @@ export const questions = [
       { text: "1", correct: false },
       { text: "2", correct: false },
       { text: "3", correct: true },
+      { text: "4", correct: false },
       { text: "The code is erroneous.", correct: false },
     ],
     explanation:
