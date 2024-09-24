@@ -9,26 +9,27 @@ const backButton = document.getElementById("back-btn"); // Select the back butto
 const timerElement = document.getElementById("timer");
 const progressBarElement = document.getElementById("progress");
 const questionCounterElement = document.getElementById("question-counter");
+const correctCountElement = document.getElementById("correct-count");
+const incorrectCountElement = document.getElementById("incorrect-count");
 const correctSound = new Audio('audio/correct_answer.mp3');
 const incorrectSound = new Audio('audio/incorrect_answer.mp3');
 
 let currentQuestionIndex = 0; // Track current question index
 let score = 0; // Track user's score
+let incorrectScore = 0; // Track user's incorrect answers
 let timeLeft = 3900; // 65 minutes in seconds
 let timerInterval;
 let quizEnded = false;
-
 
 // Store a subset of 40 random questions
 let selectedQuestions = [];
 
 // Start the quiz by resetting the question index and score, and show the first question
 function startQuiz() {
-  
   quizEnded = false;
-
   currentQuestionIndex = 0; // Reset question index
   score = 0; // Reset score
+  incorrectScore = 0; // Reset incorrect score
   timeLeft = 3900; // Reset timer
   nextButton.innerHTML = "Next"; // Update next button text
   backButton.innerHTML = "Back"; // Update back button text
@@ -39,6 +40,7 @@ function startQuiz() {
   updateProgressBar(); // Initialize progress bar
   showQuestion();
   updateQuestionCounter();
+  updateScoreCount();
   startTimer();
 }
 
@@ -67,7 +69,6 @@ function getRandomQuestions(array, num) {
 function showQuestion() {
   resetState(); // Reset the state to remove previous answers
   let currentQuestion = selectedQuestions[currentQuestionIndex]; // Get current question from selectedQuestions
-  let questionNo = currentQuestionIndex + 1; // Get current question number
   questionElement.innerHTML = currentQuestion.question; // Display the question
 
   // Display the image if it exists
@@ -128,6 +129,7 @@ function selectAnswer(e) {
     playSound(correctSound);
   } else if (!isCorrect && !selectedBtn.classList.contains("incorrect")) {
     selectedBtn.classList.add("incorrect");
+    incorrectScore++;
     playSound(incorrectSound);
   }
 
@@ -165,6 +167,7 @@ function selectAnswer(e) {
     nextButton.style.display = "block"; // Show the next button
     backButton.style.display = "block";
   }
+  updateScoreCount();
 }
 
 function showScore() {
@@ -178,7 +181,6 @@ function showScore() {
 
 // Handle the next button click to show the next question or the final score
 function handleNextButton() {
-
   if (quizEnded) return;
 
   currentQuestionIndex++;
@@ -213,20 +215,23 @@ backButton.addEventListener("click", () => {
 
 // Start the timer when the quiz starts and show the first question
 function startTimer() {
-  timerInterval = setInterval(() => {
-    timeLeft--;
-    const minutes = Math.floor(timeLeft / 60); // Get the number of minutes
-    const seconds = timeLeft % 60; // Get the number of seconds
-    const timeDisplay = document.getElementById('time-display');
-    if (timeDisplay) {
-      timeDisplay.textContent = `${minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
-    }
-    
-    if (timeLeft <= 0) {
-      clearInterval(timerInterval);
-      showScore(); // End the quiz when time runs out
-    }
-  }, 1000);
+  timerInterval = setInterval(updateTimer, 1000);
+}
+
+// Timer logic
+function updateTimer() {
+  timeLeft--;
+  const minutes = Math.floor(timeLeft / 60);
+  const seconds = timeLeft % 60;
+  const timeDisplay = document.getElementById('time-display');
+  if (timeDisplay) {
+    timeDisplay.textContent = `${minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
+  }
+  
+  if (timeLeft <= 0) {
+    clearInterval(timerInterval);
+    showScore();
+  }
 }
 
 // Menu toggle functionality
@@ -252,9 +257,12 @@ function updateProgressBar() {
 }
 
 function updateQuestionCounter() {
-  questionCounterElement.innerHTML = `Question ${currentQuestionIndex + 1} of ${
-    selectedQuestions.length
-  }`;
+  questionCounterElement.innerHTML = `Question ${currentQuestionIndex + 1}`;
+}
+
+function updateScoreCount() {
+  correctCountElement.innerHTML = score; // Update only the number
+  incorrectCountElement.innerHTML = incorrectScore; // Update only the number
 }
 
 function resetQuizState() {
@@ -262,9 +270,6 @@ function resetQuizState() {
   nextButton.style.display = "none";
   backButton.style.display = "block";
 }
-
-
-
 
 // Start the quiz initially
 resetQuizState();
