@@ -2706,7 +2706,7 @@ export const questions = [
       { text: "3", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>• inc is a function that takes a parameter inc.<br><br>• Inside inc, there's another function defined, do, which takes a parameter val and returns the result of val + inc.<br><br>• The inc function returns the do function.<br><br>• inc(-1) is called, which means inc is given the value -1.<br><br>• This call returns the do function, where inc is now bound to -1.<br><br>• So, action is now a function where inc is effectively -1.<br><br>• Calling action(2) invokes the do function with val set to 2.<br><br>• Inside do, it computes val + inc, which is 2 + (-1), resulting in 1.",
+      "Explanation:<br><br>The inc(inc) function takes an argument called inc and returns another function, do(val). The do function is responsible for adding the value of inc to its own argument, val.<br><br>The do(val) function is returned when you call inc(inc). This effectively creates a closure, meaning that do(val) will retain access to the inc variable, even after inc(inc) has finished executing.<br><br>When you call action = inc(-1), you are assigning a new function to action, which will subtract 1 from any value passed to it, since inc is set to -1.<br><br>Finally, the statement print(action(2)) calls the action function with the argument 2. This will execute do(2), adding 2 + (-1), and it will print the result, which is 1.",
     link: "https://www.geeksforgeeks.org/closures-and-decorators-in-python/",
   },
   {
