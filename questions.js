@@ -7074,7 +7074,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The code first creates a tuple List = (1, 2, 4, 8). <br><br>It then applies a slice operation with List[1:-2], which selects elements starting from index 1 up to, but not including, the second-to-last element. This results in the tuple (2,) because only the element 2 is within the specified range. The first print(List) statement outputs (2,), reflecting the sliced tuple.<br><br>Next, the tuple List is converted into a list using List = list(List), which changes it to [2]. The second print(List) statement then outputs [2], displaying the converted list.<br><br>In summary, the code first prints (2,) and then prints [2], which corresponds to option D: (2,) and [2].",
     link: "https://www.tutorialspoint.com/How-to-index-and-slice-a-tuple-in-Python",
-  }, 
+  },
   {
     question: "What is the expected output of the following code?",
     image: "images/image273.png",
@@ -7083,22 +7083,225 @@ export const questions = [
       { text: "1 2 0", correct: false },
       { text: "0 1 2", correct: false },
       { text: "2 0 0", correct: true },
-    ],    
-    explanation: "Explanation:<br><br>The code begins by assigning x = 1 and y = 2. The variable z is then set to the result of integer division of x by y, so z = 0. <br><br>Next, x, y, and z are reassigned with x = y, y = z, and z = z, resulting in x = 2, y = 0, and z = 0. <br><br>The second reassignment swaps the values again, setting z = x, y = z, and z = y, which leaves the variables as x = 2, y = 0, and z = 0.<br><br>Finally, when print(x, y, z) is executed, the output is 2 0 0.",
+    ],
+    explanation:
+      "Explanation:<br><br>The code begins by assigning x = 1 and y = 2. The variable z is then set to the result of integer division of x by y, so z = 0. <br><br>Next, x, y, and z are reassigned with x = y, y = z, and z = z, resulting in x = 2, y = 0, and z = 0. <br><br>The second reassignment swaps the values again, setting z = x, y = z, and z = y, which leaves the variables as x = 2, y = 0, and z = 0.<br><br>Finally, when print(x, y, z) is executed, the output is 2 0 0.",
     link: "https://www.programiz.com/python-programming/examples/swap-variables",
-  },  
-   {
-    question: "What code would you insert instead of the comment to obtain the expected output?<br><br>Expected output:<br><br>Luke<br>Han<br>Leia<br>Ben<br>Anakin",
+  },
+  {
+    question:
+      "What code would you insert instead of the comment to obtain the expected output?<br><br>Expected output:<br><br>Luke<br>Han<br>Leia<br>Ben<br>Anakin",
     image: "images/image274.png",
     answers: [
       { text: "A", correct: false },
       { text: "B", correct: false },
       { text: "C", correct: true },
       { text: "D", correct: false },
-    ],    
-    explanation: `Explanation:<br><br>The code creates a dictionary called my_dict where each key is an index, and the values are tuples containing names from my_list, excluding the last name. In the subsequent loop, the variable j holds each tuple.<br><br>To print just the names, you should use print(j[0]). This accesses the first element of the tuple j, which is the desired name. <br><br>This will output "Luke," "Han," "Leia," "Ben," and "Anakin" as expected.`
-  },/* 
-   {
+    ],
+    explanation: `Explanation:<br><br>The code creates a dictionary called my_dict where each key is an index, and the values are tuples containing names from my_list, excluding the last name. In the subsequent loop, the variable j holds each tuple.<br><br>To print just the names, you should use print(j[0]). This accesses the first element of the tuple j, which is the desired name. <br><br>This will output "Luke," "Han," "Leia," "Ben," and "Anakin" as expected.`,
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image275.png",
+    answers: [
+      { text: "420.0", correct: true },
+      { text: "Ich bin Scrum Master!", correct: false },
+      { text: "69.0", correct: false },
+      {
+        text: "An exception will be raised and crash the program.",
+        correct: false,
+      },
+    ],
+    explanation:
+      "Explanation:<br><br>The ArithmeticError catches the division by zero, because it is a parent class of the ZeroDivisionError<br><br><br><br>Therefore, the output is 420.0.",
+    link: "https://docs.python.org/3/tutorial/errors.html",
+  },
+  {
+    question:
+      "Which of the following would catch all exceptions, including the ones not explicitly listed?",
+    image: "images/image276.png",
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
+    ],
+    explanation:
+      "Explanation:<br><br>The Exception class is the base class for all built-in exceptions, so it will catch any error.",
+    link: "https://docs.python.org/3/tutorial/errors.html",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image277.png",
+    answers: [
+      { text: "What is this madness?", correct: false },
+      { text: "ArithmeticError Caught", correct: true },
+      { text: "420", correct: false },
+      { text: "The code is erroneous and will not execute", correct: false },
+    ],
+    explanation:
+      "Explanation:<br><br>The inner try-except block catches the ArithmeticError first, but if the exception is not handled, it goes to the outer one for ZeroDivisionError.",
+    link: "https://docs.python.org/3/tutorial/errors.html",
+  },
+  {
+    question: "What is the expected output of the following code?",
+    image: "images/image278.png",
+    answers: [
+      { text: "An error occurred: division by zero", correct: true },
+      { text: "An error occurred: ArithmeticError", correct: false },
+      { text: "An error occurred: ZeroDivisionError", correct: false },
+      { text: "The code is erroneous and will not execute", correct: false },
+    ],
+    explanation:
+      "Explanation:<br><br>The ZeroDivisionError is caught as a general Exception, and e contains the error message division by zero.",
+    link: "https://docs.python.org/3/tutorial/errors.html",
+  },
+  {
+    question: "In the following code, what will print(type(e)) output?",
+    image: "images/image279.png",
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: false },
+      { text: "C", correct: false },
+      { text: "D", correct: true },
+    ],
+    explanation:
+      "Explanation:<br><br>The specific type of the caught exception is TypeError. This is because '0' + 0 is not a valid operation.",
+    link: "https://docs.python.org/3/tutorial/errors.html",
+  },
+  {
+    question:
+      "How can you modify the following code to raise the exception again after handling it?",
+    image: "images/image280.png",
+    answers: [
+      { text: "A", correct: false },
+      { text: "B", correct: true },
+      { text: "C", correct: false },
+      { text: "D", correct: false },
+    ],
+    explanation:
+      "Explanation:<br><br>Using raise without arguments re-raises the caught exception, allowing the program to propagate the error further after handling it.",
+    link: "https://docs.python.org/3/tutorial/errors.html",
+  },
+  {
+    question:
+      "Which function returns a detailed description of the operating system, including the version?",
+    answers: [
+      { text: "A) platform.machine()", correct: false },
+      { text: "B) platform.platform()", correct: true },
+      { text: "C) platform.system()", correct: false },
+      { text: "D) platform.processor()", correct: false },
+    ],
+    explanation: "Explanation:<br><br>The platform.platform() function provides a detailed string describing the operating system, including the version number, architecture, and other specifics. <br><br>This gives more information than just the name of the OS, like kernel versions and other identifiers, making it the most detailed function related to the OS.",
+    link: "https://docs.python.org/3/library/platform.html#pla tform.platform ",
+  },
+  {
+    question:
+      "Which of the following functions returns the machine type, such as x86_64 or arm?",
+    answers: [
+      { text: "A) platform.system()", correct: false },
+      { text: "B) platform.processor()", correct: false },
+      { text: "C) platform.machine()", correct: true },
+      { text: "D) platform.version()", correct: false },
+    ],
+    explanation: "Explanation:<br><br>The platform.machine() function returns the machine architecture, which refers to the hardware type. <br><br>Common outputs include x86_64 (for 64-bit architecture) or arm (for ARM-based systems). <br><br>It tells you about the architecture of the system you're running the Python code on.",
+    link: "https://docs.python.org/3/library/platform.html#platform.machine",
+  },
+  {
+    question:
+      "Which function returns the name of the operating system, such as Windows, Linux, or Darwin?",
+    answers: [
+      { text: "A) platform.system()", correct: true },
+      { text: "B) platform.processor()", correct: false },
+      { text: "C) platform.machine()", correct: false },
+      { text: "D) platform.platform()", correct: false },
+    ],
+    explanation: `Explanation:<br><br>The platform.system() function provides the name of the operating system (e.g., "Windows", "Linux", "Darwin" for macOS). <br><br>This is the simplest function for retrieving the OS name without additional details like version or architecture.`,
+    link: "https://docs.python.org/3/library/platform.html#platform.system",
+  },
+  {
+    question:
+      "What is the output of platform.python_version_tuple() for Python version 3.9.7?",
+    answers: [
+      { text: "A) ('3.9.7')", correct: false },
+      { text: "B) ['3', '9', '7']", correct: false },
+      { text: "C) ('3', '9', '7')", correct: true },
+      { text: "D) ('3', '9')", correct: false },
+    ],
+    explanation: "Explanation:<br><br>The platform.python_version_tuple() function returns the Python version as a tuple of strings. <br><br>For example, Python 3.9.7 would be represented as ('3', '9', '7'), breaking it into major, minor, and patch versions. <br><br>This allows you to easily access specific parts of the version.",
+    link: "https://docs.python.org/3/library/platform.html#platform.python_version_tuple",
+  },
+  {
+    question:
+      "Which function returns the name and version of the processor, if available?",
+    answers: [
+      { text: "A) platform.version()", correct: false },
+      { text: "B) platform.processor()", correct: true },
+      { text: "C) platform.system()", correct: false },
+      { text: "D) platform.platform()", correct: false },
+    ],
+    explanation: `Explanation:<br><br>The platform.processor() function provides information about the processor (CPU) on the system. <br><br>The output can include the brand and model of the processor (e.g., "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz"), but on some systems, it might return an empty string if the information is not available.`,
+    link: "https://docs.python.org/3/library/platform.html#platform.processor",
+  },
+  {
+    question:
+      "Which of the following functions returns the implementation of the current Python interpreter, such as CPython?",
+    answers: [
+      { text: "A) platform.python_version_tuple()", correct: false },
+      { text: "B) platform.platform()", correct: false },
+      { text: "C) platform.python_implementation()", correct: true },
+      { text: "D) platform.system()", correct: false },
+    ],
+    explanation: `Explanation:<br><br>The platform.python_implementation() function returns the name of the Python interpreter being used, like "CPython", "PyPy", or "Jython". <br><br>This is important because certain Python features may behave differently depending on the interpreter.`,
+    link: "https://docs.python.org/3/library/platform.html#platform.python_implementation",
+  },
+  {
+    question:
+      "Which function returns the version of the operating system as a string?",
+    answers: [
+      { text: "A) platform.version()", correct: true },
+      { text: "B) platform.system()", correct: false },
+      { text: "C) platform.platform()", correct: false },
+      { text: "D) platform.machine()", correct: false },
+    ],
+    explanation: `Explanation:<br><br>The platform.version() function provides the version of the operating system as a string. <br><br>For example, on Windows, it could return something like "10.0.19041", representing the version of the OS. <br><br>It's the go-to function for getting the OS version in string format.`,
+    link: "https://docs.python.org/3/library/platform.html#platform.version",
+  },
+  {
+    question:
+      "Which function would you use to ensure that a script is running on a specific Python version?",
+    answers: [
+      { text: "A) platform.system()", correct: false },
+      { text: "B) platform.machine()", correct: false },
+      { text: "C) platform.python_version_tuple()", correct: true },
+      { text: "D) platform.version()", correct: false },
+    ],
+    explanation: "Explanation:<br><br>The platform.python_version_tuple() function returns the Python version as a tuple, which is particularly useful for comparing versions in a structured way (e.g., checking if a script is running on Python 3.8 or later). <br><br>You can easily access individual components of the version to make decisions in your code based on the Python version.",
+    link: "https://docs.python.org/3/library/platform.html#platform.python_version_tuple",
+  },
+  {
+    question: "What is the output of platform.machine() on a 64-bit system?",
+    answers: [
+      { text: `A) "Intel Core i7"`, correct: false },
+      { text: `B) "Windows"`, correct: false },
+      { text: `C) "x86_64"`, correct: true },
+      { text: `D) "10.0.19041"`, correct: false },
+    ],
+    explanation: `Explanation:<br><br>The platform.machine() function outputs the machine architecture. On a 64-bit system, the common output would be "x86_64". <br><br>This indicates that the machine is running a 64-bit architecture. <br><br>Other architectures like arm or i386 might be returned for different types of hardware.`,
+    link: "https://docs.python.org/3/library/platform.html#platform.machine",
+  },
+  {
+    question: "Which function returns operating system information along with the kernel version in a single string?",
+    answers: [
+      { text: "A) platform.system()", correct: false },
+      { text: "B) platform.platform()", correct: true },
+      { text: "C) platform.processor()", correct: false },
+      { text: "D) platform.python_version_tuple()", correct: false },
+    ],
+    explanation: "Explanation:<br><br>The platform.platform() function provides a comprehensive description of the operating system, including the kernel version, release, architecture, and more. <br><br>It returns everything as a single string, making it useful when you need all the details in one place.",  
+    link: "https://docs.python.org/3/library/platform.html#platform.platform",
+  } /*
+  {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7107,7 +7310,7 @@ export const questions = [
       { text: "", correct: false },
     ],    
   }, 
-   {
+  {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7116,7 +7319,7 @@ export const questions = [
       { text: "", correct: false },
     ],    
   }, 
-   {
+  {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7125,7 +7328,7 @@ export const questions = [
       { text: "", correct: false },
     ],    
   }, 
-   {
+  {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7134,7 +7337,7 @@ export const questions = [
       { text: "", correct: false },
     ],    
   }, 
-   {
+  {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7143,7 +7346,7 @@ export const questions = [
       { text: "", correct: false },
     ],    
   }, 
-   {
+  {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7152,7 +7355,7 @@ export const questions = [
       { text: "", correct: false },
     ],    
   }, 
-   {
+  {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7161,7 +7364,7 @@ export const questions = [
       { text: "", correct: false },
     ],    
   }, 
-   {
+  {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7170,7 +7373,7 @@ export const questions = [
       { text: "", correct: false },
     ],    
   }, 
-   {
+  {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7179,7 +7382,7 @@ export const questions = [
       { text: "", correct: false },
     ],    
   }, 
-   {
+  {
     question: "",
     answers: [
       { text: "", correct: false },
@@ -7188,6 +7391,32 @@ export const questions = [
       { text: "", correct: false },
     ],    
   }, 
-  
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  }, 
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  }, 
+  {
+    question: "",
+    answers: [
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+    ],    
+  }, 
   */,
 ];
