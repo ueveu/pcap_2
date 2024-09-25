@@ -3858,7 +3858,7 @@ export const questions = [
     link: "https://www.programiz.com/python-programming/list",
   },
   {
-    question: "Which of the following statements are true?",
+    question: "Which of the following statements are true? <br><br>(Choose two)",
     answers: [
       {
         text: "A)   The finally branch of the try statement may be executed if special conditions are met.",
