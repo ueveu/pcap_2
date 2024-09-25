@@ -864,7 +864,7 @@ export const questions = [
     question: "What does the 'with' statement do in Python?",
     answers: [
       { text: "It defines a new variable.", correct: false },
-      { text: "It creates aloop.", correct: false },
+      { text: "It creates a loop.", correct: false },
       { text: "It defines a function.", correct: false },
       {
         text: "It manages resources and ensures proper cleanup.",
