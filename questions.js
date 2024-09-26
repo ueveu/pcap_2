@@ -7500,7 +7500,8 @@ export const questions = [/*
       { text: "map() raises an error if the iterable contains None values.", correct: false },
     ],    
     explanation: "Explanation:<br><br>In Python, map() returns an iterator, not a list (you can convert it to a list by using list()), and it applies the provided function to each element of the iterable. <br><br>It does not modify the original iterable, and it doesn't raise errors for None values unless the function itself does."
-  },/*
+  }/*
+  ,
    {
     question: "",
     answers: [
