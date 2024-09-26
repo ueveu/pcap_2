@@ -6400,24 +6400,24 @@ export const questions = [/*
     question: "Is the __dict__ property available for all Python objects?",
     answers: [
       {
-        text: "A) No, it is only available for instances of built-in classes.",
+        text: "A) No, it is only available for certain built-in types.",
         correct: false,
       },
       {
-        text: "B) Yes, it is available for all objects that are instances of user-defined classes.",
+        text: "B) Yes, for most objects, but not for certain built-in types.",
         correct: true,
       },
       {
-        text: "C) No, it is only available for instances of user-defined classes.",
+        text: "C) No, only for instances of user-defined classes.",
         correct: false,
       },
       {
-        text: "D) Yes, it is available for instances of all Python objects.",
+        text: "D) Yes, for all Python objects.",
         correct: false,
       },
     ],
     explanation:
-      "Explanation:<br><br>A) is incorrect because built-in class instances generally do not have a __dict__.<br><br>B) is correct. The __dict__ attribute is available for objects that are instances of user-defined classes, allowing access to their attributes. It stores the object's namespace in a dictionary. However, objects of some built-in types like int, str, or float don't have a __dict__.<br><br>C) implies it's exclusive to user-defined class instances, which is mostly true but not absolute since some custom optimizations or settings can remove it (e.g., by using __slots__).<br><br>D) is incorrect because not all objects (like built-in types) have the __dict__ attribute.",
+      "Explanation:<br><br>The __dict__ attribute is available for instances of user-defined classes and most objects, allowing you to access their attributes. However, certain built-in types (like integers, strings, and tuples) do not have a __dict__ attribute since they are immutable and do not store attributes in that way.",
     link: "https://docs.python.org/3/reference/datamodel.html#object.__dict__",
   },
   {
@@ -7115,7 +7115,7 @@ export const questions = [/*
       },
     ],
     explanation:
-      "Explanation:<br><br>The ArithmeticError catches the division by zero, because it is a parent class of the ZeroDivisionError<br><br><br><br>Therefore, the output is 420.0.",
+      "Explanation:<br><br>The ArithmeticError catches the division by zero, because it is a parent class of the ZeroDivisionError<br><br>Therefore, the output is 420.0.",
     link: "https://docs.python.org/3/tutorial/errors.html",
   },
   {
