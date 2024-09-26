@@ -3936,7 +3936,7 @@ export const questions = [/*
   },
   {
     question:
-      "Which of the following messages will appear on the screen when the code is run?",
+      "Which of the following messages will appear on the screen when the code is run? <br><br>(Choose two)",
     image: "images/image726.png",
     answers: [
       { text: "Problem", correct: false },
@@ -7453,7 +7453,7 @@ export const questions = [/*
       { text: "hasattr() always returns True regardless of the attribute's existence.", correct: false },
       { text: "hasattr() returns None if the attribute does not exist.", correct: false },
     ],    
-    explanation: "Explanation:<br><br>asattr() checks for the existence of an attribute and returns True if it exists, otherwise it returns False without raising any exceptions.",
+    explanation: "Explanation:<br><br>hasattr() checks for the existence of an attribute and returns True if it exists, otherwise it returns False without raising any exceptions.",
     link: "https://docs.python.org/3/tutorial/classes.html#private-attributes",
   }, 
    {
