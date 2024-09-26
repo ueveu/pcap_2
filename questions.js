@@ -3232,7 +3232,7 @@ export const questions = [/*
       { text: 'The string "nice to see you" will be seen', correct: true },
       { text: 'The string "na na na na" will be seen', correct: false },
       { text: "The code will raise an unhandled exception", correct: false },
-      { text: 'The string  "I feel good" will be seen', correct: true },
+      { text: 'The string  "I feel food" will be seen', correct: true },
     ],
     explanation:
       'Explanation:<br><br>The snippet defines a custom exception class E with a fixed string message in its __str__ method. In the try block, it prints "I feel food" and raises an instance of E with a specific message.<br><br> The except block catches the exception and prints "nice to see you" due to the custom __str__ method. The else block is skipped because an exception was raised.',
