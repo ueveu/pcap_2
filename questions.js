@@ -5855,7 +5855,7 @@ export const questions = [/*
           "\n" +
           "[ tau ]" +
           "\n" +
-          "[aleph]",
+          "[ aleph ]",
         correct: false,
       },
     ],
