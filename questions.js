@@ -3652,7 +3652,7 @@ export const questions = [/*
         correct: true,
       },
       {
-        text: "Polymorphism is a phenomenon allowing you to have manylasses of the same name.",
+        text: "Polymorphism is a phenomenon allowing you to have many classes of the same name.",
         correct: false,
       },
       {
