@@ -559,7 +559,7 @@ export const questions = [/*
       { text: "Dictionary", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>Lists can be modified after they are created; you can change their elements, add new elements, or remove elements.<br><br>Sets and Dictionaries are also mutable; you can add or remove elements from a them.",
+      "Explanation:<br><br>Lists can be modified after they are created; you can change their elements, add new elements, or remove elements.<br><br>Sets and Dictionaries are also mutable; you can add or remove elements from them.",
     link: "https://www.scaler.com/topics/mutable-data-types-in-python/asp",
   },
   {
@@ -3987,7 +3987,7 @@ export const questions = [/*
     link: "https://docs.python.org/3/reference/datamodel.html#objects-values-and-types",
   },
   {
-    question: "Which of the following operations will not raise any exception?",
+    question: "Which of the following operations will not raise any exception? <br><br>(Choose two)",
     answers: [
       { text: "A)   Indexing a tuple", correct: false },
       { text: "B)   Invoking the float( ) function", correct: false },
