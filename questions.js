@@ -5828,7 +5828,7 @@ export const questions = [/*
     answers: [
       {
         text:
-          "[ upsilon]" + "\n" + "procoding" + "\n" + "[tau]" + "\n" + "[aleph]",
+          "[ upsilon]" + "\n" + "procodingrs" + "\n" + "[tau]" + "\n" + "[aleph]",
         correct: false,
       },
       {
@@ -5844,7 +5844,7 @@ export const questions = [/*
       },
       {
         text:
-          "[upsilon]" + "\n" + "procoding" + "\n" + "[tau ]" + "\n" + "[aleph]",
+          "[upsilon]" + "\n" + "procodingrs" + "\n" + "[tau ]" + "\n" + "[aleph]",
         correct: false,
       },
       {
