@@ -3639,6 +3639,7 @@ export const questions = [/*
       "Explanation:<br><br>• Top is the base class with value set to 3 and a method say() that returns self.value.<br>• Middle inherits from Top and overrides value to 2.<br>• Bottom inherits from Middle and overrides the say() method to return -self.value.<br><br>A)<br> • short is an instance of Bottom.<br>• Bottom inherits value from Middle, which is 2.<br>• Therefore, short.value is indeed 2.<br><br>B)<br>• average is an instance of Middle.<br>• Bottom is a subclass of Middle.<br>• isinstance(average, Bottom) checks if average (an instance of Middle) is also an instance of Bottom.<br>• Since average is not an instance of Bottom, this expression evaluates to False.<br><br>C)<br>• average is an instance of Middle.<br>• Middle has value set to 2.<br>• Therefore, average.value is 2.<br><br>D)<br>• tall is an instance of Top.<br>• Top's say() method returns self.value, which is 3.<br>• Therefore, tall.say() returns 3, not 2.",
     link: "https://www.programiz.com/python-programming/methods/built-in/isinstance",
   },
+  
   {
     question:
       "What statements are true about object-oriented programming? <br><br>(Choose two)",
