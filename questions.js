@@ -3975,7 +3975,7 @@ export const questions = [/*
   },
   {
     question:
-      "Consider the code below. Which print statement will output True?",
+      "Consider the code below. Which print statement will output True? <br><br>(Choose two)",
     image: "images/image728.png",
     answers: [
       { text: "A", correct: false },
@@ -6096,7 +6096,7 @@ export const questions = [/*
     link: "https://www.w3schools.com/python/gloss_python_comparison_operators.asp",
   },
   {
-    question: "How many lines does the following snippet output?",
+    question: "How many stars (*) does the following snippet output?",
     image: "images/image216.png",
     answers: [
       { text: "three", correct: true },
