@@ -1,4 +1,4 @@
-export const questions = [
+export const questions = [/*
   {
     question: "What will be the outcome of the following code snippet?",
     image: "images/image1.png",
@@ -2992,7 +2992,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The code prints True upper. Object is an instance of Lower, and super().__init__() in Lower calls Upper's constructor, setting Object.property to 'upper'.",
     link: "https://docs.python.org/3/tutorial/classes.html#inheriting-from-classes",
-  },
+  },*/
   {
     question: "What is the expected behavior of the following code?",
     image: "images/image118.png",
