@@ -2503,7 +2503,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>In the code snippet, the variable `a` is assigned the string `'hello'`. A function `x` is then defined, requiring two parameters, `a` and `b`. Inside this function, the first character of `a` is accessed and returned. <br><br>When `print(x(a))` is called, it tries to invoke the function `x` with only one argument, `a`. Since `x` expects two arguments but receives only one, Python raises a `TypeError`. <br><br>The error message will be: TypeError: x() missing 1 required positional argument: 'b'",
     link: "https://www.w3schools.com/python/python_functions.asp",
-  },
+  },*/
   {
     question: "What is the expected behavior of the following snippet?",
     image: "images/image92.png",
@@ -2993,7 +2993,7 @@ export const questions = [
     explanation:
       "Explanation:<br><br>The code prints True upper. Object is an instance of Lower, and super().__init__() in Lower calls Upper's constructor, setting Object.property to 'upper'.",
     link: "https://docs.python.org/3/tutorial/classes.html#inheriting-from-classes",
-  },*/
+  },
   {
     question: "What is the expected behavior of the following code?",
     image: "images/image118.png",
