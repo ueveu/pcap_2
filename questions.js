@@ -8050,6 +8050,7 @@ export const questions = [
   {
     question:
       "A Python package named `pypack` includes a module named `pymod.py` which contains a function `pyfun`. Which of the following snippets will let you invoke the function? <br><br>(Choose two)",
+      image: "images/image770.png",
     answers: [
       { text: "A", correct: true },
       { text: "B", correct: true },
