@@ -738,8 +738,7 @@ print(Class.Var + object_1.var + object_2.var)`,
       { text: "it outputs 5", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>Class.Var is incremented for each instance, resulting in 2, plus the values of object_1.var and object_2.var, which are 1 and 2 respectively.",
-    link: "",
+      "Explanation:<br><br>Class.Var is 2, object_1.var is 1, and object_2.var is 2, so the output is 5.",
   },
   {
     question: "What is the expected behavior of the following code?",

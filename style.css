@@ -649,7 +649,5 @@ Python syntax highlighting
 
 
 /* .python .class-name { color: #4ec9b0; } /* Class names */ */
-/* .python .operator { color: #d4d4d4; } /* Operators */ */
-/* .python .punctuation { color: #d4d4d4; } /* Punctuation */ */
-
-
+.python .operator { color: #d4d4d4; } /* Operators */
+.python .punctuation { color: #d4d4d4; } /* Punctuation */
