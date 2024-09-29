@@ -614,13 +614,42 @@ body {
 .copy-button:hover {
   background-color: #4a4a4a;
 }
+/* Styles for the copy message */
+.copy-message {
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* 20px from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  font-size: 14px; /* Font size */
+  opacity: 1; /* Fully visible */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition for opacity and transform */
+  z-index: 1000; /* Ensure it is above other elements */
+}
 
-/* Python syntax highlighting */
-.python .keyword { color: #569cd6; } /* Keywords */
-.python .string { color: #d69d85; } /* Strings */
-.python .number { color: #b5cea8; } /* Numbers */
-.python .comment { color: #6a9955; } /* Comments */
-.python .function { color: #dcdcaa; } /* Function names */
-.python .class-name { color: #4ec9b0; } /* Class names */
-.python .operator { color: #d4d4d4; } /* Operators */
-.python .punctuation { color: #d4d4d4; } /* Punctuation */
+.copy-message.fade-out {
+  opacity: 0; /* Fade out */
+  transform: translateX(-50%) translateY(20px); /* Move down slightly */
+}
+
+Python syntax highlighting
+/* .python .keyword { color: #569cd6; } /* Keywords */ */
+/* .python .string { color: #d69d85; } /* Strings */ */
+/* .python .number { color: #b5cea8; } /* Numbers */ */
+/* .python .comment { color: #6a9955; } /* Comments */ */
+/* .python .function { color: #dcdcaa; } /* Function names */ */
+/* .python .class-name { color: #4ec9b0; } /* Class names */ */
+/* .python .operator { color: #d4d4d4; } /* Operators */ */
+/* .python .punctuation { color: #d4d4d4; } /* Punctuation */ */
+
+
+
+/* .python .class-name { color: #4ec9b0; } /* Class names */ */
+/* .python .operator { color: #d4d4d4; } /* Operators */ */
+/* .python .punctuation { color: #d4d4d4; } /* Punctuation */ */
+
+

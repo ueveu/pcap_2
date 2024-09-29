@@ -1,11 +1,9 @@
 export const questions = [
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-the_string = ',,'.join(('alpha', 'omega'))
+    code:`the_string = ',,'.join(('alpha', 'omega'))
 the_list = the_string.split(',')
-print(',' in the_list)
-`,
+print(',' in the_list)`,
     answers: [
       { text: "it raises an exception", correct: false },
       { text: "it outputs False", correct: true },
@@ -19,12 +17,10 @@ print(',' in the_list)
   
   {
     question: "Which of the following invocations are valid? (Select two answers)",
-    code: `
-'python'.sorted()
+    code:`'python'.sorted()
 "python".find("")
 "python".rindex("th")
-sort("python")
-`,
+sort("python")`,
     answers: [
       { text: "'python'.sorted()", correct: false },
       { text: '"python".find("")', correct: true },
@@ -37,11 +33,9 @@ sort("python")
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-x = 8 ** (1 / 3)
+    code:`x = 8 ** (1 / 3)
 y = 2. if x < 2.3 else 3.
-print(y)
-`,
+print(y)`,
     answers: [
       { text: "it outputs 3.0", correct: false },
       { text: "it outputs 2.5", correct: false },
@@ -68,12 +62,10 @@ print(y)
   
   {
     question: "Which of the following expressions evaluate to True? (Select two answers)",
-    code: `
-'not' not in 'in'
+    code:`'not' not in 'in'
 't'.upper() in 'Thames'
 'a' not in 'ABC'.lower()
-'in' not in 'not'
-`,
+'in' not in 'not'`,
     answers: [
       { text: "'not' not in 'in'", correct: true },
       { text: "'t'.upper() in 'Thames'", correct: true },
@@ -88,12 +80,10 @@ print(y)
   
   {
       question: "Which of the following expressions evaluate to True? (Select two answers)",
-      code: `
-11 == '011'
+      code:`11 == '011'
 '1' + '2' * 2 == '12'
 'abc'.upper() < 'abc'
-3 * 'a' < 'a' * 2
-`,
+3 * 'a' < 'a' * 2`,
     answers: [
       { text: "11 == '011'", correct: false },
       { text: "'1' + '2' * 2 == '12'", correct: false },
@@ -113,8 +103,7 @@ print(y)
 ord("z") - ord("Z") == ord("0")
 len('\\') == 1
 len('"""') == 0
-chr(ord('a') + 1) == 'B'
-`,
+chr(ord('a') + 1) == 'B'`,
     answers: [
       { text: "ord('z') - ord('Z') == ord('0')", correct: false },
       { text: "len('\\') == 1", correct: true },
@@ -127,8 +116,7 @@ chr(ord('a') + 1) == 'B'
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-my_tuple = (1, 2, 3)
+    code:`my_tuple = (1, 2, 3)
 
 try:
     my_tuple[3] = my_tuple[2]
@@ -139,8 +127,7 @@ except Exception as exception:
 else:
     x = None
 
-print(x)
-`,
+print(x)`,
     answers: [
       { text: "it outputs 'tuple' object does not support item assignment", correct: true },
       { text: "it outputs None", correct: false },
@@ -153,13 +140,11 @@ print(x)
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-string = str(1/3)
+    code:`string = str(1/3)
 dummy = ''
 for character in string:
     dummy = dummy + character
-print(dummy[-1])
-`,
+print(dummy[-1])`,
     answers: [
       { text: "it outputs 0", correct: false },
       { text: "it raises an exception", correct: false },
@@ -172,11 +157,9 @@ print(dummy[-1])
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-x = 8 ** (1 / 3)
+    code:`x = 8 ** (1 / 3)
 y = 2. if x < 2.3 else 3.
-print(y)
-`,
+print(y)`,
     answers: [
       { text: "it outputs 3.0", correct: false },
       { text: "it outputs 2.5", correct: false },
@@ -189,10 +172,8 @@ print(y)
   },
   {
     question: "Assuming that the snippet below has been executed successfully, which of the following expressions will evaluate to true? (Select two answers)",
-    code: `
-string = 'python'[::2]
-string = string[-1] + string[-2]
-`,
+    code:`string = 'python'[::2]
+string = string[-1] + string[-2]`,
     answers: [
       { text: "string is None", correct: false },
       { text: "string[0] == 'o'", correct: true },
@@ -205,8 +186,7 @@ string = string[-1] + string[-2]
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-s = '2A'
+    code:`s = '2A'
 try:
     n = int(s)
 except ValueError:
@@ -216,8 +196,7 @@ except ArithmeticError:
 except:
     n = 0
 
-print(n)
-`,
+print(n)`,
     answers: [
       { text: "it outputs 2", correct: true },
       { text: "it outputs 1", correct: false },
@@ -230,8 +209,7 @@ print(n)
   },
   {
     question: "What is true about the following snippet? (Select two answers)",
-    code: `
-class E(Exception):
+    code:`class E(Exception):
     def __init__(self, message):
         self.message = message
     def __str__(self):
@@ -243,8 +221,7 @@ try:
 except E as e:
     print(e)
 else:
-    print("the show must go on")
-`,
+    print("the show must go on")`,
     answers: [
       { text: "the string it's nice to see you will be seen", correct: false },
       { text: "the string I feel fine will be seen", correct: true },
@@ -257,11 +234,9 @@ else:
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-the_list = "1,2 3".split()
+    code:`the_list = "1,2 3".split()
 the_string = ''.join(the_list)
-print(the_string.isdigit())
-`,
+print(the_string.isdigit())`,
     answers: [
       { text: "it outputs True", correct: false },
       { text: "it outputs False", correct: true },
@@ -274,11 +249,9 @@ print(the_string.isdigit())
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-myli = [1, 2, 4]
+    code:`myli = [1, 2, 4]
 m = list(map(lambda x: 2**x, myli))
-print(m[-1])
-`,
+print(m[-1])`,
     answers: [
       { text: "1", correct: false },
       { text: "16", correct: true },
@@ -304,14 +277,12 @@ print(m[-1])
   },
   {
     question: "Assuming that the code below has been executed successfully, which of the following statements are true? (Select two answers)",
-    code: `
-class Class:
+    code:`class Class:
     var = 1
     def __init__(self, value):
         self.prop = value
 
-Object = Class(2)
-`,
+Object = Class(2)`,
     answers: [
       { text: "len(Object.__dict__) == 1", correct: true },
       { text: "'var' in Class.__dict__", correct: true },
@@ -324,12 +295,10 @@ Object = Class(2)
   },
   {
     question: "What is the expected output of the following code?",
-    code: `
-def func(a, b, c=7, *args):
+    code:`def func(a, b, c=7, *args):
 print(a, b, c, args)
 
-func(1, 2, 3, 4, 5)
-`,
+func(1, 2, 3, 4, 5)`,
     answers: [
       { text: "1 2 3 (4, 5)", correct: true },
       { text: "1 2 7 (3, 4, 5)", correct: false },
@@ -341,12 +310,10 @@ func(1, 2, 3, 4, 5)
   },
   {
     question: "What will be the output of the following code?",
-    code: `
-x = [1, 2, 3]
+    code:`x = [1, 2, 3]
 y = x
 y.append(4)
-print(x)
-`,
+print(x)`,
     answers: [
       { text: "[1, 2, 3]", correct: false },
       { text: "[1, 2, 3, 4]", correct: true },
@@ -358,8 +325,7 @@ print(x)
   },
   {
     question: "Assuming that the code below has been placed inside a file named 'code.py', which of the following expressions evaluate to True? (Select two answers)",
-    code: `
-class ClassA:
+    code:`class ClassA:
   var = 1
     
   def __init__(self, prop):
@@ -398,8 +364,7 @@ Object = ClassB(2)`,
   },
   {
     question: "Assuming that the following piece of code has been executed, which of the following statements are true? (Select two answers)",
-    code: `
-class A:
+    code:`class A:
     VarA = 1
     def __init__(self):
         self.prop_a = 1
@@ -417,8 +382,7 @@ class C(B):
 
 obj_a = A()
 obj_b = B()
-obj_c = C()
-`,
+obj_c = C()`,
     answers: [
       { text: "isinstance(obj_c, A)", correct: true },
       { text: "hasattr(obj_b, 'prop_aa')", correct: false },
@@ -431,8 +395,7 @@ obj_c = C()
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-class Class:
+    code:`class Class:
     _Var = 1
     __Var = 2
     def __init__(self):
@@ -440,8 +403,7 @@ class Class:
         self.__prop = 4
   
 o = Class()
-print(o._Class__Var + o._Class__prop)
-`,
+print(o._Class__Var + o._Class__prop)`,
     answers: [
       { text: "it outputs 6", correct: true },
       { text: "it outputs 1", correct: false },
@@ -454,8 +416,7 @@ print(o._Class__Var + o._Class__prop)
   },
   {
     question: "What is the expected output of the following snippet?",
-    code: `
-class Upper:
+    code:`class Upper:
     def __init__(self):
         self.property = 'upper'
   
@@ -465,8 +426,7 @@ class Lower(Upper):
   
 Object = Lower()
 print(isinstance(Object, Lower), end=' ')
-print(Object.property)
-`,
+print(Object.property)`,
     answers: [
       { text: "True lower", correct: false },
       { text: "True upper", correct: true },
@@ -479,8 +439,7 @@ print(Object.property)
   },
   {
     question: "Which of the following lines of code will work flawlessly when put independently inside the inc() method in order to make the snippet's output equal to 3? (Select two answers)",
-    code: `
-class MyClass:
+    code:`class MyClass:
       Var = 0
       def __init__(self):
           MyClass.Var += 1
@@ -498,8 +457,7 @@ class MyClass:
   
 Object = MyClass()
 Object.inc(2)
-print(Object.get())
-`,
+print(Object.get())`,
     answers: [
       { text: "self.put(get() + val)", correct: false },
       { text: "self.put(self.prop + val)", correct: true },
@@ -512,12 +470,10 @@ print(Object.get())
   },
   {
     question: "What is the expected output of the following code?",
-    code: `
-def foo(x, y, z):
+    code:`def foo(x, y, z):
     return x(y) - x(z)
   
-print(foo(lambda x: x % 2, 2, 2, 1))
-`,
+print(foo(lambda x: x % 2, 2, 2, 1))`,
     answers: [
       { text: "an exception is raised", correct: false },
       { text: "1", correct: false },
@@ -556,8 +512,7 @@ print(foo(lambda x: x % 2, 2, 2, 1))
   },
   {
     question: "Which of the following snippets will execute without raising any unhandled exceptions? (Select two answers)",
-    code: `
-try:
+    code:`try:
     print(0/0)
 except:
     print(0/1)
@@ -579,8 +534,7 @@ except:
 else:
     print(math.sqrt(1))
 try:
-    print(float("le1"))
-`,
+    print(float("le1"))`,
     answers: [
       { text: "try: print(int('0')) except NameError: print('0') else: print(int(''))", correct: true },
       { text: "import math; try: print(math.sqrt(-1)) except: print(math.sqrt(0))", correct: true },
@@ -593,8 +547,7 @@ try:
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-s = '2A'
+    code:`s = '2A'
 try:
    n = int(s)
 except ValueError:
@@ -604,8 +557,7 @@ except ArithmeticError:
 except:
     n = 0
 
-print(n)
-`,
+print(n)`,
     answers: [
       { text: "it outputs 2", correct: true },
       { text: "it outputs 1", correct: false },
@@ -631,7 +583,8 @@ print(n)
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
+    code:`m = 1
+
 def foo(n):
     global m
     assert m == 0
@@ -648,8 +601,7 @@ except ArithmeticError:
 except:
     m += 2
 
-print(m)
-`,
+print(m)`,
     answers: [
       { text: "it outputs 3", correct: true },
       { text: "it outputs 1", correct: false },
@@ -662,21 +614,19 @@ print(m)
   },
   {
     question: "What is true about the following snippet? (Select two answers)",
-    code: `
-  class E(Exception):
-      def __init__(self, message):
-          self.message = message
-      def __str__(self):
-          return "it's nice to see you"
+    code:`class E(Exception):
+    def __init__(self, message):
+        self.message = message
+    def __str__(self):
+        return "it's nice to see you"
   
-  try:
-      print("I feel fine")
+try:
+    print("I feel fine")
       raise Exception("what a pity")
   except E as e:
       print(e)
   else:
-      print("the show must go on")
-`,
+      print("the show must go on")`,
     answers: [
       { text: "the string it's nice to see you will be seen", correct: false },
       { text: "the string I feel fine will be seen", correct: true },
@@ -689,11 +639,9 @@ print(m)
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-the_list = "1,2 3".split()
+    code:`the_list = "1,2 3".split()
 the_string = ''.join(the_list)
-print(the_string.isdigit())
-`,
+print(the_string.isdigit())`,
     answers: [
       { text: "it outputs True", correct: false },
       { text: "it raises an exception", correct: false },
@@ -719,10 +667,8 @@ print(the_string.isdigit())
   },
   {
     question: "Assuming that the snippet below has been executed successfully, which of the following expressions will evaluate to True? (Select two answers)",
-    code: `
-string = 'python'[:2]
-string = string[-1] + string[-2]
-`,
+    code:`string = 'python'[:2]
+string = string[-1] + string[-2]`,
     answers: [
       { text: "string is None", correct: false },
       { text: "string[0] == 'o'", correct: true },
@@ -748,13 +694,11 @@ string = string[-1] + string[-2]
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-string = str(1//3)
+    code:`string = str(1//3)
 dummy = ''
 for character in string:
     dummy = character + dummy
-print(dummy[-1])
-`,
+print(dummy[-1])`,
     answers: [
       { text: "it outputs 0", correct: false },
       { text: "it raises an exception", correct: false },
@@ -767,8 +711,7 @@ print(dummy[-1])
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-class Class:
+    code:`class Class:
     Var = 0
 
     def __init__(self, var):
@@ -778,8 +721,7 @@ class Class:
 
 object_1 = Class(1)
 object_2 = Class(2)
-print(Class.Var + object_1.var + object_2.var)
-`,
+print(Class.Var + object_1.var + object_2.var)`,
     answers: [
       { text: "it outputs 2", correct: false },
       { text: "it raises an exception", correct: false },
@@ -792,8 +734,7 @@ print(Class.Var + object_1.var + object_2.var)
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-class Super:
+    code:`class Super:
     def make(self):
         return 0
 
@@ -812,8 +753,7 @@ class Sub_B(Super):
 
 a = Sub_A()
 b = Sub_B()
-print(a.doit() + b.doit())
-`,
+print(a.doit() + b.doit())`,
     answers: [
       { text: "it outputs 1", correct: true },
       { text: "it outputs 2", correct: false },
@@ -826,11 +766,9 @@ print(a.doit() + b.doit())
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-x = 8 ** (1 / 3)
+    code:`x = 8 ** (1 / 3)
 y = 2. if x < 2.3 else 3.
-print(y)
-`,
+print(y)`,
     answers: [
       { text: "it outputs 3.0", correct: false },
       { text: "it outputs 2.5", correct: false },
@@ -843,12 +781,10 @@ print(y)
   },
   {
     question: "What is the expected output of the following code?",
-    code: `
-def foo(x, y, z):
+    code:`def foo(x, y, z):
     return x(y) - x(z)
   
-print(foo(lambda x: x % 2, 2, 2, 1))
-`,
+print(foo(lambda x: x % 2, 2, 2, 1))`,
     answers: [
       { text: "an exception is raised", correct: true },
       { text: "1", correct: false },
@@ -861,11 +797,9 @@ print(foo(lambda x: x % 2, 2, 2, 1))
   },
   {
     question: "What is the expected behavior of the following code?",
-    code: `
-x = 8 ** (1 / 3)
+    code:`x = 8 ** (1 / 3)
 y = 2. if x < 2.3 else 3.
-print(y)
-`,
+print(y)`,
     answers: [
       { text: "it outputs 3.0", correct: false },
       { text: "it outputs 2.5", correct: false },
@@ -878,11 +812,9 @@ print(y)
   },
   {
     question: "What is the expected output of the following code?",
-    code: `
-myli = [1, 2, 4]
+    code:`myli = [1, 2, 4]
 m = list(map(lambda x: 2 ** x, myli))
-print(m[-1])
-`,
+print(m[-1])`,
     answers: [
       { text: "1", correct: false },
       { text: "16", correct: true },
