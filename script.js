@@ -71,17 +71,31 @@ function showQuestion() {
   let currentQuestion = selectedQuestions[currentQuestionIndex]; // Get current question from selectedQuestions
   questionElement.innerHTML = currentQuestion.question; // Display the question
 
-  // Display the image if it exists
-  if (currentQuestion.image) {
-    const imgElement = document.createElement("img"); // Create an image element
-    imgElement.src = currentQuestion.image; // Set the image source
-    imgElement.alt = "Question Image"; // Set the image alt text
-    imgElement.classList.add("question-image"); // Add a class for styling
-    questionElement.appendChild(imgElement); // Append the image to the question element
+  // Display the code if it exists
+  if (currentQuestion.code) {
+    const codeElement = document.createElement("pre"); // Create a preformatted text element
+    codeElement.classList.add("question-code"); // Add class for styling
+    const codeBlock = document.createElement("code"); // Create a code element
+    codeBlock.classList.add("python"); // Add class for Python syntax highlighting
+    codeBlock.textContent = currentQuestion.code; // Set the code text
+    codeElement.appendChild(codeBlock); // Append the code to the pre element
+
+    // Create the copy button
+    const copyButton = document.createElement("button");
+    copyButton.classList.add("copy-button");
+    copyButton.textContent = "Copy All";
+    copyButton.addEventListener("click", () => {
+      navigator.clipboard.writeText(currentQuestion.code).then(() => {
+        showCopyMessage();
+      });
+    });
+    codeElement.appendChild(copyButton); // Append the copy button to the code element
+
+    questionElement.appendChild(codeElement); // Append the pre element to the question element
   }
 
   // Create buttons for each answer
-  currentQuestion.answers.forEach((answer, index) => {
+  currentQuestion.answers.forEach((answer) => {
     const button = document.createElement("button"); // Create a button
     button.classList.add("btn"); // Add a class for styling
     button.appendChild(document.createTextNode(` ${answer.text}`)); // Append the answer text to the button
@@ -257,7 +271,7 @@ function updateProgressBar() {
 }
 
 function updateQuestionCounter() {
-  questionCounterElement.innerHTML = `Question ${currentQuestionIndex + 1}/40`;
+  questionCounterElement.innerHTML = `Question ${currentQuestionIndex + 1}`;
 }
 
 function updateScoreCount() {
@@ -274,3 +288,18 @@ function resetQuizState() {
 // Start the quiz initially
 resetQuizState();
 startQuiz();
+
+// Function to show the copy message
+function showCopyMessage() {
+  const message = document.createElement("div");
+  message.classList.add("copy-message");
+  message.textContent = "Code copied! :)";
+  document.body.appendChild(message);
+
+  setTimeout(() => {
+    message.classList.add("fade-out");
+    setTimeout(() => {
+      document.body.removeChild(message);
+    }, 1000);
+  }, 1000);
+}
