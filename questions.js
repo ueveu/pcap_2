@@ -363,7 +363,7 @@ Object = ClassB(2)`,
     link: "",
   },
   {
-    question: "Assuming that the following piece of code has been executed, which of the following statements are true? (Select two answers)",
+    question: "Assuming that the following piece of code has been executed, which of the following statements are true? (Select all that apply)",
     code:`class A:
     VarA = 1
     def __init__(self):
@@ -385,12 +385,12 @@ obj_b = B()
 obj_c = C()`,
     answers: [
       { text: "isinstance(obj_c, A)", correct: true },
-      { text: "hasattr(obj_b, 'prop_aa')", correct: false },
+      { text: "hasattr(obj_b, 'prop_aa')", correct: true },
       { text: "isinstance(obj_b, B)", correct: true },
       { text: "hasattr(obj_a, 'prop_a')", correct: true },
     ],
     explanation:
-      "Explanation:<br><br>obj_c is an instance of C, which inherits from B and A. obj_b has 'prop_a' but not 'prop_aa'.",
+      "Explanation:<br><br> all the statements are true. a) obj_c is an instance of C, which inherits from B and A. b) obj_b has 'prop_a' but not 'prop_aa'. c) isinstance(obj_b, B) is true. d) hasattr(obj_a, 'prop_a') is true.",
     link: "",
   },
   {
@@ -481,7 +481,7 @@ print(foo(lambda x: x % 2, 2, 2, 1))`,
       { text: "0", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The lambda function returns 0 for both 2s, so the output is 0 - 1 = -1.",
+      "Explanation:<br><br>foo() takes 3 positional arguments but 4 were given",
     link: "",
   }, 
   {
@@ -512,37 +512,46 @@ print(foo(lambda x: x % 2, 2, 2, 1))`,
   },
   {
     question: "Which of the following snippets will execute without raising any unhandled exceptions? (Select two answers)",
-    code:`try:
+    code: `try:
     print(0/0)
 except:
     print(0/1)
 else:
     print(0/2)
 
-    try:
-        print(int("0"))
-    except NameError:
-        print("0")
-    else:
-        print(int(""))
-  
-import math
 try:
-    print(math.sqrt(-1))
-except:
-    print(math.sqrt(0))
+    print(int("0"))
+except NameError:
+    print("0")
 else:
-    print(math.sqrt(1))
-try:
-    print(float("le1"))`,
+    print(int(""))`,
     answers: [
       { text: "try: print(int('0')) except NameError: print('0') else: print(int(''))", correct: true },
       { text: "import math; try: print(math.sqrt(-1)) except: print(math.sqrt(0))", correct: true },
       { text: "try: print(0/0) except: print(0/1) else: print(0/2)", correct: false },
       { text: "try: print(float('le1'))", correct: false },
     ],
-    explanation:
-      "Explanation:<br><br>The first two snippets handle exceptions correctly, while the others will raise unhandled exceptions.",
+    explanation: "Explanation:<br><br>The first two snippets handle exceptions correctly, while the others will raise unhandled exceptions.",
+    link: "",
+  },
+  {
+    question: "Which of the following snippets will execute without raising any unhandled exceptions? (Select one answer)",
+    code: `import math
+try:
+    print(math.sqrt(-1))
+except:
+    print(math.sqrt(0))
+else:
+    print(math.sqrt(1))
+
+try:
+    print(float("le1"))`,
+    answers: [
+      { text: "import math; try: print(math.sqrt(-1)) except: print(math.sqrt(0))", correct: true },
+      { text: "try: print(0/0) except: print(0/1) else: print(0/2)", correct: false },
+      { text: "try: print(float('le1'))", correct: false },
+    ],
+    explanation: "Explanation:<br><br>The first snippet handles exceptions correctly, while the others will raise unhandled exceptions.",
     link: "",
   },
   {
