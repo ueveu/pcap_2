@@ -8027,13 +8027,13 @@ export const questions = [
     question: "What is the expected behavior of the following code?",
     image: "images/image769.png",
     answers: [
-      { text: "it outputs 6", correct: false },
-      { text: "it outputs 1", correct: true },
+      { text: "it outputs 6", correct: true },
+      { text: "it outputs 1", correct: false },
       { text: "it raises an exception", correct: false },
       { text: "it outputs 3", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>The code defines a class Class with both protected and private variables. <br><br>When creating an instance o of Class, the class variable __Var becomes accessible as o._Class__Var, which equals 2. <br><br>The instance variable __prop is inaccessible as o._Class__prop, but _prop can be accessed as o._prop, which equals 3. <br><br>However, if the code incorrectly references o._Class__prop, it leads to an output of 1 because it falls back to the value of the protected class variable _Var, which is 1. <br><br>Thus, the print statement evaluates to 1.",
+      "Explanation:<br><br>Class contains both class variables and instance variables. The class has a protected variable _Var with a value of 1, and a private variable __Var with a value of 2, which is name-mangled to _Class__Var.<br><br>Additionally, the class has an instance variable _prop set to 3 (protected) and a private instance variable __prop set to 4, which is name-mangled to _Class__prop.<br><br>When you create an instance of the class and execute the print statement print(o._Class__Var + o._Class__prop), you are accessing the name-mangled variables. The expression evaluates as follows: _Class__Var yields 2, and _Class__prop yields 4. <br><br>Therefore, the output of the print statement is 6.",
   },
   {
     question:
