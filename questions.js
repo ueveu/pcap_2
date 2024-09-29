@@ -4180,7 +4180,7 @@ export const questions = [
         correct: true,
       },
       {
-        text: "D) there can the more than one constructor in a Python class",
+        text: "D) there can be more than one constructor in a Python class",
         correct: false,
       },
     ],
