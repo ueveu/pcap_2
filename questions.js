@@ -561,11 +561,11 @@ print(n)`,
     answers: [
       { text: "it outputs 2", correct: true },
       { text: "it outputs 1", correct: false },
-      { text: "it outputs 0", correct: true },
+      { text: "it outputs 0", correct: false },
       { text: "the code is erroneous and it will not execute", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>Converting '2A' to an integer raises a ValueError, which is caught by the first except block, setting n to 2. The code then continues to the else block, setting n to 0.",
+      "Explanation:<br><br>Converting '2A' to an integer raises a ValueError, which is caught by the first except block, setting n to 2.",
     link: "",
   },
   {
