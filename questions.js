@@ -614,8 +614,8 @@ try:
     answers: [
       { text: "the string it's nice to see you will be seen", correct: false },
       { text: "the string I feel fine will be seen", correct: true },
-      { text: "the code will raise an unhandled exception", correct: false },
-      { text: "the string what a pity will be seen", correct: true },
+      { text: "the code will raise an unhandled exception", correct: true },
+      { text: "the string what a pity will be seen", correct: false },
     ],
     explanation:
       "Explanation:<br><br>The first print statement executes, then an exception is raised, which is caught by the except block.",
