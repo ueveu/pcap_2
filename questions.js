@@ -208,31 +208,6 @@ print(n)`,
     link: "",
   },
   {
-    question: "What is true about the following snippet? (Select two answers)",
-    code:`class E(Exception):
-    def __init__(self, message):
-        self.message = message
-    def __str__(self):
-        return "it's nice to see you"
-
-try:
-    print("I feel fine")
-    raise Exception("what a pity")
-except E as e:
-    print(e)
-else:
-    print("the show must go on")`,
-    answers: [
-      { text: "the string it's nice to see you will be seen", correct: false },
-      { text: "the string I feel fine will be seen", correct: true },
-      { text: "the code will raise an unhandled exception", correct: false },
-      { text: "the string what a pity will be seen", correct: true },
-    ],
-    explanation:
-      "Explanation:<br><br>The first print statement executes, then an exception is raised, which is caught by the except block.",
-    link: "",
-  },
-  {
     question: "What is the expected behavior of the following code?",
     code:`the_list = "1,2 3".split()
 the_string = ''.join(the_list)
@@ -668,10 +643,10 @@ print(the_string.isdigit())`,
       { text: "'not' not in 'in'", correct: true },
       { text: "'a' not in 'ABC'.lower()", correct: true },
       { text: "'t'.upper() in 'Thames'", correct: false },
-      { text: "'in' not in 'not'", correct: false },
+      { text: "'in not' in 'not'", correct: false },
     ],
     explanation:
-      "Explanation:<br><br>'not' is not in 'in', and 'a' is not in 'abc'.",
+      "Explanation:<br><br> 'not' is not in 'in', and 'a' is not in 'abc'.",
     link: "",
   },
   {
@@ -709,10 +684,10 @@ for character in string:
     dummy = character + dummy
 print(dummy[-1])`,
     answers: [
-      { text: "it outputs 0", correct: false },
+      { text: "it outputs 0", correct: true },
       { text: "it raises an exception", correct: false },
       { text: "it outputs 'None'", correct: false },
-      { text: "it outputs 3", correct: true },
+      { text: "it outputs 3", correct: false },
     ],
     explanation:
       "Explanation:<br><br>The last character of the string representation of 1//3 is '0'.",
